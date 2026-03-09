@@ -1,7 +1,13 @@
 # Bot Squad
-Grupo de trabaja para proyecto de software
+Grupo de trabajo para proyecto de software
 
-Integrantes: 
+### Estructura
+
+- src: código
+- data: ficheros crudos y trabajados
+- notebooks: ficheros de prueba
+
+### Integrantes: 
 -Sanaz Amanmohammadi
 -Maria Fernanda Pérez García 
 -Juan Diego Soto Galvan
