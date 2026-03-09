@@ -1,31 +1,40 @@
+import requests
 import json
 import os
-import spotipy
-from spotipy.oauth2 import SpotifyOAuth
 
-CLIENT_ID = '44a679c4d0a34b09b0b6534fa5c2d300'
-CLIENT_SECRET = '2ee21c22a3fb4ea5bf7b0963bab7cb78'
-REDIRECT_URI = 'http://localhost:8888/callback'
-
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
-    client_id=CLIENT_ID,
-    client_secret=CLIENT_SECRET,
-    redirect_uri=REDIRECT_URI,
-    scope='playlist-read-public'
-))
-
+API_KEY = '2486bf623744f4f6f8e4b2a60720a504' 
 def obtener_canciones_populares():
-    # Top 50 Global
-    resultados = sp.playlist_tracks('37i9dQZEVXbMDoHDwVN2tF', limit=50)
+    url = 'http://ws.audioscrobbler.com/2.0/'
+    params = {
+        'method': 'chart.gettoptracks',
+        'api_key': API_KEY,
+        'format': 'json',
+        'limit': 50
+    }
+    respuesta = requests.get(url, params=params)
+    print(respuesta.text)
+    datos = respuesta.json()
     canciones = []
 
-    for item in resultados['items']:
-        track = item['track']
+    for track in datos['tracks']['track']:
         cancion = {
-            'id': track['id'],
             'nombre': track['name'],
-            'artista': track['artists'][0]['name']
+            'artista': track['artist']['name'],
+            'reproducciones': track['playcount']
         }
         canciones.append(cancion)
 
     return canciones
+
+
+def guardar_canciones(canciones):
+    os.makedirs('data/clean', exist_ok=True)
+    file_path = 'data/clean/canciones_populares.json'
+    with open(file_path, 'w') as archivo:
+        json.dump(canciones, archivo, indent=4)
+    print(f'Se han guardado {len(canciones)} canciones en {file_path}')
+
+
+if __name__ == '__main__':
+    canciones = obtener_canciones_populares()
+    guardar_canciones(canciones)
