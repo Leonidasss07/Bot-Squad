@@ -75,6 +75,7 @@ def obtener_canciones_populares_julio():
 
     return canciones_populares_julio
 
+
 def guardar_artistas(artistas):
     os.makedirs('data/clean', exist_ok=True)
     file_path = 'data/clean/artistas_populares.json'
@@ -99,6 +100,7 @@ def guardar_canciones_julio(canciones_populares_julio):
         for cancion_julio in canciones_populares_julio:
             archivo.write(json.dumps(cancion_julio, ensure_ascii=False) + '\n')
     print(f'Se han guardado {len(canciones_populares_julio)} canciones en {file_path}')
+
 
 if __name__ == '__main__':
     canciones = obtener_canciones_populares()
