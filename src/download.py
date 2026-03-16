@@ -3,6 +3,8 @@ import json
 import os
 
 API_KEY = '2486bf623744f4f6f8e4b2a60720a504' 
+
+#canciones populares
 def obtener_canciones_populares():
     url = 'http://ws.audioscrobbler.com/2.0/'
     params = {
@@ -25,10 +27,7 @@ def obtener_canciones_populares():
 
     return canciones
 
-<<<<<<< Updated upstream
-=======
-
-#canciones populares
+#artistas populares
 def obetener_artistas_populares():
     url =  'http://ws.audioscrobbler.com/2.0/'
     params = {
@@ -84,7 +83,6 @@ def guardar_artistas(artistas):
         for musico in artistas:
             archivo.write(json.dumps(musico, ensure_ascii=False) + '\n')
     print(f'Se han guardado {len(artistas)} artisatas en {file_path}')
->>>>>>> Stashed changes
 
 def guardar_canciones(canciones):
     os.makedirs('data/clean', exist_ok=True)
@@ -95,6 +93,19 @@ def guardar_canciones(canciones):
     print(f'Se han guardado {len(canciones)} canciones en {file_path}')
 
 
+def guardar_canciones_julio(canciones_populares_julio):
+    os.makedirs('data/clean', exist_ok=True)
+    file_path = 'data/clean/canciones_populares_julio.json'
+    with open(file_path, 'w') as archivo:
+        for cancion_julio in canciones_populares_julio:
+            archivo.write(json.dumps(cancion_julio, ensure_ascii=False) + '\n')
+    print(f'Se han guardado {len(canciones_populares_julio)} canciones en {file_path}')
+
+
 if __name__ == '__main__':
     canciones = obtener_canciones_populares()
     guardar_canciones(canciones)
+    artistas = obetener_artistas_populares()
+    guardar_artistas(artistas)
+    canciones_julio = obtener_canciones_populares_julio()
+    guardar_canciones_julio(canciones_julio)
