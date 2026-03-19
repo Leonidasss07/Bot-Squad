@@ -1,50 +1,1000 @@
-{"nombre": "Stateside + Zara Larsson", "artista": "PinkPantheress", "reproducciones": "13571831"}
-{"nombre": "American Girls", "artista": "Harry Styles", "reproducciones": "1639064"}
-{"nombre": "Ready, Steady, Go!", "artista": "Harry Styles", "reproducciones": "1391321"}
-{"nombre": "Taste Back", "artista": "Harry Styles", "reproducciones": "1390735"}
-{"nombre": "Aperture", "artista": "Harry Styles", "reproducciones": "4619555"}
-{"nombre": "Coming Up Roses", "artista": "Harry Styles", "reproducciones": "1255877"}
-{"nombre": "Fame Is a Gun", "artista": "Addison Rae", "reproducciones": "18033544"}
-{"nombre": "Are you listening yet?", "artista": "Harry Styles", "reproducciones": "1225796"}
-{"nombre": "Babydoll", "artista": "Dominic Fike", "reproducciones": "21419354"}
-{"nombre": "POP", "artista": "Harry Styles", "reproducciones": "1276947"}
-{"nombre": "The Waiting Game", "artista": "Harry Styles", "reproducciones": "1144282"}
-{"nombre": "Midnight Sun", "artista": "Zara Larsson", "reproducciones": "10252722"}
-{"nombre": "Season 2 Weight Loss", "artista": "Harry Styles", "reproducciones": "1153620"}
-{"nombre": "DtMF", "artista": "Bad Bunny", "reproducciones": "15286111"}
-{"nombre": "Dance No More", "artista": "Harry Styles", "reproducciones": "1117483"}
-{"nombre": "Dracula", "artista": "Tame Impala", "reproducciones": "8774731"}
-{"nombre": "End of Beginning", "artista": "Djo", "reproducciones": "32972710"}
-{"nombre": "Manchild", "artista": "Sabrina Carpenter", "reproducciones": "22571552"}
-{"nombre": "Carla's Song", "artista": "Harry Styles", "reproducciones": "1031278"}
-{"nombre": "Paint By Numbers", "artista": "Harry Styles", "reproducciones": "902964"}
-{"nombre": "Good Luck, Babe!", "artista": "Chappell Roan", "reproducciones": "58347591"}
-{"nombre": "So Easy (To Fall In Love)", "artista": "Olivia Dean", "reproducciones": "7405091"}
-{"nombre": "WHERE IS MY HUSBAND!", "artista": "RAYE", "reproducciones": "9425412"}
-{"nombre": "The Less I Know the Better", "artista": "Tame Impala", "reproducciones": "46876865"}
-{"nombre": "back to friends", "artista": "sombr", "reproducciones": "22913625"}
-{"nombre": "Creep", "artista": "Radiohead", "reproducciones": "58728611"}
-{"nombre": "NUEVAYoL", "artista": "Bad Bunny", "reproducciones": "11681855"}
-{"nombre": "505", "artista": "Arctic Monkeys", "reproducciones": "56431744"}
-{"nombre": "Lush Life", "artista": "Zara Larsson", "reproducciones": "13043059"}
-{"nombre": "BAILE INoLVIDABLE", "artista": "Bad Bunny", "reproducciones": "12041322"}
-{"nombre": "Feel Good Inc.", "artista": "Gorillaz", "reproducciones": "38779073"}
-{"nombre": "Man I Need", "artista": "Olivia Dean", "reproducciones": "8347484"}
-{"nombre": "No One Noticed", "artista": "The Mar�as", "reproducciones": "31752911"}
-{"nombre": "The Fate of Ophelia", "artista": "Taylor Swift", "reproducciones": "23184698"}
-{"nombre": "I Thought I Saw Your Face Today", "artista": "She & Him", "reproducciones": "7162981"}
-{"nombre": "Risk It All", "artista": "Bruno Mars", "reproducciones": "1280080"}
-{"nombre": "Mr. Brightside", "artista": "The Killers", "reproducciones": "49637863"}
-{"nombre": "Sienna", "artista": "The Mar�as", "reproducciones": "18797022"}
-{"nombre": "Let Down", "artista": "Radiohead", "reproducciones": "38955277"}
-{"nombre": "Lovers Rock", "artista": "TV Girl", "reproducciones": "48909892"}
-{"nombre": "Iris", "artista": "The Goo Goo Dolls", "reproducciones": "30098627"}
-{"nombre": "Earrings", "artista": "Malcolm Todd", "reproducciones": "5703081"}
-{"nombre": "Sweater Weather", "artista": "The Neighbourhood", "reproducciones": "48736123"}
-{"nombre": "See You Again (feat. Kali Uchis)", "artista": "Tyler, The Creator", "reproducciones": "55853084"}
-{"nombre": "Duvet", "artista": "b�a", "reproducciones": "39708301"}
-{"nombre": "Dracula - JENNIE remix", "artista": "Tame Impala", "reproducciones": "1887049"}
-{"nombre": "E85", "artista": "Don Toliver", "reproducciones": "2391281"}
-{"nombre": "Pain", "artista": "PinkPantheress", "reproducciones": "35152494"}
-{"nombre": "Pink + White", "artista": "Frank Ocean", "reproducciones": "58089510"}
-{"nombre": "Dreams - 2004 Remaster", "artista": "Fleetwood Mac", "reproducciones": "27241250"}
+{"nombre": "Stateside + Zara Larsson", "artista": "PinkPantheress", "reproducciones": "14110497", "url": "https://www.last.fm/music/PinkPantheress/_/Stateside+%252B+Zara+Larsson"}
+{"nombre": "American Girls", "artista": "Harry Styles", "reproducciones": "1917760", "url": "https://www.last.fm/music/Harry+Styles/_/American+Girls"}
+{"nombre": "Fame Is a Gun", "artista": "Addison Rae", "reproducciones": "18220067", "url": "https://www.last.fm/music/Addison+Rae/_/Fame+Is+a+Gun"}
+{"nombre": "Babydoll", "artista": "Dominic Fike", "reproducciones": "21647641", "url": "https://www.last.fm/music/Dominic+Fike/_/Babydoll"}
+{"nombre": "Taste Back", "artista": "Harry Styles", "reproducciones": "1616650", "url": "https://www.last.fm/music/Harry+Styles/_/Taste+Back"}
+{"nombre": "Ready, Steady, Go!", "artista": "Harry Styles", "reproducciones": "1598267", "url": "https://www.last.fm/music/Harry+Styles/_/Ready,+Steady,+Go%21"}
+{"nombre": "Dracula", "artista": "Tame Impala", "reproducciones": "8930291", "url": "https://www.last.fm/music/Tame+Impala/_/Dracula"}
+{"nombre": "Midnight Sun", "artista": "Zara Larsson", "reproducciones": "10411136", "url": "https://www.last.fm/music/Zara+Larsson/_/Midnight+Sun"}
+{"nombre": "Manchild", "artista": "Sabrina Carpenter", "reproducciones": "22741461", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Manchild"}
+{"nombre": "Aperture", "artista": "Harry Styles", "reproducciones": "4789561", "url": "https://www.last.fm/music/Harry+Styles/_/Aperture"}
+{"nombre": "Coming Up Roses", "artista": "Harry Styles", "reproducciones": "1457648", "url": "https://www.last.fm/music/Harry+Styles/_/Coming+Up+Roses"}
+{"nombre": "DtMF", "artista": "Bad Bunny", "reproducciones": "15415464", "url": "https://www.last.fm/music/Bad+Bunny/_/DtMF"}
+{"nombre": "End of Beginning", "artista": "Djo", "reproducciones": "33086964", "url": "https://www.last.fm/music/Djo/_/End+of+Beginning"}
+{"nombre": "POP", "artista": "Harry Styles", "reproducciones": "1467564", "url": "https://www.last.fm/music/Harry+Styles/_/POP"}
+{"nombre": "The Less I Know the Better", "artista": "Tame Impala", "reproducciones": "46978817", "url": "https://www.last.fm/music/Tame+Impala/_/The+Less+I+Know+the+Better"}
+{"nombre": "Good Luck, Babe!", "artista": "Chappell Roan", "reproducciones": "58455370", "url": "https://www.last.fm/music/Chappell+Roan/_/Good+Luck,+Babe%21"}
+{"nombre": "Are you listening yet?", "artista": "Harry Styles", "reproducciones": "1395243", "url": "https://www.last.fm/music/Harry+Styles/_/Are+you+listening+yet%3F"}
+{"nombre": "The Waiting Game", "artista": "Harry Styles", "reproducciones": "1304847", "url": "https://www.last.fm/music/Harry+Styles/_/The+Waiting+Game"}
+{"nombre": "So Easy (To Fall In Love)", "artista": "Olivia Dean", "reproducciones": "7522081", "url": "https://www.last.fm/music/Olivia+Dean/_/So+Easy+(To+Fall+In+Love)"}
+{"nombre": "Creep", "artista": "Radiohead", "reproducciones": "58833324", "url": "https://www.last.fm/music/Radiohead/_/Creep"}
+{"nombre": "WHERE IS MY HUSBAND!", "artista": "RAYE", "reproducciones": "9525218", "url": "https://www.last.fm/music/RAYE/_/WHERE+IS+MY+HUSBAND%21"}
+{"nombre": "back to friends", "artista": "sombr", "reproducciones": "23033295", "url": "https://www.last.fm/music/sombr/_/back+to+friends"}
+{"nombre": "Dance No More", "artista": "Harry Styles", "reproducciones": "1281963", "url": "https://www.last.fm/music/Harry+Styles/_/Dance+No+More"}
+{"nombre": "505", "artista": "Arctic Monkeys", "reproducciones": "56528875", "url": "https://www.last.fm/music/Arctic+Monkeys/_/505"}
+{"nombre": "Season 2 Weight Loss", "artista": "Harry Styles", "reproducciones": "1320078", "url": "https://www.last.fm/music/Harry+Styles/_/Season+2+Weight+Loss"}
+{"nombre": "NUEVAYoL", "artista": "Bad Bunny", "reproducciones": "11790320", "url": "https://www.last.fm/music/Bad+Bunny/_/NUEVAYoL"}
+{"nombre": "Carla's Song", "artista": "Harry Styles", "reproducciones": "1194183", "url": "https://www.last.fm/music/Harry+Styles/_/Carla%27s+Song"}
+{"nombre": "No One Noticed", "artista": "The MarÃ­as", "reproducciones": "31865695", "url": "https://www.last.fm/music/The+Mar%C3%ADas/_/No+One+Noticed"}
+{"nombre": "Feel Good Inc.", "artista": "Gorillaz", "reproducciones": "38855609", "url": "https://www.last.fm/music/Gorillaz/_/Feel+Good+Inc."}
+{"nombre": "Sienna", "artista": "The MarÃ­as", "reproducciones": "18906617", "url": "https://www.last.fm/music/The+Mar%C3%ADas/_/Sienna"}
+{"nombre": "Lush Life", "artista": "Zara Larsson", "reproducciones": "13133465", "url": "https://www.last.fm/music/Zara+Larsson/_/Lush+Life"}
+{"nombre": "Man I Need", "artista": "Olivia Dean", "reproducciones": "8448635", "url": "https://www.last.fm/music/Olivia+Dean/_/Man+I+Need"}
+{"nombre": "BAILE INoLVIDABLE", "artista": "Bad Bunny", "reproducciones": "12154984", "url": "https://www.last.fm/music/Bad+Bunny/_/BAILE+INoLVIDABLE"}
+{"nombre": "The Fate of Ophelia", "artista": "Taylor Swift", "reproducciones": "23311425", "url": "https://www.last.fm/music/Taylor+Swift/_/The+Fate+of+Ophelia"}
+{"nombre": "Let Down", "artista": "Radiohead", "reproducciones": "39062799", "url": "https://www.last.fm/music/Radiohead/_/Let+Down"}
+{"nombre": "Lovers Rock", "artista": "TV Girl", "reproducciones": "49000442", "url": "https://www.last.fm/music/TV+Girl/_/Lovers+Rock"}
+{"nombre": "See You Again (feat. Kali Uchis)", "artista": "Tyler, The Creator", "reproducciones": "55951466", "url": "https://www.last.fm/music/Tyler,+The+Creator/_/See+You+Again+(feat.+Kali+Uchis)"}
+{"nombre": "Mr. Brightside", "artista": "The Killers", "reproducciones": "49724079", "url": "https://www.last.fm/music/The+Killers/_/Mr.+Brightside"}
+{"nombre": "Iris", "artista": "The Goo Goo Dolls", "reproducciones": "30181444", "url": "https://www.last.fm/music/The+Goo+Goo+Dolls/_/Iris"}
+{"nombre": "Dracula - JENNIE remix", "artista": "Tame Impala", "reproducciones": "2041048", "url": "https://www.last.fm/music/Tame+Impala/_/Dracula+-+JENNIE+remix"}
+{"nombre": "Risk It All", "artista": "Bruno Mars", "reproducciones": "1440043", "url": "https://www.last.fm/music/Bruno+Mars/_/Risk+It+All"}
+{"nombre": "I Thought I Saw Your Face Today", "artista": "She & Him", "reproducciones": "7258022", "url": "https://www.last.fm/music/She+&+Him/_/I+Thought+I+Saw+Your+Face+Today"}
+{"nombre": "Paint By Numbers", "artista": "Harry Styles", "reproducciones": "1020997", "url": "https://www.last.fm/music/Harry+Styles/_/Paint+By+Numbers"}
+{"nombre": "Earrings", "artista": "Malcolm Todd", "reproducciones": "5823711", "url": "https://www.last.fm/music/Malcolm+Todd/_/Earrings"}
+{"nombre": "Sweater Weather", "artista": "The Neighbourhood", "reproducciones": "48811915", "url": "https://www.last.fm/music/The+Neighbourhood/_/Sweater+Weather"}
+{"nombre": "Duvet", "artista": "bÃ´a", "reproducciones": "39789008", "url": "https://www.last.fm/music/b%C3%B4a/_/Duvet"}
+{"nombre": "All I Did Was Dream Of You (feat. The MarÃ­as)", "artista": "beabadoobee", "reproducciones": "900433", "url": "https://www.last.fm/music/beabadoobee/_/All+I+Did+Was+Dream+Of+You+(feat.+The+Mar%C3%ADas)"}
+{"nombre": "Tears", "artista": "Sabrina Carpenter", "reproducciones": "14602524", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Tears"}
+{"nombre": "Pain", "artista": "PinkPantheress", "reproducciones": "35229668", "url": "https://www.last.fm/music/PinkPantheress/_/Pain"}
+{"nombre": "Lover, You Should've Come Over", "artista": "Jeff Buckley", "reproducciones": "30142352", "url": "https://www.last.fm/music/Jeff+Buckley/_/Lover,+You+Should%27ve+Come+Over"}
+{"nombre": "Espresso", "artista": "Sabrina Carpenter", "reproducciones": "54179205", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Espresso"}
+{"nombre": "Pink + White", "artista": "Frank Ocean", "reproducciones": "58163938", "url": "https://www.last.fm/music/Frank+Ocean/_/Pink+%252B+White"}
+{"nombre": "Dreams - 2004 Remaster", "artista": "Fleetwood Mac", "reproducciones": "27308627", "url": "https://www.last.fm/music/Fleetwood+Mac/_/Dreams+-+2004+Remaster"}
+{"nombre": "Borderline", "artista": "Tame Impala", "reproducciones": "28514214", "url": "https://www.last.fm/music/Tame+Impala/_/Borderline"}
+{"nombre": "E85", "artista": "Don Toliver", "reproducciones": "2515224", "url": "https://www.last.fm/music/Don+Toliver/_/E85"}
+{"nombre": "Flashing Lights", "artista": "Kanye West", "reproducciones": "36024753", "url": "https://www.last.fm/music/Kanye+West/_/Flashing+Lights"}
+{"nombre": "Illegal", "artista": "PinkPantheress", "reproducciones": "11601484", "url": "https://www.last.fm/music/PinkPantheress/_/Illegal"}
+{"nombre": "Sweet Boy", "artista": "Malcolm Todd", "reproducciones": "8260157", "url": "https://www.last.fm/music/Malcolm+Todd/_/Sweet+Boy"}
+{"nombre": "No Pole", "artista": "Don Toliver", "reproducciones": "16918745", "url": "https://www.last.fm/music/Don+Toliver/_/No+Pole"}
+{"nombre": "12 to 12", "artista": "sombr", "reproducciones": "8504334", "url": "https://www.last.fm/music/sombr/_/12+to+12"}
+{"nombre": "LES", "artista": "Childish Gambino", "reproducciones": "25888809", "url": "https://www.last.fm/music/Childish+Gambino/_/LES"}
+{"nombre": "EoO", "artista": "Bad Bunny", "reproducciones": "9278506", "url": "https://www.last.fm/music/Bad+Bunny/_/EoO"}
+{"nombre": "SLOW DANCING IN THE DARK", "artista": "Joji", "reproducciones": "36665856", "url": "https://www.last.fm/music/Joji/_/SLOW+DANCING+IN+THE+DARK"}
+{"nombre": "Linger", "artista": "The Cranberries", "reproducciones": "32042391", "url": "https://www.last.fm/music/The+Cranberries/_/Linger"}
+{"nombre": "BIRDS OF A FEATHER", "artista": "Billie Eilish", "reproducciones": "54210563", "url": "https://www.last.fm/music/Billie+Eilish/_/BIRDS+OF+A+FEATHER"}
+{"nombre": "In My Room", "artista": "Julia Wolf", "reproducciones": "7997320", "url": "https://www.last.fm/music/Julia+Wolf/_/In+My+Room"}
+{"nombre": "RUDE!", "artista": "Hearts2Hearts", "reproducciones": "2377031", "url": "https://www.last.fm/music/Hearts2Hearts/_/RUDE%21"}
+{"nombre": "Von dutch", "artista": "Charli xcx", "reproducciones": "30955490", "url": "https://www.last.fm/music/Charli+xcx/_/Von+dutch"}
+{"nombre": "Stateside", "artista": "PinkPantheress", "reproducciones": "9558153", "url": "https://www.last.fm/music/PinkPantheress/_/Stateside"}
+{"nombre": "Nights", "artista": "Frank Ocean", "reproducciones": "41335129", "url": "https://www.last.fm/music/Frank+Ocean/_/Nights"}
+{"nombre": "There Is a Light That Never Goes Out - 2011 Remaster", "artista": "The Smiths", "reproducciones": "29761037", "url": "https://www.last.fm/music/The+Smiths/_/There+Is+a+Light+That+Never+Goes+Out+-+2011+Remaster"}
+{"nombre": "The Subway", "artista": "Chappell Roan", "reproducciones": "16376087", "url": "https://www.last.fm/music/Chappell+Roan/_/The+Subway"}
+{"nombre": "Roommates", "artista": "Malcolm Todd", "reproducciones": "8381724", "url": "https://www.last.fm/music/Malcolm+Todd/_/Roommates"}
+{"nombre": "No Surprises", "artista": "Radiohead", "reproducciones": "53910980", "url": "https://www.last.fm/music/Radiohead/_/No+Surprises"}
+{"nombre": "Everlong", "artista": "Foo Fighters", "reproducciones": "45274045", "url": "https://www.last.fm/music/Foo+Fighters/_/Everlong"}
+{"nombre": "The Chain - 2004 Remaster", "artista": "Fleetwood Mac", "reproducciones": "21883286", "url": "https://www.last.fm/music/Fleetwood+Mac/_/The+Chain+-+2004+Remaster"}
+{"nombre": "Sports car", "artista": "Tate McRae", "reproducciones": "21216476", "url": "https://www.last.fm/music/Tate+McRae/_/Sports+car"}
+{"nombre": "4 Raws", "artista": "EsDeeKid", "reproducciones": "8302408", "url": "https://www.last.fm/music/EsDeeKid/_/4+Raws"}
+{"nombre": "Tonight", "artista": "PinkPantheress", "reproducciones": "11614355", "url": "https://www.last.fm/music/PinkPantheress/_/Tonight"}
+{"nombre": "Juno", "artista": "Sabrina Carpenter", "reproducciones": "25021021", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Juno"}
+{"nombre": "Casual", "artista": "Chappell Roan", "reproducciones": "29440063", "url": "https://www.last.fm/music/Chappell+Roan/_/Casual"}
+{"nombre": "Diet Pepsi", "artista": "Addison Rae", "reproducciones": "23110746", "url": "https://www.last.fm/music/Addison+Rae/_/Diet+Pepsi"}
+{"nombre": "Every Breath You Take", "artista": "The Police", "reproducciones": "26124173", "url": "https://www.last.fm/music/The+Police/_/Every+Breath+You+Take"}
+{"nombre": "My Own Summer (Shove It)", "artista": "Deftones", "reproducciones": "26923036", "url": "https://www.last.fm/music/Deftones/_/My+Own+Summer+(Shove+It)"}
+{"nombre": "All I Need", "artista": "Radiohead", "reproducciones": "40253631", "url": "https://www.last.fm/music/Radiohead/_/All+I+Need"}
+{"nombre": "All I Wanted", "artista": "Paramore", "reproducciones": "23230562", "url": "https://www.last.fm/music/Paramore/_/All+I+Wanted"}
+{"nombre": "Ribs", "artista": "Lorde", "reproducciones": "34234428", "url": "https://www.last.fm/music/Lorde/_/Ribs"}
+{"nombre": "Headlock", "artista": "Imogen Heap", "reproducciones": "25409358", "url": "https://www.last.fm/music/Imogen+Heap/_/Headlock"}
+{"nombre": "TitÃ­ Me PreguntÃ³", "artista": "Bad Bunny", "reproducciones": "11964654", "url": "https://www.last.fm/music/Bad+Bunny/_/Tit%C3%AD+Me+Pregunt%C3%B3"}
+{"nombre": "Still Into You", "artista": "Paramore", "reproducciones": "26691758", "url": "https://www.last.fm/music/Paramore/_/Still+Into+You"}
+{"nombre": "From the Start", "artista": "Laufey", "reproducciones": "26928490", "url": "https://www.last.fm/music/Laufey/_/From+the+Start"}
+{"nombre": "Love Me Not", "artista": "Ravyn Lenae", "reproducciones": "16899904", "url": "https://www.last.fm/music/Ravyn+Lenae/_/Love+Me+Not"}
+{"nombre": "The Adults Are Talking", "artista": "The Strokes", "reproducciones": "27659066", "url": "https://www.last.fm/music/The+Strokes/_/The+Adults+Are+Talking"}
+{"nombre": "undressed", "artista": "sombr", "reproducciones": "14851973", "url": "https://www.last.fm/music/sombr/_/undressed"}
+{"nombre": "Bring Me to Life", "artista": "Evanescence", "reproducciones": "29844054", "url": "https://www.last.fm/music/Evanescence/_/Bring+Me+to+Life"}
+{"nombre": "ARE WE STILL FRIENDS?", "artista": "Tyler, The Creator", "reproducciones": "31330729", "url": "https://www.last.fm/music/Tyler,+The+Creator/_/ARE+WE+STILL+FRIENDS%3F"}
+{"nombre": "Taste", "artista": "Sabrina Carpenter", "reproducciones": "30704314", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Taste"}
+{"nombre": "Heaven Knows I'm Miserable Now - 2011 Remaster", "artista": "The Smiths", "reproducciones": "24615637", "url": "https://www.last.fm/music/The+Smiths/_/Heaven+Knows+I%27m+Miserable+Now+-+2011+Remaster"}
+{"nombre": "Nobodyâs Son", "artista": "Sabrina Carpenter", "reproducciones": "10693469", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Nobody%E2%80%99s+Son"}
+{"nombre": "House Tour", "artista": "Sabrina Carpenter", "reproducciones": "10860305", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/House+Tour"}
+{"nombre": "Promiscuous", "artista": "Nelly Furtado", "reproducciones": "21948882", "url": "https://www.last.fm/music/Nelly+Furtado/_/Promiscuous"}
+{"nombre": "Into You", "artista": "Ariana Grande", "reproducciones": "26068474", "url": "https://www.last.fm/music/Ariana+Grande/_/Into+You"}
+{"nombre": "Gabriela", "artista": "KATSEYE", "reproducciones": "16649016", "url": "https://www.last.fm/music/KATSEYE/_/Gabriela"}
+{"nombre": "Busy Woman", "artista": "Sabrina Carpenter", "reproducciones": "15287143", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Busy+Woman"}
+{"nombre": "When Did You Get Hot?", "artista": "Sabrina Carpenter", "reproducciones": "11520621", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/When+Did+You+Get+Hot%3F"}
+{"nombre": "Body", "artista": "Don Toliver", "reproducciones": "1962395", "url": "https://www.last.fm/music/Don+Toliver/_/Body"}
+{"nombre": "party 4 u", "artista": "Charli xcx", "reproducciones": "19716005", "url": "https://www.last.fm/music/Charli+xcx/_/party+4+u"}
+{"nombre": "Kiss It Better", "artista": "Rihanna", "reproducciones": "15083461", "url": "https://www.last.fm/music/Rihanna/_/Kiss+It+Better"}
+{"nombre": "360", "artista": "Charli xcx", "reproducciones": "33189352", "url": "https://www.last.fm/music/Charli+xcx/_/360"}
+{"nombre": "Girl Like Me", "artista": "PinkPantheress", "reproducciones": "6837373", "url": "https://www.last.fm/music/PinkPantheress/_/Girl+Like+Me"}
+{"nombre": "Timeless (feat Playboi Carti)", "artista": "The Weeknd", "reproducciones": "13377359", "url": "https://www.last.fm/music/The+Weeknd/_/Timeless+(feat+Playboi+Carti)"}
+{"nombre": "Go Away", "artista": "Weezer", "reproducciones": "2312417", "url": "https://www.last.fm/music/Weezer/_/Go+Away"}
+{"nombre": "Fade Into You", "artista": "Mazzy Star", "reproducciones": "32792483", "url": "https://www.last.fm/music/Mazzy+Star/_/Fade+Into+You"}
+{"nombre": "Sailor Song", "artista": "Gigi Perez", "reproducciones": "26793755", "url": "https://www.last.fm/music/Gigi+Perez/_/Sailor+Song"}
+{"nombre": "Homewrecker", "artista": "sombr", "reproducciones": "2021533", "url": "https://www.last.fm/music/sombr/_/Homewrecker"}
+{"nombre": "WILDFLOWER", "artista": "Billie Eilish", "reproducciones": "34895400", "url": "https://www.last.fm/music/Billie+Eilish/_/WILDFLOWER"}
+{"nombre": "Primadonna", "artista": "Marina", "reproducciones": "12156988", "url": "https://www.last.fm/music/Marina/_/Primadonna"}
+{"nombre": "Jigsaw Falling Into Place", "artista": "Radiohead", "reproducciones": "40195836", "url": "https://www.last.fm/music/Radiohead/_/Jigsaw+Falling+Into+Place"}
+{"nombre": "Please Please Please", "artista": "Sabrina Carpenter", "reproducciones": "35590623", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Please+Please+Please"}
+{"nombre": "the perfect pair", "artista": "beabadoobee", "reproducciones": "29295357", "url": "https://www.last.fm/music/beabadoobee/_/the+perfect+pair"}
+{"nombre": "Drag Path", "artista": "Twenty One Pilots", "reproducciones": "2806024", "url": "https://www.last.fm/music/Twenty+One+Pilots/_/Drag+Path"}
+{"nombre": "Sparks", "artista": "Coldplay", "reproducciones": "37295241", "url": "https://www.last.fm/music/Coldplay/_/Sparks"}
+{"nombre": "When the Sun Hits", "artista": "Slowdive", "reproducciones": "25849583", "url": "https://www.last.fm/music/Slowdive/_/When+the+Sun+Hits"}
+{"nombre": "Why'd You Only Call Me When You're High?", "artista": "Arctic Monkeys", "reproducciones": "40697099", "url": "https://www.last.fm/music/Arctic+Monkeys/_/Why%27d+You+Only+Call+Me+When+You%27re+High%3F"}
+{"nombre": "Red Wine Supernova", "artista": "Chappell Roan", "reproducciones": "31373316", "url": "https://www.last.fm/music/Chappell+Roan/_/Red+Wine+Supernova"}
+{"nombre": "Apocalypse", "artista": "Cigarettes After Sex", "reproducciones": "41394331", "url": "https://www.last.fm/music/Cigarettes+After+Sex/_/Apocalypse"}
+{"nombre": "In the End", "artista": "Linkin Park", "reproducciones": "38797154", "url": "https://www.last.fm/music/Linkin+Park/_/In+the+End"}
+{"nombre": "We Are the People", "artista": "Empire of the Sun", "reproducciones": "19961648", "url": "https://www.last.fm/music/Empire+of+the+Sun/_/We+Are+the+People"}
+{"nombre": "Back to the Old House - 2011 Remaster", "artista": "The Smiths", "reproducciones": "22015682", "url": "https://www.last.fm/music/The+Smiths/_/Back+to+the+Old+House+-+2011+Remaster"}
+{"nombre": "I Just Might", "artista": "Bruno Mars", "reproducciones": "2859399", "url": "https://www.last.fm/music/Bruno+Mars/_/I+Just+Might"}
+{"nombre": "Sextape", "artista": "Deftones", "reproducciones": "27530823", "url": "https://www.last.fm/music/Deftones/_/Sextape"}
+{"nombre": "Passionfruit", "artista": "Drake", "reproducciones": "27576679", "url": "https://www.last.fm/music/Drake/_/Passionfruit"}
+{"nombre": "Thinkin Bout You", "artista": "Frank Ocean", "reproducciones": "35589447", "url": "https://www.last.fm/music/Frank+Ocean/_/Thinkin+Bout+You"}
+{"nombre": "All the Stars (with SZA) - From \"Black Panther: The Album\"", "artista": "Kendrick Lamar", "reproducciones": "5949240", "url": "https://www.last.fm/music/Kendrick+Lamar/_/All+the+Stars+(with+SZA)+-+From+%22Black+Panther:+The+Album%22"}
+{"nombre": "The Spins", "artista": "Mac Miller", "reproducciones": "21313305", "url": "https://www.last.fm/music/Mac+Miller/_/The+Spins"}
+{"nombre": "I Wanna Be Yours", "artista": "Arctic Monkeys", "reproducciones": "41424771", "url": "https://www.last.fm/music/Arctic+Monkeys/_/I+Wanna+Be+Yours"}
+{"nombre": "Faint", "artista": "Linkin Park", "reproducciones": "28519700", "url": "https://www.last.fm/music/Linkin+Park/_/Faint"}
+{"nombre": "Change (In the House of Flies)", "artista": "Deftones", "reproducciones": "27220192", "url": "https://www.last.fm/music/Deftones/_/Change+(In+the+House+of+Flies)"}
+{"nombre": "Bags", "artista": "Clairo", "reproducciones": "33956262", "url": "https://www.last.fm/music/Clairo/_/Bags"}
+{"nombre": "Cigarettes out the Window", "artista": "TV Girl", "reproducciones": "30492688", "url": "https://www.last.fm/music/TV+Girl/_/Cigarettes+out+the+Window"}
+{"nombre": "Somewhere I Belong", "artista": "Linkin Park", "reproducciones": "22041844", "url": "https://www.last.fm/music/Linkin+Park/_/Somewhere+I+Belong"}
+{"nombre": "Judas", "artista": "Lady Gaga", "reproducciones": "33430314", "url": "https://www.last.fm/music/Lady+Gaga/_/Judas"}
+{"nombre": "Pink Pony Club", "artista": "Chappell Roan", "reproducciones": "26276952", "url": "https://www.last.fm/music/Chappell+Roan/_/Pink+Pony+Club"}
+{"nombre": "One Dance", "artista": "Drake", "reproducciones": "22205258", "url": "https://www.last.fm/music/Drake/_/One+Dance"}
+{"nombre": "Not Allowed", "artista": "TV Girl", "reproducciones": "37343057", "url": "https://www.last.fm/music/TV+Girl/_/Not+Allowed"}
+{"nombre": "Just Dance", "artista": "Lady Gaga", "reproducciones": "27779632", "url": "https://www.last.fm/music/Lady+Gaga/_/Just+Dance"}
+{"nombre": "Only Girl (In the World)", "artista": "Rihanna", "reproducciones": "24400989", "url": "https://www.last.fm/music/Rihanna/_/Only+Girl+(In+the+World)"}
+{"nombre": "luther (with SZA)", "artista": "Kendrick Lamar", "reproducciones": "27035939", "url": "https://www.last.fm/music/Kendrick+Lamar/_/luther+(with+SZA)"}
+{"nombre": "Everybody Wants to Rule the World", "artista": "Tears for Fears", "reproducciones": "31345664", "url": "https://www.last.fm/music/Tears+for+Fears/_/Everybody+Wants+to+Rule+the+World"}
+{"nombre": "Poker Face", "artista": "Lady Gaga", "reproducciones": "41078409", "url": "https://www.last.fm/music/Lady+Gaga/_/Poker+Face"}
+{"nombre": "like JENNIE", "artista": "Jennie", "reproducciones": "18757462", "url": "https://www.last.fm/music/Jennie/_/like+JENNIE"}
+{"nombre": "Come as You Are", "artista": "Nirvana", "reproducciones": "39802484", "url": "https://www.last.fm/music/Nirvana/_/Come+as+You+Are"}
+{"nombre": "Toxic", "artista": "Britney Spears", "reproducciones": "29930958", "url": "https://www.last.fm/music/Britney+Spears/_/Toxic"}
+{"nombre": "Do I Wanna Know?", "artista": "Arctic Monkeys", "reproducciones": "44097428", "url": "https://www.last.fm/music/Arctic+Monkeys/_/Do+I+Wanna+Know%3F"}
+{"nombre": "My Love Mine All Mine", "artista": "Mitski", "reproducciones": "49560131", "url": "https://www.last.fm/music/Mitski/_/My+Love+Mine+All+Mine"}
+{"nombre": "Misery Business", "artista": "Paramore", "reproducciones": "36607256", "url": "https://www.last.fm/music/Paramore/_/Misery+Business"}
+{"nombre": "Back To Me", "artista": "The MarÃ­as", "reproducciones": "9395052", "url": "https://www.last.fm/music/The+Mar%C3%ADas/_/Back+To+Me"}
+{"nombre": "Be Quiet and Drive (Far Away)", "artista": "Deftones", "reproducciones": "27460430", "url": "https://www.last.fm/music/Deftones/_/Be+Quiet+and+Drive+(Far+Away)"}
+{"nombre": "New Person, Same Old Mistakes", "artista": "Tame Impala", "reproducciones": "23430497", "url": "https://www.last.fm/music/Tame+Impala/_/New+Person,+Same+Old+Mistakes"}
+{"nombre": "Opalite", "artista": "Taylor Swift", "reproducciones": "13693024", "url": "https://www.last.fm/music/Taylor+Swift/_/Opalite"}
+{"nombre": "Gimme More", "artista": "Britney Spears", "reproducciones": "24967250", "url": "https://www.last.fm/music/Britney+Spears/_/Gimme+More"}
+{"nombre": "S&M", "artista": "Rihanna", "reproducciones": "22281866", "url": "https://www.last.fm/music/Rihanna/_/S&M"}
+{"nombre": "Chop Suey!", "artista": "System of a Down", "reproducciones": "34215245", "url": "https://www.last.fm/music/System+of+a+Down/_/Chop+Suey%21"}
+{"nombre": "One of the Girls (with JENNIE, Lily Rose Depp)", "artista": "The Weeknd", "reproducciones": "26790308", "url": "https://www.last.fm/music/The+Weeknd/_/One+of+the+Girls+(with+JENNIE,+Lily+Rose+Depp)"}
+{"nombre": "Midnight Sun - Super Loud", "artista": "Zara Larsson", "reproducciones": "218611", "url": "https://www.last.fm/music/Zara+Larsson/_/Midnight+Sun+-+Super+Loud"}
+{"nombre": "Bed Chem", "artista": "Sabrina Carpenter", "reproducciones": "25520036", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Bed+Chem"}
+{"nombre": "Fashion Killa", "artista": "A$AP Rocky", "reproducciones": "17598491", "url": "https://www.last.fm/music/A$AP+Rocky/_/Fashion+Killa"}
+{"nombre": "Maneater", "artista": "Nelly Furtado", "reproducciones": "22502024", "url": "https://www.last.fm/music/Nelly+Furtado/_/Maneater"}
+{"nombre": "Golden", "artista": "HUNTR/X", "reproducciones": "16381257", "url": "https://www.last.fm/music/HUNTR%2FX/_/Golden"}
+{"nombre": "Telephone", "artista": "Lady Gaga", "reproducciones": "21967124", "url": "https://www.last.fm/music/Lady+Gaga/_/Telephone"}
+{"nombre": "My Own Worst Enemy", "artista": "Lit", "reproducciones": "9003550", "url": "https://www.last.fm/music/Lit/_/My+Own+Worst+Enemy"}
+{"nombre": "we can't be friends (wait for your love)", "artista": "Ariana Grande", "reproducciones": "34410126", "url": "https://www.last.fm/music/Ariana+Grande/_/we+can%27t+be+friends+(wait+for+your+love)"}
+{"nombre": "Numb", "artista": "Linkin Park", "reproducciones": "35434078", "url": "https://www.last.fm/music/Linkin+Park/_/Numb"}
+{"nombre": "The Only Exception", "artista": "Paramore", "reproducciones": "23904779", "url": "https://www.last.fm/music/Paramore/_/The+Only+Exception"}
+{"nombre": "Can't Stop", "artista": "Red Hot Chili Peppers", "reproducciones": "25995900", "url": "https://www.last.fm/music/Red+Hot+Chili+Peppers/_/Can%27t+Stop"}
+{"nombre": "Breakin' Dishes", "artista": "Rihanna", "reproducciones": "15440840", "url": "https://www.last.fm/music/Rihanna/_/Breakin%27+Dishes"}
+{"nombre": "Eyes Without a Face", "artista": "Billy Idol", "reproducciones": "17399168", "url": "https://www.last.fm/music/Billy+Idol/_/Eyes+Without+a+Face"}
+{"nombre": "On Melancholy Hill", "artista": "Gorillaz", "reproducciones": "27384899", "url": "https://www.last.fm/music/Gorillaz/_/On+Melancholy+Hill"}
+{"nombre": "DARE (feat. Shaun Ryder & Roses Gabor)", "artista": "Gorillaz", "reproducciones": "4810155", "url": "https://www.last.fm/music/Gorillaz/_/DARE+(feat.+Shaun+Ryder+&+Roses+Gabor)"}
+{"nombre": "Lost", "artista": "Frank Ocean", "reproducciones": "31728417", "url": "https://www.last.fm/music/Frank+Ocean/_/Lost"}
+{"nombre": "Don't Stop the Music", "artista": "Rihanna", "reproducciones": "19233495", "url": "https://www.last.fm/music/Rihanna/_/Don%27t+Stop+the+Music"}
+{"nombre": "Starboy", "artista": "The Weeknd", "reproducciones": "32984581", "url": "https://www.last.fm/music/The+Weeknd/_/Starboy"}
+{"nombre": "Ivy", "artista": "Frank Ocean", "reproducciones": "42620871", "url": "https://www.last.fm/music/Frank+Ocean/_/Ivy"}
+{"nombre": "White Ferrari", "artista": "Frank Ocean", "reproducciones": "39109408", "url": "https://www.last.fm/music/Frank+Ocean/_/White+Ferrari"}
+{"nombre": "20 Min", "artista": "Lil Uzi Vert", "reproducciones": "23868519", "url": "https://www.last.fm/music/Lil+Uzi+Vert/_/20+Min"}
+{"nombre": "Guess featuring billie eilish", "artista": "Charli xcx", "reproducciones": "28951087", "url": "https://www.last.fm/music/Charli+xcx/_/Guess+featuring+billie+eilish"}
+{"nombre": "Dark Red", "artista": "Steve Lacy", "reproducciones": "39527554", "url": "https://www.last.fm/music/Steve+Lacy/_/Dark+Red"}
+{"nombre": "Heavy", "artista": "The MarÃ­as", "reproducciones": "16025042", "url": "https://www.last.fm/music/The+Mar%C3%ADas/_/Heavy"}
+{"nombre": "No. 1 Party Anthem", "artista": "Arctic Monkeys", "reproducciones": "23862286", "url": "https://www.last.fm/music/Arctic+Monkeys/_/No.+1+Party+Anthem"}
+{"nombre": "Cherry Waves", "artista": "Deftones", "reproducciones": "22156562", "url": "https://www.last.fm/music/Deftones/_/Cherry+Waves"}
+{"nombre": "Beaches", "artista": "beabadoobee", "reproducciones": "11731082", "url": "https://www.last.fm/music/beabadoobee/_/Beaches"}
+{"nombre": "Money Trees", "artista": "Kendrick Lamar", "reproducciones": "34433515", "url": "https://www.last.fm/music/Kendrick+Lamar/_/Money+Trees"}
+{"nombre": "Supermassive Black Hole", "artista": "Muse", "reproducciones": "34985263", "url": "https://www.last.fm/music/Muse/_/Supermassive+Black+Hole"}
+{"nombre": "Novacane", "artista": "Frank Ocean", "reproducciones": "25591685", "url": "https://www.last.fm/music/Frank+Ocean/_/Novacane"}
+{"nombre": "STAY HERE 4 LIFE (feat. Brent Faiyaz)", "artista": "A$AP Rocky", "reproducciones": "1575847", "url": "https://www.last.fm/music/A$AP+Rocky/_/STAY+HERE+4+LIFE+(feat.+Brent+Faiyaz)"}
+{"nombre": "HOT TO GO!", "artista": "Chappell Roan", "reproducciones": "32730456", "url": "https://www.last.fm/music/Chappell+Roan/_/HOT+TO+GO%21"}
+{"nombre": "Smells Like Teen Spirit", "artista": "Nirvana", "reproducciones": "41156786", "url": "https://www.last.fm/music/Nirvana/_/Smells+Like+Teen+Spirit"}
+{"nombre": "Let It Happen", "artista": "Tame Impala", "reproducciones": "25380085", "url": "https://www.last.fm/music/Tame+Impala/_/Let+It+Happen"}
+{"nombre": "Bad Habit", "artista": "Steve Lacy", "reproducciones": "33383719", "url": "https://www.last.fm/music/Steve+Lacy/_/Bad+Habit"}
+{"nombre": "Locked Out of Heaven", "artista": "Bruno Mars", "reproducciones": "24826804", "url": "https://www.last.fm/music/Bruno+Mars/_/Locked+Out+of+Heaven"}
+{"nombre": "All the Things She Said", "artista": "t.A.T.u.", "reproducciones": "14647189", "url": "https://www.last.fm/music/t.A.T.u./_/All+the+Things+She+Said"}
+{"nombre": "Heartless", "artista": "Kanye West", "reproducciones": "33686874", "url": "https://www.last.fm/music/Kanye+West/_/Heartless"}
+{"nombre": "The Color Violet", "artista": "Tory Lanez", "reproducciones": "27781755", "url": "https://www.last.fm/music/Tory+Lanez/_/The+Color+Violet"}
+{"nombre": "Who Knows", "artista": "Daniel Caesar", "reproducciones": "5051928", "url": "https://www.last.fm/music/Daniel+Caesar/_/Who+Knows"}
+{"nombre": "Love Me Harder", "artista": "Ariana Grande", "reproducciones": "15802601", "url": "https://www.last.fm/music/Ariana+Grande/_/Love+Me+Harder"}
+{"nombre": "Scar Tissue", "artista": "Red Hot Chili Peppers", "reproducciones": "27559306", "url": "https://www.last.fm/music/Red+Hot+Chili+Peppers/_/Scar+Tissue"}
+{"nombre": "Juna", "artista": "Clairo", "reproducciones": "21264570", "url": "https://www.last.fm/music/Clairo/_/Juna"}
+{"nombre": "Lovefool", "artista": "The Cardigans", "reproducciones": "20176789", "url": "https://www.last.fm/music/The+Cardigans/_/Lovefool"}
+{"nombre": "Donât Smile", "artista": "Sabrina Carpenter", "reproducciones": "14546073", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Don%E2%80%99t+Smile"}
+{"nombre": "Promise", "artista": "Laufey", "reproducciones": "14321262", "url": "https://www.last.fm/music/Laufey/_/Promise"}
+{"nombre": "Style", "artista": "Taylor Swift", "reproducciones": "33299215", "url": "https://www.last.fm/music/Taylor+Swift/_/Style"}
+{"nombre": "That's What I Like", "artista": "Bruno Mars", "reproducciones": "17428469", "url": "https://www.last.fm/music/Bruno+Mars/_/That%27s+What+I+Like"}
+{"nombre": "Gnarly", "artista": "KATSEYE", "reproducciones": "19796065", "url": "https://www.last.fm/music/KATSEYE/_/Gnarly"}
+{"nombre": "As It Was", "artista": "Harry Styles", "reproducciones": "41312001", "url": "https://www.last.fm/music/Harry+Styles/_/As+It+Was"}
+{"nombre": "Weird Fishes / Arpeggi", "artista": "Radiohead", "reproducciones": "10547395", "url": "https://www.last.fm/music/Radiohead/_/Weird+Fishes+%2F+Arpeggi"}
+{"nombre": "Heartbeat", "artista": "Childish Gambino", "reproducciones": "20914632", "url": "https://www.last.fm/music/Childish+Gambino/_/Heartbeat"}
+{"nombre": "Break Stuff", "artista": "Limp Bizkit", "reproducciones": "22584984", "url": "https://www.last.fm/music/Limp+Bizkit/_/Break+Stuff"}
+{"nombre": "This Charming Man - 2011 Remaster", "artista": "The Smiths", "reproducciones": "24466215", "url": "https://www.last.fm/music/The+Smiths/_/This+Charming+Man+-+2011+Remaster"}
+{"nombre": "VOY A LLeVARTE PA PR", "artista": "Bad Bunny", "reproducciones": "9005342", "url": "https://www.last.fm/music/Bad+Bunny/_/VOY+A+LLeVARTE+PA+PR"}
+{"nombre": "Dying for You", "artista": "Charli xcx", "reproducciones": "1856391", "url": "https://www.last.fm/music/Charli+xcx/_/Dying+for+You"}
+{"nombre": "CHIHIRO", "artista": "Billie Eilish", "reproducciones": "31072750", "url": "https://www.last.fm/music/Billie+Eilish/_/CHIHIRO"}
+{"nombre": "Just The Way You Are", "artista": "Milky", "reproducciones": "1585548", "url": "https://www.last.fm/music/Milky/_/Just+The+Way+You+Are"}
+{"nombre": "Sugar On My Tongue", "artista": "Tyler, The Creator", "reproducciones": "11768381", "url": "https://www.last.fm/music/Tyler,+The+Creator/_/Sugar+On+My+Tongue"}
+{"nombre": "Fake Plastic Trees", "artista": "Radiohead", "reproducciones": "32580168", "url": "https://www.last.fm/music/Radiohead/_/Fake+Plastic+Trees"}
+{"nombre": "Boys Don't Cry", "artista": "The Cure", "reproducciones": "26291878", "url": "https://www.last.fm/music/The+Cure/_/Boys+Don%27t+Cry"}
+{"nombre": "Die with a Smile", "artista": "Lady Gaga", "reproducciones": "30604313", "url": "https://www.last.fm/music/Lady+Gaga/_/Die+with+a+Smile"}
+{"nombre": "She's My Collar (feat. Kali Uchis)", "artista": "Gorillaz", "reproducciones": "14797470", "url": "https://www.last.fm/music/Gorillaz/_/She%27s+My+Collar+(feat.+Kali+Uchis)"}
+{"nombre": "Phantom", "artista": "EsDeeKid", "reproducciones": "7668067", "url": "https://www.last.fm/music/EsDeeKid/_/Phantom"}
+{"nombre": "Paparazzi", "artista": "Lady Gaga", "reproducciones": "31765787", "url": "https://www.last.fm/music/Lady+Gaga/_/Paparazzi"}
+{"nombre": "Bad Romance", "artista": "Lady Gaga", "reproducciones": "38315458", "url": "https://www.last.fm/music/Lady+Gaga/_/Bad+Romance"}
+{"nombre": "Like Him (feat. Lola Young)", "artista": "Tyler, The Creator", "reproducciones": "21452065", "url": "https://www.last.fm/music/Tyler,+The+Creator/_/Like+Him+(feat.+Lola+Young)"}
+{"nombre": "Chains of Love", "artista": "Charli xcx", "reproducciones": "3323912", "url": "https://www.last.fm/music/Charli+xcx/_/Chains+of+Love"}
+{"nombre": "Blue Hair", "artista": "TV Girl", "reproducciones": "21111728", "url": "https://www.last.fm/music/TV+Girl/_/Blue+Hair"}
+{"nombre": "Shut up My Moms Calling", "artista": "Hotel Ugly", "reproducciones": "23604520", "url": "https://www.last.fm/music/Hotel+Ugly/_/Shut+up+My+Moms+Calling"}
+{"nombre": "All Falls Down", "artista": "Kanye West", "reproducciones": "21261768", "url": "https://www.last.fm/music/Kanye+West/_/All+Falls+Down"}
+{"nombre": "Softcore", "artista": "The Neighbourhood", "reproducciones": "25793002", "url": "https://www.last.fm/music/The+Neighbourhood/_/Softcore"}
+{"nombre": "I Wonder", "artista": "Kanye West", "reproducciones": "31627046", "url": "https://www.last.fm/music/Kanye+West/_/I+Wonder"}
+{"nombre": "Rush", "artista": "Troye Sivan", "reproducciones": "20414962", "url": "https://www.last.fm/music/Troye+Sivan/_/Rush"}
+{"nombre": "Sundress", "artista": "A$AP Rocky", "reproducciones": "24900079", "url": "https://www.last.fm/music/A$AP+Rocky/_/Sundress"}
+{"nombre": "If I Leave", "artista": "Mitski", "reproducciones": "885034", "url": "https://www.last.fm/music/Mitski/_/If+I+Leave"}
+{"nombre": "Lover Girl", "artista": "Laufey", "reproducciones": "6834692", "url": "https://www.last.fm/music/Laufey/_/Lover+Girl"}
+{"nombre": "404 (New Era)", "artista": "KiiiKiii", "reproducciones": "2028021", "url": "https://www.last.fm/music/KiiiKiii/_/404+(New+Era)"}
+{"nombre": "Champagne Coast", "artista": "Blood Orange", "reproducciones": "16612430", "url": "https://www.last.fm/music/Blood+Orange/_/Champagne+Coast"}
+{"nombre": "About You", "artista": "The 1975", "reproducciones": "23790226", "url": "https://www.last.fm/music/The+1975/_/About+You"}
+{"nombre": "I Smoked Away My Brain (I'm God x Demons Mashup) (feat. Imogen Heap & Clams Casino)", "artista": "A$AP Rocky", "reproducciones": "17868490", "url": "https://www.last.fm/music/A$AP+Rocky/_/I+Smoked+Away+My+Brain+(I%27m+God+x+Demons+Mashup)+(feat.+Imogen+Heap+&+Clams+Casino)"}
+{"nombre": "Revolving door", "artista": "Tate McRae", "reproducciones": "14043772", "url": "https://www.last.fm/music/Tate+McRae/_/Revolving+door"}
+{"nombre": "Dirty Little Secret", "artista": "The All-American Rejects", "reproducciones": "12928122", "url": "https://www.last.fm/music/The+All-American+Rejects/_/Dirty+Little+Secret"}
+{"nombre": "King for a Day", "artista": "Pierce the Veil", "reproducciones": "20738662", "url": "https://www.last.fm/music/Pierce+the+Veil/_/King+for+a+Day"}
+{"nombre": "Bound 2", "artista": "Kanye West", "reproducciones": "29888206", "url": "https://www.last.fm/music/Kanye+West/_/Bound+2"}
+{"nombre": "Cinnamon Girl", "artista": "Lana Del Rey", "reproducciones": "27537619", "url": "https://www.last.fm/music/Lana+Del+Rey/_/Cinnamon+Girl"}
+{"nombre": "Life Goes On", "artista": "BTS", "reproducciones": "150943194", "url": "https://www.last.fm/music/BTS/_/Life+Goes+On"}
+{"nombre": "Loving Machine", "artista": "TV Girl", "reproducciones": "11705312", "url": "https://www.last.fm/music/TV+Girl/_/Loving+Machine"}
+{"nombre": "Nobody New", "artista": "The MarÃ­as", "reproducciones": "8432237", "url": "https://www.last.fm/music/The+Mar%C3%ADas/_/Nobody+New"}
+{"nombre": "A Couple Minutes", "artista": "Olivia Dean", "reproducciones": "3786675", "url": "https://www.last.fm/music/Olivia+Dean/_/A+Couple+Minutes"}
+{"nombre": "Nice To Each Other", "artista": "Olivia Dean", "reproducciones": "5882547", "url": "https://www.last.fm/music/Olivia+Dean/_/Nice+To+Each+Other"}
+{"nombre": "Please, Please, Please, Let Me Get What I Want - 2011 Remaster", "artista": "The Smiths", "reproducciones": "20516936", "url": "https://www.last.fm/music/The+Smiths/_/Please,+Please,+Please,+Let+Me+Get+What+I+Want+-+2011+Remaster"}
+{"nombre": "Porch Light", "artista": "Noah Kahan", "reproducciones": "392085", "url": "https://www.last.fm/music/Noah+Kahan/_/Porch+Light"}
+{"nombre": "DNA", "artista": "BTS", "reproducciones": "44260408", "url": "https://www.last.fm/music/BTS/_/DNA"}
+{"nombre": "Like a Tattoo", "artista": "Sade", "reproducciones": "14237304", "url": "https://www.last.fm/music/Sade/_/Like+a+Tattoo"}
+{"nombre": "FAKE LOVE", "artista": "BTS", "reproducciones": "127472208", "url": "https://www.last.fm/music/BTS/_/FAKE+LOVE"}
+{"nombre": "The Blonde", "artista": "TV Girl", "reproducciones": "15944530", "url": "https://www.last.fm/music/TV+Girl/_/The+Blonde"}
+{"nombre": "Decode", "artista": "Paramore", "reproducciones": "21383757", "url": "https://www.last.fm/music/Paramore/_/Decode"}
+{"nombre": "Take Me Out", "artista": "Franz Ferdinand", "reproducciones": "31631756", "url": "https://www.last.fm/music/Franz+Ferdinand/_/Take+Me+Out"}
+{"nombre": "Abracadabra", "artista": "Lady Gaga", "reproducciones": "25570698", "url": "https://www.last.fm/music/Lady+Gaga/_/Abracadabra"}
+{"nombre": "Helena", "artista": "My Chemical Romance", "reproducciones": "25868369", "url": "https://www.last.fm/music/My+Chemical+Romance/_/Helena"}
+{"nombre": "Futile Devices (Doveman Remix)", "artista": "Sufjan Stevens", "reproducciones": "11310600", "url": "https://www.last.fm/music/Sufjan+Stevens/_/Futile+Devices+(Doveman+Remix)"}
+{"nombre": "My Kind of Woman", "artista": "Mac DeMarco", "reproducciones": "27799291", "url": "https://www.last.fm/music/Mac+DeMarco/_/My+Kind+of+Woman"}
+{"nombre": "Better in the Dark", "artista": "Jordana", "reproducciones": "14178356", "url": "https://www.last.fm/music/Jordana/_/Better+in+the+Dark"}
+{"nombre": "Feather", "artista": "Sabrina Carpenter", "reproducciones": "27734558", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Feather"}
+{"nombre": "Don't Dream It's Over", "artista": "Crowded House", "reproducciones": "13972327", "url": "https://www.last.fm/music/Crowded+House/_/Don%27t+Dream+It%27s+Over"}
+{"nombre": "Girl, so confusing featuring lorde", "artista": "Charli xcx", "reproducciones": "15568671", "url": "https://www.last.fm/music/Charli+xcx/_/Girl,+so+confusing+featuring+lorde"}
+{"nombre": "NOT CUTE ANYMORE", "artista": "ILLIT", "reproducciones": "6225244", "url": "https://www.last.fm/music/ILLIT/_/NOT+CUTE+ANYMORE"}
+{"nombre": "JUMP", "artista": "BLACKPINK", "reproducciones": "15643592", "url": "https://www.last.fm/music/BLACKPINK/_/JUMP"}
+{"nombre": "GO", "artista": "BLACKPINK", "reproducciones": "1919811", "url": "https://www.last.fm/music/BLACKPINK/_/GO"}
+{"nombre": "Dynamite", "artista": "BTS", "reproducciones": "172814187", "url": "https://www.last.fm/music/BTS/_/Dynamite"}
+{"nombre": "This Love", "artista": "Maroon 5", "reproducciones": "19947475", "url": "https://www.last.fm/music/Maroon+5/_/This+Love"}
+{"nombre": "Toxicity", "artista": "System of a Down", "reproducciones": "28611356", "url": "https://www.last.fm/music/System+of+a+Down/_/Toxicity"}
+{"nombre": "telepatÃ­a", "artista": "Kali Uchis", "reproducciones": "23096830", "url": "https://www.last.fm/music/Kali+Uchis/_/telepat%C3%ADa"}
+{"nombre": "Blood Sweat & Tears", "artista": "BTS", "reproducciones": "30195222", "url": "https://www.last.fm/music/BTS/_/Blood+Sweat+&+Tears"}
+{"nombre": "Silver Springs - 2004 Remaster", "artista": "Fleetwood Mac", "reproducciones": "11571408", "url": "https://www.last.fm/music/Fleetwood+Mac/_/Silver+Springs+-+2004+Remaster"}
+{"nombre": "Pyramids", "artista": "Frank Ocean", "reproducciones": "23226358", "url": "https://www.last.fm/music/Frank+Ocean/_/Pyramids"}
+{"nombre": "Hard Times", "artista": "Paramore", "reproducciones": "18379875", "url": "https://www.last.fm/music/Paramore/_/Hard+Times"}
+{"nombre": "Aerials", "artista": "System of a Down", "reproducciones": "22127106", "url": "https://www.last.fm/music/System+of+a+Down/_/Aerials"}
+{"nombre": "Run BTS", "artista": "BTS", "reproducciones": "46317809", "url": "https://www.last.fm/music/BTS/_/Run+BTS"}
+{"nombre": "Landslide", "artista": "Fleetwood Mac", "reproducciones": "15107301", "url": "https://www.last.fm/music/Fleetwood+Mac/_/Landslide"}
+{"nombre": "Washing Machine Heart", "artista": "Mitski", "reproducciones": "35247961", "url": "https://www.last.fm/music/Mitski/_/Washing+Machine+Heart"}
+{"nombre": "Karma Police", "artista": "Radiohead", "reproducciones": "42008189", "url": "https://www.last.fm/music/Radiohead/_/Karma+Police"}
+{"nombre": "Beauty and a Beat", "artista": "Justin Bieber", "reproducciones": "14436635", "url": "https://www.last.fm/music/Justin+Bieber/_/Beauty+and+a+Beat"}
+{"nombre": "Black Hole Sun", "artista": "Soundgarden", "reproducciones": "22747126", "url": "https://www.last.fm/music/Soundgarden/_/Black+Hole+Sun"}
+{"nombre": "I Bet on Losing Dogs", "artista": "Mitski", "reproducciones": "31938472", "url": "https://www.last.fm/music/Mitski/_/I+Bet+on+Losing+Dogs"}
+{"nombre": "Falling Behind", "artista": "Laufey", "reproducciones": "17149806", "url": "https://www.last.fm/music/Laufey/_/Falling+Behind"}
+{"nombre": "Teenagers", "artista": "My Chemical Romance", "reproducciones": "26769673", "url": "https://www.last.fm/music/My+Chemical+Romance/_/Teenagers"}
+{"nombre": "Under Your Spell", "artista": "Snow Strippers", "reproducciones": "12245066", "url": "https://www.last.fm/music/Snow+Strippers/_/Under+Your+Spell"}
+{"nombre": "Billie Jean", "artista": "Michael Jackson", "reproducciones": "24896052", "url": "https://www.last.fm/music/Michael+Jackson/_/Billie+Jean"}
+{"nombre": "Redbone", "artista": "Childish Gambino", "reproducciones": "28385970", "url": "https://www.last.fm/music/Childish+Gambino/_/Redbone"}
+{"nombre": "SPAGHETTI", "artista": "LE SSERAFIM", "reproducciones": "37965453", "url": "https://www.last.fm/music/LE+SSERAFIM/_/SPAGHETTI"}
+{"nombre": "American Idiot", "artista": "Green Day", "reproducciones": "24072731", "url": "https://www.last.fm/music/Green+Day/_/American+Idiot"}
+{"nombre": "Good Looking", "artista": "Suki Waterhouse", "reproducciones": "21502733", "url": "https://www.last.fm/music/Suki+Waterhouse/_/Good+Looking"}
+{"nombre": "Alright", "artista": "Kendrick Lamar", "reproducciones": "30900131", "url": "https://www.last.fm/music/Kendrick+Lamar/_/Alright"}
+{"nombre": "Reflections", "artista": "The Neighbourhood", "reproducciones": "18215746", "url": "https://www.last.fm/music/The+Neighbourhood/_/Reflections"}
+{"nombre": "Daddy Issues", "artista": "The Neighbourhood", "reproducciones": "30066397", "url": "https://www.last.fm/music/The+Neighbourhood/_/Daddy+Issues"}
+{"nombre": "iloveitiloveitiloveit", "artista": "Bella Kay", "reproducciones": "1475873", "url": "https://www.last.fm/music/Bella+Kay/_/iloveitiloveitiloveit"}
+{"nombre": "Purple Rain", "artista": "Prince", "reproducciones": "7707513", "url": "https://www.last.fm/music/Prince/_/Purple+Rain"}
+{"nombre": "Headlines", "artista": "Drake", "reproducciones": "15232731", "url": "https://www.last.fm/music/Drake/_/Headlines"}
+{"nombre": "Last Friday Night (T.G.I.F.)", "artista": "Katy Perry", "reproducciones": "21897508", "url": "https://www.last.fm/music/Katy+Perry/_/Last+Friday+Night+(T.G.I.F.)"}
+{"nombre": "SexyBack (feat. Timbaland)", "artista": "Justin Timberlake", "reproducciones": "11015532", "url": "https://www.last.fm/music/Justin+Timberlake/_/SexyBack+(feat.+Timbaland)"}
+{"nombre": "Cry", "artista": "Cigarettes After Sex", "reproducciones": "24405670", "url": "https://www.last.fm/music/Cigarettes+After+Sex/_/Cry"}
+{"nombre": "Nonsense", "artista": "Sabrina Carpenter", "reproducciones": "28767881", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Nonsense"}
+{"nombre": "Cool for the Summer", "artista": "Demi Lovato", "reproducciones": "13472301", "url": "https://www.last.fm/music/Demi+Lovato/_/Cool+for+the+Summer"}
+{"nombre": "Lonely Day", "artista": "System of a Down", "reproducciones": "24928817", "url": "https://www.last.fm/music/System+of+a+Down/_/Lonely+Day"}
+{"nombre": "For the First Time", "artista": "Mac DeMarco", "reproducciones": "25358751", "url": "https://www.last.fm/music/Mac+DeMarco/_/For+the+First+Time"}
+{"nombre": "Rock Your Body", "artista": "Justin Timberlake", "reproducciones": "14775004", "url": "https://www.last.fm/music/Justin+Timberlake/_/Rock+Your+Body"}
+{"nombre": "West Coast", "artista": "Lana Del Rey", "reproducciones": "33763150", "url": "https://www.last.fm/music/Lana+Del+Rey/_/West+Coast"}
+{"nombre": "I Hate Everything About You", "artista": "Three Days Grace", "reproducciones": "22267783", "url": "https://www.last.fm/music/Three+Days+Grace/_/I+Hate+Everything+About+You"}
+{"nombre": "Selfless", "artista": "The Strokes", "reproducciones": "13078564", "url": "https://www.last.fm/music/The+Strokes/_/Selfless"}
+{"nombre": "Supercut", "artista": "Lorde", "reproducciones": "21477824", "url": "https://www.last.fm/music/Lorde/_/Supercut"}
+{"nombre": "Somebody Told Me", "artista": "The Killers", "reproducciones": "29608054", "url": "https://www.last.fm/music/The+Killers/_/Somebody+Told+Me"}
+{"nombre": "No Role Modelz", "artista": "J. Cole", "reproducciones": "25464917", "url": "https://www.last.fm/music/J.+Cole/_/No+Role+Modelz"}
+{"nombre": "Exit Music (for a Film)", "artista": "Radiohead", "reproducciones": "30273267", "url": "https://www.last.fm/music/Radiohead/_/Exit+Music+(for+a+Film)"}
+{"nombre": "My Man on Willpower", "artista": "Sabrina Carpenter", "reproducciones": "8645966", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/My+Man+on+Willpower"}
+{"nombre": "Confident", "artista": "Justin Bieber", "reproducciones": "11947110", "url": "https://www.last.fm/music/Justin+Bieber/_/Confident"}
+{"nombre": "Kill Bill", "artista": "SZA", "reproducciones": "44172939", "url": "https://www.last.fm/music/SZA/_/Kill+Bill"}
+{"nombre": "Womanizer", "artista": "Britney Spears", "reproducciones": "21349152", "url": "https://www.last.fm/music/Britney+Spears/_/Womanizer"}
+{"nombre": "Meet Me Halfway", "artista": "Black Eyed Peas", "reproducciones": "15571106", "url": "https://www.last.fm/music/Black+Eyed+Peas/_/Meet+Me+Halfway"}
+{"nombre": "Yellow", "artista": "Coldplay", "reproducciones": "38500501", "url": "https://www.last.fm/music/Coldplay/_/Yellow"}
+{"nombre": "My Kink Is Karma", "artista": "Chappell Roan", "reproducciones": "19679273", "url": "https://www.last.fm/music/Chappell+Roan/_/My+Kink+Is+Karma"}
+{"nombre": "3005", "artista": "Childish Gambino", "reproducciones": "22133281", "url": "https://www.last.fm/music/Childish+Gambino/_/3005"}
+{"nombre": "She", "artista": "Tyler, The Creator", "reproducciones": "25843190", "url": "https://www.last.fm/music/Tyler,+The+Creator/_/She"}
+{"nombre": "LV Sandals", "artista": "EsDeeKid", "reproducciones": "7607228", "url": "https://www.last.fm/music/EsDeeKid/_/LV+Sandals"}
+{"nombre": "Duality", "artista": "Slipknot", "reproducciones": "24156975", "url": "https://www.last.fm/music/Slipknot/_/Duality"}
+{"nombre": "365", "artista": "Charli xcx", "reproducciones": "22097545", "url": "https://www.last.fm/music/Charli+xcx/_/365"}
+{"nombre": "Mrs Magic (Strings Version)", "artista": "Strawberry Guy", "reproducciones": "3804695", "url": "https://www.last.fm/music/Strawberry+Guy/_/Mrs+Magic+(Strings+Version)"}
+{"nombre": "family ties (with Kendrick Lamar)", "artista": "Baby Keem", "reproducciones": "28386356", "url": "https://www.last.fm/music/Baby+Keem/_/family+ties+(with+Kendrick+Lamar)"}
+{"nombre": "Century", "artista": "EsDeeKid", "reproducciones": "4670349", "url": "https://www.last.fm/music/EsDeeKid/_/Century"}
+{"nombre": "D>E>A>T>H>M>E>T>A>L", "artista": "Panchiko", "reproducciones": "13500989", "url": "https://www.last.fm/music/Panchiko/_/D%3EE%3EA%3ET%3EH%3EM%3EE%3ET%3EA%3EL"}
+{"nombre": "Magnetic", "artista": "ILLIT", "reproducciones": "22591101", "url": "https://www.last.fm/music/ILLIT/_/Magnetic"}
+{"nombre": "Father Stretch My Hands Pt. 1", "artista": "Kanye West", "reproducciones": "35335266", "url": "https://www.last.fm/music/Kanye+West/_/Father+Stretch+My+Hands+Pt.+1"}
+{"nombre": "Kiss Me", "artista": "Sixpence None the Richer", "reproducciones": "21335890", "url": "https://www.last.fm/music/Sixpence+None+the+Richer/_/Kiss+Me"}
+{"nombre": "(When You Gonna) Give It Up To Me - Radio Version", "artista": "Sean Paul", "reproducciones": "606342", "url": "https://www.last.fm/music/Sean+Paul/_/(When+You+Gonna)+Give+It+Up+To+Me+-+Radio+Version"}
+{"nombre": "Die On This Hill", "artista": "Sienna Spiro", "reproducciones": "2451412", "url": "https://www.last.fm/music/Sienna+Spiro/_/Die+On+This+Hill"}
+{"nombre": "Fluorescent Adolescent", "artista": "Arctic Monkeys", "reproducciones": "33640445", "url": "https://www.last.fm/music/Arctic+Monkeys/_/Fluorescent+Adolescent"}
+{"nombre": "TIT FOR TAT", "artista": "Tate McRae", "reproducciones": "7483615", "url": "https://www.last.fm/music/Tate+McRae/_/TIT+FOR+TAT"}
+{"nombre": "I NEED U", "artista": "BTS", "reproducciones": "19224040", "url": "https://www.last.fm/music/BTS/_/I+NEED+U"}
+{"nombre": "CRAZY", "artista": "LE SSERAFIM", "reproducciones": "19497018", "url": "https://www.last.fm/music/LE+SSERAFIM/_/CRAZY"}
+{"nombre": "American Boy", "artista": "Estelle", "reproducciones": "14460810", "url": "https://www.last.fm/music/Estelle/_/American+Boy"}
+{"nombre": "One Step Closer", "artista": "Linkin Park", "reproducciones": "24397288", "url": "https://www.last.fm/music/Linkin+Park/_/One+Step+Closer"}
+{"nombre": "Just Keep Watching (From F1Â® The Movie)", "artista": "Tate McRae", "reproducciones": "9358716", "url": "https://www.last.fm/music/Tate+McRae/_/Just+Keep+Watching+(From+F1%C2%AE+The+Movie)"}
+{"nombre": "Tiramisu", "artista": "Don Toliver", "reproducciones": "3468661", "url": "https://www.last.fm/music/Don+Toliver/_/Tiramisu"}
+{"nombre": "Breathe", "artista": "Malcolm Todd", "reproducciones": "420029", "url": "https://www.last.fm/music/Malcolm+Todd/_/Breathe"}
+{"nombre": "Snooze", "artista": "SZA", "reproducciones": "25874346", "url": "https://www.last.fm/music/SZA/_/Snooze"}
+{"nombre": "Brooklyn Baby", "artista": "Lana Del Rey", "reproducciones": "29571814", "url": "https://www.last.fm/music/Lana+Del+Rey/_/Brooklyn+Baby"}
+{"nombre": "Ghost Town", "artista": "Kanye West", "reproducciones": "26913324", "url": "https://www.last.fm/music/Kanye+West/_/Ghost+Town"}
+{"nombre": "Chamber of Reflection", "artista": "Mac DeMarco", "reproducciones": "27024983", "url": "https://www.last.fm/music/Mac+DeMarco/_/Chamber+of+Reflection"}
+{"nombre": "What You Know", "artista": "Two Door Cinema Club", "reproducciones": "26397441", "url": "https://www.last.fm/music/Two+Door+Cinema+Club/_/What+You+Know"}
+{"nombre": "Rollin' (Air Raid Vehicle)", "artista": "Limp Bizkit", "reproducciones": "14415909", "url": "https://www.last.fm/music/Limp+Bizkit/_/Rollin%27+(Air+Raid+Vehicle)"}
+{"nombre": "Ditto", "artista": "NewJeans", "reproducciones": "35129407", "url": "https://www.last.fm/music/NewJeans/_/Ditto"}
+{"nombre": "The Winner Takes It All", "artista": "ABBA", "reproducciones": "11984920", "url": "https://www.last.fm/music/ABBA/_/The+Winner+Takes+It+All"}
+{"nombre": "Too Many Nights (feat. Don Toliver & with Future)", "artista": "Metro Boomin", "reproducciones": "21631529", "url": "https://www.last.fm/music/Metro+Boomin/_/Too+Many+Nights+(feat.+Don+Toliver+&+with+Future)"}
+{"nombre": "The One That Got Away", "artista": "Katy Perry", "reproducciones": "18959679", "url": "https://www.last.fm/music/Katy+Perry/_/The+One+That+Got+Away"}
+{"nombre": "Kiss Of Life", "artista": "Sade", "reproducciones": "11779786", "url": "https://www.last.fm/music/Sade/_/Kiss+Of+Life"}
+{"nombre": "Die for You", "artista": "The Weeknd", "reproducciones": "33271517", "url": "https://www.last.fm/music/The+Weeknd/_/Die+for+You"}
+{"nombre": "Heart to Heart", "artista": "Mac DeMarco", "reproducciones": "23045294", "url": "https://www.last.fm/music/Mac+DeMarco/_/Heart+to+Heart"}
+{"nombre": "needy", "artista": "Ariana Grande", "reproducciones": "15251730", "url": "https://www.last.fm/music/Ariana+Grande/_/needy"}
+{"nombre": "Agora Hills", "artista": "Doja Cat", "reproducciones": "20719787", "url": "https://www.last.fm/music/Doja+Cat/_/Agora+Hills"}
+{"nombre": "White Feather Hawk Tail Deer Hunter", "artista": "Lana Del Rey", "reproducciones": "1624758", "url": "https://www.last.fm/music/Lana+Del+Rey/_/White+Feather+Hawk+Tail+Deer+Hunter"}
+{"nombre": "Slow Dance", "artista": "Clairo", "reproducciones": "8311250", "url": "https://www.last.fm/music/Clairo/_/Slow+Dance"}
+{"nombre": "Heart-Shaped Box", "artista": "Nirvana", "reproducciones": "24424577", "url": "https://www.last.fm/music/Nirvana/_/Heart-Shaped+Box"}
+{"nombre": "Outside (feat. Ellie Goulding)", "artista": "Calvin Harris", "reproducciones": "10654372", "url": "https://www.last.fm/music/Calvin+Harris/_/Outside+(feat.+Ellie+Goulding)"}
+{"nombre": "Like That", "artista": "Future", "reproducciones": "22145653", "url": "https://www.last.fm/music/Future/_/Like+That"}
+{"nombre": "RUN", "artista": "BTS", "reproducciones": "17210086", "url": "https://www.last.fm/music/BTS/_/RUN"}
+{"nombre": "HUMBLE.", "artista": "Kendrick Lamar", "reproducciones": "30810687", "url": "https://www.last.fm/music/Kendrick+Lamar/_/HUMBLE."}
+{"nombre": "My Moon My Man", "artista": "Feist", "reproducciones": "6931794", "url": "https://www.last.fm/music/Feist/_/My+Moon+My+Man"}
+{"nombre": "R U Mine?", "artista": "Arctic Monkeys", "reproducciones": "31818126", "url": "https://www.last.fm/music/Arctic+Monkeys/_/R+U+Mine%3F"}
+{"nombre": "Animal I Have Become", "artista": "Three Days Grace", "reproducciones": "18802732", "url": "https://www.last.fm/music/Three+Days+Grace/_/Animal+I+Have+Become"}
+{"nombre": "Breathe (In the Air)", "artista": "Pink Floyd", "reproducciones": "12615818", "url": "https://www.last.fm/music/Pink+Floyd/_/Breathe+(In+the+Air)"}
+{"nombre": "No Hands (feat. Roscoe Dash & Wale)", "artista": "Waka Flocka Flame", "reproducciones": "7800747", "url": "https://www.last.fm/music/Waka+Flocka+Flame/_/No+Hands+(feat.+Roscoe+Dash+&+Wale)"}
+{"nombre": "Bubblegum Bitch", "artista": "Marina", "reproducciones": "15277261", "url": "https://www.last.fm/music/Marina/_/Bubblegum+Bitch"}
+{"nombre": "Adore You", "artista": "Harry Styles", "reproducciones": "20139213", "url": "https://www.last.fm/music/Harry+Styles/_/Adore+You"}
+{"nombre": "It Almost Worked", "artista": "TV Girl", "reproducciones": "13512810", "url": "https://www.last.fm/music/TV+Girl/_/It+Almost+Worked"}
+{"nombre": "Kiss Me More (feat. SZA)", "artista": "Doja Cat", "reproducciones": "28365796", "url": "https://www.last.fm/music/Doja+Cat/_/Kiss+Me+More+(feat.+SZA)"}
+{"nombre": "I Must Apologise", "artista": "PinkPantheress", "reproducciones": "15646744", "url": "https://www.last.fm/music/PinkPantheress/_/I+Must+Apologise"}
+{"nombre": "Boy With Luv (feat. Halsey)", "artista": "BTS", "reproducciones": "77156769", "url": "https://www.last.fm/music/BTS/_/Boy+With+Luv+(feat.+Halsey)"}
+{"nombre": "I Just Threw Out the Love of My Dreams", "artista": "Weezer", "reproducciones": "10709079", "url": "https://www.last.fm/music/Weezer/_/I+Just+Threw+Out+the+Love+of+My+Dreams"}
+{"nombre": "Wait a Minute!", "artista": "Willow", "reproducciones": "17192566", "url": "https://www.last.fm/music/Willow/_/Wait+a+Minute%21"}
+{"nombre": "Wicked Game", "artista": "Chris Isaak", "reproducciones": "17044885", "url": "https://www.last.fm/music/Chris+Isaak/_/Wicked+Game"}
+{"nombre": "Give Me Everything (feat. Nayer)", "artista": "Pitbull", "reproducciones": "6894341", "url": "https://www.last.fm/music/Pitbull/_/Give+Me+Everything+(feat.+Nayer)"}
+{"nombre": "Streets", "artista": "Doja Cat", "reproducciones": "22081386", "url": "https://www.last.fm/music/Doja+Cat/_/Streets"}
+{"nombre": "Ain't Shit", "artista": "Doja Cat", "reproducciones": "15102366", "url": "https://www.last.fm/music/Doja+Cat/_/Ain%27t+Shit"}
+{"nombre": "HYPNOTIZE", "artista": "XG", "reproducciones": "2065064", "url": "https://www.last.fm/music/XG/_/HYPNOTIZE"}
+{"nombre": "Pink Matter", "artista": "Frank Ocean", "reproducciones": "20055585", "url": "https://www.last.fm/music/Frank+Ocean/_/Pink+Matter"}
+{"nombre": "Raindance (feat. Tems)", "artista": "Dave", "reproducciones": "2614102", "url": "https://www.last.fm/music/Dave/_/Raindance+(feat.+Tems)"}
+{"nombre": "White Keys", "artista": "Dominic Fike", "reproducciones": "1753383", "url": "https://www.last.fm/music/Dominic+Fike/_/White+Keys"}
+{"nombre": "Touch", "artista": "KATSEYE", "reproducciones": "15162997", "url": "https://www.last.fm/music/KATSEYE/_/Touch"}
+{"nombre": "Taking What's Not Yours", "artista": "TV Girl", "reproducciones": "13158060", "url": "https://www.last.fm/music/TV+Girl/_/Taking+What%27s+Not+Yours"}
+{"nombre": "nuts", "artista": "Lil Peep", "reproducciones": "17717873", "url": "https://www.last.fm/music/Lil+Peep/_/nuts"}
+{"nombre": "Walking on a Dream", "artista": "Empire of the Sun", "reproducciones": "21862885", "url": "https://www.last.fm/music/Empire+of+the+Sun/_/Walking+on+a+Dream"}
+{"nombre": "Good Days", "artista": "SZA", "reproducciones": "26341008", "url": "https://www.last.fm/music/SZA/_/Good+Days"}
+{"nombre": "Space Song", "artista": "Beach House", "reproducciones": "32788531", "url": "https://www.last.fm/music/Beach+House/_/Space+Song"}
+{"nombre": "Sofia", "artista": "Clairo", "reproducciones": "26623717", "url": "https://www.last.fm/music/Clairo/_/Sofia"}
+{"nombre": "The Hills", "artista": "The Weeknd", "reproducciones": "27121339", "url": "https://www.last.fm/music/The+Weeknd/_/The+Hills"}
+{"nombre": "Spring Day", "artista": "BTS", "reproducciones": "24761972", "url": "https://www.last.fm/music/BTS/_/Spring+Day"}
+{"nombre": "Chicago", "artista": "Michael Jackson", "reproducciones": "10984775", "url": "https://www.last.fm/music/Michael+Jackson/_/Chicago"}
+{"nombre": "NEW MAGIC WAND", "artista": "Tyler, The Creator", "reproducciones": "31620906", "url": "https://www.last.fm/music/Tyler,+The+Creator/_/NEW+MAGIC+WAND"}
+{"nombre": "Sex on Fire", "artista": "Kings of Leon", "reproducciones": "32800896", "url": "https://www.last.fm/music/Kings+of+Leon/_/Sex+on+Fire"}
+{"nombre": "ATM", "artista": "Don Toliver", "reproducciones": "1684230", "url": "https://www.last.fm/music/Don+Toliver/_/ATM"}
+{"nombre": "Blow", "artista": "Kesha", "reproducciones": "5913553", "url": "https://www.last.fm/music/Kesha/_/Blow"}
+{"nombre": "Matilda", "artista": "Harry Styles", "reproducciones": "16546195", "url": "https://www.last.fm/music/Harry+Styles/_/Matilda"}
+{"nombre": "Freaks", "artista": "Surf Curse", "reproducciones": "21964862", "url": "https://www.last.fm/music/Surf+Curse/_/Freaks"}
+{"nombre": "Tek It", "artista": "CafunÃ©", "reproducciones": "19613382", "url": "https://www.last.fm/music/Cafun%C3%A9/_/Tek+It"}
+{"nombre": "Homecoming", "artista": "Kanye West", "reproducciones": "20156506", "url": "https://www.last.fm/music/Kanye+West/_/Homecoming"}
+{"nombre": "Thatâs So True", "artista": "Gracie Abrams", "reproducciones": "20997565", "url": "https://www.last.fm/music/Gracie+Abrams/_/That%E2%80%99s+So+True"}
+{"nombre": "deja vu", "artista": "Olivia Rodrigo", "reproducciones": "30011848", "url": "https://www.last.fm/music/Olivia+Rodrigo/_/deja+vu"}
+{"nombre": "Not Like Us", "artista": "Kendrick Lamar", "reproducciones": "29550319", "url": "https://www.last.fm/music/Kendrick+Lamar/_/Not+Like+Us"}
+{"nombre": "PRIDE.", "artista": "Kendrick Lamar", "reproducciones": "32423226", "url": "https://www.last.fm/music/Kendrick+Lamar/_/PRIDE."}
+{"nombre": "Can't Tell Me Nothing", "artista": "Kanye West", "reproducciones": "19295169", "url": "https://www.last.fm/music/Kanye+West/_/Can%27t+Tell+Me+Nothing"}
+{"nombre": "Show Me How", "artista": "Men I Trust", "reproducciones": "26949705", "url": "https://www.last.fm/music/Men+I+Trust/_/Show+Me+How"}
+{"nombre": "Runaway", "artista": "Kanye West", "reproducciones": "25296545", "url": "https://www.last.fm/music/Kanye+West/_/Runaway"}
+{"nombre": "cardigan", "artista": "Taylor Swift", "reproducciones": "44436527", "url": "https://www.last.fm/music/Taylor+Swift/_/cardigan"}
+{"nombre": "Where Have You Been", "artista": "Rihanna", "reproducciones": "14488659", "url": "https://www.last.fm/music/Rihanna/_/Where+Have+You+Been"}
+{"nombre": "Stressed Out", "artista": "Twenty One Pilots", "reproducciones": "21333838", "url": "https://www.last.fm/music/Twenty+One+Pilots/_/Stressed+Out"}
+{"nombre": "Love on the Brain", "artista": "Rihanna", "reproducciones": "18111830", "url": "https://www.last.fm/music/Rihanna/_/Love+on+the+Brain"}
+{"nombre": "IDOL", "artista": "BTS", "reproducciones": "36421584", "url": "https://www.last.fm/music/BTS/_/IDOL"}
+{"nombre": "Alter Ego (with JT)", "artista": "Doechii", "reproducciones": "6997769", "url": "https://www.last.fm/music/Doechii/_/Alter+Ego+(with+JT)"}
+{"nombre": "EARFQUAKE", "artista": "Tyler, The Creator", "reproducciones": "38563137", "url": "https://www.last.fm/music/Tyler,+The+Creator/_/EARFQUAKE"}
+{"nombre": "Go Go Juice", "artista": "Sabrina Carpenter", "reproducciones": "7538830", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Go+Go+Juice"}
+{"nombre": "Buddy Holly", "artista": "Weezer", "reproducciones": "22701809", "url": "https://www.last.fm/music/Weezer/_/Buddy+Holly"}
+{"nombre": "Everybody Here Wants You", "artista": "Jeff Buckley", "reproducciones": "8667193", "url": "https://www.last.fm/music/Jeff+Buckley/_/Everybody+Here+Wants+You"}
+{"nombre": "Hey Ya!", "artista": "OutKast", "reproducciones": "17634860", "url": "https://www.last.fm/music/OutKast/_/Hey+Ya%21"}
+{"nombre": "Take Me to Church", "artista": "Hozier", "reproducciones": "27636332", "url": "https://www.last.fm/music/Hozier/_/Take+Me+to+Church"}
+{"nombre": "Break It Off - Bonus", "artista": "PinkPantheress", "reproducciones": "11290258", "url": "https://www.last.fm/music/PinkPantheress/_/Break+It+Off+-+Bonus"}
+{"nombre": "After the Storm (feat. Tyler, the Creator & Bootsy Collins)", "artista": "Kali Uchis", "reproducciones": "24618100", "url": "https://www.last.fm/music/Kali+Uchis/_/After+the+Storm+(feat.+Tyler,+the+Creator+&+Bootsy+Collins)"}
+{"nombre": "Love You Like a Love Song", "artista": "Selena Gomez & the Scene", "reproducciones": "15641743", "url": "https://www.last.fm/music/Selena+Gomez+&+the+Scene/_/Love+You+Like+a+Love+Song"}
+{"nombre": "Who", "artista": "Jimin", "reproducciones": "238998308", "url": "https://www.last.fm/music/Jimin/_/Who"}
+{"nombre": "You Get Me So High", "artista": "The Neighbourhood", "reproducciones": "22821241", "url": "https://www.last.fm/music/The+Neighbourhood/_/You+Get+Me+So+High"}
+{"nombre": "Eventually", "artista": "Tame Impala", "reproducciones": "19268309", "url": "https://www.last.fm/music/Tame+Impala/_/Eventually"}
+{"nombre": "vampire", "artista": "Olivia Rodrigo", "reproducciones": "33304903", "url": "https://www.last.fm/music/Olivia+Rodrigo/_/vampire"}
+{"nombre": "Teenage Dirtbag", "artista": "Wheatus", "reproducciones": "14024579", "url": "https://www.last.fm/music/Wheatus/_/Teenage+Dirtbag"}
+{"nombre": "Sunsetz", "artista": "Cigarettes After Sex", "reproducciones": "25422194", "url": "https://www.last.fm/music/Cigarettes+After+Sex/_/Sunsetz"}
+{"nombre": "Superpowers", "artista": "Daniel Caesar", "reproducciones": "10553897", "url": "https://www.last.fm/music/Daniel+Caesar/_/Superpowers"}
+{"nombre": "K.", "artista": "Cigarettes After Sex", "reproducciones": "25837354", "url": "https://www.last.fm/music/Cigarettes+After+Sex/_/K."}
+{"nombre": "Femininomenon", "artista": "Chappell Roan", "reproducciones": "19573556", "url": "https://www.last.fm/music/Chappell+Roan/_/Femininomenon"}
+{"nombre": "The Way I Are", "artista": "Timbaland", "reproducciones": "14682230", "url": "https://www.last.fm/music/Timbaland/_/The+Way+I+Are"}
+{"nombre": "Boy's a liar Pt. 2", "artista": "PinkPantheress", "reproducciones": "22399838", "url": "https://www.last.fm/music/PinkPantheress/_/Boy%27s+a+liar+Pt.+2"}
+{"nombre": "Like a Stone", "artista": "Audioslave", "reproducciones": "16612774", "url": "https://www.last.fm/music/Audioslave/_/Like+a+Stone"}
+{"nombre": "Viva la Vida", "artista": "Coldplay", "reproducciones": "40625891", "url": "https://www.last.fm/music/Coldplay/_/Viva+la+Vida"}
+{"nombre": "...Baby One More Time", "artista": "Britney Spears", "reproducciones": "16306979", "url": "https://www.last.fm/music/Britney+Spears/_/...Baby+One+More+Time"}
+{"nombre": "Catch Catch", "artista": "Yena", "reproducciones": "481184", "url": "https://www.last.fm/music/Yena/_/Catch+Catch"}
+{"nombre": "Clint Eastwood", "artista": "Gorillaz", "reproducciones": "22455879", "url": "https://www.last.fm/music/Gorillaz/_/Clint+Eastwood"}
+{"nombre": "4Me 4Me", "artista": "Malcolm Todd", "reproducciones": "3459361", "url": "https://www.last.fm/music/Malcolm+Todd/_/4Me+4Me"}
+{"nombre": "LoveGame", "artista": "Lady Gaga", "reproducciones": "22019646", "url": "https://www.last.fm/music/Lady+Gaga/_/LoveGame"}
+{"nombre": "A Horse With No Name", "artista": "America", "reproducciones": "12557281", "url": "https://www.last.fm/music/America/_/A+Horse+With+No+Name"}
+{"nombre": "Kids", "artista": "MGMT", "reproducciones": "32713658", "url": "https://www.last.fm/music/MGMT/_/Kids"}
+{"nombre": "This Night Has Opened My Eyes - 2011 Remaster", "artista": "The Smiths", "reproducciones": "19450080", "url": "https://www.last.fm/music/The+Smiths/_/This+Night+Has+Opened+My+Eyes+-+2011+Remaster"}
+{"nombre": "TiK ToK", "artista": "Kesha", "reproducciones": "14977234", "url": "https://www.last.fm/music/Kesha/_/TiK+ToK"}
+{"nombre": "Infrunami", "artista": "Steve Lacy", "reproducciones": "19607955", "url": "https://www.last.fm/music/Steve+Lacy/_/Infrunami"}
+{"nombre": "Apple", "artista": "Charli xcx", "reproducciones": "23134873", "url": "https://www.last.fm/music/Charli+xcx/_/Apple"}
+{"nombre": "Amoeba", "artista": "Clairo", "reproducciones": "20416052", "url": "https://www.last.fm/music/Clairo/_/Amoeba"}
+{"nombre": "First Love/Late Spring", "artista": "Mitski", "reproducciones": "18894424", "url": "https://www.last.fm/music/Mitski/_/First+Love%2FLate+Spring"}
+{"nombre": "tv off (feat. Lefty Gunplay)", "artista": "Kendrick Lamar", "reproducciones": "16693626", "url": "https://www.last.fm/music/Kendrick+Lamar/_/tv+off+(feat.+Lefty+Gunplay)"}
+{"nombre": "No Scrubs", "artista": "TLC", "reproducciones": "13361997", "url": "https://www.last.fm/music/TLC/_/No+Scrubs"}
+{"nombre": "We Found Love", "artista": "Rihanna", "reproducciones": "16450276", "url": "https://www.last.fm/music/Rihanna/_/We+Found+Love"}
+{"nombre": "Complicated", "artista": "Avril Lavigne", "reproducciones": "18862196", "url": "https://www.last.fm/music/Avril+Lavigne/_/Complicated"}
+{"nombre": "Young and Beautiful", "artista": "Lana Del Rey", "reproducciones": "26190306", "url": "https://www.last.fm/music/Lana+Del+Rey/_/Young+and+Beautiful"}
+{"nombre": "Santeria", "artista": "Sublime", "reproducciones": "17247489", "url": "https://www.last.fm/music/Sublime/_/Santeria"}
+{"nombre": "I'm Not Okay (I Promise)", "artista": "My Chemical Romance", "reproducciones": "22453775", "url": "https://www.last.fm/music/My+Chemical+Romance/_/I%27m+Not+Okay+(I+Promise)"}
+{"nombre": "What I've Done", "artista": "Linkin Park", "reproducciones": "22859866", "url": "https://www.last.fm/music/Linkin+Park/_/What+I%27ve+Done"}
+{"nombre": "Say It Right", "artista": "Nelly Furtado", "reproducciones": "17719474", "url": "https://www.last.fm/music/Nelly+Furtado/_/Say+It+Right"}
+{"nombre": "Whiplash", "artista": "aespa", "reproducciones": "16433051", "url": "https://www.last.fm/music/aespa/_/Whiplash"}
+{"nombre": "Woman", "artista": "Doja Cat", "reproducciones": "24997686", "url": "https://www.last.fm/music/Doja+Cat/_/Woman"}
+{"nombre": "High and Dry", "artista": "Radiohead", "reproducciones": "28502417", "url": "https://www.last.fm/music/Radiohead/_/High+and+Dry"}
+{"nombre": "Killin' It Girl (feat. GloRilla)", "artista": "j-hope", "reproducciones": "94829648", "url": "https://www.last.fm/music/j-hope/_/Killin%27+It+Girl+(feat.+GloRilla)"}
+{"nombre": "Vienna", "artista": "Billy Joel", "reproducciones": "18253867", "url": "https://www.last.fm/music/Billy+Joel/_/Vienna"}
+{"nombre": "Devil in a New Dress", "artista": "Kanye West", "reproducciones": "25030854", "url": "https://www.last.fm/music/Kanye+West/_/Devil+in+a+New+Dress"}
+{"nombre": "Guilty as Sin?", "artista": "Taylor Swift", "reproducciones": "23138282", "url": "https://www.last.fm/music/Taylor+Swift/_/Guilty+as+Sin%3F"}
+{"nombre": "I Love It (feat. Charli XCX)", "artista": "Icona Pop", "reproducciones": "12242461", "url": "https://www.last.fm/music/Icona+Pop/_/I+Love+It+(feat.+Charli+XCX)"}
+{"nombre": "Californication", "artista": "Red Hot Chili Peppers", "reproducciones": "27717933", "url": "https://www.last.fm/music/Red+Hot+Chili+Peppers/_/Californication"}
+{"nombre": "Hotel California - 2013 Remaster", "artista": "Eagles", "reproducciones": "13356165", "url": "https://www.last.fm/music/Eagles/_/Hotel+California+-+2013+Remaster"}
+{"nombre": "1979 - Remastered 2012", "artista": "The Smashing Pumpkins", "reproducciones": "17101875", "url": "https://www.last.fm/music/The+Smashing+Pumpkins/_/1979+-+Remastered+2012"}
+{"nombre": "lacy", "artista": "Olivia Rodrigo", "reproducciones": "20588953", "url": "https://www.last.fm/music/Olivia+Rodrigo/_/lacy"}
+{"nombre": "STICKY (feat. GloRilla, Sexyy Red & Lil Wayne)", "artista": "Tyler, The Creator", "reproducciones": "15319742", "url": "https://www.last.fm/music/Tyler,+The+Creator/_/STICKY+(feat.+GloRilla,+Sexyy+Red+&+Lil+Wayne)"}
+{"nombre": "Deceptacon", "artista": "Le Tigre", "reproducciones": "13049827", "url": "https://www.last.fm/music/Le+Tigre/_/Deceptacon"}
+{"nombre": "Riptide", "artista": "Vance Joy", "reproducciones": "23462008", "url": "https://www.last.fm/music/Vance+Joy/_/Riptide"}
+{"nombre": "Sweet", "artista": "Cigarettes After Sex", "reproducciones": "20057078", "url": "https://www.last.fm/music/Cigarettes+After+Sex/_/Sweet"}
+{"nombre": "It's ok I'm ok", "artista": "Tate McRae", "reproducciones": "14885565", "url": "https://www.last.fm/music/Tate+McRae/_/It%27s+ok+I%27m+ok"}
+{"nombre": "Sign of the Times", "artista": "Harry Styles", "reproducciones": "17489312", "url": "https://www.last.fm/music/Harry+Styles/_/Sign+of+the+Times"}
+{"nombre": "ETA", "artista": "NewJeans", "reproducciones": "24041464", "url": "https://www.last.fm/music/NewJeans/_/ETA"}
+{"nombre": "Internet Girl", "artista": "KATSEYE", "reproducciones": "3124024", "url": "https://www.last.fm/music/KATSEYE/_/Internet+Girl"}
+{"nombre": "So Far So Fake", "artista": "Pierce the Veil", "reproducciones": "6952974", "url": "https://www.last.fm/music/Pierce+the+Veil/_/So+Far+So+Fake"}
+{"nombre": "Black Swan", "artista": "BTS", "reproducciones": "35553241", "url": "https://www.last.fm/music/BTS/_/Black+Swan"}
+{"nombre": "Friday I'm in Love", "artista": "The Cure", "reproducciones": "22449068", "url": "https://www.last.fm/music/The+Cure/_/Friday+I%27m+in+Love"}
+{"nombre": "B2b", "artista": "Charli xcx", "reproducciones": "18305991", "url": "https://www.last.fm/music/Charli+xcx/_/B2b"}
+{"nombre": "Somewhere Only We Know", "artista": "Keane", "reproducciones": "26264528", "url": "https://www.last.fm/music/Keane/_/Somewhere+Only+We+Know"}
+{"nombre": "The Great Divide", "artista": "Noah Kahan", "reproducciones": "1820735", "url": "https://www.last.fm/music/Noah+Kahan/_/The+Great+Divide"}
+{"nombre": "Sugar Talking", "artista": "Sabrina Carpenter", "reproducciones": "7728175", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Sugar+Talking"}
+{"nombre": "Buzzcut Season", "artista": "Lorde", "reproducciones": "17637376", "url": "https://www.last.fm/music/Lorde/_/Buzzcut+Season"}
+{"nombre": "butterflies.", "artista": "Brent Faiyaz", "reproducciones": "902628", "url": "https://www.last.fm/music/Brent+Faiyaz/_/butterflies."}
+{"nombre": "The Night We Met", "artista": "Lord Huron", "reproducciones": "30603276", "url": "https://www.last.fm/music/Lord+Huron/_/The+Night+We+Met"}
+{"nombre": "Pushing It Down and Praying", "artista": "Lizzy McAlpine", "reproducciones": "7085097", "url": "https://www.last.fm/music/Lizzy+McAlpine/_/Pushing+It+Down+and+Praying"}
+{"nombre": "XO TOUR Llif3", "artista": "Lil Uzi Vert", "reproducciones": "25567945", "url": "https://www.last.fm/music/Lil+Uzi+Vert/_/XO+TOUR+Llif3"}
+{"nombre": "Super Shy", "artista": "NewJeans", "reproducciones": "29210620", "url": "https://www.last.fm/music/NewJeans/_/Super+Shy"}
+{"nombre": "Dancing Queen", "artista": "ABBA", "reproducciones": "20772042", "url": "https://www.last.fm/music/ABBA/_/Dancing+Queen"}
+{"nombre": "Mystery of Love", "artista": "Sufjan Stevens", "reproducciones": "13851075", "url": "https://www.last.fm/music/Sufjan+Stevens/_/Mystery+of+Love"}
+{"nombre": "Apple Cider", "artista": "beabadoobee", "reproducciones": "12991974", "url": "https://www.last.fm/music/beabadoobee/_/Apple+Cider"}
+{"nombre": "FOCUS", "artista": "Hearts2Hearts", "reproducciones": "3029561", "url": "https://www.last.fm/music/Hearts2Hearts/_/FOCUS"}
+{"nombre": "Glue Song", "artista": "beabadoobee", "reproducciones": "19564171", "url": "https://www.last.fm/music/beabadoobee/_/Glue+Song"}
+{"nombre": "Island in the Sun", "artista": "Weezer", "reproducciones": "19051960", "url": "https://www.last.fm/music/Weezer/_/Island+in+the+Sun"}
+{"nombre": "Dance, Dance", "artista": "Fall Out Boy", "reproducciones": "21298116", "url": "https://www.last.fm/music/Fall+Out+Boy/_/Dance,+Dance"}
+{"nombre": "Standing Next to You", "artista": "Jung Kook", "reproducciones": "173453685", "url": "https://www.last.fm/music/Jung+Kook/_/Standing+Next+to+You"}
+{"nombre": "Good Graces", "artista": "Sabrina Carpenter", "reproducciones": "17871962", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Good+Graces"}
+{"nombre": "Glimpse of Us", "artista": "Joji", "reproducciones": "31142640", "url": "https://www.last.fm/music/Joji/_/Glimpse+of+Us"}
+{"nombre": "Umbrella", "artista": "Rihanna", "reproducciones": "17108018", "url": "https://www.last.fm/music/Rihanna/_/Umbrella"}
+{"nombre": "Summertime Sadness", "artista": "Lana Del Rey", "reproducciones": "34137233", "url": "https://www.last.fm/music/Lana+Del+Rey/_/Summertime+Sadness"}
+{"nombre": "Attracted to You", "artista": "PinkPantheress", "reproducciones": "17340460", "url": "https://www.last.fm/music/PinkPantheress/_/Attracted+to+You"}
+{"nombre": "Be Like a Woman", "artista": "Chris Rainbow", "reproducciones": "1102757", "url": "https://www.last.fm/music/Chris+Rainbow/_/Be+Like+a+Woman"}
+{"nombre": "Ultraviolence", "artista": "Lana Del Rey", "reproducciones": "22822021", "url": "https://www.last.fm/music/Lana+Del+Rey/_/Ultraviolence"}
+{"nombre": "CA$INO", "artista": "Baby Keem", "reproducciones": "1043659", "url": "https://www.last.fm/music/Baby+Keem/_/CA$INO"}
+{"nombre": "we fell in love in october", "artista": "girl in red", "reproducciones": "23907512", "url": "https://www.last.fm/music/girl+in+red/_/we+fell+in+love+in+october"}
+{"nombre": "Black", "artista": "Pearl Jam", "reproducciones": "16536931", "url": "https://www.last.fm/music/Pearl+Jam/_/Black"}
+{"nombre": "Haegeum", "artista": "Agust D", "reproducciones": "228929293", "url": "https://www.last.fm/music/Agust+D/_/Haegeum"}
+{"nombre": "Enjoy the Silence", "artista": "Depeche Mode", "reproducciones": "22364572", "url": "https://www.last.fm/music/Depeche+Mode/_/Enjoy+the+Silence"}
+{"nombre": "I'll Change For You", "artista": "Mitski", "reproducciones": "1783061", "url": "https://www.last.fm/music/Mitski/_/I%27ll+Change+For+You"}
+{"nombre": "Disturbia", "artista": "Rihanna", "reproducciones": "18181993", "url": "https://www.last.fm/music/Rihanna/_/Disturbia"}
+{"nombre": "Lady - Hear me tonight", "artista": "Modjo", "reproducciones": "10499915", "url": "https://www.last.fm/music/Modjo/_/Lady+-+Hear+me+tonight"}
+{"nombre": "Always", "artista": "Daniel Caesar", "reproducciones": "11619359", "url": "https://www.last.fm/music/Daniel+Caesar/_/Always"}
+{"nombre": "P.I.T.T.Y. (Parecendo Uma Cafetina)", "artista": "NandaTsunami", "reproducciones": "2039081", "url": "https://www.last.fm/music/NandaTsunami/_/P.I.T.T.Y.+(Parecendo+Uma+Cafetina)"}
+{"nombre": "Not You Too (feat. Chris Brown)", "artista": "Drake", "reproducciones": "9955762", "url": "https://www.last.fm/music/Drake/_/Not+You+Too+(feat.+Chris+Brown)"}
+{"nombre": "The Ghost of You", "artista": "My Chemical Romance", "reproducciones": "19168475", "url": "https://www.last.fm/music/My+Chemical+Romance/_/The+Ghost+of+You"}
+{"nombre": "Latch", "artista": "Disclosure", "reproducciones": "13311146", "url": "https://www.last.fm/music/Disclosure/_/Latch"}
+{"nombre": "Unwritten", "artista": "Natasha Bedingfield", "reproducciones": "16115669", "url": "https://www.last.fm/music/Natasha+Bedingfield/_/Unwritten"}
+{"nombre": "Feel So Close - Radio Edit", "artista": "Calvin Harris", "reproducciones": "9436666", "url": "https://www.last.fm/music/Calvin+Harris/_/Feel+So+Close+-+Radio+Edit"}
+{"nombre": "Need to Know", "artista": "Doja Cat", "reproducciones": "23193847", "url": "https://www.last.fm/music/Doja+Cat/_/Need+to+Know"}
+{"nombre": "NIGHTS LIKE THIS", "artista": "The Kid LAROI", "reproducciones": "18364205", "url": "https://www.last.fm/music/The+Kid+LAROI/_/NIGHTS+LIKE+THIS"}
+{"nombre": "LUNCH", "artista": "Billie Eilish", "reproducciones": "27213612", "url": "https://www.last.fm/music/Billie+Eilish/_/LUNCH"}
+{"nombre": "Naked in Manhattan", "artista": "Chappell Roan", "reproducciones": "14736118", "url": "https://www.last.fm/music/Chappell+Roan/_/Naked+in+Manhattan"}
+{"nombre": "Saturn", "artista": "SZA", "reproducciones": "17998302", "url": "https://www.last.fm/music/SZA/_/Saturn"}
+{"nombre": "Clarity", "artista": "Zedd", "reproducciones": "10148959", "url": "https://www.last.fm/music/Zedd/_/Clarity"}
+{"nombre": "Entombed", "artista": "Deftones", "reproducciones": "11572726", "url": "https://www.last.fm/music/Deftones/_/Entombed"}
+{"nombre": "BANG BANG", "artista": "IVE", "reproducciones": "2003257", "url": "https://www.last.fm/music/IVE/_/BANG+BANG"}
+{"nombre": "Basket Case", "artista": "Green Day", "reproducciones": "22504573", "url": "https://www.last.fm/music/Green+Day/_/Basket+Case"}
+{"nombre": "Donât Say You Love Me", "artista": "Jin", "reproducciones": "280284423", "url": "https://www.last.fm/music/Jin/_/Don%E2%80%99t+Say+You+Love+Me"}
+{"nombre": "Ring Ring Ring", "artista": "Tyler, The Creator", "reproducciones": "7336348", "url": "https://www.last.fm/music/Tyler,+The+Creator/_/Ring+Ring+Ring"}
+{"nombre": "I Write Sins Not Tragedies", "artista": "Panic! at the Disco", "reproducciones": "22089872", "url": "https://www.last.fm/music/Panic%21+at+the+Disco/_/I+Write+Sins+Not+Tragedies"}
+{"nombre": "Butter", "artista": "BTS", "reproducciones": "145767568", "url": "https://www.last.fm/music/BTS/_/Butter"}
+{"nombre": "Dimple", "artista": "BTS", "reproducciones": "18368047", "url": "https://www.last.fm/music/BTS/_/Dimple"}
+{"nombre": "Gemstone", "artista": "Don Toliver", "reproducciones": "1288699", "url": "https://www.last.fm/music/Don+Toliver/_/Gemstone"}
+{"nombre": "Self Control", "artista": "Frank Ocean", "reproducciones": "32076024", "url": "https://www.last.fm/music/Frank+Ocean/_/Self+Control"}
+{"nombre": "Brain Stew", "artista": "Green Day", "reproducciones": "12015861", "url": "https://www.last.fm/music/Green+Day/_/Brain+Stew"}
+{"nombre": "Circus", "artista": "Britney Spears", "reproducciones": "17914134", "url": "https://www.last.fm/music/Britney+Spears/_/Circus"}
+{"nombre": "SÃ£o Paulo (feat. Anitta)", "artista": "The Weeknd", "reproducciones": "12439952", "url": "https://www.last.fm/music/The+Weeknd/_/S%C3%A3o+Paulo+(feat.+Anitta)"}
+{"nombre": "Bitter Sweet Symphony - Remastered 2016", "artista": "The Verve", "reproducciones": "6618636", "url": "https://www.last.fm/music/The+Verve/_/Bitter+Sweet+Symphony+-+Remastered+2016"}
+{"nombre": "NISSAN ALTIMA", "artista": "Doechii", "reproducciones": "12280750", "url": "https://www.last.fm/music/Doechii/_/NISSAN+ALTIMA"}
+{"nombre": "I Love You, I'm Sorry", "artista": "Gracie Abrams", "reproducciones": "19827557", "url": "https://www.last.fm/music/Gracie+Abrams/_/I+Love+You,+I%27m+Sorry"}
+{"nombre": "Stronger", "artista": "Kanye West", "reproducciones": "27611388", "url": "https://www.last.fm/music/Kanye+West/_/Stronger"}
+{"nombre": "Stargirl Interlude", "artista": "The Weeknd", "reproducciones": "36577274", "url": "https://www.last.fm/music/The+Weeknd/_/Stargirl+Interlude"}
+{"nombre": "Mist", "artista": "EsDeeKid", "reproducciones": "3507984", "url": "https://www.last.fm/music/EsDeeKid/_/Mist"}
+{"nombre": "Friends", "artista": "Chase Atlantic", "reproducciones": "16999369", "url": "https://www.last.fm/music/Chase+Atlantic/_/Friends"}
+{"nombre": "Telephones", "artista": "VACATIONS", "reproducciones": "19408150", "url": "https://www.last.fm/music/VACATIONS/_/Telephones"}
+{"nombre": "Chest Pain (I Love)", "artista": "Malcolm Todd", "reproducciones": "6713929", "url": "https://www.last.fm/music/Malcolm+Todd/_/Chest+Pain+(I+Love)"}
+{"nombre": "LVL", "artista": "A$AP Rocky", "reproducciones": "13983279", "url": "https://www.last.fm/music/A$AP+Rocky/_/LVL"}
+{"nombre": "The Sweet Escape", "artista": "Gwen Stefani", "reproducciones": "12982607", "url": "https://www.last.fm/music/Gwen+Stefani/_/The+Sweet+Escape"}
+{"nombre": "Given Up", "artista": "Linkin Park", "reproducciones": "14646352", "url": "https://www.last.fm/music/Linkin+Park/_/Given+Up"}
+{"nombre": "fever", "artista": "Buckshot", "reproducciones": "4943278", "url": "https://www.last.fm/music/Buckshot/_/fever"}
+{"nombre": "Location", "artista": "Playboi Carti", "reproducciones": "25048973", "url": "https://www.last.fm/music/Playboi+Carti/_/Location"}
+{"nombre": "Snap Out of It", "artista": "Arctic Monkeys", "reproducciones": "20137043", "url": "https://www.last.fm/music/Arctic+Monkeys/_/Snap+Out+of+It"}
+{"nombre": "I Love You So", "artista": "The Walters", "reproducciones": "26692896", "url": "https://www.last.fm/music/The+Walters/_/I+Love+You+So"}
+{"nombre": "Pumped Up Kicks", "artista": "Foster the People", "reproducciones": "30412210", "url": "https://www.last.fm/music/Foster+the+People/_/Pumped+Up+Kicks"}
+{"nombre": "Freak on a Leash", "artista": "Korn", "reproducciones": "16726561", "url": "https://www.last.fm/music/Korn/_/Freak+on+a+Leash"}
+{"nombre": "Just", "artista": "Radiohead", "reproducciones": "25648122", "url": "https://www.last.fm/music/Radiohead/_/Just"}
+{"nombre": "The Man Who Can't Be Moved", "artista": "The Script", "reproducciones": "12093975", "url": "https://www.last.fm/music/The+Script/_/The+Man+Who+Can%27t+Be+Moved"}
+{"nombre": "Cigarette Daydreams", "artista": "Cage the Elephant", "reproducciones": "24205116", "url": "https://www.last.fm/music/Cage+the+Elephant/_/Cigarette+Daydreams"}
+{"nombre": "Ain't It Fun", "artista": "Paramore", "reproducciones": "14718378", "url": "https://www.last.fm/music/Paramore/_/Ain%27t+It+Fun"}
+{"nombre": "\"Heroes\" - 2017 Remaster", "artista": "David Bowie", "reproducciones": "1429135", "url": "https://www.last.fm/music/David+Bowie/_/%22Heroes%22+-+2017+Remaster"}
+{"nombre": "LOVE. FEAT. ZACARI.", "artista": "Kendrick Lamar", "reproducciones": "25051954", "url": "https://www.last.fm/music/Kendrick+Lamar/_/LOVE.+FEAT.+ZACARI."}
+{"nombre": "DENIAL IS A RIVER", "artista": "Doechii", "reproducciones": "15567128", "url": "https://www.last.fm/music/Doechii/_/DENIAL+IS+A+RIVER"}
+{"nombre": "Folded", "artista": "Kehlani", "reproducciones": "5001347", "url": "https://www.last.fm/music/Kehlani/_/Folded"}
+{"nombre": "Sex, Drugs, Etc.", "artista": "Beach Weather", "reproducciones": "18615967", "url": "https://www.last.fm/music/Beach+Weather/_/Sex,+Drugs,+Etc."}
+{"nombre": "Love Me", "artista": "Lil Wayne", "reproducciones": "14590600", "url": "https://www.last.fm/music/Lil+Wayne/_/Love+Me"}
+{"nombre": "Ms. Jackson", "artista": "OutKast", "reproducciones": "18288036", "url": "https://www.last.fm/music/OutKast/_/Ms.+Jackson"}
+{"nombre": "Seven (feat. Latto) (Explicit Ver.)", "artista": "Jung Kook", "reproducciones": "103590740", "url": "https://www.last.fm/music/Jung+Kook/_/Seven+(feat.+Latto)+(Explicit+Ver.)"}
+{"nombre": "Swim", "artista": "Chase Atlantic", "reproducciones": "16967324", "url": "https://www.last.fm/music/Chase+Atlantic/_/Swim"}
+{"nombre": "Jealous Type", "artista": "Doja Cat", "reproducciones": "8398650", "url": "https://www.last.fm/music/Doja+Cat/_/Jealous+Type"}
+{"nombre": "Come Back to Earth", "artista": "Mac Miller", "reproducciones": "13100670", "url": "https://www.last.fm/music/Mac+Miller/_/Come+Back+to+Earth"}
+{"nombre": "Dope", "artista": "BTS", "reproducciones": "13472772", "url": "https://www.last.fm/music/BTS/_/Dope"}
+{"nombre": "Everywhere - 2017 Remaster", "artista": "Fleetwood Mac", "reproducciones": "10456934", "url": "https://www.last.fm/music/Fleetwood+Mac/_/Everywhere+-+2017+Remaster"}
+{"nombre": "Let the Light In (feat. Father John Misty)", "artista": "Lana Del Rey", "reproducciones": "22903452", "url": "https://www.last.fm/music/Lana+Del+Rey/_/Let+the+Light+In+(feat.+Father+John+Misty)"}
+{"nombre": "Gameboy", "artista": "KATSEYE", "reproducciones": "7122550", "url": "https://www.last.fm/music/KATSEYE/_/Gameboy"}
+{"nombre": "Step On Me", "artista": "The Cardigans", "reproducciones": "12545677", "url": "https://www.last.fm/music/The+Cardigans/_/Step+On+Me"}
+{"nombre": "Me and Your Mama", "artista": "Childish Gambino", "reproducciones": "22237646", "url": "https://www.last.fm/music/Childish+Gambino/_/Me+and+Your+Mama"}
+{"nombre": "Get You (feat. Kali Uchis)", "artista": "Daniel Caesar", "reproducciones": "22088444", "url": "https://www.last.fm/music/Daniel+Caesar/_/Get+You+(feat.+Kali+Uchis)"}
+{"nombre": "Welcome to the Black Parade", "artista": "My Chemical Romance", "reproducciones": "24368314", "url": "https://www.last.fm/music/My+Chemical+Romance/_/Welcome+to+the+Black+Parade"}
+{"nombre": "Wish You Were Here", "artista": "Pink Floyd", "reproducciones": "25708613", "url": "https://www.last.fm/music/Pink+Floyd/_/Wish+You+Were+Here"}
+{"nombre": "Blinding Lights", "artista": "The Weeknd", "reproducciones": "37953811", "url": "https://www.last.fm/music/The+Weeknd/_/Blinding+Lights"}
+{"nombre": "Smooth Operator - Single Version", "artista": "Sade", "reproducciones": "10532419", "url": "https://www.last.fm/music/Sade/_/Smooth+Operator+-+Single+Version"}
+{"nombre": "Pied Piper", "artista": "BTS", "reproducciones": "17384790", "url": "https://www.last.fm/music/BTS/_/Pied+Piper"}
+{"nombre": "Been Like This", "artista": "Doja Cat", "reproducciones": "9423370", "url": "https://www.last.fm/music/Doja+Cat/_/Been+Like+This"}
+{"nombre": "Vanished", "artista": "Crystal Castles", "reproducciones": "16601836", "url": "https://www.last.fm/music/Crystal+Castles/_/Vanished"}
+{"nombre": "Nutshell", "artista": "Alice in Chains", "reproducciones": "15301924", "url": "https://www.last.fm/music/Alice+in+Chains/_/Nutshell"}
+{"nombre": "Sympathy is a knife", "artista": "Charli xcx", "reproducciones": "18275989", "url": "https://www.last.fm/music/Charli+xcx/_/Sympathy+is+a+knife"}
+{"nombre": "Airplane pt.2", "artista": "BTS", "reproducciones": "16784813", "url": "https://www.last.fm/music/BTS/_/Airplane+pt.2"}
+{"nombre": "Adventure of a Lifetime", "artista": "Coldplay", "reproducciones": "12155721", "url": "https://www.last.fm/music/Coldplay/_/Adventure+of+a+Lifetime"}
+{"nombre": "Video Games", "artista": "Lana Del Rey", "reproducciones": "30805386", "url": "https://www.last.fm/music/Lana+Del+Rey/_/Video+Games"}
+{"nombre": "ST. CHROMA (feat. Daniel Caesar)", "artista": "Tyler, The Creator", "reproducciones": "14110308", "url": "https://www.last.fm/music/Tyler,+The+Creator/_/ST.+CHROMA+(feat.+Daniel+Caesar)"}
+{"nombre": "HOME", "artista": "BTS", "reproducciones": "24520854", "url": "https://www.last.fm/music/BTS/_/HOME"}
+{"nombre": "Dance With Me", "artista": "Bruno Mars", "reproducciones": "478140", "url": "https://www.last.fm/music/Bruno+Mars/_/Dance+With+Me"}
+{"nombre": "Too Sweet", "artista": "Hozier", "reproducciones": "20278309", "url": "https://www.last.fm/music/Hozier/_/Too+Sweet"}
+{"nombre": "august", "artista": "Taylor Swift", "reproducciones": "42422348", "url": "https://www.last.fm/music/Taylor+Swift/_/august"}
+{"nombre": "PIXELATED KISSES", "artista": "Joji", "reproducciones": "8780706", "url": "https://www.last.fm/music/Joji/_/PIXELATED+KISSES"}
+{"nombre": "One of Your Girls", "artista": "Troye Sivan", "reproducciones": "17808107", "url": "https://www.last.fm/music/Troye+Sivan/_/One+of+Your+Girls"}
+{"nombre": "Just One Day", "artista": "BTS", "reproducciones": "13347729", "url": "https://www.last.fm/music/BTS/_/Just+One+Day"}
+{"nombre": "Sugar, We're Goin Down", "artista": "Fall Out Boy", "reproducciones": "15317709", "url": "https://www.last.fm/music/Fall+Out+Boy/_/Sugar,+We%27re+Goin+Down"}
+{"nombre": "Habits (Stay High)", "artista": "Tove Lo", "reproducciones": "14953224", "url": "https://www.last.fm/music/Tove+Lo/_/Habits+(Stay+High)"}
+{"nombre": "Paranoia", "artista": "The MarÃ­as", "reproducciones": "7599798", "url": "https://www.last.fm/music/The+Mar%C3%ADas/_/Paranoia"}
+{"nombre": "Trance (with Travis Scott & Young Thug)", "artista": "Metro Boomin", "reproducciones": "20020251", "url": "https://www.last.fm/music/Metro+Boomin/_/Trance+(with+Travis+Scott+&+Young+Thug)"}
+{"nombre": "Miniskirt", "artista": "AOA", "reproducciones": "8705573", "url": "https://www.last.fm/music/AOA/_/Miniskirt"}
+{"nombre": "You (feat. Travis Scott)", "artista": "Don Toliver", "reproducciones": "6763364", "url": "https://www.last.fm/music/Don+Toliver/_/You+(feat.+Travis+Scott)"}
+{"nombre": "Hysteria", "artista": "Muse", "reproducciones": "23526561", "url": "https://www.last.fm/music/Muse/_/Hysteria"}
+{"nombre": "Headphones On", "artista": "Addison Rae", "reproducciones": "9646059", "url": "https://www.last.fm/music/Addison+Rae/_/Headphones+On"}
+{"nombre": "Diet Mountain Dew", "artista": "Lana Del Rey", "reproducciones": "24561168", "url": "https://www.last.fm/music/Lana+Del+Rey/_/Diet+Mountain+Dew"}
+{"nombre": "Motion Sickness", "artista": "Phoebe Bridgers", "reproducciones": "27560228", "url": "https://www.last.fm/music/Phoebe+Bridgers/_/Motion+Sickness"}
+{"nombre": "No More Dream", "artista": "BTS", "reproducciones": "15410004", "url": "https://www.last.fm/music/BTS/_/No+More+Dream"}
+{"nombre": "Supernatural", "artista": "NewJeans", "reproducciones": "13286987", "url": "https://www.last.fm/music/NewJeans/_/Supernatural"}
+{"nombre": "bad idea right?", "artista": "Olivia Rodrigo", "reproducciones": "24861370", "url": "https://www.last.fm/music/Olivia+Rodrigo/_/bad+idea+right%3F"}
+{"nombre": "Born to Die", "artista": "Lana Del Rey", "reproducciones": "31452893", "url": "https://www.last.fm/music/Lana+Del+Rey/_/Born+to+Die"}
+{"nombre": "Burning Up (FIRE)", "artista": "BTS", "reproducciones": "16148314", "url": "https://www.last.fm/music/BTS/_/Burning+Up+(FIRE)"}
+{"nombre": "Running Up That Hill (A Deal with God)", "artista": "Kate Bush", "reproducciones": "20019045", "url": "https://www.last.fm/music/Kate+Bush/_/Running+Up+That+Hill+(A+Deal+with+God)"}
+{"nombre": "New Jeans", "artista": "NewJeans", "reproducciones": "23550508", "url": "https://www.last.fm/music/NewJeans/_/New+Jeans"}
+{"nombre": "Maps", "artista": "Maroon 5", "reproducciones": "15400980", "url": "https://www.last.fm/music/Maroon+5/_/Maps"}
+{"nombre": "Green Light", "artista": "Lorde", "reproducciones": "20422221", "url": "https://www.last.fm/music/Lorde/_/Green+Light"}
+{"nombre": "Oops!...I Did It Again", "artista": "Britney Spears", "reproducciones": "13338957", "url": "https://www.last.fm/music/Britney+Spears/_/Oops%21...I+Did+It+Again"}
+{"nombre": "Take on Me", "artista": "a-ha", "reproducciones": "23574033", "url": "https://www.last.fm/music/a-ha/_/Take+on+Me"}
+{"nombre": "Trap Queen", "artista": "Fetty Wap", "reproducciones": "10068596", "url": "https://www.last.fm/music/Fetty+Wap/_/Trap+Queen"}
+{"nombre": "Make It Right", "artista": "BTS", "reproducciones": "17970294", "url": "https://www.last.fm/music/BTS/_/Make+It+Right"}
+{"nombre": "spring into summer", "artista": "Lizzy McAlpine", "reproducciones": "6525562", "url": "https://www.last.fm/music/Lizzy+McAlpine/_/spring+into+summer"}
+{"nombre": "Save ME", "artista": "BTS", "reproducciones": "12707827", "url": "https://www.last.fm/music/BTS/_/Save+ME"}
+{"nombre": "Rein Me In (with Olivia Dean)", "artista": "Sam Fender", "reproducciones": "1850328", "url": "https://www.last.fm/music/Sam+Fender/_/Rein+Me+In+(with+Olivia+Dean)"}
+{"nombre": "Cali Man", "artista": "EsDeeKid", "reproducciones": "4760623", "url": "https://www.last.fm/music/EsDeeKid/_/Cali+Man"}
+{"nombre": "Semi-Charmed Life", "artista": "Third Eye Blind", "reproducciones": "10293887", "url": "https://www.last.fm/music/Third+Eye+Blind/_/Semi-Charmed+Life"}
+{"nombre": "Sorry", "artista": "Justin Bieber", "reproducciones": "13249371", "url": "https://www.last.fm/music/Justin+Bieber/_/Sorry"}
+{"nombre": "My Love (feat. T.I.)", "artista": "Justin Timberlake", "reproducciones": "8030444", "url": "https://www.last.fm/music/Justin+Timberlake/_/My+Love+(feat.+T.I.)"}
+{"nombre": "Hips Don't Lie (feat. Wyclef Jean)", "artista": "Shakira", "reproducciones": "11868832", "url": "https://www.last.fm/music/Shakira/_/Hips+Don%27t+Lie+(feat.+Wyclef+Jean)"}
+{"nombre": "Sky", "artista": "Playboi Carti", "reproducciones": "24939277", "url": "https://www.last.fm/music/Playboi+Carti/_/Sky"}
+{"nombre": "RATHER LIE (with The Weeknd)", "artista": "Playboi Carti", "reproducciones": "11620341", "url": "https://www.last.fm/music/Playboi+Carti/_/RATHER+LIE+(with+The+Weeknd)"}
+{"nombre": "Team", "artista": "Lorde", "reproducciones": "20379398", "url": "https://www.last.fm/music/Lorde/_/Team"}
+{"nombre": "Moonlight", "artista": "Kali Uchis", "reproducciones": "20013374", "url": "https://www.last.fm/music/Kali+Uchis/_/Moonlight"}
+{"nombre": "Unforgettable", "artista": "French Montana", "reproducciones": "13483367", "url": "https://www.last.fm/music/French+Montana/_/Unforgettable"}
+{"nombre": "Time to Pretend", "artista": "MGMT", "reproducciones": "26734233", "url": "https://www.last.fm/music/MGMT/_/Time+to+Pretend"}
+{"nombre": "Heaven or Las Vegas", "artista": "Cocteau Twins", "reproducciones": "12854517", "url": "https://www.last.fm/music/Cocteau+Twins/_/Heaven+or+Las+Vegas"}
+{"nombre": "The Emptiness Machine", "artista": "Linkin Park", "reproducciones": "14427669", "url": "https://www.last.fm/music/Linkin+Park/_/The+Emptiness+Machine"}
+{"nombre": "Just Like Heaven", "artista": "The Cure", "reproducciones": "25513505", "url": "https://www.last.fm/music/The+Cure/_/Just+Like+Heaven"}
+{"nombre": "good 4 u", "artista": "Olivia Rodrigo", "reproducciones": "35602753", "url": "https://www.last.fm/music/Olivia+Rodrigo/_/good+4+u"}
+{"nombre": "Nope your too late i already died", "artista": "wifiskeleton", "reproducciones": "17227267", "url": "https://www.last.fm/music/wifiskeleton/_/Nope+your+too+late+i+already+died"}
+{"nombre": "OMG", "artista": "NewJeans", "reproducciones": "29516580", "url": "https://www.last.fm/music/NewJeans/_/OMG"}
+{"nombre": "Best of Me", "artista": "BTS", "reproducciones": "13147346", "url": "https://www.last.fm/music/BTS/_/Best+of+Me"}
+{"nombre": "What You Saying", "artista": "Lil Uzi Vert", "reproducciones": "2402496", "url": "https://www.last.fm/music/Lil+Uzi+Vert/_/What+You+Saying"}
+{"nombre": "Genesis", "artista": "Grimes", "reproducciones": "22439628", "url": "https://www.last.fm/music/Grimes/_/Genesis"}
+{"nombre": "Dreams", "artista": "The Cranberries", "reproducciones": "14240998", "url": "https://www.last.fm/music/The+Cranberries/_/Dreams"}
+{"nombre": "COMÃ N GO", "artista": "Yeat", "reproducciones": "4633465", "url": "https://www.last.fm/music/Yeat/_/COM%C3%8B+N+GO"}
+{"nombre": "Wild Flower (with youjeen)", "artista": "RM", "reproducciones": "120391230", "url": "https://www.last.fm/music/RM/_/Wild+Flower+(with+youjeen)"}
+{"nombre": "make you mine", "artista": "Madison Beer", "reproducciones": "11012449", "url": "https://www.last.fm/music/Madison+Beer/_/make+you+mine"}
+{"nombre": "Cruel Summer", "artista": "Taylor Swift", "reproducciones": "48605499", "url": "https://www.last.fm/music/Taylor+Swift/_/Cruel+Summer"}
+{"nombre": "Fortnight (feat. Post Malone)", "artista": "Taylor Swift", "reproducciones": "23957242", "url": "https://www.last.fm/music/Taylor+Swift/_/Fortnight+(feat.+Post+Malone)"}
+{"nombre": "Never Getting Laid", "artista": "Sabrina Carpenter", "reproducciones": "6415343", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Never+Getting+Laid"}
+{"nombre": "7 rings", "artista": "Ariana Grande", "reproducciones": "28290779", "url": "https://www.last.fm/music/Ariana+Grande/_/7+rings"}
+{"nombre": "Cherry-Coloured Funk", "artista": "Cocteau Twins", "reproducciones": "16988002", "url": "https://www.last.fm/music/Cocteau+Twins/_/Cherry-Coloured+Funk"}
+{"nombre": "Time of Our Lives", "artista": "Pitbull", "reproducciones": "9867227", "url": "https://www.last.fm/music/Pitbull/_/Time+of+Our+Lives"}
+{"nombre": "One Last Time", "artista": "Ariana Grande", "reproducciones": "18125490", "url": "https://www.last.fm/music/Ariana+Grande/_/One+Last+Time"}
+{"nombre": "Cannock Chase", "artista": "Labi Siffre", "reproducciones": "3405402", "url": "https://www.last.fm/music/Labi+Siffre/_/Cannock+Chase"}
+{"nombre": "Anpanman", "artista": "BTS", "reproducciones": "13701773", "url": "https://www.last.fm/music/BTS/_/Anpanman"}
+{"nombre": "Dionysus", "artista": "BTS", "reproducciones": "19485771", "url": "https://www.last.fm/music/BTS/_/Dionysus"}
+{"nombre": "No Broke Boys", "artista": "Disco Lines", "reproducciones": "4257404", "url": "https://www.last.fm/music/Disco+Lines/_/No+Broke+Boys"}
+{"nombre": "Ride", "artista": "Twenty One Pilots", "reproducciones": "15640639", "url": "https://www.last.fm/music/Twenty+One+Pilots/_/Ride"}
+{"nombre": "the boy is mine", "artista": "Ariana Grande", "reproducciones": "24901853", "url": "https://www.last.fm/music/Ariana+Grande/_/the+boy+is+mine"}
+{"nombre": "Where's My Phone?", "artista": "Mitski", "reproducciones": "2184015", "url": "https://www.last.fm/music/Mitski/_/Where%27s+My+Phone%3F"}
+{"nombre": "How You Remind Me", "artista": "Nickelback", "reproducciones": "16088632", "url": "https://www.last.fm/music/Nickelback/_/How+You+Remind+Me"}
+{"nombre": "Sultans of Swing", "artista": "Dire Straits", "reproducciones": "19601183", "url": "https://www.last.fm/music/Dire+Straits/_/Sultans+of+Swing"}
+{"nombre": "What is Love?", "artista": "TWICE", "reproducciones": "6633617", "url": "https://www.last.fm/music/TWICE/_/What+is+Love%3F"}
+{"nombre": "Sunflower - Spider-Man: Into the Spider-Verse", "artista": "Post Malone", "reproducciones": "25740338", "url": "https://www.last.fm/music/Post+Malone/_/Sunflower+-+Spider-Man:+Into+the+Spider-Verse"}
+{"nombre": "Going Under", "artista": "Evanescence", "reproducciones": "15330112", "url": "https://www.last.fm/music/Evanescence/_/Going+Under"}
+{"nombre": "Love Takes Miles", "artista": "Cameron Winter", "reproducciones": "4461792", "url": "https://www.last.fm/music/Cameron+Winter/_/Love+Takes+Miles"}
+{"nombre": "Rock With You - Single Version", "artista": "Michael Jackson", "reproducciones": "10385672", "url": "https://www.last.fm/music/Michael+Jackson/_/Rock+With+You+-+Single+Version"}
+{"nombre": "real man", "artista": "beabadoobee", "reproducciones": "11173601", "url": "https://www.last.fm/music/beabadoobee/_/real+man"}
+{"nombre": "Picture You", "artista": "Chappell Roan", "reproducciones": "12980725", "url": "https://www.last.fm/music/Chappell+Roan/_/Picture+You"}
+{"nombre": "Master of None", "artista": "Beach House", "reproducciones": "12474860", "url": "https://www.last.fm/music/Beach+House/_/Master+of+None"}
+{"nombre": "Break from Toronto", "artista": "PARTYNEXTDOOR", "reproducciones": "21447107", "url": "https://www.last.fm/music/PARTYNEXTDOOR/_/Break+from+Toronto"}
+{"nombre": "Sure Thing", "artista": "Miguel", "reproducciones": "15959716", "url": "https://www.last.fm/music/Miguel/_/Sure+Thing"}
+{"nombre": "Mikrokosmos", "artista": "BTS", "reproducciones": "21198937", "url": "https://www.last.fm/music/BTS/_/Mikrokosmos"}
+{"nombre": "Happier Than Ever", "artista": "Billie Eilish", "reproducciones": "28553213", "url": "https://www.last.fm/music/Billie+Eilish/_/Happier+Than+Ever"}
+{"nombre": "Back to Black", "artista": "Amy Winehouse", "reproducciones": "24947920", "url": "https://www.last.fm/music/Amy+Winehouse/_/Back+to+Black"}
+{"nombre": "Wet", "artista": "Dazey and the Scouts", "reproducciones": "9232602", "url": "https://www.last.fm/music/Dazey+and+the+Scouts/_/Wet"}
+{"nombre": "Nude", "artista": "Radiohead", "reproducciones": "29061395", "url": "https://www.last.fm/music/Radiohead/_/Nude"}
+{"nombre": "Rhinestone Eyes", "artista": "Gorillaz", "reproducciones": "18692231", "url": "https://www.last.fm/music/Gorillaz/_/Rhinestone+Eyes"}
+{"nombre": "The Moon Cave (feat. Asha Puthli, Bobby Womack, Dave Jolicoeur, Jalen Ngonda and Black Thought)", "artista": "Gorillaz", "reproducciones": "465087", "url": "https://www.last.fm/music/Gorillaz/_/The+Moon+Cave+(feat.+Asha+Puthli,+Bobby+Womack,+Dave+Jolicoeur,+Jalen+Ngonda+and+Black+Thought)"}
+{"nombre": "Beat It", "artista": "Michael Jackson", "reproducciones": "17958211", "url": "https://www.last.fm/music/Michael+Jackson/_/Beat+It"}
+{"nombre": "Are You Bored Yet? (feat. Clairo)", "artista": "Wallows", "reproducciones": "23347033", "url": "https://www.last.fm/music/Wallows/_/Are+You+Bored+Yet%3F+(feat.+Clairo)"}
+{"nombre": "anything", "artista": "Adrianne Lenker", "reproducciones": "18385076", "url": "https://www.last.fm/music/Adrianne+Lenker/_/anything"}
+{"nombre": "Lying from You", "artista": "Linkin Park", "reproducciones": "15276657", "url": "https://www.last.fm/music/Linkin+Park/_/Lying+from+You"}
+{"nombre": "traitor", "artista": "Olivia Rodrigo", "reproducciones": "25101437", "url": "https://www.last.fm/music/Olivia+Rodrigo/_/traitor"}
+{"nombre": "Danger", "artista": "BTS", "reproducciones": "13369629", "url": "https://www.last.fm/music/BTS/_/Danger"}
+{"nombre": "HELICOPTER", "artista": "A$AP Rocky", "reproducciones": "2491502", "url": "https://www.last.fm/music/A$AP+Rocky/_/HELICOPTER"}
+{"nombre": "Secondhand (feat. Rema)", "artista": "Don Toliver", "reproducciones": "1254955", "url": "https://www.last.fm/music/Don+Toliver/_/Secondhand+(feat.+Rema)"}
+{"nombre": "Stars", "artista": "PinkPantheress", "reproducciones": "4862354", "url": "https://www.last.fm/music/PinkPantheress/_/Stars"}
+{"nombre": "Be My Baby", "artista": "The Ronettes", "reproducciones": "11855391", "url": "https://www.last.fm/music/The+Ronettes/_/Be+My+Baby"}
+{"nombre": "DJ Got Us Fallin' in Love (feat. Pitbull)", "artista": "Usher", "reproducciones": "9095692", "url": "https://www.last.fm/music/Usher/_/DJ+Got+Us+Fallin%27+in+Love+(feat.+Pitbull)"}
+{"nombre": "Cats", "artista": "Mitski", "reproducciones": "627054", "url": "https://www.last.fm/music/Mitski/_/Cats"}
+{"nombre": "mangetout", "artista": "Wet Leg", "reproducciones": "2194472", "url": "https://www.last.fm/music/Wet+Leg/_/mangetout"}
+{"nombre": "You Right", "artista": "Doja Cat", "reproducciones": "17239466", "url": "https://www.last.fm/music/Doja+Cat/_/You+Right"}
+{"nombre": "Violent Crimes", "artista": "Kanye West", "reproducciones": "23812771", "url": "https://www.last.fm/music/Kanye+West/_/Violent+Crimes"}
+{"nombre": "FaSHioN", "artista": "CORTIS", "reproducciones": "6002606", "url": "https://www.last.fm/music/CORTIS/_/FaSHioN"}
+{"nombre": "Dive", "artista": "Olivia Dean", "reproducciones": "4281926", "url": "https://www.last.fm/music/Olivia+Dean/_/Dive"}
+{"nombre": "Something About You", "artista": "Eyedress", "reproducciones": "17320155", "url": "https://www.last.fm/music/Eyedress/_/Something+About+You"}
+{"nombre": "Staying", "artista": "Lizzy McAlpine", "reproducciones": "5150777", "url": "https://www.last.fm/music/Lizzy+McAlpine/_/Staying"}
+{"nombre": "Oblivion", "artista": "Grimes", "reproducciones": "22816478", "url": "https://www.last.fm/music/Grimes/_/Oblivion"}
+{"nombre": "New Perspective", "artista": "Panic! at the Disco", "reproducciones": "7297826", "url": "https://www.last.fm/music/Panic%21+at+the+Disco/_/New+Perspective"}
+{"nombre": "Electric Feel", "artista": "MGMT", "reproducciones": "29050891", "url": "https://www.last.fm/music/MGMT/_/Electric+Feel"}
+{"nombre": "A Match Into Water", "artista": "Pierce the Veil", "reproducciones": "13492888", "url": "https://www.last.fm/music/Pierce+the+Veil/_/A+Match+Into+Water"}
+{"nombre": "Break Free", "artista": "Ariana Grande", "reproducciones": "12278133", "url": "https://www.last.fm/music/Ariana+Grande/_/Break+Free"}
+{"nombre": "Losing My Religion", "artista": "R.E.M.", "reproducciones": "21438348", "url": "https://www.last.fm/music/R.E.M./_/Losing+My+Religion"}
+{"nombre": "Let Me Love You", "artista": "DJ Snake", "reproducciones": "9653778", "url": "https://www.last.fm/music/DJ+Snake/_/Let+Me+Love+You"}
+{"nombre": "Kingston", "artista": "Faye Webster", "reproducciones": "20674478", "url": "https://www.last.fm/music/Faye+Webster/_/Kingston"}
+{"nombre": "Father Figure", "artista": "Taylor Swift", "reproducciones": "10073060", "url": "https://www.last.fm/music/Taylor+Swift/_/Father+Figure"}
+{"nombre": "Golden Brown", "artista": "The Stranglers", "reproducciones": "12039455", "url": "https://www.last.fm/music/The+Stranglers/_/Golden+Brown"}
+{"nombre": "Billyeoon Goyangi (Do the Dance)", "artista": "ILLIT", "reproducciones": "6076842", "url": "https://www.last.fm/music/ILLIT/_/Billyeoon+Goyangi+(Do+the+Dance)"}
+{"nombre": "Nothin' on You (feat. Bruno Mars)", "artista": "B.o.B", "reproducciones": "7732640", "url": "https://www.last.fm/music/B.o.B/_/Nothin%27+on+You+(feat.+Bruno+Mars)"}
+{"nombre": "I Know It's Over - 2011 Remaster", "artista": "The Smiths", "reproducciones": "12760329", "url": "https://www.last.fm/music/The+Smiths/_/I+Know+It%27s+Over+-+2011+Remaster"}
+{"nombre": "Lua Cheia", "artista": "Marina Sena", "reproducciones": "5441245", "url": "https://www.last.fm/music/Marina+Sena/_/Lua+Cheia"}
+{"nombre": "What Once Was", "artista": "Her's", "reproducciones": "15043270", "url": "https://www.last.fm/music/Her%27s/_/What+Once+Was"}
+{"nombre": "Permission to Dance", "artista": "BTS", "reproducciones": "82768749", "url": "https://www.last.fm/music/BTS/_/Permission+to+Dance"}
+{"nombre": "Somebody That I Used to Know", "artista": "Gotye", "reproducciones": "26349931", "url": "https://www.last.fm/music/Gotye/_/Somebody+That+I+Used+to+Know"}
+{"nombre": "Maneater", "artista": "Daryl Hall & John Oates", "reproducciones": "10318670", "url": "https://www.last.fm/music/Daryl+Hall+&+John+Oates/_/Maneater"}
+{"nombre": "Needed Me", "artista": "Rihanna", "reproducciones": "16555354", "url": "https://www.last.fm/music/Rihanna/_/Needed+Me"}
+{"nombre": "Touch the Sky", "artista": "Kanye West", "reproducciones": "13896999", "url": "https://www.last.fm/music/Kanye+West/_/Touch+the+Sky"}
+{"nombre": "Can't Take My Eyes Off You", "artista": "Frankie Valli", "reproducciones": "9810629", "url": "https://www.last.fm/music/Frankie+Valli/_/Can%27t+Take+My+Eyes+Off+You"}
+{"nombre": "QuÃ© PasarÃ­a...", "artista": "Rauw Alejandro", "reproducciones": "5281514", "url": "https://www.last.fm/music/Rauw+Alejandro/_/Qu%C3%A9+Pasar%C3%ADa..."}
+{"nombre": "Cico Buff", "artista": "Cocteau Twins", "reproducciones": "2969666", "url": "https://www.last.fm/music/Cocteau+Twins/_/Cico+Buff"}
+{"nombre": "Applause", "artista": "Lady Gaga", "reproducciones": "20767628", "url": "https://www.last.fm/music/Lady+Gaga/_/Applause"}
+{"nombre": "Under the Bridge", "artista": "Red Hot Chili Peppers", "reproducciones": "24736281", "url": "https://www.last.fm/music/Red+Hot+Chili+Peppers/_/Under+the+Bridge"}
+{"nombre": "90210 (feat. Kacy Hill)", "artista": "Travis Scott", "reproducciones": "25087918", "url": "https://www.last.fm/music/Travis+Scott/_/90210+(feat.+Kacy+Hill)"}
+{"nombre": "Hot n Cold", "artista": "Katy Perry", "reproducciones": "19294024", "url": "https://www.last.fm/music/Katy+Perry/_/Hot+n+Cold"}
+{"nombre": "Under Pressure - Remastered 2011", "artista": "Queen", "reproducciones": "11149874", "url": "https://www.last.fm/music/Queen/_/Under+Pressure+-+Remastered+2011"}
+{"nombre": "Mrs Magic", "artista": "Strawberry Guy", "reproducciones": "17305874", "url": "https://www.last.fm/music/Strawberry+Guy/_/Mrs+Magic"}
+{"nombre": "Since U Been Gone", "artista": "Kelly Clarkson", "reproducciones": "13555510", "url": "https://www.last.fm/music/Kelly+Clarkson/_/Since+U+Been+Gone"}
+{"nombre": "When I Was Your Man", "artista": "Bruno Mars", "reproducciones": "18195388", "url": "https://www.last.fm/music/Bruno+Mars/_/When+I+Was+Your+Man"}
+{"nombre": "DNA.", "artista": "Kendrick Lamar", "reproducciones": "24253710", "url": "https://www.last.fm/music/Kendrick+Lamar/_/DNA."}
+{"nombre": "Long Way 2 Go", "artista": "Cassie", "reproducciones": "7069599", "url": "https://www.last.fm/music/Cassie/_/Long+Way+2+Go"}
+{"nombre": "Aquamarine", "artista": "Addison Rae", "reproducciones": "11305856", "url": "https://www.last.fm/music/Addison+Rae/_/Aquamarine"}
+{"nombre": "drivers license", "artista": "Olivia Rodrigo", "reproducciones": "30302590", "url": "https://www.last.fm/music/Olivia+Rodrigo/_/drivers+license"}
+{"nombre": "I Love You", "artista": "Fontaines D.C.", "reproducciones": "7617700", "url": "https://www.last.fm/music/Fontaines+D.C./_/I+Love+You"}
+{"nombre": "Lying Is the Most Fun a Girl Can Have Without Taking Her Clothes Off", "artista": "Panic! at the Disco", "reproducciones": "15701629", "url": "https://www.last.fm/music/Panic%21+at+the+Disco/_/Lying+Is+the+Most+Fun+a+Girl+Can+Have+Without+Taking+Her+Clothes+Off"}
+{"nombre": "Notion", "artista": "The Rare Occasions", "reproducciones": "12870379", "url": "https://www.last.fm/music/The+Rare+Occasions/_/Notion"}
+{"nombre": "TOXIC (with Skepta)", "artista": "Playboi Carti", "reproducciones": "8029902", "url": "https://www.last.fm/music/Playboi+Carti/_/TOXIC+(with+Skepta)"}
+{"nombre": "Good Flirts (feat. Kendrick Lamar & Momo Boyd)", "artista": "Baby Keem", "reproducciones": "819721", "url": "https://www.last.fm/music/Baby+Keem/_/Good+Flirts+(feat.+Kendrick+Lamar+&+Momo+Boyd)"}
+{"nombre": "Super Graphic Ultra Modern Girl", "artista": "Chappell Roan", "reproducciones": "13816579", "url": "https://www.last.fm/music/Chappell+Roan/_/Super+Graphic+Ultra+Modern+Girl"}
+{"nombre": "Thnks fr th Mmrs", "artista": "Fall Out Boy", "reproducciones": "19544253", "url": "https://www.last.fm/music/Fall+Out+Boy/_/Thnks+fr+th+Mmrs"}
+{"nombre": "Love Maze", "artista": "BTS", "reproducciones": "13833330", "url": "https://www.last.fm/music/BTS/_/Love+Maze"}
+{"nombre": "favorite crime", "artista": "Olivia Rodrigo", "reproducciones": "25480240", "url": "https://www.last.fm/music/Olivia+Rodrigo/_/favorite+crime"}
+{"nombre": "Ni**as In Paris", "artista": "JAÅ¸-Z", "reproducciones": "208334", "url": "https://www.last.fm/music/JA%C5%B8-Z/_/Ni%2A%2Aas+In+Paris"}
+{"nombre": "Call Me Maybe", "artista": "Carly Rae Jepsen", "reproducciones": "20483151", "url": "https://www.last.fm/music/Carly+Rae+Jepsen/_/Call+Me+Maybe"}
+{"nombre": "Chanel", "artista": "Frank Ocean", "reproducciones": "24049052", "url": "https://www.last.fm/music/Frank+Ocean/_/Chanel"}
+{"nombre": "Papercut", "artista": "Linkin Park", "reproducciones": "19168511", "url": "https://www.last.fm/music/Linkin+Park/_/Papercut"}
+{"nombre": "Nobody Gets Me", "artista": "SZA", "reproducciones": "18917393", "url": "https://www.last.fm/music/SZA/_/Nobody+Gets+Me"}
+{"nombre": "Euphoria", "artista": "BTS", "reproducciones": "36815839", "url": "https://www.last.fm/music/BTS/_/Euphoria"}
+{"nombre": "God Was Showing Off", "artista": "Bruno Mars", "reproducciones": "483607", "url": "https://www.last.fm/music/Bruno+Mars/_/God+Was+Showing+Off"}
+{"nombre": "Jamais Vu", "artista": "BTS", "reproducciones": "22298936", "url": "https://www.last.fm/music/BTS/_/Jamais+Vu"}
+{"nombre": "HOUSE MONEY", "artista": "Baby Keem", "reproducciones": "932845", "url": "https://www.last.fm/music/Baby+Keem/_/HOUSE+MONEY"}
+{"nombre": "I'm Not in Love", "artista": "10cc", "reproducciones": "9378528", "url": "https://www.last.fm/music/10cc/_/I%27m+Not+in+Love"}
+{"nombre": "Dangerous Woman", "artista": "Ariana Grande", "reproducciones": "17057361", "url": "https://www.last.fm/music/Ariana+Grande/_/Dangerous+Woman"}
+{"nombre": "we never dated", "artista": "sombr", "reproducciones": "4973064", "url": "https://www.last.fm/music/sombr/_/we+never+dated"}
+{"nombre": "CALL BACK", "artista": "Don Toliver", "reproducciones": "1187264", "url": "https://www.last.fm/music/Don+Toliver/_/CALL+BACK"}
+{"nombre": "Don't", "artista": "Bryson Tiller", "reproducciones": "17198541", "url": "https://www.last.fm/music/Bryson+Tiller/_/Don%27t"}
+{"nombre": "Crawling", "artista": "Linkin Park", "reproducciones": "19284111", "url": "https://www.last.fm/music/Linkin+Park/_/Crawling"}
+{"nombre": "Can't Get You Out of My Head", "artista": "Kylie Minogue", "reproducciones": "13868447", "url": "https://www.last.fm/music/Kylie+Minogue/_/Can%27t+Get+You+Out+of+My+Head"}
+{"nombre": "Birds & The Bees", "artista": "Baby Keem", "reproducciones": "915577", "url": "https://www.last.fm/music/Baby+Keem/_/Birds+&+The+Bees"}
+{"nombre": "Wonderwall - Remastered", "artista": "Oasis", "reproducciones": "12124364", "url": "https://www.last.fm/music/Oasis/_/Wonderwall+-+Remastered"}
+{"nombre": "No Idea", "artista": "Don Toliver", "reproducciones": "15690278", "url": "https://www.last.fm/music/Don+Toliver/_/No+Idea"}
+{"nombre": "Without Me", "artista": "Eminem", "reproducciones": "20877321", "url": "https://www.last.fm/music/Eminem/_/Without+Me"}
+{"nombre": "Otherside", "artista": "Red Hot Chili Peppers", "reproducciones": "22675038", "url": "https://www.last.fm/music/Red+Hot+Chili+Peppers/_/Otherside"}
+{"nombre": "Take Two", "artista": "BTS", "reproducciones": "60980372", "url": "https://www.last.fm/music/BTS/_/Take+Two"}
+{"nombre": "Sweet Child o' Mine", "artista": "Guns N' Roses", "reproducciones": "21099166", "url": "https://www.last.fm/music/Guns+N%27+Roses/_/Sweet+Child+o%27+Mine"}
+{"nombre": "MIC Drop", "artista": "BTS", "reproducciones": "11169218", "url": "https://www.last.fm/music/BTS/_/MIC+Drop"}
+{"nombre": "greedy", "artista": "Tate McRae", "reproducciones": "23765700", "url": "https://www.last.fm/music/Tate+McRae/_/greedy"}
+{"nombre": "Teenage Dream", "artista": "Katy Perry", "reproducciones": "23713674", "url": "https://www.last.fm/music/Katy+Perry/_/Teenage+Dream"}
+{"nombre": "Ode to the Mets", "artista": "The Strokes", "reproducciones": "9079703", "url": "https://www.last.fm/music/The+Strokes/_/Ode+to+the+Mets"}
+{"nombre": "All of the Lights", "artista": "Kanye West", "reproducciones": "21387153", "url": "https://www.last.fm/music/Kanye+West/_/All+of+the+Lights"}
+{"nombre": "ON", "artista": "BTS", "reproducciones": "35904351", "url": "https://www.last.fm/music/BTS/_/ON"}
+{"nombre": "CHANEL", "artista": "Tyla", "reproducciones": "3875292", "url": "https://www.last.fm/music/Tyla/_/CHANEL"}
+{"nombre": "Goodbye", "artista": "Sabrina Carpenter", "reproducciones": "6189704", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Goodbye"}
+{"nombre": "All the Small Things", "artista": "blink-182", "reproducciones": "20467741", "url": "https://www.last.fm/music/blink-182/_/All+the+Small+Things"}
+{"nombre": "Save Your Tears", "artista": "The Weeknd", "reproducciones": "26912569", "url": "https://www.last.fm/music/The+Weeknd/_/Save+Your+Tears"}
+{"nombre": "Dog Days Are Over", "artista": "Florence + the Machine", "reproducciones": "22513863", "url": "https://www.last.fm/music/Florence+%252B+the+Machine/_/Dog+Days+Are+Over"}
+{"nombre": "In A Lake", "artista": "Mitski", "reproducciones": "639187", "url": "https://www.last.fm/music/Mitski/_/In+A+Lake"}
+{"nombre": "Don't Stop Me Now - Remastered 2011", "artista": "Queen", "reproducciones": "13290828", "url": "https://www.last.fm/music/Queen/_/Don%27t+Stop+Me+Now+-+Remastered+2011"}
+{"nombre": "Cinema", "artista": "Harry Styles", "reproducciones": "8548548", "url": "https://www.last.fm/music/Harry+Styles/_/Cinema"}
+{"nombre": "Black Sheep - Brie Larson Vocal Version", "artista": "Metric", "reproducciones": "9259976", "url": "https://www.last.fm/music/Metric/_/Black+Sheep+-+Brie+Larson+Vocal+Version"}
+{"nombre": "Pocketful of Sunshine", "artista": "Natasha Bedingfield", "reproducciones": "8440176", "url": "https://www.last.fm/music/Natasha+Bedingfield/_/Pocketful+of+Sunshine"}
+{"nombre": "Memories (feat. Kid Cudi)", "artista": "David Guetta", "reproducciones": "10836915", "url": "https://www.last.fm/music/David+Guetta/_/Memories+(feat.+Kid+Cudi)"}
+{"nombre": "Hype Boy", "artista": "NewJeans", "reproducciones": "27149403", "url": "https://www.last.fm/music/NewJeans/_/Hype+Boy"}
+{"nombre": "Always Forever", "artista": "Cults", "reproducciones": "18494659", "url": "https://www.last.fm/music/Cults/_/Always+Forever"}
+{"nombre": "APT.", "artista": "RosÃ©", "reproducciones": "27116438", "url": "https://www.last.fm/music/Ros%C3%A9/_/APT."}
+{"nombre": "Bite Me", "artista": "ENHYPEN", "reproducciones": "16778565", "url": "https://www.last.fm/music/ENHYPEN/_/Bite+Me"}
+{"nombre": "Tongue Tied", "artista": "Grouplove", "reproducciones": "16647835", "url": "https://www.last.fm/music/Grouplove/_/Tongue+Tied"}
+{"nombre": "California Gurls", "artista": "Katy Perry", "reproducciones": "13277922", "url": "https://www.last.fm/music/Katy+Perry/_/California+Gurls"}
+{"nombre": "bless the telephone", "artista": "Labi Siffre", "reproducciones": "4145010", "url": "https://www.last.fm/music/Labi+Siffre/_/bless+the+telephone"}
+{"nombre": "Baby Come Back", "artista": "Player", "reproducciones": "5872344", "url": "https://www.last.fm/music/Player/_/Baby+Come+Back"}
+{"nombre": "Evergreen (You Didnât Deserve Me At All)", "artista": "Omar Apollo", "reproducciones": "9014823", "url": "https://www.last.fm/music/Omar+Apollo/_/Evergreen+(You+Didn%E2%80%99t+Deserve+Me+At+All)"}
+{"nombre": "Sexy To Someone", "artista": "Clairo", "reproducciones": "13945107", "url": "https://www.last.fm/music/Clairo/_/Sexy+To+Someone"}
+{"nombre": "Have You Ever Seen the Rain", "artista": "Creedence Clearwater Revival", "reproducciones": "12798012", "url": "https://www.last.fm/music/Creedence+Clearwater+Revival/_/Have+You+Ever+Seen+the+Rain"}
+{"nombre": "Paradise", "artista": "Sade", "reproducciones": "5113031", "url": "https://www.last.fm/music/Sade/_/Paradise"}
+{"nombre": "get him back!", "artista": "Olivia Rodrigo", "reproducciones": "20023466", "url": "https://www.last.fm/music/Olivia+Rodrigo/_/get+him+back%21"}
+{"nombre": "Attention", "artista": "NewJeans", "reproducciones": "23307539", "url": "https://www.last.fm/music/NewJeans/_/Attention"}
+{"nombre": "Yet to Come", "artista": "BTS", "reproducciones": "74622910", "url": "https://www.last.fm/music/BTS/_/Yet+to+Come"}
+{"nombre": "Starman - 2012 Remaster", "artista": "David Bowie", "reproducciones": "12945637", "url": "https://www.last.fm/music/David+Bowie/_/Starman+-+2012+Remaster"}
+{"nombre": "One More Time", "artista": "Daft Punk", "reproducciones": "18665183", "url": "https://www.last.fm/music/Daft+Punk/_/One+More+Time"}
+{"nombre": "MUTT", "artista": "Leon Thomas", "reproducciones": "7144530", "url": "https://www.last.fm/music/Leon+Thomas/_/MUTT"}
+{"nombre": "M.I.A", "artista": "KATSEYE", "reproducciones": "6268011", "url": "https://www.last.fm/music/KATSEYE/_/M.I.A"}
+{"nombre": "NOKIA", "artista": "Drake", "reproducciones": "10521706", "url": "https://www.last.fm/music/Drake/_/NOKIA"}
+{"nombre": "Like", "artista": "BTS", "reproducciones": "10738184", "url": "https://www.last.fm/music/BTS/_/Like"}
+{"nombre": "Francis Forever", "artista": "Mitski", "reproducciones": "24836787", "url": "https://www.last.fm/music/Mitski/_/Francis+Forever"}
+{"nombre": "supernatural", "artista": "Ariana Grande", "reproducciones": "17521747", "url": "https://www.last.fm/music/Ariana+Grande/_/supernatural"}
+{"nombre": "VeLDÃ", "artista": "Bad Bunny", "reproducciones": "6396764", "url": "https://www.last.fm/music/Bad+Bunny/_/VeLD%C3%81"}
+{"nombre": "It Will Rain", "artista": "Bruno Mars", "reproducciones": "10797718", "url": "https://www.last.fm/music/Bruno+Mars/_/It+Will+Rain"}
+{"nombre": "Dramatic Girl (feat. Che Ecru)", "artista": "Baby Keem", "reproducciones": "840851", "url": "https://www.last.fm/music/Baby+Keem/_/Dramatic+Girl+(feat.+Che+Ecru)"}
+{"nombre": "One Last Breath", "artista": "Creed", "reproducciones": "10735103", "url": "https://www.last.fm/music/Creed/_/One+Last+Breath"}
+{"nombre": "Delete Ya", "artista": "Djo", "reproducciones": "2814933", "url": "https://www.last.fm/music/Djo/_/Delete+Ya"}
+{"nombre": "Rottweiler", "artista": "EsDeeKid", "reproducciones": "4317737", "url": "https://www.last.fm/music/EsDeeKid/_/Rottweiler"}
+{"nombre": "Rather Be (feat. Jess Glynne)", "artista": "Clean Bandit", "reproducciones": "11433630", "url": "https://www.last.fm/music/Clean+Bandit/_/Rather+Be+(feat.+Jess+Glynne)"}
+{"nombre": "Ordinary", "artista": "Alex Warren", "reproducciones": "7011699", "url": "https://www.last.fm/music/Alex+Warren/_/Ordinary"}
+{"nombre": "Doin' Time", "artista": "Lana Del Rey", "reproducciones": "25275812", "url": "https://www.last.fm/music/Lana+Del+Rey/_/Doin%27+Time"}
+{"nombre": "Payphone", "artista": "Maroon 5", "reproducciones": "14727872", "url": "https://www.last.fm/music/Maroon+5/_/Payphone"}
+{"nombre": "Dear Maria, Count Me In", "artista": "All Time Low", "reproducciones": "14613536", "url": "https://www.last.fm/music/All+Time+Low/_/Dear+Maria,+Count+Me+In"}
+{"nombre": "Disillusioned (with serpentwithfeet)", "artista": "Daniel Caesar", "reproducciones": "4809079", "url": "https://www.last.fm/music/Daniel+Caesar/_/Disillusioned+(with+serpentwithfeet)"}
+{"nombre": "Man in the Box", "artista": "Alice in Chains", "reproducciones": "14695761", "url": "https://www.last.fm/music/Alice+in+Chains/_/Man+in+the+Box"}
+{"nombre": "poster boy", "artista": "2hollis", "reproducciones": "8106396", "url": "https://www.last.fm/music/2hollis/_/poster+boy"}
+{"nombre": "Everything Is Embarrassing", "artista": "Sky Ferreira", "reproducciones": "12723093", "url": "https://www.last.fm/music/Sky+Ferreira/_/Everything+Is+Embarrassing"}
+{"nombre": "Say It Ain't So - Original Mix", "artista": "Weezer", "reproducciones": "4229840", "url": "https://www.last.fm/music/Weezer/_/Say+It+Ain%27t+So+-+Original+Mix"}
+{"nombre": "I Know the End", "artista": "Phoebe Bridgers", "reproducciones": "20634917", "url": "https://www.last.fm/music/Phoebe+Bridgers/_/I+Know+the+End"}
+{"nombre": "Mascara", "artista": "Deftones", "reproducciones": "15523182", "url": "https://www.last.fm/music/Deftones/_/Mascara"}
+{"nombre": "Praise the Lord (Da Shine) (feat. Skepta)", "artista": "A$AP Rocky", "reproducciones": "17849830", "url": "https://www.last.fm/music/A$AP+Rocky/_/Praise+the+Lord+(Da+Shine)+(feat.+Skepta)"}
+{"nombre": "NEW DROP", "artista": "Don Toliver", "reproducciones": "8312156", "url": "https://www.last.fm/music/Don+Toliver/_/NEW+DROP"}
+{"nombre": "Just the Way You Are", "artista": "Bruno Mars", "reproducciones": "19341672", "url": "https://www.last.fm/music/Bruno+Mars/_/Just+the+Way+You+Are"}
+{"nombre": "pretty isnât pretty", "artista": "Olivia Rodrigo", "reproducciones": "14313339", "url": "https://www.last.fm/music/Olivia+Rodrigo/_/pretty+isn%E2%80%99t+pretty"}
+{"nombre": "C U Girl", "artista": "Steve Lacy", "reproducciones": "22700099", "url": "https://www.last.fm/music/Steve+Lacy/_/C+U+Girl"}
+{"nombre": "THE GREATEST", "artista": "Billie Eilish", "reproducciones": "17770440", "url": "https://www.last.fm/music/Billie+Eilish/_/THE+GREATEST"}
+{"nombre": "Moonlight on the River", "artista": "Mac DeMarco", "reproducciones": "14780978", "url": "https://www.last.fm/music/Mac+DeMarco/_/Moonlight+on+the+River"}
+{"nombre": "Berghain", "artista": "ROSALÃA", "reproducciones": "5932482", "url": "https://www.last.fm/music/ROSAL%C3%8DA/_/Berghain"}
+{"nombre": "Nobody", "artista": "Mitski", "reproducciones": "23117210", "url": "https://www.last.fm/music/Mitski/_/Nobody"}
+{"nombre": "Rosemary", "artista": "Deftones", "reproducciones": "13430579", "url": "https://www.last.fm/music/Deftones/_/Rosemary"}
+{"nombre": "Bleed (feat. Omar Apollo)", "artista": "Malcolm Todd", "reproducciones": "4359136", "url": "https://www.last.fm/music/Malcolm+Todd/_/Bleed+(feat.+Omar+Apollo)"}
+{"nombre": "Intro : Persona", "artista": "BTS", "reproducciones": "30156407", "url": "https://www.last.fm/music/BTS/_/Intro+:+Persona"}
+{"nombre": "Hung Up", "artista": "Madonna", "reproducciones": "15800502", "url": "https://www.last.fm/music/Madonna/_/Hung+Up"}
+{"nombre": "I've Seen It", "artista": "Olivia Dean", "reproducciones": "2697361", "url": "https://www.last.fm/music/Olivia+Dean/_/I%27ve+Seen+It"}
+{"nombre": "Around Me (feat. Don Toliver)", "artista": "Metro Boomin", "reproducciones": "11072472", "url": "https://www.last.fm/music/Metro+Boomin/_/Around+Me+(feat.+Don+Toliver)"}
+{"nombre": "Cha Cha Cha", "artista": "Bruno Mars", "reproducciones": "490240", "url": "https://www.last.fm/music/Bruno+Mars/_/Cha+Cha+Cha"}
+{"nombre": "Song 2 - 2012 Remaster", "artista": "Blur", "reproducciones": "11656058", "url": "https://www.last.fm/music/Blur/_/Song+2+-+2012+Remaster"}
+{"nombre": "House of Balloons / Glass Table Girls", "artista": "The Weeknd", "reproducciones": "12319436", "url": "https://www.last.fm/music/The+Weeknd/_/House+of+Balloons+%2F+Glass+Table+Girls"}
+{"nombre": "Rendezvous (feat. Yeat)", "artista": "Don Toliver", "reproducciones": "1209066", "url": "https://www.last.fm/music/Don+Toliver/_/Rendezvous+(feat.+Yeat)"}
+{"nombre": "Baby Steps", "artista": "Olivia Dean", "reproducciones": "2662062", "url": "https://www.last.fm/music/Olivia+Dean/_/Baby+Steps"}
+{"nombre": "Will I See You Again?", "artista": "Thee Sacred Souls", "reproducciones": "6431492", "url": "https://www.last.fm/music/Thee+Sacred+Souls/_/Will+I+See+You+Again%3F"}
+{"nombre": "THIS IS FOR", "artista": "TWICE", "reproducciones": "8832503", "url": "https://www.last.fm/music/TWICE/_/THIS+IS+FOR"}
+{"nombre": "Pretty When You Cry", "artista": "Lana Del Rey", "reproducciones": "19178878", "url": "https://www.last.fm/music/Lana+Del+Rey/_/Pretty+When+You+Cry"}
+{"nombre": "JETSKI", "artista": "PEDRO SAMPAIO", "reproducciones": "2523548", "url": "https://www.last.fm/music/PEDRO+SAMPAIO/_/JETSKI"}
+{"nombre": "Crush", "artista": "Ethel Cain", "reproducciones": "11944825", "url": "https://www.last.fm/music/Ethel+Cain/_/Crush"}
+{"nombre": "Japanese Denim", "artista": "Daniel Caesar", "reproducciones": "16137909", "url": "https://www.last.fm/music/Daniel+Caesar/_/Japanese+Denim"}
+{"nombre": "Let Alone The One You Love", "artista": "Olivia Dean", "reproducciones": "3139245", "url": "https://www.last.fm/music/Olivia+Dean/_/Let+Alone+The+One+You+Love"}
+{"nombre": "Africa", "artista": "Toto", "reproducciones": "18717493", "url": "https://www.last.fm/music/Toto/_/Africa"}
+{"nombre": "Swimming Pools (Drank)", "artista": "Kendrick Lamar", "reproducciones": "14277444", "url": "https://www.last.fm/music/Kendrick+Lamar/_/Swimming+Pools+(Drank)"}
+{"nombre": "Louder than bombs", "artista": "BTS", "reproducciones": "16539236", "url": "https://www.last.fm/music/BTS/_/Louder+than+bombs"}
+{"nombre": "Looking Out For You", "artista": "Joy Again", "reproducciones": "16208488", "url": "https://www.last.fm/music/Joy+Again/_/Looking+Out+For+You"}
+{"nombre": "Elizabeth Taylor", "artista": "Taylor Swift", "reproducciones": "9520294", "url": "https://www.last.fm/music/Taylor+Swift/_/Elizabeth+Taylor"}
+{"nombre": "Would? (2022 remaster)", "artista": "Alice in Chains", "reproducciones": "9263506", "url": "https://www.last.fm/music/Alice+in+Chains/_/Would%3F+(2022+remaster)"}
+{"nombre": "Bohemian Rhapsody - Remastered 2011", "artista": "Queen", "reproducciones": "13029367", "url": "https://www.last.fm/music/Queen/_/Bohemian+Rhapsody+-+Remastered+2011"}
+{"nombre": "HIGHEST IN THE ROOM", "artista": "Travis Scott", "reproducciones": "19556176", "url": "https://www.last.fm/music/Travis+Scott/_/HIGHEST+IN+THE+ROOM"}
+{"nombre": "B.Y.O.B.", "artista": "System of a Down", "reproducciones": "17757863", "url": "https://www.last.fm/music/System+of+a+Down/_/B.Y.O.B."}
+{"nombre": "TBH", "artista": "PARTYNEXTDOOR", "reproducciones": "7209873", "url": "https://www.last.fm/music/PARTYNEXTDOOR/_/TBH"}
+{"nombre": "Obsessed", "artista": "Mariah Carey", "reproducciones": "11546979", "url": "https://www.last.fm/music/Mariah+Carey/_/Obsessed"}
+{"nombre": "Blank Space", "artista": "Taylor Swift", "reproducciones": "27767687", "url": "https://www.last.fm/music/Taylor+Swift/_/Blank+Space"}
+{"nombre": "jealousy, jealousy", "artista": "Olivia Rodrigo", "reproducciones": "24660993", "url": "https://www.last.fm/music/Olivia+Rodrigo/_/jealousy,+jealousy"}
+{"nombre": "Magic Shop", "artista": "BTS", "reproducciones": "17095466", "url": "https://www.last.fm/music/BTS/_/Magic+Shop"}
+{"nombre": "Broken Clocks", "artista": "SZA", "reproducciones": "20163205", "url": "https://www.last.fm/music/SZA/_/Broken+Clocks"}
+{"nombre": "Some", "artista": "Steve Lacy", "reproducciones": "24680746", "url": "https://www.last.fm/music/Steve+Lacy/_/Some"}
+{"nombre": "Closer", "artista": "The Chainsmokers", "reproducciones": "11491716", "url": "https://www.last.fm/music/The+Chainsmokers/_/Closer"}
+{"nombre": "Attention", "artista": "Charlie Puth", "reproducciones": "11216462", "url": "https://www.last.fm/music/Charlie+Puth/_/Attention"}
+{"nombre": "After Midnight", "artista": "Chappell Roan", "reproducciones": "12450348", "url": "https://www.last.fm/music/Chappell+Roan/_/After+Midnight"}
+{"nombre": "No Other Heart", "artista": "Mac DeMarco", "reproducciones": "11490641", "url": "https://www.last.fm/music/Mac+DeMarco/_/No+Other+Heart"}
+{"nombre": "Angel", "artista": "Massive Attack", "reproducciones": "15324298", "url": "https://www.last.fm/music/Massive+Attack/_/Angel"}
+{"nombre": "Alejandro", "artista": "Lady Gaga", "reproducciones": "24995341", "url": "https://www.last.fm/music/Lady+Gaga/_/Alejandro"}
+{"nombre": "Reptilia", "artista": "The Strokes", "reproducciones": "27183532", "url": "https://www.last.fm/music/The+Strokes/_/Reptilia"}
+{"nombre": "Pump It", "artista": "Black Eyed Peas", "reproducciones": "11269365", "url": "https://www.last.fm/music/Black+Eyed+Peas/_/Pump+It"}
+{"nombre": "My Time", "artista": "BTS", "reproducciones": "34400128", "url": "https://www.last.fm/music/BTS/_/My+Time"}
+{"nombre": "Such A Funny Way", "artista": "Sabrina Carpenter", "reproducciones": "2130304", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Such+A+Funny+Way"}
+{"nombre": "SOS", "artista": "Rihanna", "reproducciones": "9556471", "url": "https://www.last.fm/music/Rihanna/_/SOS"}
+{"nombre": "Heavenly", "artista": "Cigarettes After Sex", "reproducciones": "14162458", "url": "https://www.last.fm/music/Cigarettes+After+Sex/_/Heavenly"}
+{"nombre": "Into It", "artista": "Chase Atlantic", "reproducciones": "12206013", "url": "https://www.last.fm/music/Chase+Atlantic/_/Into+It"}
+{"nombre": "A Night To Remember", "artista": "beabadoobee", "reproducciones": "11455298", "url": "https://www.last.fm/music/beabadoobee/_/A+Night+To+Remember"}
+{"nombre": "Orange County (feat. Bizarrap, Kara Jackson and Anoushka Shankar)", "artista": "Gorillaz", "reproducciones": "781162", "url": "https://www.last.fm/music/Gorillaz/_/Orange+County+(feat.+Bizarrap,+Kara+Jackson+and+Anoushka+Shankar)"}
+{"nombre": "Stress Relief", "artista": "late night drive home", "reproducciones": "6555371", "url": "https://www.last.fm/music/late+night+drive+home/_/Stress+Relief"}
+{"nombre": "Everybody Talks", "artista": "Neon Trees", "reproducciones": "14203098", "url": "https://www.last.fm/music/Neon+Trees/_/Everybody+Talks"}
+{"nombre": "Wuthering Heights", "artista": "Kate Bush", "reproducciones": "9091171", "url": "https://www.last.fm/music/Kate+Bush/_/Wuthering+Heights"}
+{"nombre": "PILLOWTALK", "artista": "ZAYN", "reproducciones": "12850399", "url": "https://www.last.fm/music/ZAYN/_/PILLOWTALK"}
+{"nombre": "Dress", "artista": "Taylor Swift", "reproducciones": "18787516", "url": "https://www.last.fm/music/Taylor+Swift/_/Dress"}
+{"nombre": "Piano Man", "artista": "Billy Joel", "reproducciones": "13582534", "url": "https://www.last.fm/music/Billy+Joel/_/Piano+Man"}
+{"nombre": "Even Flow", "artista": "Pearl Jam", "reproducciones": "17712022", "url": "https://www.last.fm/music/Pearl+Jam/_/Even+Flow"}
+{"nombre": "my tears ricochet", "artista": "Taylor Swift", "reproducciones": "30092807", "url": "https://www.last.fm/music/Taylor+Swift/_/my+tears+ricochet"}
+{"nombre": "Why You Wanna Fight?", "artista": "Bruno Mars", "reproducciones": "450652", "url": "https://www.last.fm/music/Bruno+Mars/_/Why+You+Wanna+Fight%3F"}
+{"nombre": "Counting Stars", "artista": "OneRepublic", "reproducciones": "19797981", "url": "https://www.last.fm/music/OneRepublic/_/Counting+Stars"}
+{"nombre": "Risk", "artista": "Deftones", "reproducciones": "8898374", "url": "https://www.last.fm/music/Deftones/_/Risk"}
+{"nombre": "Moves Like Jagger - Studio Recording From \"The Voice\" Performance", "artista": "Maroon 5", "reproducciones": "6967955", "url": "https://www.last.fm/music/Maroon+5/_/Moves+Like+Jagger+-+Studio+Recording+From+%22The+Voice%22+Performance"}
+{"nombre": "Yes I'm Changing", "artista": "Tame Impala", "reproducciones": "11642731", "url": "https://www.last.fm/music/Tame+Impala/_/Yes+I%27m+Changing"}
+{"nombre": "Siren sounds (bonus)", "artista": "Tate McRae", "reproducciones": "5098892", "url": "https://www.last.fm/music/Tate+McRae/_/Siren+sounds+(bonus)"}
+{"nombre": "Nothing's Gonna Hurt You Baby", "artista": "Cigarettes After Sex", "reproducciones": "14200354", "url": "https://www.last.fm/music/Cigarettes+After+Sex/_/Nothing%27s+Gonna+Hurt+You+Baby"}
+{"nombre": "Let You Break My Heart Again", "artista": "Laufey", "reproducciones": "12869979", "url": "https://www.last.fm/music/Laufey/_/Let+You+Break+My+Heart+Again"}
+{"nombre": "CRANK", "artista": "Slayyyter", "reproducciones": "2389923", "url": "https://www.last.fm/music/Slayyyter/_/CRANK"}
+{"nombre": "Best Part (feat. H.E.R.)", "artista": "Daniel Caesar", "reproducciones": "16688469", "url": "https://www.last.fm/music/Daniel+Caesar/_/Best+Part+(feat.+H.E.R.)"}
+{"nombre": "I Was Made for Lovin' You", "artista": "Kiss", "reproducciones": "13244522", "url": "https://www.last.fm/music/Kiss/_/I+Was+Made+for+Lovin%27+You"}
+{"nombre": "Say Yes to Heaven", "artista": "Lana Del Rey", "reproducciones": "16599104", "url": "https://www.last.fm/music/Lana+Del+Rey/_/Say+Yes+to+Heaven"}
+{"nombre": "Twilight", "artista": "bÃ´a", "reproducciones": "13177715", "url": "https://www.last.fm/music/b%C3%B4a/_/Twilight"}
+{"nombre": "Knockin' on Heaven's Door", "artista": "Bob Dylan", "reproducciones": "11488382", "url": "https://www.last.fm/music/Bob+Dylan/_/Knockin%27+on+Heaven%27s+Door"}
+{"nombre": "Genie in a Bottle", "artista": "Christina Aguilera", "reproducciones": "10010399", "url": "https://www.last.fm/music/Christina+Aguilera/_/Genie+in+a+Bottle"}
+{"nombre": "I Gotta Feeling", "artista": "Black Eyed Peas", "reproducciones": "15976567", "url": "https://www.last.fm/music/Black+Eyed+Peas/_/I+Gotta+Feeling"}
+{"nombre": "It Ain't Over 'til It's Over", "artista": "Lenny Kravitz", "reproducciones": "5816370", "url": "https://www.last.fm/music/Lenny+Kravitz/_/It+Ain%27t+Over+%27til+It%27s+Over"}
+{"nombre": "Excavator", "artista": "Don Toliver", "reproducciones": "1012842", "url": "https://www.last.fm/music/Don+Toliver/_/Excavator"}
+{"nombre": "ANTIFRAGILE", "artista": "LE SSERAFIM", "reproducciones": "24464681", "url": "https://www.last.fm/music/LE+SSERAFIM/_/ANTIFRAGILE"}
+{"nombre": "Timber", "artista": "Pitbull", "reproducciones": "7512847", "url": "https://www.last.fm/music/Pitbull/_/Timber"}
+{"nombre": "Paradise", "artista": "BTS", "reproducciones": "12776752", "url": "https://www.last.fm/music/BTS/_/Paradise"}
+{"nombre": "Instant Crush (feat. Julian Casablancas)", "artista": "Daft Punk", "reproducciones": "14287624", "url": "https://www.last.fm/music/Daft+Punk/_/Instant+Crush+(feat.+Julian+Casablancas)"}
+{"nombre": "not a lot, just forever", "artista": "Adrianne Lenker", "reproducciones": "13311951", "url": "https://www.last.fm/music/Adrianne+Lenker/_/not+a+lot,+just+forever"}
+{"nombre": "UGH!", "artista": "BTS", "reproducciones": "17153090", "url": "https://www.last.fm/music/BTS/_/UGH%21"}
+{"nombre": "You're Not the Only One I Know", "artista": "The Sundays", "reproducciones": "7179348", "url": "https://www.last.fm/music/The+Sundays/_/You%27re+Not+the+Only+One+I+Know"}
+{"nombre": "Laputa", "artista": "Panchiko", "reproducciones": "9067502", "url": "https://www.last.fm/music/Panchiko/_/Laputa"}
+{"nombre": "Side to Side", "artista": "Ariana Grande", "reproducciones": "12924855", "url": "https://www.last.fm/music/Ariana+Grande/_/Side+to+Side"}
+{"nombre": "Moth to a Flame (with The Weeknd)", "artista": "Swedish House Mafia", "reproducciones": "14563807", "url": "https://www.last.fm/music/Swedish+House+Mafia/_/Moth+to+a+Flame+(with+The+Weeknd)"}
+{"nombre": "Is There Someone Else?", "artista": "The Weeknd", "reproducciones": "20788852", "url": "https://www.last.fm/music/The+Weeknd/_/Is+There+Someone+Else%3F"}
+{"nombre": "I WANT THINGS TO BE BEAUTIFUL", "artista": "Devi McCallion", "reproducciones": "3960904", "url": "https://www.last.fm/music/Devi+McCallion/_/I+WANT+THINGS+TO+BE+BEAUTIFUL"}
+{"nombre": "ExtraL (feat. Doechii)", "artista": "Jennie", "reproducciones": "11466858", "url": "https://www.last.fm/music/Jennie/_/ExtraL+(feat.+Doechii)"}
+{"nombre": "Teenage Fever", "artista": "Drake", "reproducciones": "12792067", "url": "https://www.last.fm/music/Drake/_/Teenage+Fever"}
+{"nombre": "Scott Street", "artista": "Phoebe Bridgers", "reproducciones": "18804887", "url": "https://www.last.fm/music/Phoebe+Bridgers/_/Scott+Street"}
+{"nombre": "Escapism.", "artista": "RAYE", "reproducciones": "13327509", "url": "https://www.last.fm/music/RAYE/_/Escapism."}
+{"nombre": "I Was All Over Her", "artista": "Salvia Palth", "reproducciones": "24955827", "url": "https://www.last.fm/music/Salvia+Palth/_/I+Was+All+Over+Her"}
+{"nombre": "A New Kind Of Love - Demo", "artista": "Frou Frou", "reproducciones": "9855382", "url": "https://www.last.fm/music/Frou+Frou/_/A+New+Kind+Of+Love+-+Demo"}
+{"nombre": "Somebody Else", "artista": "The 1975", "reproducciones": "16433969", "url": "https://www.last.fm/music/The+1975/_/Somebody+Else"}
+{"nombre": "Crack Rock", "artista": "Frank Ocean", "reproducciones": "15003481", "url": "https://www.last.fm/music/Frank+Ocean/_/Crack+Rock"}
+{"nombre": "The Scientist", "artista": "Coldplay", "reproducciones": "31853669", "url": "https://www.last.fm/music/Coldplay/_/The+Scientist"}
+{"nombre": "Hotline Bling", "artista": "Drake", "reproducciones": "12348038", "url": "https://www.last.fm/music/Drake/_/Hotline+Bling"}
+{"nombre": "Starting Over", "artista": "LSD and the Search for God", "reproducciones": "9310063", "url": "https://www.last.fm/music/LSD+and+the+Search+for+God/_/Starting+Over"}
+{"nombre": "Stick Season", "artista": "Noah Kahan", "reproducciones": "18772946", "url": "https://www.last.fm/music/Noah+Kahan/_/Stick+Season"}
+{"nombre": "Star Shopping", "artista": "Lil Peep", "reproducciones": "25362719", "url": "https://www.last.fm/music/Lil+Peep/_/Star+Shopping"}
+{"nombre": "ceilings", "artista": "Lizzy McAlpine", "reproducciones": "19155983", "url": "https://www.last.fm/music/Lizzy+McAlpine/_/ceilings"}
+{"nombre": "I Don't Love You", "artista": "My Chemical Romance", "reproducciones": "16878270", "url": "https://www.last.fm/music/My+Chemical+Romance/_/I+Don%27t+Love+You"}
+{"nombre": "On My Soul", "artista": "Bruno Mars", "reproducciones": "452226", "url": "https://www.last.fm/music/Bruno+Mars/_/On+My+Soul"}
+{"nombre": "Super Rich Kids", "artista": "Frank Ocean", "reproducciones": "18452233", "url": "https://www.last.fm/music/Frank+Ocean/_/Super+Rich+Kids"}
+{"nombre": "Don't Look Back In Anger - Remastered", "artista": "Oasis", "reproducciones": "10576753", "url": "https://www.last.fm/music/Oasis/_/Don%27t+Look+Back+In+Anger+-+Remastered"}
+{"nombre": "crushcrushcrush", "artista": "Paramore", "reproducciones": "18966989", "url": "https://www.last.fm/music/Paramore/_/crushcrushcrush"}
+{"nombre": "Go Go", "artista": "BTS", "reproducciones": "10805713", "url": "https://www.last.fm/music/BTS/_/Go+Go"}
+{"nombre": "Psychosocial", "artista": "Slipknot", "reproducciones": "18539152", "url": "https://www.last.fm/music/Slipknot/_/Psychosocial"}
+{"nombre": "Magnolia", "artista": "Playboi Carti", "reproducciones": "20581562", "url": "https://www.last.fm/music/Playboi+Carti/_/Magnolia"}
+{"nombre": "Jealous", "artista": "Eyedress", "reproducciones": "21389853", "url": "https://www.last.fm/music/Eyedress/_/Jealous"}
+{"nombre": "GO!", "artista": "CORTIS", "reproducciones": "5352568", "url": "https://www.last.fm/music/CORTIS/_/GO%21"}
+{"nombre": "Falling Down - Bonus Track", "artista": "Lil Peep", "reproducciones": "15378574", "url": "https://www.last.fm/music/Lil+Peep/_/Falling+Down+-+Bonus+Track"}
+{"nombre": "Work Out", "artista": "J. Cole", "reproducciones": "10936242", "url": "https://www.last.fm/music/J.+Cole/_/Work+Out"}
+{"nombre": "Debut", "artista": "KATSEYE", "reproducciones": "9400637", "url": "https://www.last.fm/music/KATSEYE/_/Debut"}
+{"nombre": "Au Pays du Cocaine", "artista": "Geese", "reproducciones": "3472461", "url": "https://www.last.fm/music/Geese/_/Au+Pays+du+Cocaine"}
+{"nombre": "Moonwalkin'", "artista": "LNGSHOT", "reproducciones": "1835122", "url": "https://www.last.fm/music/LNGSHOT/_/Moonwalkin%27"}
+{"nombre": "Hold On, We're Going Home", "artista": "Drake", "reproducciones": "14747937", "url": "https://www.last.fm/music/Drake/_/Hold+On,+We%27re+Going+Home"}
+{"nombre": "I Can't Handle Change", "artista": "Roar", "reproducciones": "19093919", "url": "https://www.last.fm/music/Roar/_/I+Can%27t+Handle+Change"}
+{"nombre": "Gold Digger", "artista": "Kanye West", "reproducciones": "16870477", "url": "https://www.last.fm/music/Kanye+West/_/Gold+Digger"}
+{"nombre": "Killing in the Name", "artista": "Rage Against the Machine", "reproducciones": "19727924", "url": "https://www.last.fm/music/Rage+Against+the+Machine/_/Killing+in+the+Name"}
+{"nombre": "goosebumps", "artista": "Travis Scott", "reproducciones": "23293125", "url": "https://www.last.fm/music/Travis+Scott/_/goosebumps"}
+{"nombre": "We Almost Broke Up Again Last Night", "artista": "Sabrina Carpenter", "reproducciones": "6300534", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/We+Almost+Broke+Up+Again+Last+Night"}
+{"nombre": "Lay All Your Love on Me", "artista": "ABBA", "reproducciones": "11644378", "url": "https://www.last.fm/music/ABBA/_/Lay+All+Your+Love+on+Me"}
+{"nombre": "She Knows Too Much", "artista": "Thundercat", "reproducciones": "354606", "url": "https://www.last.fm/music/Thundercat/_/She+Knows+Too+Much"}
+{"nombre": "Far Away (feat. A$AP Rocky)", "artista": "Yebba", "reproducciones": "3753320", "url": "https://www.last.fm/music/Yebba/_/Far+Away+(feat.+A$AP+Rocky)"}
+{"nombre": "Can't Feel My Face", "artista": "The Weeknd", "reproducciones": "18398561", "url": "https://www.last.fm/music/The+Weeknd/_/Can%27t+Feel+My+Face"}
+{"nombre": "FE!N (feat. Playboi Carti)", "artista": "Travis Scott", "reproducciones": "26837820", "url": "https://www.last.fm/music/Travis+Scott/_/FE%21N+(feat.+Playboi+Carti)"}
+{"nombre": "Solo", "artista": "Future", "reproducciones": "12560734", "url": "https://www.last.fm/music/Future/_/Solo"}
+{"nombre": "Paint It, Black", "artista": "The Rolling Stones", "reproducciones": "14529884", "url": "https://www.last.fm/music/The+Rolling+Stones/_/Paint+It,+Black"}
+{"nombre": "Feels Like We Only Go Backwards", "artista": "Tame Impala", "reproducciones": "18871112", "url": "https://www.last.fm/music/Tame+Impala/_/Feels+Like+We+Only+Go+Backwards"}
+{"nombre": "Youngest Daughter", "artista": "Superheaven", "reproducciones": "9492798", "url": "https://www.last.fm/music/Superheaven/_/Youngest+Daughter"}
+{"nombre": "Boy In Luv", "artista": "BTS", "reproducciones": "12536425", "url": "https://www.last.fm/music/BTS/_/Boy+In+Luv"}
+{"nombre": "American Teenager", "artista": "Ethel Cain", "reproducciones": "15968628", "url": "https://www.last.fm/music/Ethel+Cain/_/American+Teenager"}
+{"nombre": "Crazy in Love (feat. JAY-Z)", "artista": "BeyoncÃ©", "reproducciones": "13434251", "url": "https://www.last.fm/music/Beyonc%C3%A9/_/Crazy+in+Love+(feat.+JAY-Z)"}
+{"nombre": "Famous Last Words", "artista": "My Chemical Romance", "reproducciones": "17086248", "url": "https://www.last.fm/music/My+Chemical+Romance/_/Famous+Last+Words"}
+{"nombre": "24K Magic", "artista": "Bruno Mars", "reproducciones": "11526819", "url": "https://www.last.fm/music/Bruno+Mars/_/24K+Magic"}
+{"nombre": "Out of My League", "artista": "Fitz and the Tantrums", "reproducciones": "14340350", "url": "https://www.last.fm/music/Fitz+and+the+Tantrums/_/Out+of+My+League"}
+{"nombre": "DIE TRYING", "artista": "PARTYNEXTDOOR", "reproducciones": "7462437", "url": "https://www.last.fm/music/PARTYNEXTDOOR/_/DIE+TRYING"}
+{"nombre": "Zombie - 2025 Remastered", "artista": "The Cranberries", "reproducciones": "1658436", "url": "https://www.last.fm/music/The+Cranberries/_/Zombie+-+2025+Remastered"}
+{"nombre": "Right Here", "artista": "Justin Bieber", "reproducciones": "3997283", "url": "https://www.last.fm/music/Justin+Bieber/_/Right+Here"}
+{"nombre": "the way things go", "artista": "beabadoobee", "reproducciones": "13994223", "url": "https://www.last.fm/music/beabadoobee/_/the+way+things+go"}
+{"nombre": "3D (feat. Jack Harlow)", "artista": "Jung Kook", "reproducciones": "65217318", "url": "https://www.last.fm/music/Jung+Kook/_/3D+(feat.+Jack+Harlow)"}
+{"nombre": "Freaking Out the Neighborhood", "artista": "Mac DeMarco", "reproducciones": "15282525", "url": "https://www.last.fm/music/Mac+DeMarco/_/Freaking+Out+the+Neighborhood"}
+{"nombre": "Rock That Body", "artista": "Black Eyed Peas", "reproducciones": "8624003", "url": "https://www.last.fm/music/Black+Eyed+Peas/_/Rock+That+Body"}
+{"nombre": "So High", "artista": "Doja Cat", "reproducciones": "12288131", "url": "https://www.last.fm/music/Doja+Cat/_/So+High"}
+{"nombre": "Circles", "artista": "Post Malone", "reproducciones": "21682710", "url": "https://www.last.fm/music/Post+Malone/_/Circles"}
+{"nombre": "Ventura Highway", "artista": "America", "reproducciones": "7637263", "url": "https://www.last.fm/music/America/_/Ventura+Highway"}
+{"nombre": "Disease", "artista": "Lady Gaga", "reproducciones": "17474077", "url": "https://www.last.fm/music/Lady+Gaga/_/Disease"}
+{"nombre": "Livin' on a Prayer", "artista": "Bon Jovi", "reproducciones": "16140326", "url": "https://www.last.fm/music/Bon+Jovi/_/Livin%27+on+a+Prayer"}
+{"nombre": "because i liked a boy", "artista": "Sabrina Carpenter", "reproducciones": "14935555", "url": "https://www.last.fm/music/Sabrina+Carpenter/_/because+i+liked+a+boy"}
+{"nombre": "Forget Her", "artista": "Jeff Buckley", "reproducciones": "10381951", "url": "https://www.last.fm/music/Jeff+Buckley/_/Forget+Her"}
+{"nombre": "Heather", "artista": "Conan Gray", "reproducciones": "21332580", "url": "https://www.last.fm/music/Conan+Gray/_/Heather"}
+{"nombre": "LA CANCIÃN", "artista": "J Balvin", "reproducciones": "7744556", "url": "https://www.last.fm/music/J+Balvin/_/LA+CANCI%C3%93N"}
+{"nombre": "The Reason", "artista": "Hoobastank", "reproducciones": "15953205", "url": "https://www.last.fm/music/Hoobastank/_/The+Reason"}
+{"nombre": "Dead to Me", "artista": "Kali Uchis", "reproducciones": "16711039", "url": "https://www.last.fm/music/Kali+Uchis/_/Dead+to+Me"}
