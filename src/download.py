@@ -1,40 +1,59 @@
 import requests
 import json
 import os
+import time
 
 API_KEY = '2486bf623744f4f6f8e4b2a60720a504' 
 
 #canciones populares
 def obtener_canciones_populares():
     url = 'http://ws.audioscrobbler.com/2.0/'
-    params = {
-        'method': 'chart.gettoptracks',
-        'api_key': API_KEY,
-        'format': 'json',
-        'limit': 50
-    }
-    respuesta = requests.get(url, params=params)
-    datos = respuesta.json()
     canciones = []
-
-    for track in datos['tracks']['track']:
-        cancion = {
-            'nombre': track['name'],
-            'artista': track['artist']['name'],
-            'reproducciones': track['playcount']
+    for pagina in range(1,11):
+        params = {
+            'method': 'chart.gettoptracks',
+            'api_key': API_KEY,
+            'format': 'json',
+            'limit': 1000,
+            'page': pagina
         }
-        canciones.append(cancion)
+        try:    
+            respuesta = requests.get(url, params=params)
+            datos = respuesta.json()
+
+            if 'error' in datos or 'tracks' not in datos:
+                print(f"Aviso: Error o fin de datos en la página {pagina}.")
+                break
+
+            for track in datos['tracks']['track']:
+                cancion = {
+                    'nombre': track['name'],
+                    'artista': track['artist']['name'],
+                    'reproducciones': track['playcount'],
+                    'url': track['url']
+                }
+                canciones.append(cancion)
+
+            print(f"Página {pagina} procesada. Canciones en total: {len(canciones)}")
+            
+            # Pausa de 1 segundo para no saturar la API
+            time.sleep(1)
+            
+        except Exception as e:
+            print(f"Ocurrió un error en la página {pagina}: {e}")
+            break
 
     return canciones
 
 #artistas populares
 def obtener_artistas_populares():
+    
     url =  'http://ws.audioscrobbler.com/2.0/'
     params = {
         'method': 'chart.gettopartists',
         'format': 'json',
         'page': 1,
-        'limit': 50,
+        'limit': 1000,
         'api_key': API_KEY
     }
     respuesta = requests.get(url, params=params)
@@ -45,10 +64,11 @@ def obtener_artistas_populares():
         musico = {
             'nombre': artista['name'],
             'reproducciones': artista['playcount'],
-            'oyentes': artista['listeners']
+            'oyentes': artista['listeners'],
+            'url': artista['url']
         }
         artistas.append(musico)
-        
+            
     return artistas
 
 #canciones populares del mes
@@ -131,29 +151,27 @@ def obtener_generos_canciones_populares():
 
     return canciones_con_generos
 
-
 #guardar los archivos
-def guardar_artistas(artistas):
-    os.makedirs('data/clean', exist_ok=True)
-    file_path = 'data/clean/artistas_populares.json'
-    with open(file_path, 'w') as archivo:
-        for musico in artistas:
-            archivo.write(json.dumps(musico, ensure_ascii=False) + '\n')
-    print(f'Se han guardado {len(artistas)} artistas en {file_path}')
-
 def guardar_canciones(canciones):
     os.makedirs('data/clean', exist_ok=True)
     file_path = 'data/clean/canciones_populares.json'
-    with open(file_path, 'w') as archivo:
+    with open(file_path, 'w', encoding='utf-8') as archivo:
         for cancion in canciones:
             archivo.write(json.dumps(cancion, ensure_ascii=False) + '\n')
     print(f'Se han guardado {len(canciones)} canciones en {file_path}')
 
+def guardar_artistas(artistas):
+    os.makedirs('data/clean', exist_ok=True)
+    file_path = 'data/clean/artistas_populares.json'
+    with open(file_path, 'w', encoding='utf-8') as archivo:
+        for musico in artistas:
+            archivo.write(json.dumps(musico, ensure_ascii=False) + '\n')
+    print(f'Se han guardado {len(artistas)} artistas en {file_path}')
 
 def guardar_canciones_julio(canciones_populares_julio):
     os.makedirs('data/clean', exist_ok=True)
     file_path = 'data/clean/canciones_populares_julio.json'
-    with open(file_path, 'w') as archivo:
+    with open(file_path, 'w', encoding='utf-8') as archivo:
         for cancion_julio in canciones_populares_julio:
             archivo.write(json.dumps(cancion_julio, ensure_ascii=False) + '\n')
     print(f'Se han guardado {len(canciones_populares_julio)} canciones en {file_path}')
