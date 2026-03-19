@@ -35,6 +35,39 @@ def obtener_artistas_populares(limit=50):
 
     return artistas
 
+def obetener_artistas_populares():
+    url =  'http://ws.audioscrobbler.com/2.0/'
+    params = {
+        'method': 'chart.gettopartists',
+        'format': 'json',
+        'page': 1,
+        'limit': 50,
+        'api_key': API_KEY
+    }
+    respuesta = requests.get(url, params=params)
+    datos = respuesta.json()
+    artistas = []
+
+    for artista in datos['artists']['artist']:
+        musico = {
+            'nombre': artista['name'],
+            'reproducciones': artista['playcount'],
+            'oyentes': artista['listeners']
+        }
+        artistas.append(musico)
+        
+    return artistas
+
+def guardar_artistas(artistas):
+    os.makedirs('data/clean', exist_ok=True)
+    file_path = 'data/clean/artistas_populares.json'
+    with open(file_path, 'w') as archivo:
+        for musico in artistas:
+            archivo.write(json.dumps(musico, ensure_ascii=False) + '\n')
+    print(f'Se han guardado {len(artistas)} artisatas en {file_path}')
+
+
+
 
 def guardar_artistas_json(artistas):
     os.makedirs("data/clean", exist_ok=True)
