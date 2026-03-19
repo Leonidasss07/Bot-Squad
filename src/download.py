@@ -1,29 +1,45 @@
 import requests
 import json
 import os
+import time
 
 API_KEY = '2486bf623744f4f6f8e4b2a60720a504' 
 def obtener_canciones_populares():
     url = 'http://ws.audioscrobbler.com/2.0/'
-    params = {
-        'method': 'chart.gettoptracks',
-        'api_key': API_KEY,
-        'format': 'json',
-        'limit': 1000,
-        'page': i+1
-    }
-    respuesta = requests.get(url, params=params)
-    datos = respuesta.json()
     canciones = []
-
-    for track in datos['tracks']['track']:
-        cancion = {
-            'nombre': track['name'],
-            'artista': track['artist']['name'],
-            'reproducciones': track['playcount'],
-            'url': track['url']
+    for pagina in range(1,11):
+        params = {
+            'method': 'chart.gettoptracks',
+            'api_key': API_KEY,
+            'format': 'json',
+            'limit': 1000,
+            'page': pagina
         }
-        canciones.append(cancion)
+        try:    
+            respuesta = requests.get(url, params=params)
+            datos = respuesta.json()
+
+            if 'error' in datos or 'tracks' not in datos:
+                print(f"Aviso: Error o fin de datos en la página {pagina}.")
+                break
+
+            for track in datos['tracks']['track']:
+                cancion = {
+                    'nombre': track['name'],
+                    'artista': track['artist']['name'],
+                    'reproducciones': track['playcount'],
+                    'url': track['url']
+                }
+                canciones.append(cancion)
+
+            print(f"Página {pagina} procesada. Canciones en total: {len(canciones)}")
+            
+            # Pausa de 1 segundo para no saturar la API
+            time.sleep(1)
+            
+        except Exception as e:
+            print(f"Ocurrió un error en la página {pagina}: {e}")
+            break
 
     return canciones
 
