@@ -27,7 +27,7 @@ def obtener_canciones_populares():
 
     return canciones
 
-#canciones populares
+#artistas populares
 def obetener_artistas_populares():
     url =  'http://ws.audioscrobbler.com/2.0/'
     params = {
@@ -105,7 +105,9 @@ def guardar_canciones_julio(canciones_populares_julio):
 if __name__ == '__main__':
     canciones = obtener_canciones_populares()
     guardar_canciones(canciones)
+
     artistas = obetener_artistas_populares()
     guardar_artistas(artistas)
+    
     canciones_julio = obtener_canciones_populares_julio()
     guardar_canciones_julio(canciones_julio)
