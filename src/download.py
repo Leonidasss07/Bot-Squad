@@ -182,7 +182,9 @@ def guardar_generos_canciones(canciones_con_generos):
     with open(file_path, 'w', encoding='utf-8') as archivo:
         for cancion in canciones_con_generos:
             archivo.write(json.dumps(cancion, ensure_ascii=False) + '\n')
-    print(f'Se han guardado {len(canciones_con_generos)} canciones con géneros en {file_path}')
+    total_generos = sum(len(cancion['generos']) for cancion in canciones_con_generos)
+    print(f'Se han guardado {total_generos} géneros en {file_path}')
+
 
 
 if __name__ == '__main__':
