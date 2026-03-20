@@ -2,6 +2,7 @@ import requests
 import json
 import os
 import time
+import csv
 
 API_KEY = '2486bf623744f4f6f8e4b2a60720a504' 
 
@@ -153,49 +154,93 @@ def obtener_generos_canciones_populares():
 
 #guardar los archivos
 def guardar_canciones(canciones):
-    os.makedirs('data/clean', exist_ok=True)
-    file_path = 'data/clean/canciones_populares.json'
+    os.makedirs('data/raw', exist_ok=True)
+    file_path = 'data/raw/canciones_populares.json'
     with open(file_path, 'w', encoding='utf-8') as archivo:
         for cancion in canciones:
             archivo.write(json.dumps(cancion, ensure_ascii=False) + '\n')
     print(f'Se han guardado {len(canciones)} canciones en {file_path}')
 
 def guardar_artistas(artistas):
-    os.makedirs('data/clean', exist_ok=True)
-    file_path = 'data/clean/artistas_populares.json'
+    os.makedirs('data/raw', exist_ok=True)
+    file_path = 'data/raw/artistas_populares.json'
     with open(file_path, 'w', encoding='utf-8') as archivo:
         for musico in artistas:
             archivo.write(json.dumps(musico, ensure_ascii=False) + '\n')
     print(f'Se han guardado {len(artistas)} artistas en {file_path}')
 
 def guardar_canciones_julio(canciones_populares_julio):
-    os.makedirs('data/clean', exist_ok=True)
-    file_path = 'data/clean/canciones_populares_julio.json'
+    os.makedirs('data/raw', exist_ok=True)
+    file_path = 'data/raw/canciones_populares_julio.json'
     with open(file_path, 'w', encoding='utf-8') as archivo:
         for cancion_julio in canciones_populares_julio:
             archivo.write(json.dumps(cancion_julio, ensure_ascii=False) + '\n')
     print(f'Se han guardado {len(canciones_populares_julio)} canciones en {file_path}')
 
 def guardar_generos_canciones(canciones_con_generos):
-    os.makedirs('data/clean', exist_ok=True)
-    file_path = 'data/clean/generos_canciones_populares.json'
+    os.makedirs('data/raw', exist_ok=True)
+    file_path = 'data/raw/generos_canciones_populares.json'
     with open(file_path, 'w', encoding='utf-8') as archivo:
         for cancion in canciones_con_generos:
             archivo.write(json.dumps(cancion, ensure_ascii=False) + '\n')
     total_generos = sum(len(cancion['generos']) for cancion in canciones_con_generos)
     print(f'Se han guardado {total_generos} géneros en {file_path}')
 
+#archivos csv
+def guardar_canciones_csv(canciones):
+    os.makedirs('data/clean', exist_ok=True)
+    file_path = 'data/clean/canciones_populares.csv'
+    with open(file_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['nombre', 'artista', 'reproducciones', 'url'])
+        for cancion in canciones:
+            writer.writerow([cancion['nombre'], cancion['artista'], cancion['reproducciones'], cancion['url']])
+    print(f'CSV guardado en {file_path}')
+
+def guardar_artistas_csv(artistas):
+    os.makedirs('data/clean', exist_ok=True)
+    file_path = 'data/clean/artistas_populares.csv'
+    with open(file_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['nombre', 'reproducciones', 'oyentes', 'url'])
+        for artista in artistas:
+            writer.writerow([artista['nombre'], artista['reproducciones'], artista['oyentes'], artista['url']])
+    print(f'CSV guardado en {file_path}')
+
+def guardar_canciones_julio_csv(canciones_julio):
+    os.makedirs('data/clean', exist_ok=True)
+    file_path = 'data/clean/canciones_julio.csv'
+    with open(file_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['nombre', 'artista', 'duracion'])
+        for cancion in canciones_julio:
+            writer.writerow([cancion['nombre'], cancion['artista'], cancion['duracion']])
+    print(f'CSV guardado en {file_path}')
+
+def guardar_generos_csv(canciones_con_generos):
+    os.makedirs('data/clean', exist_ok=True)
+    file_path = 'data/clean/generos_canciones.csv'
+    with open(file_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['generos'])
+        for cancion in canciones_con_generos:
+            writer.writerow([' , '.join(cancion['generos'])])
+    print(f'CSV guardado en {file_path}')
 
 
 if __name__ == '__main__':
     canciones = obtener_canciones_populares()
     guardar_canciones(canciones)
+    guardar_canciones_csv(canciones)
 
     artistas = obtener_artistas_populares()
     guardar_artistas(artistas)
-    
+    guardar_artistas_csv(artistas)
+
     canciones_julio = obtener_canciones_populares_julio()
     guardar_canciones_julio(canciones_julio)
+    guardar_canciones_julio_csv(canciones_julio)
 
     canciones_generos = obtener_generos_canciones_populares()
     guardar_generos_canciones(canciones_generos)
+    guardar_generos_csv(canciones_generos)
