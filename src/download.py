@@ -2,6 +2,7 @@ import requests
 import json
 import os
 import time
+import csv
 
 API_KEY = '2486bf623744f4f6f8e4b2a60720a504' 
 
@@ -46,7 +47,7 @@ def obtener_canciones_populares():
     return canciones
 
 #artistas populares
-def obetener_artistas_populares():
+def obtener_artistas_populares():
     
     url =  'http://ws.audioscrobbler.com/2.0/'
     params = {
@@ -95,64 +96,136 @@ def obtener_canciones_populares_julio():
 
     return canciones_populares_julio
 
+#generos de los canciones mas populares
+#creamos un set de los generos validos 
+GENEROS_VALIDOS = {
+    'pop', 'rock', 'hip-hop', 'hip hop', 'rap', 'r&b', 'rnb', 'soul', 'jazz',
+    'blues', 'classical', 'electronic', 'dance', 'house', 'techno', 'trance',
+    'metal', 'heavy metal', 'punk', 'indie', 'alternative', 'folk', 'country',
+    'reggae', 'latin', 'reggaeton', 'k-pop', 'j-pop', 'edm', 'trap', 'funk',
+    'disco', 'ambient', 'lo-fi', 'synthpop', 'synthwave', 'grunge', 'emo',
+    'gospel', 'opera', 'soundtrack', 'new wave', 'post-rock', 'experimental'
+}
 
-def guardar_artistas(artistas):
-    os.makedirs('data/clean', exist_ok=True)
-    file_path = 'data/clean/artistas_populares.json'
-    with open(file_path, 'w') as archivo:
-        for musico in artistas:
-            archivo.write(json.dumps(musico, ensure_ascii=False) + '\n')
-    print(f'Se han guardado {len(artistas)} artistas en {file_path}')
+def obtener_generos_canciones_populares():
+    url = 'http://ws.audioscrobbler.com/2.0/'
+    params = {
+        'method': 'chart.gettoptracks',
+        'api_key': API_KEY,
+        'format': 'json',
+        'limit': 50
+    }
+    respuesta = requests.get(url, params=params)
+    datos = respuesta.json()
 
+    canciones_con_generos = []
 
+    for track in datos['tracks']['track']:
+        nombre = track['name']
+        artista = track['artist']['name']
+
+        params_info = {
+            'method': 'track.getInfo',
+            'api_key': API_KEY,
+            'format': 'json',
+            'artist': artista,
+            'track': nombre
+        }
+        respuesta_info = requests.get(url, params=params_info)
+        datos_info = respuesta_info.json()
+
+        generos = []
+        try:
+            tags = datos_info['track']['toptags']['tag']
+            #solo guardamos los tags que esten en nuestra lista de generos validos
+            generos = [
+                tag['name'] for tag in tags
+                if tag['name'].lower() in GENEROS_VALIDOS
+            ]
+        except (KeyError, TypeError):
+            pass
+
+        #solo se guarda la cancion si tiene al menos un genero valido
+        if generos:
+            cancion = {'generos': generos}
+            canciones_con_generos.append(cancion)
+
+    return canciones_con_generos
+
+#guardar los archivos
 def guardar_canciones(canciones):
-    os.makedirs('data/clean', exist_ok=True)
-    file_path = 'data/clean/canciones_populares.json'
-    with open(file_path, 'w') as archivo:
+    os.makedirs('data/raw', exist_ok=True)
+    file_path = 'data/raw/canciones_populares.json'
+    with open(file_path, 'w', encoding='utf-8') as archivo:
         for cancion in canciones:
             archivo.write(json.dumps(cancion, ensure_ascii=False) + '\n')
     print(f'Se han guardado {len(canciones)} canciones en {file_path}')
 
-def obtener_canciones_populares_julio():
-    url = 'http://ws.audioscrobbler.com/2.0/'
-    params = {
-        'method': 'album.getinfo',
-        'artist': 'KY Noraebang',
-        'album': 'July 2021\'s popular song Vol.2',
-        'api_key': API_KEY,
-        'format': 'json'
-    }
-    respuesta = requests.get(url, params=params)
-    datos = respuesta.json()
-    canciones_populares_julio = []
-
-    for track in datos['album']['tracks']['track']:
-        cancion_julio = {
-            'nombre': track['name'],
-            'artista': track['artist']['name'],
-            'duracion': track.get('duration', 'N/A')
-        }
-        canciones_populares_julio.append(cancion_julio)
-
-    return canciones_populares_julio
+def guardar_artistas(artistas):
+    os.makedirs('data/raw', exist_ok=True)
+    file_path = 'data/raw/artistas_populares.json'
+    with open(file_path, 'w', encoding='utf-8') as archivo:
+        for musico in artistas:
+            archivo.write(json.dumps(musico, ensure_ascii=False) + '\n')
+    print(f'Se han guardado {len(artistas)} artistas en {file_path}')
 
 def guardar_canciones_julio(canciones_populares_julio):
-    os.makedirs('data/clean', exist_ok=True)
-    file_path = 'data/clean/canciones_populares_julio.json'
-    with open(file_path, 'w') as archivo:
+    os.makedirs('data/raw', exist_ok=True)
+    file_path = 'data/raw/canciones_populares_julio.json'
+    with open(file_path, 'w', encoding='utf-8') as archivo:
         for cancion_julio in canciones_populares_julio:
             archivo.write(json.dumps(cancion_julio, ensure_ascii=False) + '\n')
     print(f'Se han guardado {len(canciones_populares_julio)} canciones en {file_path}')
 
+def guardar_generos_canciones(canciones_con_generos):
+    os.makedirs('data/raw', exist_ok=True)
+    file_path = 'data/raw/generos_canciones_populares.json'
+    with open(file_path, 'w', encoding='utf-8') as archivo:
+        for cancion in canciones_con_generos:
+            archivo.write(json.dumps(cancion, ensure_ascii=False) + '\n')
+    total_generos = sum(len(cancion['generos']) for cancion in canciones_con_generos)
+    print(f'Se han guardado {total_generos} géneros en {file_path}')
 
-
-def guardar_canciones_julio(canciones_populares_julio):
+#archivos csv
+def guardar_canciones_csv(canciones):
     os.makedirs('data/clean', exist_ok=True)
-    file_path = 'data/clean/canciones_populares_julio.json'
-    with open(file_path, 'w') as archivo:
-        for cancion_julio in canciones_populares_julio:
-            archivo.write(json.dumps(cancion_julio, ensure_ascii=False) + '\n')
-    print(f'Se han guardado {len(canciones_populares_julio)} canciones en {file_path}')
+    file_path = 'data/clean/canciones_populares.csv'
+    with open(file_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['nombre', 'artista', 'reproducciones', 'url'])
+        for cancion in canciones:
+            writer.writerow([cancion['nombre'], cancion['artista'], cancion['reproducciones'], cancion['url']])
+    print(f'CSV guardado en {file_path}')
+
+def guardar_artistas_csv(artistas):
+    os.makedirs('data/clean', exist_ok=True)
+    file_path = 'data/clean/artistas_populares.csv'
+    with open(file_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['nombre', 'reproducciones', 'oyentes', 'url'])
+        for artista in artistas:
+            writer.writerow([artista['nombre'], artista['reproducciones'], artista['oyentes'], artista['url']])
+    print(f'CSV guardado en {file_path}')
+
+def guardar_canciones_julio_csv(canciones_julio):
+    os.makedirs('data/clean', exist_ok=True)
+    file_path = 'data/clean/canciones_julio.csv'
+    with open(file_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['nombre', 'artista', 'duracion'])
+        for cancion in canciones_julio:
+            writer.writerow([cancion['nombre'], cancion['artista'], cancion['duracion']])
+    print(f'CSV guardado en {file_path}')
+
+def guardar_generos_csv(canciones_con_generos):
+    os.makedirs('data/clean', exist_ok=True)
+    file_path = 'data/clean/generos_canciones.csv'
+    with open(file_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['generos'])
+        for cancion in canciones_con_generos:
+            writer.writerow([' , '.join(cancion['generos'])])
+    print(f'CSV guardado en {file_path}')
 
 
 ##Creamos el codigo para descargar canciones mas populares de un mes
@@ -191,8 +264,16 @@ def guardar_canciones_julio(canciones_populares_julio):
 if __name__ == '__main__':
     canciones = obtener_canciones_populares()
     guardar_canciones(canciones)
+    guardar_canciones_csv(canciones)
 
-    artistas = obetener_artistas_populares()
+    artistas = obtener_artistas_populares()
     guardar_artistas(artistas)
-    canciones_populares_julio = obtener_canciones_populares_julio()
-    guardar_canciones_julio(canciones_populares_julio)
+    guardar_artistas_csv(artistas)
+
+    canciones_julio = obtener_canciones_populares_julio()
+    guardar_canciones_julio(canciones_julio)
+    guardar_canciones_julio_csv(canciones_julio)
+
+    canciones_generos = obtener_generos_canciones_populares()
+    guardar_generos_canciones(canciones_generos)
+    guardar_generos_csv(canciones_generos)
