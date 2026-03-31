@@ -1,51 +1,1001 @@
-nombre,oyentes,reproducciones,url
-PinkPantheress,2974333,310428042,https://www.last.fm/music/PinkPantheress
-The Weeknd,5253270,1102095411,https://www.last.fm/music/The+Weeknd
-Kendrick Lamar,5041843,1016054304,https://www.last.fm/music/Kendrick+Lamar
-Radiohead,8171538,1353796713,https://www.last.fm/music/Radiohead
-Taylor Swift,5881552,3626416557,https://www.last.fm/music/Taylor+Swift
-Kanye West,7883446,1495894683,https://www.last.fm/music/Kanye+West
-Rihanna,8225908,590487513,https://www.last.fm/music/Rihanna
-Tame Impala,4252775,404339794,https://www.last.fm/music/Tame+Impala
-"Tyler, The Creator",4273359,1033694305,"https://www.last.fm/music/Tyler,+The+Creator"
-Drake,6665037,1137572402,https://www.last.fm/music/Drake
-Lady Gaga,7653636,1017276537,https://www.last.fm/music/Lady+Gaga
-Charli xcx,3723340,704861827,https://www.last.fm/music/Charli+xcx
-Ariana Grande,4423377,1088024966,https://www.last.fm/music/Ariana+Grande
-Sabrina Carpenter,3190035,635765608,https://www.last.fm/music/Sabrina+Carpenter
-Lana Del Rey,5198779,1557302134,https://www.last.fm/music/Lana+Del+Rey
-Harry Styles,3231475,423844594,https://www.last.fm/music/Harry+Styles
-Arctic Monkeys,7038118,922783646,https://www.last.fm/music/Arctic+Monkeys
-Gorillaz,6804538,507971375,https://www.last.fm/music/Gorillaz
-Billie Eilish,4174302,821359154,https://www.last.fm/music/Billie+Eilish
-Bruno Mars,5176757,292734106,https://www.last.fm/music/Bruno+Mars
-Frank Ocean,4210529,762967271,https://www.last.fm/music/Frank+Ocean
-Bad Bunny,2509166,390788914,https://www.last.fm/music/Bad+Bunny
-Paramore,5579914,574366113,https://www.last.fm/music/Paramore
-A$AP Rocky,3407627,361204508,https://www.last.fm/music/A$AP+Rocky
-Doja Cat,3578232,459548733,https://www.last.fm/music/Doja+Cat
-Mitski,3223091,650639588,https://www.last.fm/music/Mitski
-Chappell Roan,2520012,326836518,https://www.last.fm/music/Chappell+Roan
-Don Toliver,2463911,261342927,https://www.last.fm/music/Don+Toliver
-Deftones,4184321,559753661,https://www.last.fm/music/Deftones
-The Smiths,5017828,529865872,https://www.last.fm/music/The+Smiths
-Fleetwood Mac,4827304,291738924,https://www.last.fm/music/Fleetwood+Mac
-Linkin Park,6876598,731598173,https://www.last.fm/music/Linkin+Park
-The Neighbourhood,3906882,388501178,https://www.last.fm/music/The+Neighbourhood
-Justin Bieber,4724801,315806334,https://www.last.fm/music/Justin+Bieber
-beabadoobee,2578653,313661517,https://www.last.fm/music/beabadoobee
-The Marías,2439462,230412017,https://www.last.fm/music/The+Mar%C3%ADas
-Childish Gambino,3762877,321715643,https://www.last.fm/music/Childish+Gambino
-Travis Scott,3293819,671458839,https://www.last.fm/music/Travis+Scott
-SZA,3451993,578684866,https://www.last.fm/music/SZA
-Coldplay,9040617,774939338,https://www.last.fm/music/Coldplay
-Olivia Rodrigo,3044313,545484603,https://www.last.fm/music/Olivia+Rodrigo
-Michael Jackson,6767229,346654030,https://www.last.fm/music/Michael+Jackson
-Clairo,2883699,342716159,https://www.last.fm/music/Clairo
-TV Girl,2803509,286151139,https://www.last.fm/music/TV+Girl
-Playboi Carti,2449340,770381561,https://www.last.fm/music/Playboi+Carti
-Zara Larsson,2227352,80514038,https://www.last.fm/music/Zara+Larsson
-Future,3185113,453148665,https://www.last.fm/music/Future
-Beyoncé,6337328,690072882,https://www.last.fm/music/Beyonc%C3%A9
-Mac Miller,3482438,425428412,https://www.last.fm/music/Mac+Miller
-Katy Perry,7067577,431863986,https://www.last.fm/music/Katy+Perry
+nombre,reproducciones,oyentes,url
+PinkPantheress,310972224,2977173,https://www.last.fm/music/PinkPantheress
+The Weeknd,1102615000,5254646,https://www.last.fm/music/The+Weeknd
+Kendrick Lamar,1016463781,5043127,https://www.last.fm/music/Kendrick+Lamar
+Radiohead,1354355099,8173096,https://www.last.fm/music/Radiohead
+Taylor Swift,3627729645,5882601,https://www.last.fm/music/Taylor+Swift
+Kanye West,1496457152,7884723,https://www.last.fm/music/Kanye+West
+Rihanna,590788302,8227721,https://www.last.fm/music/Rihanna
+Tame Impala,404714428,4255569,https://www.last.fm/music/Tame+Impala
+"Tyler, The Creator",1034200973,4274683,"https://www.last.fm/music/Tyler,+The+Creator"
+Drake,1138253550,6666277,https://www.last.fm/music/Drake
+Lady Gaga,1017664485,7655007,https://www.last.fm/music/Lady+Gaga
+Charli xcx,705350648,3724570,https://www.last.fm/music/Charli+xcx
+Ariana Grande,1088614746,4424583,https://www.last.fm/music/Ariana+Grande
+Sabrina Carpenter,636486622,3191374,https://www.last.fm/music/Sabrina+Carpenter
+Lana Del Rey,1558114934,5200019,https://www.last.fm/music/Lana+Del+Rey
+Harry Styles,424683479,3233308,https://www.last.fm/music/Harry+Styles
+Arctic Monkeys,923099836,7039757,https://www.last.fm/music/Arctic+Monkeys
+Billie Eilish,821739986,4175555,https://www.last.fm/music/Billie+Eilish
+Gorillaz,508313946,6806073,https://www.last.fm/music/Gorillaz
+Bruno Mars,293044708,5178396,https://www.last.fm/music/Bruno+Mars
+Frank Ocean,763326240,4211814,https://www.last.fm/music/Frank+Ocean
+Bad Bunny,391283808,2511056,https://www.last.fm/music/Bad+Bunny
+Paramore,574654606,5581333,https://www.last.fm/music/Paramore
+A$AP Rocky,361492108,3408740,https://www.last.fm/music/A$AP+Rocky
+Doja Cat,459793709,3579455,https://www.last.fm/music/Doja+Cat
+Mitski,651076236,3224301,https://www.last.fm/music/Mitski
+Chappell Roan,327130823,2521174,https://www.last.fm/music/Chappell+Roan
+Don Toliver,261771463,2465507,https://www.last.fm/music/Don+Toliver
+Deftones,560175450,4185851,https://www.last.fm/music/Deftones
+Fleetwood Mac,291931879,4828559,https://www.last.fm/music/Fleetwood+Mac
+The Smiths,530112907,5019015,https://www.last.fm/music/The+Smiths
+beabadoobee,314042630,2580798,https://www.last.fm/music/beabadoobee
+Linkin Park,731961945,6878052,https://www.last.fm/music/Linkin+Park
+The Neighbourhood,388765301,3908212,https://www.last.fm/music/The+Neighbourhood
+Justin Bieber,316021849,4726127,https://www.last.fm/music/Justin+Bieber
+The Marías,230722593,2440857,https://www.last.fm/music/The+Mar%C3%ADas
+Childish Gambino,321883421,3764158,https://www.last.fm/music/Childish+Gambino
+Travis Scott,671731407,3294701,https://www.last.fm/music/Travis+Scott
+SZA,578923636,3452941,https://www.last.fm/music/SZA
+Coldplay,775107682,9042162,https://www.last.fm/music/Coldplay
+Michael Jackson,346840299,6768801,https://www.last.fm/music/Michael+Jackson
+Olivia Rodrigo,545770068,3045282,https://www.last.fm/music/Olivia+Rodrigo
+Clairo,342950973,2884733,https://www.last.fm/music/Clairo
+Playboi Carti,770762262,2450099,https://www.last.fm/music/Playboi+Carti
+TV Girl,286382096,2804786,https://www.last.fm/music/TV+Girl
+Zara Larsson,80703810,2229920,https://www.last.fm/music/Zara+Larsson
+Future,453392068,3186038,https://www.last.fm/music/Future
+Katy Perry,432012312,7069060,https://www.last.fm/music/Katy+Perry
+Beyoncé,690320792,6338511,https://www.last.fm/music/Beyonc%C3%A9
+Mac Miller,425651595,3483643,https://www.last.fm/music/Mac+Miller
+Nirvana,574808959,7478301,https://www.last.fm/music/Nirvana
+The Beatles,1089446204,6463454,https://www.last.fm/music/The+Beatles
+Britney Spears,490228730,6394310,https://www.last.fm/music/Britney+Spears
+Lorde,440306230,3686295,https://www.last.fm/music/Lorde
+Dominic Fike,145924382,2391398,https://www.last.fm/music/Dominic+Fike
+sombr,78980281,1771602,https://www.last.fm/music/sombr
+Lil Uzi Vert,424850125,2710553,https://www.last.fm/music/Lil+Uzi+Vert
+Twenty One Pilots,425005854,3316293,https://www.last.fm/music/Twenty+One+Pilots
+Maroon 5,283780045,6586609,https://www.last.fm/music/Maroon+5
+Joji,366235861,2972029,https://www.last.fm/music/Joji
+Olivia Dean,69367654,1373418,https://www.last.fm/music/Olivia+Dean
+Kali Uchis,309700429,3028164,https://www.last.fm/music/Kali+Uchis
+Mac DeMarco,340804833,3215798,https://www.last.fm/music/Mac+DeMarco
+Red Hot Chili Peppers,554650569,7207829,https://www.last.fm/music/Red+Hot+Chili+Peppers
+The Cure,389993908,5450611,https://www.last.fm/music/The+Cure
+Calvin Harris,205215168,4963026,https://www.last.fm/music/Calvin+Harris
+My Chemical Romance,537294889,4802151,https://www.last.fm/music/My+Chemical+Romance
+Addison Rae,108456661,1513763,https://www.last.fm/music/Addison+Rae
+Tate McRae,272923223,2231302,https://www.last.fm/music/Tate+McRae
+Steve Lacy,283972451,3078673,https://www.last.fm/music/Steve+Lacy
+Weezer,293994776,5377635,https://www.last.fm/music/Weezer
+The Strokes,474716172,5667415,https://www.last.fm/music/The+Strokes
+Malcolm Todd,78254812,1165894,https://www.last.fm/music/Malcolm+Todd
+Laufey,251666468,2289776,https://www.last.fm/music/Laufey
+Green Day,440851348,6540077,https://www.last.fm/music/Green+Day
+J. Cole,301926973,3821684,https://www.last.fm/music/J.+Cole
+System of a Down,506470639,5778174,https://www.last.fm/music/System+of+a+Down
+Daniel Caesar,237789585,2318548,https://www.last.fm/music/Daniel+Caesar
+BTS,3069376665,2333869,https://www.last.fm/music/BTS
+Queen,421760296,7178762,https://www.last.fm/music/Queen
+Eminem,563328913,7744356,https://www.last.fm/music/Eminem
+Post Malone,328328831,3499132,https://www.last.fm/music/Post+Malone
+Hozier,278670420,3308845,https://www.last.fm/music/Hozier
+Sade,133926953,3355170,https://www.last.fm/music/Sade
+Baby Keem,198446833,2004594,https://www.last.fm/music/Baby+Keem
+Panic! at the Disco,315467475,4379113,https://www.last.fm/music/Panic%21+at+the+Disco
+Djo,89619606,2280491,https://www.last.fm/music/Djo
+Daft Punk,403436490,6267862,https://www.last.fm/music/Daft+Punk
+Cigarettes After Sex,305635766,2844917,https://www.last.fm/music/Cigarettes+After+Sex
+Metro Boomin,241539927,2454074,https://www.last.fm/music/Metro+Boomin
+Black Eyed Peas,150866351,5676210,https://www.last.fm/music/Black+Eyed+Peas
+The Killers,377052103,6895976,https://www.last.fm/music/The+Killers
+Justin Timberlake,163478012,5495173,https://www.last.fm/music/Justin+Timberlake
+Madonna,357491648,5546303,https://www.last.fm/music/Madonna
+Pierce the Veil,262176708,2059360,https://www.last.fm/music/Pierce+the+Veil
+Pink Floyd,604122805,5511165,https://www.last.fm/music/Pink+Floyd
+Brent Faiyaz,229924422,2020383,https://www.last.fm/music/Brent+Faiyaz
+Marina,179259401,2236390,https://www.last.fm/music/Marina
+Fall Out Boy,416883188,5032255,https://www.last.fm/music/Fall+Out+Boy
+LE SSERAFIM,299166173,1630532,https://www.last.fm/music/LE+SSERAFIM
+The Cranberries,155976528,4687756,https://www.last.fm/music/The+Cranberries
+ABBA,188712716,4349610,https://www.last.fm/music/ABBA
+KATSEYE,93792208,1498678,https://www.last.fm/music/KATSEYE
+Jeff Buckley,162053264,3332185,https://www.last.fm/music/Jeff+Buckley
+The Smashing Pumpkins,255870131,4515702,https://www.last.fm/music/The+Smashing+Pumpkins
+Pitbull,106682208,4363781,https://www.last.fm/music/Pitbull
+David Guetta,186270149,5181452,https://www.last.fm/music/David+Guetta
+RAYE,56852385,1823544,https://www.last.fm/music/RAYE
+TWICE,492870816,1882145,https://www.last.fm/music/TWICE
+Kesha,115907855,3106779,https://www.last.fm/music/Kesha
+JAŸ-Z,1886381,443858,https://www.last.fm/music/JA%C5%B8-Z
+Dua Lipa,316350371,3239192,https://www.last.fm/music/Dua+Lipa
+Muse,566481931,6345192,https://www.last.fm/music/Muse
+David Bowie,400930439,5558594,https://www.last.fm/music/David+Bowie
+EsDeeKid,57360768,904738,https://www.last.fm/music/EsDeeKid
+NewJeans,325339820,1781581,https://www.last.fm/music/NewJeans
+Miley Cyrus,297222282,4800822,https://www.last.fm/music/Miley+Cyrus
+Cocteau Twins,167093566,2269496,https://www.last.fm/music/Cocteau+Twins
+XXXTENTACION,337843172,2790042,https://www.last.fm/music/XXXTENTACION
+Yeat,363322354,1596526,https://www.last.fm/music/Yeat
+One Direction,313670653,3233237,https://www.last.fm/music/One+Direction
+Doechii,93994661,1992760,https://www.last.fm/music/Doechii
+Lil Peep,367334302,2162694,https://www.last.fm/music/Lil+Peep
+Metallica,530821832,5144584,https://www.last.fm/music/Metallica
+Nelly Furtado,116088636,4809954,https://www.last.fm/music/Nelly+Furtado
+Lil Wayne,165764431,3545156,https://www.last.fm/music/Lil+Wayne
+Noah Kahan,169750528,1551038,https://www.last.fm/music/Noah+Kahan
+Foo Fighters,360816779,6329678,https://www.last.fm/music/Foo+Fighters
+The 1975,298030424,2623667,https://www.last.fm/music/The+1975
+Beach House,241972903,3488521,https://www.last.fm/music/Beach+House
+Conan Gray,247566347,2391160,https://www.last.fm/music/Conan+Gray
+PARTYNEXTDOOR,166569460,1946939,https://www.last.fm/music/PARTYNEXTDOOR
+Slipknot,358550249,4181505,https://www.last.fm/music/Slipknot
+Oasis,324727733,5834230,https://www.last.fm/music/Oasis
+Juice WRLD,514221258,2462942,https://www.last.fm/music/Juice+WRLD
+Limp Bizkit,176524510,4094371,https://www.last.fm/music/Limp+Bizkit
+21 Savage,217232358,2281065,https://www.last.fm/music/21+Savage
+Adele,316187427,5581310,https://www.last.fm/music/Adele
+BLACKPINK,309119009,1968482,https://www.last.fm/music/BLACKPINK
+Gracie Abrams,283235297,1784020,https://www.last.fm/music/Gracie+Abrams
+MGMT,217739055,5227037,https://www.last.fm/music/MGMT
+Gunna,178106803,1788638,https://www.last.fm/music/Gunna
+Shakira,177381045,4825610,https://www.last.fm/music/Shakira
+Troye Sivan,168225261,2425972,https://www.last.fm/music/Troye+Sivan
+Alex G,249797876,2038792,https://www.last.fm/music/Alex+G
+Evanescence,215493852,4460859,https://www.last.fm/music/Evanescence
+bôa,80485334,2080861,https://www.last.fm/music/b%C3%B4a
+Tory Lanez,145591242,1939920,https://www.last.fm/music/Tory+Lanez
+Billy Joel,127309344,4016250,https://www.last.fm/music/Billy+Joel
+Megan Thee Stallion,181871069,2293608,https://www.last.fm/music/Megan+Thee+Stallion
+Phoebe Bridgers,286206241,2131411,https://www.last.fm/music/Phoebe+Bridgers
+Kid Cudi,271376343,4661506,https://www.last.fm/music/Kid+Cudi
+Avril Lavigne,264784868,5092094,https://www.last.fm/music/Avril+Lavigne
+Halsey,219842439,2791111,https://www.last.fm/music/Halsey
+Demi Lovato,197837511,3355232,https://www.last.fm/music/Demi+Lovato
+OutKast,147116803,4933688,https://www.last.fm/music/OutKast
+Sufjan Stevens,297242436,3876341,https://www.last.fm/music/Sufjan+Stevens
+Jennie,107869918,1474536,https://www.last.fm/music/Jennie
+Melanie Martinez,241676521,2276840,https://www.last.fm/music/Melanie+Martinez
+Bring Me the Horizon,318466794,2800825,https://www.last.fm/music/Bring+Me+the+Horizon
+Alice in Chains,217477732,3424536,https://www.last.fm/music/Alice+in+Chains
+Ed Sheeran,253662942,4176102,https://www.last.fm/music/Ed+Sheeran
+The Police,109835247,4558050,https://www.last.fm/music/The+Police
+50 Cent,118317649,4885734,https://www.last.fm/music/50+Cent
+Chase Atlantic,198847257,1838013,https://www.last.fm/music/Chase+Atlantic
+Kate Bush,143479429,3429653,https://www.last.fm/music/Kate+Bush
+Blood Orange,103238207,1947453,https://www.last.fm/music/Blood+Orange
+Chief Keef,138853760,1726659,https://www.last.fm/music/Chief+Keef
+The Cardigans,91359656,3627273,https://www.last.fm/music/The+Cardigans
+Nicki Minaj,305243812,4712120,https://www.last.fm/music/Nicki+Minaj
+Young Thug,191036867,1856798,https://www.last.fm/music/Young+Thug
+ILLIT,86265575,1124546,https://www.last.fm/music/ILLIT
+Empire of the Sun,77451151,3004052,https://www.last.fm/music/Empire+of+the+Sun
+Elton John,161726966,5185637,https://www.last.fm/music/Elton+John
+ROSALÍA,197216045,1834202,https://www.last.fm/music/ROSAL%C3%8DA
+Lizzy McAlpine,109881040,1403714,https://www.last.fm/music/Lizzy+McAlpine
+Mazzy Star,107867862,2696937,https://www.last.fm/music/Mazzy+Star
+aespa,263746382,1305984,https://www.last.fm/music/aespa
+Korn,247170568,3381136,https://www.last.fm/music/Korn
+Selena Gomez,202329936,3144198,https://www.last.fm/music/Selena+Gomez
+Trippie Redd,184951186,1868967,https://www.last.fm/music/Trippie+Redd
+Usher,102062797,4986896,https://www.last.fm/music/Usher
+Three Days Grace,183382878,3850442,https://www.last.fm/music/Three+Days+Grace
+Slowdive,145148899,2196299,https://www.last.fm/music/Slowdive
+Imagine Dragons,249768336,4035134,https://www.last.fm/music/Imagine+Dragons
+Tears for Fears,90030004,3923635,https://www.last.fm/music/Tears+for+Fears
+Faye Webster,132884671,1766445,https://www.last.fm/music/Faye+Webster
+Gwen Stefani,88554039,4429482,https://www.last.fm/music/Gwen+Stefani
+Chris Brown,157441902,4734724,https://www.last.fm/music/Chris+Brown
+ENHYPEN,333942092,1115075,https://www.last.fm/music/ENHYPEN
+Florence + the Machine,279736675,3883426,https://www.last.fm/music/Florence+%252B+the+Machine
+The Kid LAROI,160396195,2459712,https://www.last.fm/music/The+Kid+LAROI
+Big Thief,118710956,1638076,https://www.last.fm/music/Big+Thief
+Cage the Elephant,144986165,3357084,https://www.last.fm/music/Cage+the+Elephant
+The Rolling Stones,272032068,5791842,https://www.last.fm/music/The+Rolling+Stones
+Lil Tecca,157812994,1751847,https://www.last.fm/music/Lil+Tecca
+Kodak Black,104234304,1792288,https://www.last.fm/music/Kodak+Black
+Charlie Puth,133157065,2430531,https://www.last.fm/music/Charlie+Puth
+5 Seconds of Summer,206899653,2240250,https://www.last.fm/music/5+Seconds+of+Summer
+Panchiko,80600816,1137899,https://www.last.fm/music/Panchiko
+Lil Baby,166674891,1601033,https://www.last.fm/music/Lil+Baby
+Ellie Goulding,151554551,3925674,https://www.last.fm/music/Ellie+Goulding
+Frank Sinatra,180189753,4898862,https://www.last.fm/music/Frank+Sinatra
+Jung Kook,801152865,1444039,https://www.last.fm/music/Jung+Kook
+The Goo Goo Dolls,52087950,2600141,https://www.last.fm/music/The+Goo+Goo+Dolls
+blink-182,306502124,4603501,https://www.last.fm/music/blink-182
+Ken Carson,278871476,1148634,https://www.last.fm/music/Ken+Carson
+Lil Yachty,130595320,1790992,https://www.last.fm/music/Lil+Yachty
+Ravyn Lenae,43719175,1661403,https://www.last.fm/music/Ravyn+Lenae
+Sean Paul,49102413,3167139,https://www.last.fm/music/Sean+Paul
+Led Zeppelin,339232540,4909157,https://www.last.fm/music/Led+Zeppelin
+The Chainsmokers,87871336,2779315,https://www.last.fm/music/The+Chainsmokers
+Miguel,77778128,2659774,https://www.last.fm/music/Miguel
+Prince,101842405,3291235,https://www.last.fm/music/Prince
+Amy Winehouse,202398916,4595346,https://www.last.fm/music/Amy+Winehouse
+$uicideboy$,462747379,1571747,https://www.last.fm/music/$uicideboy$
+Grimes,194467482,2639467,https://www.last.fm/music/Grimes
+Men I Trust,124564206,2146323,https://www.last.fm/music/Men+I+Trust
+Red Velvet,242708381,1378165,https://www.last.fm/music/Red+Velvet
+Pixies,214210855,4247751,https://www.last.fm/music/Pixies
+2Pac,144772706,4134697,https://www.last.fm/music/2Pac
+Lucki,285755774,1141640,https://www.last.fm/music/Lucki
+Madison Beer,106928907,1649122,https://www.last.fm/music/Madison+Beer
+Imogen Heap,90070250,3022996,https://www.last.fm/music/Imogen+Heap
+Ethel Cain,148327491,1250532,https://www.last.fm/music/Ethel+Cain
+Pearl Jam,251712829,4331891,https://www.last.fm/music/Pearl+Jam
+Magdalena Bay,111553242,1422066,https://www.last.fm/music/Magdalena+Bay
+Björk,256255870,3434256,https://www.last.fm/music/Bj%C3%B6rk
+Guns N' Roses,202359054,5159527,https://www.last.fm/music/Guns+N%27+Roses
+Shawn Mendes,139814303,2685920,https://www.last.fm/music/Shawn+Mendes
+Mariah Carey,251213571,5034224,https://www.last.fm/music/Mariah+Carey
+Thundercat,75807305,2019124,https://www.last.fm/music/Thundercat
+Black Sabbath,208335216,4367300,https://www.last.fm/music/Black+Sabbath
+Fontaines D.C.,75856452,1085628,https://www.last.fm/music/Fontaines+D.C.
+Crystal Castles,238146155,3155180,https://www.last.fm/music/Crystal+Castles
+Marvin Gaye,89571532,3729674,https://www.last.fm/music/Marvin+Gaye
+Depeche Mode,293982249,4419055,https://www.last.fm/music/Depeche+Mode
+She & Him,47969675,1712245,https://www.last.fm/music/She+&+Him
+Flo Rida,75587011,4137399,https://www.last.fm/music/Flo+Rida
+Glass Animals,134284259,2589400,https://www.last.fm/music/Glass+Animals
+Snow Strippers,55267831,868365,https://www.last.fm/music/Snow+Strippers
+Hearts2Hearts,18238570,355473,https://www.last.fm/music/Hearts2Hearts
+MF DOOM,160966776,2280284,https://www.last.fm/music/MF+DOOM
+Gigi Perez,48568003,1379771,https://www.last.fm/music/Gigi+Perez
+Blur,193329551,4736477,https://www.last.fm/music/Blur
+Cardi B,77756906,2399632,https://www.last.fm/music/Cardi+B
+Daryl Hall & John Oates,54425228,2517441,https://www.last.fm/music/Daryl+Hall+&+John+Oates
+IVE,157321028,1034778,https://www.last.fm/music/IVE
+Strawberry Guy,49581360,1703023,https://www.last.fm/music/Strawberry+Guy
+girl in red,114012704,2461099,https://www.last.fm/music/girl+in+red
+The Notorious B.I.G.,93554889,3090499,https://www.last.fm/music/The+Notorious+B.I.G.
+The Offspring,212717337,4550500,https://www.last.fm/music/The+Offspring
+Lisa,126733329,1930302,https://www.last.fm/music/Lisa
+Denzel Curry,154027412,1616527,https://www.last.fm/music/Denzel+Curry
+Adrianne Lenker,111866917,1327136,https://www.last.fm/music/Adrianne+Lenker
+Wallows,125695998,2050807,https://www.last.fm/music/Wallows
+HUNTR/X,40711906,1132935,https://www.last.fm/music/HUNTR%2FX
+Billy Idol,56582387,3035752,https://www.last.fm/music/Billy+Idol
+ZAYN,117388988,2225330,https://www.last.fm/music/ZAYN
+Sublime,122706064,3096123,https://www.last.fm/music/Sublime
+bbno$,68219138,1492293,https://www.last.fm/music/bbno$
+DJ Snake,48181980,2569984,https://www.last.fm/music/DJ+Snake
+Camila Cabello,127848743,2378539,https://www.last.fm/music/Camila+Cabello
+Bryson Tiller,103738536,1681871,https://www.last.fm/music/Bryson+Tiller
+FKA twigs,150438826,1652535,https://www.last.fm/music/FKA+twigs
+Aphex Twin,220703906,3007271,https://www.last.fm/music/Aphex+Twin
+Julia Wolf,13465672,594546,https://www.last.fm/music/Julia+Wolf
+Elliott Smith,284457287,2932351,https://www.last.fm/music/Elliott+Smith
+Ayesha Erotica,59986073,1173317,https://www.last.fm/music/Ayesha+Erotica
+Kings of Leon,265290385,5106260,https://www.last.fm/music/Kings+of+Leon
+Fred again..,65852419,1280486,https://www.last.fm/music/Fred+again..
+AC/DC,211618805,4523842,https://www.last.fm/music/AC%2FDC
+Tove Lo,122621655,2418700,https://www.last.fm/music/Tove+Lo
+Marina Sena,93241888,480364,https://www.last.fm/music/Marina+Sena
+Stray Kids,481327492,1333377,https://www.last.fm/music/Stray+Kids
+Duran Duran,75770941,3145448,https://www.last.fm/music/Duran+Duran
+Eagles,78662012,3804624,https://www.last.fm/music/Eagles
+¥$,79213114,1458127,https://www.last.fm/music/%C2%A5$
+OneRepublic,134537331,4290921,https://www.last.fm/music/OneRepublic
+The Sundays,48440357,1310796,https://www.last.fm/music/The+Sundays
+Dave,75771274,1275564,https://www.last.fm/music/Dave
+TOMORROW X TOGETHER,425309777,1209136,https://www.last.fm/music/TOMORROW+X+TOGETHER
+j-hope,755883734,1026568,https://www.last.fm/music/j-hope
+Talking Heads,141576559,3226368,https://www.last.fm/music/Talking+Heads
+Hotel Ugly,52509213,1884073,https://www.last.fm/music/Hotel+Ugly
+XG,62703577,811330,https://www.last.fm/music/XG
+2hollis,78939186,777233,https://www.last.fm/music/2hollis
+Bob Dylan,291958370,4278608,https://www.last.fm/music/Bob+Dylan
+Nine Inch Nails,316265508,3582318,https://www.last.fm/music/Nine+Inch+Nails
+J Balvin,63574774,1820371,https://www.last.fm/music/J+Balvin
+Jack Harlow,77829101,1833156,https://www.last.fm/music/Jack+Harlow
+Willow,73843376,2315994,https://www.last.fm/music/Willow
+d4vd,113772614,2274298,https://www.last.fm/music/d4vd
+Zedd,61083878,2572270,https://www.last.fm/music/Zedd
+Dire Straits,114472864,3502185,https://www.last.fm/music/Dire+Straits
+Rauw Alejandro,89582556,1088366,https://www.last.fm/music/Rauw+Alejandro
+Fiona Apple,177100144,2709209,https://www.last.fm/music/Fiona+Apple
+The All-American Rejects,85869390,3274464,https://www.last.fm/music/The+All-American+Rejects
+Mother Mother,103512520,1912164,https://www.last.fm/music/Mother+Mother
+Tyla,50204653,1454640,https://www.last.fm/music/Tyla
+Kehlani,68550714,1671682,https://www.last.fm/music/Kehlani
+America,39619190,2122921,https://www.last.fm/music/America
+Massive Attack,186700184,3839702,https://www.last.fm/music/Massive+Attack
+Soundgarden,102914227,3296399,https://www.last.fm/music/Soundgarden
+Two Door Cinema Club,128709401,3125713,https://www.last.fm/music/Two+Door+Cinema+Club
+Queens of the Stone Age,253416844,3719806,https://www.last.fm/music/Queens+of+the+Stone+Age
+Nickelback,150859894,4335181,https://www.last.fm/music/Nickelback
+Avenged Sevenfold,230535162,2851812,https://www.last.fm/music/Avenged+Sevenfold
+Disclosure,74355863,2451592,https://www.last.fm/music/Disclosure
+Clean Bandit,50327099,2533744,https://www.last.fm/music/Clean+Bandit
+Avicii,111336962,3325698,https://www.last.fm/music/Avicii
+Khalid,95372504,2281855,https://www.last.fm/music/Khalid
+Metric,111177125,2825467,https://www.last.fm/music/Metric
+Timbaland,63944720,3533090,https://www.last.fm/music/Timbaland
+Fetty Wap,32496670,1682535,https://www.last.fm/music/Fetty+Wap
+VACATIONS,68578664,1872497,https://www.last.fm/music/VACATIONS
+Suki Waterhouse,54012516,1728665,https://www.last.fm/music/Suki+Waterhouse
+Title Fight,96488421,1178679,https://www.last.fm/music/Title+Fight
+A Boogie wit da Hoodie,100357558,1434465,https://www.last.fm/music/A+Boogie+wit+da+Hoodie
+Eyedress,74330652,2185409,https://www.last.fm/music/Eyedress
+Bee Gees,68728263,3415038,https://www.last.fm/music/Bee+Gees
+Creedence Clearwater Revival,121448836,4059361,https://www.last.fm/music/Creedence+Clearwater+Revival
+Jamiroquai,103737040,2868150,https://www.last.fm/music/Jamiroquai
+Sam Smith,112307429,3059920,https://www.last.fm/music/Sam+Smith
+Lord Huron,72270425,2282590,https://www.last.fm/music/Lord+Huron
+Labi Siffre,16216963,991544,https://www.last.fm/music/Labi+Siffre
+Electric Light Orchestra,76437921,2958736,https://www.last.fm/music/Electric+Light+Orchestra
+Blondie,73800429,3407151,https://www.last.fm/music/Blondie
+Sia,162395426,4373838,https://www.last.fm/music/Sia
+Destroy Lonely,188836890,892219,https://www.last.fm/music/Destroy+Lonely
+Her's,45947911,1453024,https://www.last.fm/music/Her%27s
+Franz Ferdinand,179557044,4845275,https://www.last.fm/music/Franz+Ferdinand
+fakemink,57440193,446904,https://www.last.fm/music/fakemink
+Bladee,406969126,959977,https://www.last.fm/music/Bladee
+The Clash,152579249,4122652,https://www.last.fm/music/The+Clash
+Major Lazer,68780562,2947129,https://www.last.fm/music/Major+Lazer
+Alex Warren,27495925,939229,https://www.last.fm/music/Alex+Warren
+Marshmello,67763533,2546757,https://www.last.fm/music/Marshmello
+YoungBoy Never Broke Again,171810451,1129765,https://www.last.fm/music/YoungBoy+Never+Broke+Again
+Joey Bada$$,113711743,1741144,https://www.last.fm/music/Joey+Bada$$
+Stevie Wonder,110952425,3929850,https://www.last.fm/music/Stevie+Wonder
+Bon Jovi,124066228,4222550,https://www.last.fm/music/Bon+Jovi
+The Pussycat Dolls,53521798,3249437,https://www.last.fm/music/The+Pussycat+Dolls
+Migos,71220792,1857686,https://www.last.fm/music/Migos
+Zach Bryan,132528673,1186806,https://www.last.fm/music/Zach+Bryan
+Slayyyter,50875903,797100,https://www.last.fm/music/Slayyyter
+Rae Sremmurd,45729302,1884184,https://www.last.fm/music/Rae+Sremmurd
+Carly Rae Jepsen,154776811,2991180,https://www.last.fm/music/Carly+Rae+Jepsen
+Måneskin,100545976,1850838,https://www.last.fm/music/M%C3%A5neskin
+Dean Blunt,69858399,925516,https://www.last.fm/music/Dean+Blunt
+Rammstein,318438720,3097966,https://www.last.fm/music/Rammstein
+Foster the People,118286504,3701270,https://www.last.fm/music/Foster+the+People
+Rex Orange County,124040397,2032976,https://www.last.fm/music/Rex+Orange+County
+Anitta,154455939,1197194,https://www.last.fm/music/Anitta
+Phantogram,47864477,1928361,https://www.last.fm/music/Phantogram
+Daddy Yankee,50872197,2216037,https://www.last.fm/music/Daddy+Yankee
+Geese,35819123,524707,https://www.last.fm/music/Geese
+The Script,75294336,2962358,https://www.last.fm/music/The+Script
+P!nk,122610268,3743237,https://www.last.fm/music/P%21nk
+Swedish House Mafia,53511610,2694089,https://www.last.fm/music/Swedish+House+Mafia
+nettspend,76599324,447133,https://www.last.fm/music/nettspend
+KAYTRANADA,74911197,1553202,https://www.last.fm/music/KAYTRANADA
+Gucci Mane,66133750,2741537,https://www.last.fm/music/Gucci+Mane
+Steely Dan,72831315,1757545,https://www.last.fm/music/Steely+Dan
+Current Joys,66002895,1731762,https://www.last.fm/music/Current+Joys
+Summer Walker,107751256,1717895,https://www.last.fm/music/Summer+Walker
+Snoop Dogg,81668753,4332863,https://www.last.fm/music/Snoop+Dogg
+The Beach Boys,162663703,4101360,https://www.last.fm/music/The+Beach+Boys
+ROLE MODEL,52624008,1030400,https://www.last.fm/music/ROLE+MODEL
+Agust D,587499846,839131,https://www.last.fm/music/Agust+D
+Ty Dolla $ign,29756301,1658023,https://www.last.fm/music/Ty+Dolla+$ign
+"Earth, Wind & Fire",48561572,2925208,"https://www.last.fm/music/Earth,+Wind+&+Fire"
+The Living Tombstone,51920282,1300662,https://www.last.fm/music/The+Living+Tombstone
+JPEGMAFIA,228280247,1218325,https://www.last.fm/music/JPEGMAFIA
+Sienna Spiro,5306971,366185,https://www.last.fm/music/Sienna+Spiro
+Earl Sweatshirt,151613029,1567381,https://www.last.fm/music/Earl+Sweatshirt
+Artemas,52565143,1588858,https://www.last.fm/music/Artemas
+Jordana,27848674,1262013,https://www.last.fm/music/Jordana
+No Doubt,83828352,3571216,https://www.last.fm/music/No+Doubt
+New Order,117214166,3151229,https://www.last.fm/music/New+Order
+Natasha Bedingfield,43167996,2975982,https://www.last.fm/music/Natasha+Bedingfield
+Alicia Keys,101497696,4179841,https://www.last.fm/music/Alicia+Keys
+Yung Lean,160830490,1304987,https://www.last.fm/music/Yung+Lean
+Car Seat Headrest,169538209,1361518,https://www.last.fm/music/Car+Seat+Headrest
+Lily Allen,129980245,3741841,https://www.last.fm/music/Lily+Allen
+Lil Nas X,115106316,2628661,https://www.last.fm/music/Lil+Nas+X
+Lykke Li,97212749,3121497,https://www.last.fm/music/Lykke+Li
+BROCKHAMPTON,193336235,1663447,https://www.last.fm/music/BROCKHAMPTON
+NMIXX,83680279,732021,https://www.last.fm/music/NMIXX
+JID,104269137,1376450,https://www.last.fm/music/JID
+Surf Curse,45462575,1993793,https://www.last.fm/music/Surf+Curse
+G-Eazy,55449723,2052522,https://www.last.fm/music/G-Eazy
+Mindless Self Indulgence,132958472,1516098,https://www.last.fm/music/Mindless+Self+Indulgence
+Bob Marley & The Wailers,125275290,3458856,https://www.last.fm/music/Bob+Marley+&+The+Wailers
+PEDRO SAMPAIO,30094199,558028,https://www.last.fm/music/PEDRO+SAMPAIO
+Bon Iver,237160381,3541483,https://www.last.fm/music/Bon+Iver
+Jimin,798334312,867951,https://www.last.fm/music/Jimin
+t.A.T.u.,48977304,2219741,https://www.last.fm/music/t.A.T.u.
+Sleeping With Sirens,74829127,1173666,https://www.last.fm/music/Sleeping+With+Sirens
+Wiz Khalifa,88232775,3866206,https://www.last.fm/music/Wiz+Khalifa
+KiiiKiii,8796520,240998,https://www.last.fm/music/KiiiKiii
+Bad Omens,85521819,781034,https://www.last.fm/music/Bad+Omens
+Rosé,103577802,1654735,https://www.last.fm/music/Ros%C3%A9
+Nas,139478391,3358456,https://www.last.fm/music/Nas
+Omar Apollo,64032152,1469207,https://www.last.fm/music/Omar+Apollo
+Pantera,131991691,2600725,https://www.last.fm/music/Pantera
+JVKE,45792723,1585527,https://www.last.fm/music/JVKE
+Rage Against the Machine,162042439,4229701,https://www.last.fm/music/Rage+Against+the+Machine
+Tool,227701803,2600366,https://www.last.fm/music/Tool
+Audioslave,94469965,3290441,https://www.last.fm/music/Audioslave
+Thee Sacred Souls,28622131,1174323,https://www.last.fm/music/Thee+Sacred+Souls
+RM,527494370,781005,https://www.last.fm/music/RM
+The Doors,227635854,4709018,https://www.last.fm/music/The+Doors
+Kylie Minogue,174140791,3517910,https://www.last.fm/music/Kylie+Minogue
+George Harrison,69346157,2450930,https://www.last.fm/music/George+Harrison
+Ne-Yo,63553540,3328145,https://www.last.fm/music/Ne-Yo
+Chevelle,59714689,1816342,https://www.last.fm/music/Chevelle
+Odetari,64395427,1116007,https://www.last.fm/music/Odetari
+Jin,800519269,804513,https://www.last.fm/music/Jin
+Toby Fox,154637700,1191268,https://www.last.fm/music/Toby+Fox
+Wet Leg,27226629,897245,https://www.last.fm/music/Wet+Leg
+Kelly Clarkson,131571412,4486340,https://www.last.fm/music/Kelly+Clarkson
+R.E.M.,155124234,4344463,https://www.last.fm/music/R.E.M.
+All Time Low,144608872,2554585,https://www.last.fm/music/All+Time+Low
+Freddie Gibbs,108571418,1284459,https://www.last.fm/music/Freddie+Gibbs
+Jhené Aiko,69838284,1373705,https://www.last.fm/music/Jhen%C3%A9+Aiko
+Givēon,25697075,700176,https://www.last.fm/music/Giv%C4%93on
+Lit,13295682,1312274,https://www.last.fm/music/Lit
+Selena Gomez & the Scene,55020647,2481229,https://www.last.fm/music/Selena+Gomez+&+the+Scene
+KAROL G,73670379,1416855,https://www.last.fm/music/KAROL+G
+Mark Ronson,50306215,3067465,https://www.last.fm/music/Mark+Ronson
+Leon Thomas,21618410,887243,https://www.last.fm/music/Leon+Thomas
+ATEEZ,212645093,794761,https://www.last.fm/music/ATEEZ
+Jennifer Lopez,71997893,3755073,https://www.last.fm/music/Jennifer+Lopez
+V,725488710,913884,https://www.last.fm/music/V
+DJ Khaled,60742587,2844282,https://www.last.fm/music/DJ+Khaled
+Bruce Springsteen,149484172,3555631,https://www.last.fm/music/Bruce+Springsteen
+Elvis Presley,150540581,4469584,https://www.last.fm/music/Elvis+Presley
+Jason Derulo,60154406,3093554,https://www.last.fm/music/Jason+Derulo
+Falling in Reverse,68626147,1355543,https://www.last.fm/music/Falling+in+Reverse
+Bella Kay,4455101,212759,https://www.last.fm/music/Bella+Kay
+Ghost,156367313,1623913,https://www.last.fm/music/Ghost
+i-dle,16648893,485607,https://www.last.fm/music/i-dle
+Sleep Token,154442679,831143,https://www.last.fm/music/Sleep+Token
+Exo,166207776,1039683,https://www.last.fm/music/Exo
+Aerosmith,130443575,4699161,https://www.last.fm/music/Aerosmith
+boygenius,99486787,1139222,https://www.last.fm/music/boygenius
+Creed,57109350,2429010,https://www.last.fm/music/Creed
+B.o.B,46543800,3169544,https://www.last.fm/music/B.o.B
+Sam Fender,45526886,804666,https://www.last.fm/music/Sam+Fender
+OsamaSon,111974064,433709,https://www.last.fm/music/OsamaSon
+Labrinth,73815378,2519410,https://www.last.fm/music/Labrinth
+HIM,99380543,1678126,https://www.last.fm/music/HIM
+Akon,61070879,3707302,https://www.last.fm/music/Akon
+James Blake,89947657,1933770,https://www.last.fm/music/James+Blake
+Milky,2088768,269336,https://www.last.fm/music/Milky
+Toto,55236154,3061709,https://www.last.fm/music/Toto
+Portishead,141297776,3286315,https://www.last.fm/music/Portishead
+Cafuné,32674960,1463355,https://www.last.fm/music/Cafun%C3%A9
+Christina Aguilera,206930021,4443556,https://www.last.fm/music/Christina+Aguilera
+Skrillex,107662407,2955415,https://www.last.fm/music/Skrillex
+ScHoolboy Q,79677667,1973683,https://www.last.fm/music/ScHoolboy+Q
+Jane Remover,53777868,509820,https://www.last.fm/music/Jane+Remover
+The White Stripes,197960033,4826112,https://www.last.fm/music/The+White+Stripes
+Yena,21227308,417264,https://www.last.fm/music/Yena
+Mumford & Sons,137661891,2678736,https://www.last.fm/music/Mumford+&+Sons
+Azealia Banks,80854519,1708133,https://www.last.fm/music/Azealia+Banks
+John Lennon,85055820,4046796,https://www.last.fm/music/John+Lennon
+Offset,45390596,1455757,https://www.last.fm/music/Offset
+Chris Isaak,32111023,2029300,https://www.last.fm/music/Chris+Isaak
+Cults,54774053,2444765,https://www.last.fm/music/Cults
+CORTIS,19408607,415429,https://www.last.fm/music/CORTIS
+Lauv,77290215,1746300,https://www.last.fm/music/Lauv
+Matt Maltese,67687475,1720275,https://www.last.fm/music/Matt+Maltese
+Cavetown,86881345,1618355,https://www.last.fm/music/Cavetown
+Ozzy Osbourne,94773715,3099092,https://www.last.fm/music/Ozzy+Osbourne
+Joy Division,182554892,3362850,https://www.last.fm/music/Joy+Division
+Feist,93958108,2677362,https://www.last.fm/music/Feist
+U2,229738584,5016482,https://www.last.fm/music/U2
+Stone Temple Pilots,72809304,2479189,https://www.last.fm/music/Stone+Temple+Pilots
+Crowded House,31192198,1973502,https://www.last.fm/music/Crowded+House
+Hole,71588809,2090740,https://www.last.fm/music/Hole
+Cameron Winter,17914235,352716,https://www.last.fm/music/Cameron+Winter
+Keane,116803466,4009193,https://www.last.fm/music/Keane
+Seventeen,286370295,932430,https://www.last.fm/music/Seventeen
+Modest Mouse,202155112,3402555,https://www.last.fm/music/Modest+Mouse
+wave to earth,86601690,830276,https://www.last.fm/music/wave+to+earth
+Duster,118210287,1586560,https://www.last.fm/music/Duster
+Waka Flocka Flame,20630609,1808843,https://www.last.fm/music/Waka+Flocka+Flame
+Reneé Rapp,80531196,987185,https://www.last.fm/music/Rene%C3%A9+Rapp
+The Lumineers,90999516,2560584,https://www.last.fm/music/The+Lumineers
+Wolf Alice,57700273,1259971,https://www.last.fm/music/Wolf+Alice
+Mike Posner,33243137,2506647,https://www.last.fm/music/Mike+Posner
+Don Omar,33709263,1793881,https://www.last.fm/music/Don+Omar
+Modern Baseball,81359648,918611,https://www.last.fm/music/Modern+Baseball
+Little Mix,112867467,1831510,https://www.last.fm/music/Little+Mix
+Ricky Montgomery,50131616,1319293,https://www.last.fm/music/Ricky+Montgomery
+Pharrell Williams,47969716,2710532,https://www.last.fm/music/Pharrell+Williams
+The Fray,97509839,3575654,https://www.last.fm/music/The+Fray
+ITZY,135551146,987628,https://www.last.fm/music/ITZY
+Dr. Dre,89297175,3944584,https://www.last.fm/music/Dr.+Dre
+Benson Boone,44868800,1465828,https://www.last.fm/music/Benson+Boone
+George Michael,57039565,3206855,https://www.last.fm/music/George+Michael
+The Velvet Underground,129898180,3175354,https://www.last.fm/music/The+Velvet+Underground
+Vance Joy,49548777,2416295,https://www.last.fm/music/Vance+Joy
+M83,139542007,3503670,https://www.last.fm/music/M83
+NLE Choppa,57391174,1468166,https://www.last.fm/music/NLE+Choppa
+The Mamas & the Papas,41727449,2675680,https://www.last.fm/music/The+Mamas+&+the+Papas
+Ashnikko,63349140,1445559,https://www.last.fm/music/Ashnikko
+Tinashe,84049743,1595784,https://www.last.fm/music/Tinashe
+Sonder,48616064,1046555,https://www.last.fm/music/Sonder
+C418,130424378,1410818,https://www.last.fm/music/C418
+wifiskeleton,60385273,693382,https://www.last.fm/music/wifiskeleton
+Neil Young,111170780,2704992,https://www.last.fm/music/Neil+Young
+Air,136207031,3192577,https://www.last.fm/music/Air
+Third Eye Blind,52977034,2073463,https://www.last.fm/music/Third+Eye+Blind
+Wisp,36020163,1040550,https://www.last.fm/music/Wisp
+Pop Smoke,133803794,1560547,https://www.last.fm/music/Pop+Smoke
+Lenny Kravitz,53667417,2965344,https://www.last.fm/music/Lenny+Kravitz
+Ado,78495749,680861,https://www.last.fm/music/Ado
+Sophie,47874014,1008301,https://www.last.fm/music/Sophie
+Lynyrd Skynyrd,63700426,3257243,https://www.last.fm/music/Lynyrd+Skynyrd
+keshi,130194785,1097499,https://www.last.fm/music/keshi
+The Verve,60187598,3336742,https://www.last.fm/music/The+Verve
+King Von,60756326,994691,https://www.last.fm/music/King+Von
+DaBaby,54462830,1477170,https://www.last.fm/music/DaBaby
+Paul McCartney,85642416,3259792,https://www.last.fm/music/Paul+McCartney
+Lola Young,26316753,1160776,https://www.last.fm/music/Lola+Young
+TLC,33287383,2654053,https://www.last.fm/music/TLC
+3OH!3,54466733,1876116,https://www.last.fm/music/3OH%213
+LCD Soundsystem,95678067,2437531,https://www.last.fm/music/LCD+Soundsystem
+Nujabes,92238436,1172612,https://www.last.fm/music/Nujabes
+Ice Cube,61908078,3184446,https://www.last.fm/music/Ice+Cube
+BigXthaPlug,32353513,935556,https://www.last.fm/music/BigXthaPlug
+Destiny's Child,58521013,3365783,https://www.last.fm/music/Destiny%27s+Child
+Sixpence None the Richer,31180481,2329658,https://www.last.fm/music/Sixpence+None+the+Richer
+Solange,63867044,1596311,https://www.last.fm/music/Solange
+Breaking Benjamin,134594994,2866504,https://www.last.fm/music/Breaking+Benjamin
+Lucy Bedroque,28315345,280906,https://www.last.fm/music/Lucy+Bedroque
+Morgan Wallen,88691142,968686,https://www.last.fm/music/Morgan+Wallen
+The Backseat Lovers,41574467,1057591,https://www.last.fm/music/The+Backseat+Lovers
+Incubus,169710087,3700177,https://www.last.fm/music/Incubus
+Cassie,20798858,1723210,https://www.last.fm/music/Cassie
+She Wants Revenge,51066008,1396139,https://www.last.fm/music/She+Wants+Revenge
+NandaTsunami,7577718,188377,https://www.last.fm/music/NandaTsunami
+Joey Valence & Brae,28661413,973383,https://www.last.fm/music/Joey+Valence+&+Brae
+Phil Collins,64872094,3208011,https://www.last.fm/music/Phil+Collins
+Type O Negative,73464977,1307139,https://www.last.fm/music/Type+O+Negative
+Girls' Generation,69522012,917466,https://www.last.fm/music/Girls%27+Generation
+"Black Country, New Road",68410139,780546,"https://www.last.fm/music/Black+Country,+New+Road"
+Bebe Rexha,37837501,1450431,https://www.last.fm/music/Bebe+Rexha
+Stromae,59895593,2002277,https://www.last.fm/music/Stromae
+Gym Class Heroes,45191250,2768183,https://www.last.fm/music/Gym+Class+Heroes
+xaviersobased,47422023,309579,https://www.last.fm/music/xaviersobased
+Aurora,88495661,1795595,https://www.last.fm/music/Aurora
+Sean Kingston,28293070,2739187,https://www.last.fm/music/Sean+Kingston
+A Tribe Called Quest,110173345,2454564,https://www.last.fm/music/A+Tribe+Called+Quest
+M.I.A.,102365072,3341675,https://www.last.fm/music/M.I.A.
+Kenshi Yonezu,33696907,832221,https://www.last.fm/music/Kenshi+Yonezu
+Journey,62803537,3239417,https://www.last.fm/music/Journey
+Whitney Houston,62216535,3210547,https://www.last.fm/music/Whitney+Houston
+Superheaven,27005897,924748,https://www.last.fm/music/Superheaven
+Papa Roach,126831444,3672627,https://www.last.fm/music/Papa+Roach
+Tiësto,68623868,2733508,https://www.last.fm/music/Ti%C3%ABsto
+Caroline Polachek,94401128,1084418,https://www.last.fm/music/Caroline+Polachek
+Rob Zombie,68221614,2283553,https://www.last.fm/music/Rob+Zombie
+Japanese Breakfast,62516244,1232768,https://www.last.fm/music/Japanese+Breakfast
+blackbear,69540735,1760199,https://www.last.fm/music/blackbear
+Slayr,9763053,143437,https://www.last.fm/music/Slayr
+Tainy,36836222,792647,https://www.last.fm/music/Tainy
+Skillet,83039155,2204634,https://www.last.fm/music/Skillet
+Fergie,51326531,3437353,https://www.last.fm/music/Fergie
+Che,64113059,427490,https://www.last.fm/music/Che
+mgk,37659071,1012393,https://www.last.fm/music/mgk
+French Montana,29333311,1951133,https://www.last.fm/music/French+Montana
+Flyleaf,65851778,1927618,https://www.last.fm/music/Flyleaf
+Wonder Girls,35129127,936892,https://www.last.fm/music/Wonder+Girls
+Estelle,23205693,2216239,https://www.last.fm/music/Estelle
+Neon Trees,34798358,2068617,https://www.last.fm/music/Neon+Trees
+Train,57703220,3359866,https://www.last.fm/music/Train
+Masayoshi Takanaka,23893124,653288,https://www.last.fm/music/Masayoshi+Takanaka
+Bleachers,43462577,1238009,https://www.last.fm/music/Bleachers
+Kiss,88944250,3189070,https://www.last.fm/music/Kiss
+Hayley Williams,51421572,789020,https://www.last.fm/music/Hayley+Williams
+Pavement,100936948,2153074,https://www.last.fm/music/Pavement
+Kacey Musgraves,66834031,1133938,https://www.last.fm/music/Kacey+Musgraves
+Yeah Yeah Yeahs,134518534,4002347,https://www.last.fm/music/Yeah+Yeah+Yeahs
+Roar,40013521,1514807,https://www.last.fm/music/Roar
+Johnny Cash,170445786,4093816,https://www.last.fm/music/Johnny+Cash
+Westside Gunn,84408577,1046708,https://www.last.fm/music/Westside+Gunn
+Central Cee,57379549,1298134,https://www.last.fm/music/Central+Cee
+Arcane,33959672,800837,https://www.last.fm/music/Arcane
+Isaiah Rashad,79716339,1269307,https://www.last.fm/music/Isaiah+Rashad
+Iron Maiden,265948748,3189626,https://www.last.fm/music/Iron+Maiden
+Le Tigre,32104265,1846396,https://www.last.fm/music/Le+Tigre
+Sky Ferreira,49316749,1396579,https://www.last.fm/music/Sky+Ferreira
+Bill Withers,40397264,2690603,https://www.last.fm/music/Bill+Withers
+Montell Fish,44103137,1338092,https://www.last.fm/music/Montell+Fish
+a-ha,58542406,3377913,https://www.last.fm/music/a-ha
+Alan Walker,47246139,1764641,https://www.last.fm/music/Alan+Walker
+3 Doors Down,89758086,3552532,https://www.last.fm/music/3+Doors+Down
+Ms. Lauryn Hill,38124367,1396761,https://www.last.fm/music/Ms.+Lauryn+Hill
+Thirty Seconds to Mars,43111949,1544409,https://www.last.fm/music/Thirty+Seconds+to+Mars
+alt-J,118624358,2347716,https://www.last.fm/music/alt-J
+Jeremih,31780584,2193071,https://www.last.fm/music/Jeremih
+Robyn,64831281,1951786,https://www.last.fm/music/Robyn
+Salvia Palth,57843661,1616779,https://www.last.fm/music/Salvia+Palth
+Neutral Milk Hotel,117699107,2232576,https://www.last.fm/music/Neutral+Milk+Hotel
+Diplo,36012706,2080417,https://www.last.fm/music/Diplo
+Jungle,53353099,1612022,https://www.last.fm/music/Jungle
+Sum 41,155248587,3409407,https://www.last.fm/music/Sum+41
+Poppy,72910220,1116356,https://www.last.fm/music/Poppy
+Nelly,41819535,3432540,https://www.last.fm/music/Nelly
+Jimmy Eat World,117042896,3347773,https://www.last.fm/music/Jimmy+Eat+World
+alex_g_offline,27396253,858564,https://www.last.fm/music/alex_g_offline
+Jessie J,59632930,3053253,https://www.last.fm/music/Jessie+J
+ADÉLA,13235394,343898,https://www.last.fm/music/AD%C3%89LA
+Scorpions,87728710,2818699,https://www.last.fm/music/Scorpions
+Death Grips,158953081,1190777,https://www.last.fm/music/Death+Grips
+Yebba,8703221,644257,https://www.last.fm/music/Yebba
+AOA,25281339,649719,https://www.last.fm/music/AOA
+Disturbed,173468153,3532241,https://www.last.fm/music/Disturbed
+N.E.R.D,24832996,1053818,https://www.last.fm/music/N.E.R.D
+Pinegrove,53546515,1316001,https://www.last.fm/music/Pinegrove
+Eve,51169289,1774948,https://www.last.fm/music/Eve
+Djavan,38086202,767404,https://www.last.fm/music/Djavan
+Pet Shop Boys,69075454,2332287,https://www.last.fm/music/Pet+Shop+Boys
+Motionless in White,59674690,889137,https://www.last.fm/music/Motionless+in+White
+Modjo,16969559,1589571,https://www.last.fm/music/Modjo
+Ninajirachi,14139133,347576,https://www.last.fm/music/Ninajirachi
+Steven Universe,55333228,968521,https://www.last.fm/music/Steven+Universe
+Kygo,58544037,1969186,https://www.last.fm/music/Kygo
+Soulja Boy,25259939,2482549,https://www.last.fm/music/Soulja+Boy
+Jimi Hendrix,139116239,4040091,https://www.last.fm/music/Jimi+Hendrix
+Madvillain,113106973,1893474,https://www.last.fm/music/Madvillain
+Icona Pop,27609510,2107849,https://www.last.fm/music/Icona+Pop
+John Mayer,202062799,3744291,https://www.last.fm/music/John+Mayer
+Erykah Badu,66623881,2046170,https://www.last.fm/music/Erykah+Badu
+Weyes Blood,60960170,1119599,https://www.last.fm/music/Weyes+Blood
+Polo G,104663946,1202778,https://www.last.fm/music/Polo+G
+Martin Garrix,51169441,2063924,https://www.last.fm/music/Martin+Garrix
+will.i.am,29402442,2514407,https://www.last.fm/music/will.i.am
+Jorge Ben Jor,44750079,846328,https://www.last.fm/music/Jorge+Ben+Jor
+Charlie Brown Jr.,73328659,753402,https://www.last.fm/music/Charlie+Brown+Jr.
+The Walters,35472464,1845488,https://www.last.fm/music/The+Walters
+Kim Petras,93296545,1201143,https://www.last.fm/music/Kim+Petras
+Sports,14472753,1035640,https://www.last.fm/music/Sports
+Flo Milli,34867329,1277484,https://www.last.fm/music/Flo+Milli
+Megadeth,191089621,2303744,https://www.last.fm/music/Megadeth
+Beach Bunny,43539118,1535425,https://www.last.fm/music/Beach+Bunny
+Beach Weather,24760099,1374025,https://www.last.fm/music/Beach+Weather
+Turnstile,57920093,897347,https://www.last.fm/music/Turnstile
+Balu Brigada,9413991,499002,https://www.last.fm/music/Balu+Brigada
+NF,95331433,1282133,https://www.last.fm/music/NF
+Bryan Adams,53564268,3000785,https://www.last.fm/music/Bryan+Adams
+The Stranglers,25588377,1705117,https://www.last.fm/music/The+Stranglers
+Feng,28088075,329528,https://www.last.fm/music/Feng
+The Rare Occasions,19463845,1179356,https://www.last.fm/music/The+Rare+Occasions
+Jaydes,87956861,457883,https://www.last.fm/music/Jaydes
+Wheatus,18063495,1821429,https://www.last.fm/music/Wheatus
+Justice,103070260,2792820,https://www.last.fm/music/Justice
+American Football,48427838,1145548,https://www.last.fm/music/American+Football
+Fuerza Regida,40419238,557797,https://www.last.fm/music/Fuerza+Regida
+Loathe,45378875,843114,https://www.last.fm/music/Loathe
+NCT 127,138356619,794848,https://www.last.fm/music/NCT+127
+Oklou,32801125,589696,https://www.last.fm/music/Oklou
+Basement,34334652,1029493,https://www.last.fm/music/Basement
+Royel Otis,23989291,956882,https://www.last.fm/music/Royel+Otis
+Flume,69728857,1905490,https://www.last.fm/music/Flume
+Disco Lines,9862952,786248,https://www.last.fm/music/Disco+Lines
+Dazey and the Scouts,17574675,619344,https://www.last.fm/music/Dazey+and+the+Scouts
+Shelly,17937228,837458,https://www.last.fm/music/Shelly
+Interpol,201079842,3179658,https://www.last.fm/music/Interpol
+The Last Dinner Party,30105933,787825,https://www.last.fm/music/The+Last+Dinner+Party
+Nessa Barrett,50422580,1087086,https://www.last.fm/music/Nessa+Barrett
+Young Nudy,49535096,1009056,https://www.last.fm/music/Young+Nudy
+Frou Frou,37802205,2075924,https://www.last.fm/music/Frou+Frou
+P1Harmony,54490267,421459,https://www.last.fm/music/P1Harmony
+Beastie Boys,125165397,3446170,https://www.last.fm/music/Beastie+Boys
+Vince Staples,87617986,1399174,https://www.last.fm/music/Vince+Staples
+Men at Work,26852307,2043819,https://www.last.fm/music/Men+at+Work
+Machine Girl,68170373,1023346,https://www.last.fm/music/Machine+Girl
+Backstreet Boys,68339053,3028081,https://www.last.fm/music/Backstreet+Boys
+Grouplove,39888914,2238837,https://www.last.fm/music/Grouplove
+Ski Mask the Slump God,72258924,1298071,https://www.last.fm/music/Ski+Mask+the+Slump+God
+Tom Odell,49928117,2009875,https://www.last.fm/music/Tom+Odell
+Declan McKenna,47076503,1427457,https://www.last.fm/music/Declan+McKenna
+Buckshot,12412380,346283,https://www.last.fm/music/Buckshot
+Chris Rainbow,1742374,162773,https://www.last.fm/music/Chris+Rainbow
+NAV,58829381,1113034,https://www.last.fm/music/NAV
+Beck,157469802,4153194,https://www.last.fm/music/Beck
+Seether,76796647,2396476,https://www.last.fm/music/Seether
+Stephen Sanchez,29813589,1510411,https://www.last.fm/music/Stephen+Sanchez
+Frankie Valli,14352057,1593865,https://www.last.fm/music/Frankie+Valli
+Bastille,90864999,2383549,https://www.last.fm/music/Bastille
+10cc,19450380,1616365,https://www.last.fm/music/10cc
+Simon & Garfunkel,111396524,3485717,https://www.last.fm/music/Simon+&+Garfunkel
+Lamp,69607843,1067732,https://www.last.fm/music/Lamp
+A$AP Ferg,41866419,1612000,https://www.last.fm/music/A$AP+Ferg
+YOASOBI,53103573,874978,https://www.last.fm/music/YOASOBI
+Niki,76520948,935042,https://www.last.fm/music/Niki
+BK,50550861,441106,https://www.last.fm/music/BK
+Leslie Odom Jr.,37881997,848487,https://www.last.fm/music/Leslie+Odom+Jr.
+Ava Max,66339779,1567306,https://www.last.fm/music/Ava+Max
+Mom Jeans.,40341266,707882,https://www.last.fm/music/Mom+Jeans.
+Big Sean,56899900,2766482,https://www.last.fm/music/Big+Sean
+Enrique Iglesias,53588052,2682265,https://www.last.fm/music/Enrique+Iglesias
+Gotye,52888854,3034937,https://www.last.fm/music/Gotye
+LNGSHOT,5217848,171019,https://www.last.fm/music/LNGSHOT
+Sonic Youth,133143966,2653609,https://www.last.fm/music/Sonic+Youth
+Meek Mill,47513600,1763171,https://www.last.fm/music/Meek+Mill
+King Krule,83700856,1116896,https://www.last.fm/music/King+Krule
+Santana,52597993,2840356,https://www.last.fm/music/Santana
+Wale,31425504,2260293,https://www.last.fm/music/Wale
+Xavier Wulf,51673259,909190,https://www.last.fm/music/Xavier+Wulf
+Lloyd,17639566,1573312,https://www.last.fm/music/Lloyd
+Far East Movement,24799761,2202179,https://www.last.fm/music/Far+East+Movement
+Dove Cameron,29771727,1269781,https://www.last.fm/music/Dove+Cameron
+bassvictim,12025897,273247,https://www.last.fm/music/bassvictim
+Rich Amiri,42157810,815594,https://www.last.fm/music/Rich+Amiri
+Logic,103995610,1719403,https://www.last.fm/music/Logic
+Bob Sinclar,17253949,1630008,https://www.last.fm/music/Bob+Sinclar
+Moby,138565829,3625559,https://www.last.fm/music/Moby
+YUNGBLUD,44302216,1176346,https://www.last.fm/music/YUNGBLUD
+Rainbow Kitten Surprise,43110197,1071278,https://www.last.fm/music/Rainbow+Kitten+Surprise
+Jack Johnson,185207773,3664452,https://www.last.fm/music/Jack+Johnson
+Hans Zimmer,143688700,2694177,https://www.last.fm/music/Hans+Zimmer
+Janet Jackson,64982402,2258943,https://www.last.fm/music/Janet+Jackson
+Saja Boys,18626063,795456,https://www.last.fm/music/Saja+Boys
+Anavitória,63773752,519483,https://www.last.fm/music/Anavit%C3%B3ria
+STAYC,86457706,737313,https://www.last.fm/music/STAYC
+SHINee,103093001,838366,https://www.last.fm/music/SHINee
+underscores,29699871,473900,https://www.last.fm/music/underscores
+Roddy Ricch,49119012,1504975,https://www.last.fm/music/Roddy+Ricch
+Van Halen,80759821,2995841,https://www.last.fm/music/Van+Halen
+Romeo Santos,24554425,812717,https://www.last.fm/music/Romeo+Santos
+Kiss of Life,61837407,715186,https://www.last.fm/music/Kiss+of+Life
+Chris Stapleton,29839231,865854,https://www.last.fm/music/Chris+Stapleton
+The Black Keys,195534202,3289120,https://www.last.fm/music/The+Black+Keys
+SOSOCAMO,7105274,308766,https://www.last.fm/music/SOSOCAMO
+Fitz and the Tantrums,26223357,1850651,https://www.last.fm/music/Fitz+and+the+Tantrums
+Arcade Fire,224509788,3102709,https://www.last.fm/music/Arcade+Fire
+Lupe Fiasco,73569916,2935807,https://www.last.fm/music/Lupe+Fiasco
+Peso Pluma,52426630,687104,https://www.last.fm/music/Peso+Pluma
+Dijon,31449882,801640,https://www.last.fm/music/Dijon
+Spiritbox,45193282,543871,https://www.last.fm/music/Spiritbox
+Ice Spice,49247714,1482340,https://www.last.fm/music/Ice+Spice
+Black Box Recorder,13878864,753860,https://www.last.fm/music/Black+Box+Recorder
+James Arthur,47747948,1779797,https://www.last.fm/music/James+Arthur
+Alec Benjamin,53032880,1356473,https://www.last.fm/music/Alec+Benjamin
+Matuê,61926116,427810,https://www.last.fm/music/Matu%C3%AA
+100 gecs,81777968,1138323,https://www.last.fm/music/100+gecs
+Gal Costa,44495352,893940,https://www.last.fm/music/Gal+Costa
+Jonas Brothers,74966469,2151676,https://www.last.fm/music/Jonas+Brothers
+Ween,66907773,1297283,https://www.last.fm/music/Ween
+Luke Combs,40580230,786509,https://www.last.fm/music/Luke+Combs
+Alvvays,61947426,1191189,https://www.last.fm/music/Alvvays
+Luis Miguel,38962263,880850,https://www.last.fm/music/Luis+Miguel
+Passion Pit,73222393,2494131,https://www.last.fm/music/Passion+Pit
+Liana Flores,30082640,1263953,https://www.last.fm/music/Liana+Flores
+John Summit,14575313,592116,https://www.last.fm/music/John+Summit
+my bloody valentine,126046375,2028575,https://www.last.fm/music/my+bloody+valentine
+Wham!,43501157,3287613,https://www.last.fm/music/Wham%21
+Foreigner,32917779,2374746,https://www.last.fm/music/Foreigner
+Mötley Crüe,59454394,1934675,https://www.last.fm/music/M%C3%B6tley+Cr%C3%BCe
+BABYMETAL,57169538,943453,https://www.last.fm/music/BABYMETAL
+Santigold,26951457,1416516,https://www.last.fm/music/Santigold
+Jack Stauber's Micropop,38495595,905229,https://www.last.fm/music/Jack+Stauber%27s+Micropop
+Dance Gavin Dance,89534882,788363,https://www.last.fm/music/Dance+Gavin+Dance
+Maluma,31232658,994069,https://www.last.fm/music/Maluma
+Owl City,88133006,2755772,https://www.last.fm/music/Owl+City
+Glokk40Spaz,47597363,303685,https://www.last.fm/music/Glokk40Spaz
+Of Monsters and Men,73209807,2309180,https://www.last.fm/music/Of+Monsters+and+Men
+Fifth Harmony,49819217,1669630,https://www.last.fm/music/Fifth+Harmony
+Ozuna,27735263,923828,https://www.last.fm/music/Ozuna
+KMFDM,40644953,780397,https://www.last.fm/music/KMFDM
+IU,90662972,1058528,https://www.last.fm/music/IU
+Nick Drake,93835882,2235545,https://www.last.fm/music/Nick+Drake
+League of Legends,55182414,1223170,https://www.last.fm/music/League+of+Legends
+The Game,54063402,3103024,https://www.last.fm/music/The+Game
+Young the Giant,43982382,1912886,https://www.last.fm/music/Young+the+Giant
+LSD and the Search for God,16226699,676951,https://www.last.fm/music/LSD+and+the+Search+for+God
+Yves,26727240,437057,https://www.last.fm/music/Yves
+Rina Sawayama,96899964,1121631,https://www.last.fm/music/Rina+Sawayama
+Player,6719821,777966,https://www.last.fm/music/Player
+Meghan Trainor,44048072,2111260,https://www.last.fm/music/Meghan+Trainor
+Tally Hall,44886905,1113133,https://www.last.fm/music/Tally+Hall
+Rita Lee,38887862,756433,https://www.last.fm/music/Rita+Lee
+Cuco,41397548,1208383,https://www.last.fm/music/Cuco
+Marisa Monte,39781101,811505,https://www.last.fm/music/Marisa+Monte
+Phoenix,123481818,3083163,https://www.last.fm/music/Phoenix
+The Front Bottoms,65242956,916431,https://www.last.fm/music/The+Front+Bottoms
+Gesaffelstein,27524989,1536137,https://www.last.fm/music/Gesaffelstein
+fun.,51753485,2541252,https://www.last.fm/music/fun.
+Plan B,30433063,1288948,https://www.last.fm/music/Plan+B
+Noah Cyrus,30655739,1507726,https://www.last.fm/music/Noah+Cyrus
+A Day to Remember,155200830,1913647,https://www.last.fm/music/A+Day+to+Remember
+Hoobastank,48392802,2892901,https://www.last.fm/music/Hoobastank
+Mary J. Blige,35070260,2396567,https://www.last.fm/music/Mary+J.+Blige
+Cyndi Lauper,38049806,2989621,https://www.last.fm/music/Cyndi+Lauper
+The Magnetic Fields,64459945,1316803,https://www.last.fm/music/The+Magnetic+Fields
+Teddy Swims,20656869,1138009,https://www.last.fm/music/Teddy+Swims
+Macklemore,20791153,1514830,https://www.last.fm/music/Macklemore
+VIOLENT VIRA,25000639,601813,https://www.last.fm/music/VIOLENT+VIRA
+Set It Off,37402915,802453,https://www.last.fm/music/Set+It+Off
+Rise Against,213523051,2880855,https://www.last.fm/music/Rise+Against
+The Ronettes,21469596,2381803,https://www.last.fm/music/The+Ronettes
+S3RL,20483664,595224,https://www.last.fm/music/S3RL
+Tim Maia,35701079,829734,https://www.last.fm/music/Tim+Maia
+Tommy Richman,27750969,1476309,https://www.last.fm/music/Tommy+Richman
+GIRLSET,2644251,145957,https://www.last.fm/music/GIRLSET
+Alice Phoebe Lou,25267700,965315,https://www.last.fm/music/Alice+Phoebe+Lou
+Ella Langley,5879903,290484,https://www.last.fm/music/Ella+Langley
+Staind,51998423,2184667,https://www.last.fm/music/Staind
+Have a Nice Life,59837553,1060310,https://www.last.fm/music/Have+a+Nice+Life
+Milky Chance,39062259,1703204,https://www.last.fm/music/Milky+Chance
+ivri,8932376,690678,https://www.last.fm/music/ivri
+Ecco2K,79353337,649482,https://www.last.fm/music/Ecco2K
+T-Pain,29027005,2295896,https://www.last.fm/music/T-Pain
+Ian,43549452,671711,https://www.last.fm/music/Ian
+Bibi,41859573,857567,https://www.last.fm/music/Bibi
+Bullet for My Valentine,138158745,2512816,https://www.last.fm/music/Bullet+for+My+Valentine
+Loona,111618352,1139546,https://www.last.fm/music/Loona
+LMFAO,36509918,2585246,https://www.last.fm/music/LMFAO
+benny blanco,40840798,1434172,https://www.last.fm/music/benny+blanco
+Luísa Sonza,83935680,571965,https://www.last.fm/music/Lu%C3%ADsa+Sonza
+Ebony,24037770,296957,https://www.last.fm/music/Ebony
+Lil Durk,63738784,1073304,https://www.last.fm/music/Lil+Durk
+DNCE,19753218,1560106,https://www.last.fm/music/DNCE
+late night drive home,12550976,621079,https://www.last.fm/music/late+night+drive+home
+Amaarae,33182820,996090,https://www.last.fm/music/Amaarae
+Tay-K,42046027,906333,https://www.last.fm/music/Tay-K
+Death Cab for Cutie,248609618,3772657,https://www.last.fm/music/Death+Cab+for+Cutie
+Lewis Capaldi,51765269,1517220,https://www.last.fm/music/Lewis+Capaldi
+Cascada,42818454,2289266,https://www.last.fm/music/Cascada
+Tyler Childers,39510259,592560,https://www.last.fm/music/Tyler+Childers
+PASTEL GHOST,28003964,921198,https://www.last.fm/music/PASTEL+GHOST
+Aminé,62788637,1475646,https://www.last.fm/music/Amin%C3%A9
+Slow Pulp,24377940,872626,https://www.last.fm/music/Slow+Pulp
+Sidney Gish,12050563,408740,https://www.last.fm/music/Sidney+Gish
+Clipse,36233751,1186390,https://www.last.fm/music/Clipse
+Bones,131752236,1062365,https://www.last.fm/music/Bones
+Tems,18678104,728340,https://www.last.fm/music/Tems
+BØRNS,32268056,1711151,https://www.last.fm/music/B%C3%98RNS
+Siouxsie and the Banshees,57663704,1694575,https://www.last.fm/music/Siouxsie+and+the+Banshees
+Niall Horan,70743351,1301878,https://www.last.fm/music/Niall+Horan
+Joy Again,21509529,1252423,https://www.last.fm/music/Joy+Again
+NAYEON,39788941,769778,https://www.last.fm/music/NAYEON
+Clarion,3508262,257151,https://www.last.fm/music/Clarion
+Devon Hendryx,30584848,347566,https://www.last.fm/music/Devon+Hendryx
+Junior H,52199526,395931,https://www.last.fm/music/Junior+H
+Yot Club,32725633,1475694,https://www.last.fm/music/Yot+Club
+Bizarrap,45364910,913699,https://www.last.fm/music/Bizarrap
+Bo Burnham,72960655,1143446,https://www.last.fm/music/Bo+Burnham
+Portugal. The Man,61840577,2012350,https://www.last.fm/music/Portugal.+The+Man
+smokedope2016,32986036,285105,https://www.last.fm/music/smokedope2016
+Sir Mix-A-Lot,16562119,1125435,https://www.last.fm/music/Sir+Mix-A-Lot
+Blue Öyster Cult,37648454,1937663,https://www.last.fm/music/Blue+%C3%96yster+Cult
+Dayglow,37303671,1392882,https://www.last.fm/music/Dayglow
+Shaggy,21348692,2156780,https://www.last.fm/music/Shaggy
+Good Kid,29575242,571411,https://www.last.fm/music/Good+Kid
+Devi McCallion,5441222,233316,https://www.last.fm/music/Devi+McCallion
+GloRilla,21366795,907422,https://www.last.fm/music/GloRilla
+The Alchemist,47354942,1351299,https://www.last.fm/music/The+Alchemist
+Duquesa,20778343,265594,https://www.last.fm/music/Duquesa
+Ciara,45598366,2767152,https://www.last.fm/music/Ciara
+Alanis Morissette,80415777,2798818,https://www.last.fm/music/Alanis+Morissette
+6ix9ine,32120468,1165528,https://www.last.fm/music/6ix9ine
+Father John Misty,58361525,1429413,https://www.last.fm/music/Father+John+Misty
+Feid,57656748,633611,https://www.last.fm/music/Feid
+Summrs,77446740,454046,https://www.last.fm/music/Summrs
+Fifty Fifty,35208343,1343673,https://www.last.fm/music/Fifty+Fifty
+Leith Ross,27678916,801644,https://www.last.fm/music/Leith+Ross
+Nina Simone,74057704,2955128,https://www.last.fm/music/Nina+Simone
+Mon Laferte,24270051,465741,https://www.last.fm/music/Mon+Laferte
+The Prodigy,140737303,2961550,https://www.last.fm/music/The+Prodigy
+YNW Melly,37569731,1082981,https://www.last.fm/music/YNW+Melly
+The Kinks,90703552,3251427,https://www.last.fm/music/The+Kinks
+54 Ultra,6267690,474989,https://www.last.fm/music/54+Ultra
+Luci4,26984985,579695,https://www.last.fm/music/Luci4
+Becky G,25244544,1430199,https://www.last.fm/music/Becky+G
+Keyshia Cole,21409742,1629799,https://www.last.fm/music/Keyshia+Cole
+The Kooks,165139264,3671748,https://www.last.fm/music/The+Kooks
+Alessia Cara,36897170,1729535,https://www.last.fm/music/Alessia+Cara
+SWV,14411540,1040669,https://www.last.fm/music/SWV
+Nine Vicious,21265151,163140,https://www.last.fm/music/Nine+Vicious
+Lemon Demon,51048503,834398,https://www.last.fm/music/Lemon+Demon
+Taio Cruz,33719411,2815746,https://www.last.fm/music/Taio+Cruz
+Simple Plan,79934483,2787098,https://www.last.fm/music/Simple+Plan
+Gojira,84082708,1012090,https://www.last.fm/music/Gojira
+Lil Skies,39779850,838996,https://www.last.fm/music/Lil+Skies
+Vundabar,26297271,1292906,https://www.last.fm/music/Vundabar
+Capital Cities,26457488,1920465,https://www.last.fm/music/Capital+Cities
+Quavo,30116049,1259095,https://www.last.fm/music/Quavo
+Vampire Weekend,178357459,3419094,https://www.last.fm/music/Vampire+Weekend
+Boney M.,24231777,1967282,https://www.last.fm/music/Boney+M.
+Dr. Dog,37013013,1787770,https://www.last.fm/music/Dr.+Dog
+Liniker,31016694,304984,https://www.last.fm/music/Liniker
+Willie Colón,9650680,568554,https://www.last.fm/music/Willie+Col%C3%B3n
+Key Glock,41149786,979280,https://www.last.fm/music/Key+Glock
+Jade,28932363,620078,https://www.last.fm/music/Jade
+Lucy Dacus,57212652,1003444,https://www.last.fm/music/Lucy+Dacus
+The Animals,28558859,2502194,https://www.last.fm/music/The+Animals
+The Hellp,16679646,376170,https://www.last.fm/music/The+Hellp
+femtanyl,32404427,334195,https://www.last.fm/music/femtanyl
+The Stone Roses,54471348,1894172,https://www.last.fm/music/The+Stone+Roses
+Susannah Joffe,8455515,466737,https://www.last.fm/music/Susannah+Joffe
+Between Friends,23974589,857717,https://www.last.fm/music/Between+Friends
+BABYMONSTER,33641822,518766,https://www.last.fm/music/BABYMONSTER
+Jim Croce,26729342,1553144,https://www.last.fm/music/Jim+Croce
+The Long Faces,3599767,225772,https://www.last.fm/music/The+Long+Faces
+Bazzi,36919734,1427984,https://www.last.fm/music/Bazzi
+Porter Robinson,65776098,1326714,https://www.last.fm/music/Porter+Robinson
+Not For Radio,8499267,262094,https://www.last.fm/music/Not+For+Radio
+Fleet Foxes,119352339,2527160,https://www.last.fm/music/Fleet+Foxes
+yeule,38062029,711413,https://www.last.fm/music/yeule
+Avenoir,15896887,503985,https://www.last.fm/music/Avenoir
+Sexyy Red,21839204,976774,https://www.last.fm/music/Sexyy+Red
+T.I.,53324460,3377049,https://www.last.fm/music/T.I.
+Isabel LaRosa,31105828,1095487,https://www.last.fm/music/Isabel+LaRosa
+Rio Romeo,19977251,779488,https://www.last.fm/music/Rio+Romeo
+The Drums,50936165,2126990,https://www.last.fm/music/The+Drums
+Rick Ross,36699165,2445374,https://www.last.fm/music/Rick+Ross
+glaive,97157477,568001,https://www.last.fm/music/glaive
+Miracle Musical,25500328,732285,https://www.last.fm/music/Miracle+Musical
+Edward Maya,12872217,1207118,https://www.last.fm/music/Edward+Maya
+Glee Cast,229062793,1879711,https://www.last.fm/music/Glee+Cast
+Clara La San,12781881,559587,https://www.last.fm/music/Clara+La+San
+Snow Patrol,134937314,4119022,https://www.last.fm/music/Snow+Patrol
+RÜFÜS DU SOL,27066823,771476,https://www.last.fm/music/R%C3%9CF%C3%9CS+DU+SOL
+Chrystal,7120579,608734,https://www.last.fm/music/Chrystal
+Pulp,63294775,1838017,https://www.last.fm/music/Pulp
+Spice Girls,41528361,2604310,https://www.last.fm/music/Spice+Girls
+Paris Paloma,18199539,719026,https://www.last.fm/music/Paris+Paloma
+Julie,30671693,731984,https://www.last.fm/music/Julie
+The Who,118220063,3887822,https://www.last.fm/music/The+Who
+Jorja Smith,43172618,1331856,https://www.last.fm/music/Jorja+Smith
+f(x),51431767,608377,https://www.last.fm/music/f(x)
+Wu-Tang Clan,74621835,2409810,https://www.last.fm/music/Wu-Tang+Clan
+Peach Pit,45059470,1039456,https://www.last.fm/music/Peach+Pit
+Korea Girl,4543644,326708,https://www.last.fm/music/Korea+Girl
+Mk.gee,31539648,704743,https://www.last.fm/music/Mk.gee
+Leonard Cohen,85426585,2109207,https://www.last.fm/music/Leonard+Cohen
+Alok,25280736,1241614,https://www.last.fm/music/Alok
+Danny Brown,69176843,1099144,https://www.last.fm/music/Danny+Brown
+Sweet Trip,41028292,779785,https://www.last.fm/music/Sweet+Trip
+fromis_9,52099391,569826,https://www.last.fm/music/fromis_9
+"Dream, Ivory",22442937,1132553,"https://www.last.fm/music/Dream,+Ivory"
+You'll Never Get to Heaven,14091690,637075,https://www.last.fm/music/You%27ll+Never+Get+to+Heaven
+Quality Control,17570310,842762,https://www.last.fm/music/Quality+Control
+Misfits,91676586,1590139,https://www.last.fm/music/Misfits
+Crumb,36569185,1280409,https://www.last.fm/music/Crumb
+Creepy Nuts,20576699,594910,https://www.last.fm/music/Creepy+Nuts
+Kikuo,27340449,620133,https://www.last.fm/music/Kikuo
+Psy,34868604,1657748,https://www.last.fm/music/Psy
+Gregory Alan Isakov,39343237,1153515,https://www.last.fm/music/Gregory+Alan+Isakov
+Mareux,23956014,1122217,https://www.last.fm/music/Mareux
+Pusha T,64653647,1523484,https://www.last.fm/music/Pusha+T
+Lithe,10820232,505911,https://www.last.fm/music/Lithe
+Fugazi,63303212,1530580,https://www.last.fm/music/Fugazi
+Lil Tjay,62435819,938916,https://www.last.fm/music/Lil+Tjay
+Joni Mitchell,56202485,1720822,https://www.last.fm/music/Joni+Mitchell
+Autumn!,79914862,448262,https://www.last.fm/music/Autumn%21
+I DONT KNOW HOW BUT THEY FOUND ME,42083167,863166,https://www.last.fm/music/I+DONT+KNOW+HOW+BUT+THEY+FOUND+ME
+FloyyMenor,17172136,696949,https://www.last.fm/music/FloyyMenor
+Heart,30400104,2108127,https://www.last.fm/music/Heart
+Wilco,101981230,1956924,https://www.last.fm/music/Wilco
+Iggy Azalea,57950897,1889312,https://www.last.fm/music/Iggy+Azalea
+Lil Darkie,56604717,711712,https://www.last.fm/music/Lil+Darkie
+The Radio Dept.,39518150,1163837,https://www.last.fm/music/The+Radio+Dept.
+Counting Crows,60052428,3039688,https://www.last.fm/music/Counting+Crows
+The Five Stairsteps,5630572,775458,https://www.last.fm/music/The+Five+Stairsteps
+Jorge Rivera-Herrans,70708979,321185,https://www.last.fm/music/Jorge+Rivera-Herrans
+Remi Wolf,34136202,945399,https://www.last.fm/music/Remi+Wolf
+Bigbang,42362158,889351,https://www.last.fm/music/Bigbang
+The Japanese House,36140811,1101083,https://www.last.fm/music/The+Japanese+House
+King Gnu,18594004,509706,https://www.last.fm/music/King+Gnu
+Dolly Parton,36478331,2266564,https://www.last.fm/music/Dolly+Parton
+El Alfa,16158972,668806,https://www.last.fm/music/El+Alfa
+Aaron May,31903910,1043903,https://www.last.fm/music/Aaron+May
+Boston,30508070,2194386,https://www.last.fm/music/Boston
+Drowning Pool,37013194,2121580,https://www.last.fm/music/Drowning+Pool
+Cochise,39585713,969224,https://www.last.fm/music/Cochise
+King Crimson,64852080,1263155,https://www.last.fm/music/King+Crimson
+Khruangbin,45801330,1051147,https://www.last.fm/music/Khruangbin
+Pabllo Vittar,99141587,616010,https://www.last.fm/music/Pabllo+Vittar
+Chezile,12559554,1000398,https://www.last.fm/music/Chezile
+The Internet,35802271,1201029,https://www.last.fm/music/The+Internet
+Saint Motel,27242302,1235352,https://www.last.fm/music/Saint+Motel
+Bakar,28201714,1321436,https://www.last.fm/music/Bakar
+Sevdaliza,30952739,1075951,https://www.last.fm/music/Sevdaliza
+Slayer,137629624,2343295,https://www.last.fm/music/Slayer
+Chance the Rapper,60318150,1388439,https://www.last.fm/music/Chance+the+Rapper
+Al Green,37994918,2271241,https://www.last.fm/music/Al+Green
+Indigo De Souza,21554155,670578,https://www.last.fm/music/Indigo+De+Souza
+NCT DREAM,113603994,676417,https://www.last.fm/music/NCT+DREAM
+Hannah Montana,26366010,1112204,https://www.last.fm/music/Hannah+Montana
+Masego,20770479,1056286,https://www.last.fm/music/Masego
+Alphaville,23360936,1799070,https://www.last.fm/music/Alphaville
+311,40328923,1671550,https://www.last.fm/music/311
