@@ -4,8 +4,10 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Proyecto Musical", layout="wide")
 
-st.title("Proyecto musical con Last.fm")
-st.subheader("Análisis de canciones, artistas y géneros")
+st.title("Ánalisis Estaditico Musical")
+st.subheader("En un mercado saturado la diferencia entre un track que pasa desapercibido y un exito global suele/" \
+"estar en los detalles que el odio humano no siempre detecta a la primera.En Ánalisis Estadistico MUsical, transformamos " \
+"transformamos el audio en métricas accionables para que lleves tu sonido al siguiente nivel competitivo.")
 
 canciones = pd.read_csv("data/clean/canciones_populares.csv")
 artistas = pd.read_csv("data/clean/artistas_populares.csv")
