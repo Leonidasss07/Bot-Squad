@@ -4,10 +4,45 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Proyecto Musical", layout="wide")
 
-st.title("Ánalisis Estaditico Musical")
-st.subheader("En un mercado saturado la diferencia entre un track que pasa desapercibido y un exito global suele/" \
-"estar en los detalles que el odio humano no siempre detecta a la primera.En Ánalisis Estadistico MUsical, transformamos " \
-"transformamos el audio en métricas accionables para que lleves tu sonido al siguiente nivel competitivo.")
+col1, col2 = st.columns([5, 1])
+
+col_logo, col_titulo = st.columns([0.6, 6])
+
+
+with col_titulo:
+    st.markdown("<h1 style='margin-top: 16px;'>  𝄞 ANÁLISIS ESTADISTICO MUSICAL</h1>", unsafe_allow_html=True)
+   
+st.markdown("""
+<p style='font-size:16px; max-width:800px;'>
+En un mercado saturado la diferencia entre un track que pasa desapercibido y un exito global
+suele estar en los detalles que el oido humano no siempre detecta a la primera.
+En Análisis Estadistico Musical, transformamos el audio en métricas accionables
+para que lleves tu sonido al siguiente nivel competitivo.
+</p>
+""", unsafe_allow_html=True)
+st.markdown("""
+<p style='font-size:22px; font-weight:bold; color:#3d2b1f; margin-top:20px;'>
+NO SOMOS CRÍTICOS MUSICALES, SOMOS ANALISTAS DE DATOS
+</p>
+""", unsafe_allow_html=True)
+
+st.markdown("## Explora los análisis")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    if st.button("Canciones populares"):
+        st.switch_page("pages/canciones_populares.py")
+
+    if st.button("Artistas"):
+        st.switch_page("pages/artistas.py")
+
+with col2:
+    if st.button("Canciones del mes"):
+        st.switch_page("pages/canciones_del_mes.py")
+
+    if st.button("🎧 Géneros"):
+        st.switch_page("pages/Géneros.py")
 
 canciones = pd.read_csv("data/clean/canciones_populares.csv")
 artistas = pd.read_csv("data/clean/artistas_populares.csv")
