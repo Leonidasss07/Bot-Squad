@@ -160,6 +160,63 @@ def obtener_generos_canciones_populares():
 
     return canciones_con_generos
 
+#canciones semanales
+def obtener_canciones_semanales_tag(tag):
+    url = 'http://ws.audioscrobbler.com/2.0/'
+    canciones = []
+
+    params_chartlist = {
+        'method': 'tag.getweeklychartlist',
+        'tag': tag,
+        'api_key': API_KEY,
+        'format': 'json'
+    }
+
+    respuesta_chartlist = requests.get(url, params=params_chartlist)
+    datos_chartlist = respuesta_chartlist.json()
+
+    try:
+        semanas = datos_chartlist['weeklychartlist']['chart']
+
+        if not semanas:
+            print(f"No hay semanas disponibles para este tag: {tag}")
+            return canciones
+
+        ultima_semana = semanas[-1]
+        fecha_desde = ultima_semana['from']
+        fecha_hasta = ultima_semana['to']
+
+        params = {
+            'method': 'tag.gettoptracks',
+            'tag': tag,
+            'api_key': API_KEY,
+            'format': 'json',
+            'limit': 100
+        }
+
+        respuesta = requests.get(url, params=params)
+        datos = respuesta.json()
+
+        for track in datos['tracks']['track']:
+            cancion = {
+                'tag': tag,
+                'fecha_desde': fecha_desde,
+                'fecha_hasta': fecha_hasta,
+                'nombre': track.get('name', 'N/A'),
+                'artista': track.get('artist', {}).get('name', 'N/A'),
+                'oyentes': track.get('listeners', 'N/A'),
+                'url': track.get('url', 'N/A')
+            }
+            canciones.append(cancion)
+
+        print(f"Se obtuvieron {len(canciones)} canciones para el tag {tag}")
+
+    except Exception as e:
+        print(f"Error al obtener canciones del tag {tag}: {e}")
+
+    return canciones
+
+
 #guardar los archivos
 def guardar_canciones(canciones):
     os.makedirs('data/raw', exist_ok=True)
@@ -193,6 +250,15 @@ def guardar_generos_canciones(canciones_con_generos):
             archivo.write(json.dumps(cancion, ensure_ascii=False) + '\n')
     total_generos = len(canciones_con_generos)
     print(f'Se han guardado {total_generos} géneros en {file_path}')
+
+def guardar_canciones_tag(canciones, tag):
+    os.makedirs('data/raw', exist_ok=True)
+    file_path = f'data/raw/canciones_{tag}.json'
+
+    with open(file_path, 'w', encoding='utf-8') as archivo:
+        json.dump(canciones, archivo, ensure_ascii=False, indent=4)
+
+    print(f'Se han guardado {len(canciones)} canciones en {file_path}')
 
 #archivos csv
 def guardar_canciones_csv(canciones):
@@ -235,6 +301,28 @@ def guardar_generos_csv(canciones_con_generos):
             writer.writerow([cancion['generos']])
     print(f'CSV guardado en {file_path}')
 
+def guardar_canciones_tag_csv(canciones, tag):
+    os.makedirs('data/clean', exist_ok=True)
+    file_path = f'data/clean/canciones_{tag}.csv'
+
+    with open(file_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['tag', 'fecha_desde', 'fecha_hasta', 'nombre', 'artista', 'oyentes', 'url'])
+
+        for cancion in canciones:
+            writer.writerow([
+                cancion['tag'],
+                cancion['fecha_desde'],
+                cancion['fecha_hasta'],
+                cancion['nombre'],
+                cancion['artista'],
+                cancion['oyentes'],
+                cancion['url']
+            ])
+
+    print(f'CSV guardado en {file_path}')
+
+
 if __name__ == '__main__':
     canciones = obtener_canciones_populares()
     guardar_canciones(canciones)
@@ -251,3 +339,10 @@ if __name__ == '__main__':
     canciones_generos = obtener_generos_canciones_populares()
     guardar_generos_canciones(canciones_generos)
     guardar_generos_csv(canciones_generos)
+
+    tags = ["disco", "rock", "pop", "jazz", "hip-hop", "k-pop"]
+
+    for tag in tags:
+        canciones_tag = obtener_canciones_semanales_tag(tag)
+        guardar_canciones_tag(canciones_tag, tag)
+        guardar_canciones_tag_csv(canciones_tag, tag)
