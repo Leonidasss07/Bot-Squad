@@ -106,8 +106,8 @@ def obtener_canciones_populares_julio():
 
     return canciones_populares_julio
 
-#generos de los canciones mas populares
-#creamos un set de los generos validos 
+# géneros de las canciones más populares
+# creamos un conjunto de géneros válidos
 GENEROS_VALIDOS = {
     'pop', 'rock', 'hip-hop', 'hip hop', 'rap', 'r&b', 'rnb', 'soul', 'jazz',
     'blues', 'classical', 'electronic', 'dance', 'house', 'techno', 'trance',
@@ -119,46 +119,54 @@ GENEROS_VALIDOS = {
 
 def obtener_generos_canciones_populares():
     url = 'http://ws.audioscrobbler.com/2.0/'
-    params = {
-        'method': 'chart.gettoptracks',
-        'api_key': API_KEY,
-        'format': 'json',
-        'limit': 50
-    }
-    respuesta = requests.get(url, params=params)
-    datos = respuesta.json()
-
     canciones_con_generos = []
 
-    for track in datos['tracks']['track']:
-        nombre = track['name']
-        artista = track['artist']['name']
-
-        params_info = {
-            'method': 'track.getInfo',
+    for pagina in range(1, 11):
+        params = {
+            'method': 'chart.gettoptracks',
             'api_key': API_KEY,
             'format': 'json',
-            'artist': artista,
-            'track': nombre
+            'limit': 100,
+            'page': pagina
         }
-        respuesta_info = requests.get(url, params=params_info)
-        datos_info = respuesta_info.json()
 
-        generos = []
-        try:
-            tags = datos_info['track']['toptags']['tag']
-            #solo guardamos los tags que esten en nuestra lista de generos validos
-            generos = [
-                tag['name'] for tag in tags
-                if tag['name'].lower() in GENEROS_VALIDOS
-            ]
-        except (KeyError, TypeError):
-            pass
+        respuesta = requests.get(url, params=params)
+        datos = respuesta.json()
 
-        #solo se guarda la cancion si tiene al menos un genero valido
-        if generos:
-            cancion = {'generos': generos}
-            canciones_con_generos.append(cancion)
+        if 'error' in datos or 'tracks' not in datos:
+            print(f"Aviso: error en la página {pagina}")
+            break
+
+        for track in datos['tracks']['track']:
+            nombre = track['name']
+            artista = track['artist']['name']
+
+            params_info = {
+                'method': 'track.getInfo',
+                'api_key': API_KEY,
+                'format': 'json',
+                'artist': artista,
+                'track': nombre
+            }
+
+            respuesta_info = requests.get(url, params=params_info)
+            datos_info = respuesta_info.json()
+
+            try:
+                tags = datos_info['track']['toptags']['tag']
+
+                for tag in tags:
+                    genero = tag['name'].lower()
+
+                    if genero in GENEROS_VALIDOS:
+                        canciones_con_generos.append({'generos': genero})
+
+            except (KeyError, TypeError):
+                pass
+
+            time.sleep(0.2)
+
+        print(f"Página {pagina} procesada")
 
     return canciones_con_generos
 
@@ -193,7 +201,7 @@ def guardar_generos_canciones(canciones_con_generos):
     with open(file_path, 'w', encoding='utf-8') as archivo:
         for cancion in canciones_con_generos:
             archivo.write(json.dumps(cancion, ensure_ascii=False) + '\n')
-    total_generos = sum(len(cancion['generos']) for cancion in canciones_con_generos)
+    total_generos = len(canciones_con_generos)
     print(f'Se han guardado {total_generos} géneros en {file_path}')
 
 #archivos csv
@@ -234,9 +242,8 @@ def guardar_generos_csv(canciones_con_generos):
         writer = csv.writer(f)
         writer.writerow(['generos'])
         for cancion in canciones_con_generos:
-            writer.writerow([' , '.join(cancion['generos'])])
+            writer.writerow([cancion['generos']])
     print(f'CSV guardado en {file_path}')
-
 
 if __name__ == '__main__':
     canciones = obtener_canciones_populares()
