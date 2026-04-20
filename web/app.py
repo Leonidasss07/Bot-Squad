@@ -171,7 +171,7 @@ with col_g1:
         ax2.set_title("Top géneros")
         ax2.set_xlabel("Género")
         ax2.set_ylabel("Cantidad")
-        plt.xticks(rotation=45, ha="right")
+        ax2.tick_params(rotation=45, ha="right")
         fig2.tight_layout()
         st.pyplot(fig2)
     else:
@@ -227,7 +227,7 @@ for i, tag in enumerate(tags_comparacion):
                     ax.bar(top5["etiqueta"], top5["oyentes"])
                     ax.set_title(f"Top 5 - {tag}")
                     ax.set_ylabel("Oyentes")
-                    plt.xticks(rotation=45, ha="right")
+                    ax.tick_params(rotation=45, ha="right")
                     fig.tight_layout()
                     st.pyplot(fig)
             else:
@@ -239,7 +239,7 @@ for i, tag in enumerate(tags_comparacion):
                     ax.bar(top5["etiqueta"], top5["oyentes"])
                     ax.set_title(f"Top 5 - {tag}")
                     ax.set_ylabel("Oyentes")
-                    plt.xticks(rotation=45, ha="right")
+                    ax.tick_params(rotation=45, ha="right")
                     fig.tight_layout()
                     st.pyplot(fig)
         else:
