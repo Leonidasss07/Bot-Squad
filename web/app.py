@@ -146,7 +146,7 @@ if not canciones_tag.empty:
             ax.set_title(f"Top canciones semanales - {tag_usuario}")
             ax.set_xlabel("Oyentes")
             ax.set_ylabel("Canción")
-            plt.tight_layout()
+            fig.tight_layout()
             st.pyplot(fig)
     else:
         st.warning(f"El archivo {ruta_csv_tag} existe, pero no tiene valores numéricos válidos en 'oyentes'.")
@@ -172,7 +172,7 @@ with col_g1:
         ax2.set_xlabel("Género")
         ax2.set_ylabel("Cantidad")
         plt.xticks(rotation=45, ha="right")
-        plt.tight_layout()
+        fig2.tight_layout()
         st.pyplot(fig2)
     else:
         st.warning("No hay datos de géneros disponibles.")
@@ -192,7 +192,7 @@ with col_g2:
         ax3.set_title("Top artistas")
         ax3.set_xlabel("Reproducciones")
         ax3.set_ylabel("Artista")
-        plt.tight_layout()
+        fig3.tight_layout()
         st.pyplot(fig3)
     else:
         st.warning("No hay datos de artistas disponibles.")
@@ -228,7 +228,7 @@ for i, tag in enumerate(tags_comparacion):
                     ax.set_title(f"Top 5 - {tag}")
                     ax.set_ylabel("Oyentes")
                     plt.xticks(rotation=45, ha="right")
-                    plt.tight_layout()
+                    fig.tight_layout()
                     st.pyplot(fig)
             else:
                 with col_b:
@@ -240,7 +240,7 @@ for i, tag in enumerate(tags_comparacion):
                     ax.set_title(f"Top 5 - {tag}")
                     ax.set_ylabel("Oyentes")
                     plt.xticks(rotation=45, ha="right")
-                    plt.tight_layout()
+                    fig.tight_layout()
                     st.pyplot(fig)
         else:
             if i == 0:
