@@ -6,6 +6,9 @@ pandas==3.0.0
 python-dateutil==2.9.0.post0
 requests==2.32.5
 six==1.17.0
+streamlit
 tzdata==2025.3
 urllib3==2.6.3
 spotipy==2.19.0
+streamlit==1.30.0
+matplotlib==3.7.2
