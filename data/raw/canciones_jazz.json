@@ -1,0 +1,902 @@
+[
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Like a Tattoo",
+        "artista": "Sade",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Sade/_/Like+a+Tattoo"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "I Fall in Love Too Easily",
+        "artista": "Chet Baker",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Chet+Baker/_/I+Fall+in+Love+Too+Easily"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Paradise",
+        "artista": "Sade",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Sade/_/Paradise"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Back to Black",
+        "artista": "Amy Winehouse",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Amy+Winehouse/_/Back+to+Black"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "My Way",
+        "artista": "Frank Sinatra",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Frank+Sinatra/_/My+Way"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Take Five",
+        "artista": "The Dave Brubeck Quartet",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/The+Dave+Brubeck+Quartet/_/Take+Five"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Don't Know Why",
+        "artista": "Norah Jones",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Norah+Jones/_/Don%27t+Know+Why"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "That's Life",
+        "artista": "Frank Sinatra",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Frank+Sinatra/_/That%27s+Life"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Feeling Good",
+        "artista": "Michael Bublé",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Michael+Bubl%C3%A9/_/Feeling+Good"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "In A Sentimental Mood",
+        "artista": "Duke Ellington",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Duke+Ellington/_/In+A+Sentimental+Mood"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "You Know I'm No Good",
+        "artista": "Amy Winehouse",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Amy+Winehouse/_/You+Know+I%27m+No+Good"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "The Other Woman",
+        "artista": "Lana Del Rey",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Lana+Del+Rey/_/The+Other+Woman"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Hit the Road Jack",
+        "artista": "Ray Charles",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Ray+Charles/_/Hit+the+Road+Jack"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Strangers in the Night",
+        "artista": "Frank Sinatra",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Frank+Sinatra/_/Strangers+in+the+Night"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "What a Wonderful World",
+        "artista": "Louis Armstrong",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Louis+Armstrong/_/What+a+Wonderful+World"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "My Funny Valentine",
+        "artista": "Chet Baker",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Chet+Baker/_/My+Funny+Valentine"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "My One And Only Love",
+        "artista": "John Coltrane",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/John+Coltrane/_/My+One+And+Only+Love"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Sway",
+        "artista": "Michael Bublé",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Michael+Bubl%C3%A9/_/Sway"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Feeling Good",
+        "artista": "Nina Simone",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Nina+Simone/_/Feeling+Good"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Tank!",
+        "artista": "The Seatbelts",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/The+Seatbelts/_/Tank%21"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Tears Dry on Their Own",
+        "artista": "Amy Winehouse",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Amy+Winehouse/_/Tears+Dry+on+Their+Own"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Solitude",
+        "artista": "Billie Holiday",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Billie+Holiday/_/Solitude"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Just The Two Of Us",
+        "artista": "Grover Washington, Jr.",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Grover+Washington,+Jr./_/Just+The+Two+Of+Us"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "It Had to Be You",
+        "artista": "Frank Sinatra",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Frank+Sinatra/_/It+Had+to+Be+You"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "The Girl From Ipanema",
+        "artista": "Stan Getz",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Stan+Getz/_/The+Girl+From+Ipanema"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "L-O-V-E",
+        "artista": "Nat King Cole",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Nat+King+Cole/_/L-O-V-E"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "It Never Entered My Mind",
+        "artista": "Miles Davis Quintet",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Miles+Davis+Quintet/_/It+Never+Entered+My+Mind"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "I'll Be Seeing You",
+        "artista": "Billie Holiday",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Billie+Holiday/_/I%27ll+Be+Seeing+You"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Rehab",
+        "artista": "Amy Winehouse",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Amy+Winehouse/_/Rehab"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "I Put a Spell on You",
+        "artista": "Nina Simone",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Nina+Simone/_/I+Put+a+Spell+on+You"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "My Foolish Heart",
+        "artista": "Bill Evans Trio",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Bill+Evans+Trio/_/My+Foolish+Heart"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Me & Mr Jones",
+        "artista": "Amy Winehouse",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Amy+Winehouse/_/Me+&+Mr+Jones"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "At Last",
+        "artista": "Etta James",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Etta+James/_/At+Last"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Kiss Of Life",
+        "artista": "Sade",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Sade/_/Kiss+Of+Life"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Sunrise",
+        "artista": "Norah Jones",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Norah+Jones/_/Sunrise"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Stronger Than Me",
+        "artista": "Amy Winehouse",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Amy+Winehouse/_/Stronger+Than+Me"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Corcovado (Quiet Nights Of Quiet Stars)",
+        "artista": "Stan Getz",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Stan+Getz/_/Corcovado+(Quiet+Nights+Of+Quiet+Stars)"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Love Is a Losing Game",
+        "artista": "Amy Winehouse",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Amy+Winehouse/_/Love+Is+a+Losing+Game"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Blue Moon",
+        "artista": "Billie Holiday",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Billie+Holiday/_/Blue+Moon"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "It's Easy To Remember",
+        "artista": "John Coltrane Quartet",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/John+Coltrane+Quartet/_/It%27s+Easy+To+Remember"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Life in a Glasshouse",
+        "artista": "Radiohead",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Radiohead/_/Life+in+a+Glasshouse"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Moanin'",
+        "artista": "Art Blakey & The Jazz Messengers",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Art+Blakey+&+The+Jazz+Messengers/_/Moanin%27"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Misty",
+        "artista": "Erroll Garner",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Erroll+Garner/_/Misty"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "The Sweetest Taboo",
+        "artista": "Sade",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Sade/_/The+Sweetest+Taboo"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "That Old Feeling",
+        "artista": "Chet Baker",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Chet+Baker/_/That+Old+Feeling"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Watermelon Man",
+        "artista": "Herbie Hancock",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Herbie+Hancock/_/Watermelon+Man"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Say It (Over And Over Again)",
+        "artista": "John Coltrane Quartet",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/John+Coltrane+Quartet/_/Say+It+(Over+And+Over+Again)"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "It's Oh So Quiet",
+        "artista": "Björk",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Bj%C3%B6rk/_/It%27s+Oh+So+Quiet"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Fly Me to the Moon (In Other Words)",
+        "artista": "Frank Sinatra",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Frank+Sinatra/_/Fly+Me+to+the+Moon+(In+Other+Words)"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "He Can Only Hold Her",
+        "artista": "Amy Winehouse",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Amy+Winehouse/_/He+Can+Only+Hold+Her"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Goodbye Pork Pie Hat",
+        "artista": "Charles Mingus",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Charles+Mingus/_/Goodbye+Pork+Pie+Hat"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "I Don't Want to Set the World on Fire",
+        "artista": "The Ink Spots",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/The+Ink+Spots/_/I+Don%27t+Want+to+Set+the+World+on+Fire"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Unforgettable",
+        "artista": "Nat King Cole",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Nat+King+Cole/_/Unforgettable"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Come Away with Me",
+        "artista": "Norah Jones",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Norah+Jones/_/Come+Away+with+Me"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Tar Baby",
+        "artista": "Sade",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Sade/_/Tar+Baby"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "'Round Midnight",
+        "artista": "Thelonious Monk",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Thelonious+Monk/_/%27Round+Midnight"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "I've Got A Crush On You",
+        "artista": "Ella Fitzgerald",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Ella+Fitzgerald/_/I%27ve+Got+A+Crush+On+You"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Fever",
+        "artista": "Peggy Lee",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Peggy+Lee/_/Fever"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Winter Ahead (with PARK HYO SHIN)",
+        "artista": "V",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/V/_/Winter+Ahead+(with+PARK+HYO+SHIN)"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Time Moves Slow",
+        "artista": "BADBADNOTGOOD",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/BADBADNOTGOOD/_/Time+Moves+Slow"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Is It a Crime",
+        "artista": "Sade",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Sade/_/Is+It+a+Crime"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "My Funny Valentine",
+        "artista": "Frank Sinatra",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Frank+Sinatra/_/My+Funny+Valentine"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Beyond the Sea",
+        "artista": "Bobby Darin",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Bobby+Darin/_/Beyond+the+Sea"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "My Favorite Things",
+        "artista": "John Coltrane",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/John+Coltrane/_/My+Favorite+Things"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "I'm in the Mood for Love",
+        "artista": "Julie London",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Julie+London/_/I%27m+in+the+Mood+for+Love"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "My Little Brown Book",
+        "artista": "Duke Ellington",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Duke+Ellington/_/My+Little+Brown+Book"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Last Train Home",
+        "artista": "Pat Metheny Group",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Pat+Metheny+Group/_/Last+Train+Home"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Somethin' Stupid",
+        "artista": "Frank Sinatra",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Frank+Sinatra/_/Somethin%27+Stupid"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "No Ordinary Love",
+        "artista": "Sade",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Sade/_/No+Ordinary+Love"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Moon Dreams",
+        "artista": "Miles Davis",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Miles+Davis/_/Moon+Dreams"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Summertime",
+        "artista": "Ella Fitzgerald",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Ella+Fitzgerald/_/Summertime"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Cheek to Cheek",
+        "artista": "Ella Fitzgerald",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Ella+Fitzgerald/_/Cheek+to+Cheek"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Sinnerman",
+        "artista": "Nina Simone",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Nina+Simone/_/Sinnerman"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "(I Love You) for Sentimental Reasons",
+        "artista": "Nat King Cole",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Nat+King+Cole/_/(I+Love+You)+for+Sentimental+Reasons"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Tears Dry (Original Version)",
+        "artista": "Amy Winehouse",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Amy+Winehouse/_/Tears+Dry+(Original+Version)"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Cry Me a River",
+        "artista": "Julie London",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Julie+London/_/Cry+Me+a+River"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "We'll Meet Again",
+        "artista": "Vera Lynn",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Vera+Lynn/_/We%27ll+Meet+Again"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Dream a Little Dream of Me",
+        "artista": "Ella Fitzgerald",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Ella+Fitzgerald/_/Dream+a+Little+Dream+of+Me"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Fuck Me Pumps",
+        "artista": "Amy Winehouse",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Amy+Winehouse/_/Fuck+Me+Pumps"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "The Way You Look Tonight",
+        "artista": "Frank Sinatra",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Frank+Sinatra/_/The+Way+You+Look+Tonight"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Jezebel",
+        "artista": "Sade",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Sade/_/Jezebel"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "There Will Never Be Another You",
+        "artista": "Lester Young",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Lester+Young/_/There+Will+Never+Be+Another+You"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Too Young To Go Steady",
+        "artista": "John Coltrane Quartet",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/John+Coltrane+Quartet/_/Too+Young+To+Go+Steady"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Misty",
+        "artista": "Sarah Vaughan",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Sarah+Vaughan/_/Misty"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Time After Time",
+        "artista": "Chet Baker",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Chet+Baker/_/Time+After+Time"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Stolen Moments",
+        "artista": "Oliver Nelson",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Oliver+Nelson/_/Stolen+Moments"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Fly Me to the Moon",
+        "artista": "Frank Sinatra",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Frank+Sinatra/_/Fly+Me+to+the+Moon"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Blue Train",
+        "artista": "John Coltrane",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/John+Coltrane/_/Blue+Train"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "I Know You Know",
+        "artista": "Esperanza Spalding",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Esperanza+Spalding/_/I+Know+You+Know"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Mystic Brew",
+        "artista": "Ronnie Foster",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Ronnie+Foster/_/Mystic+Brew"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Summertime",
+        "artista": "Charlie Parker",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Charlie+Parker/_/Summertime"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Let's Get Lost",
+        "artista": "Chet Baker",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Chet+Baker/_/Let%27s+Get+Lost"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "My Ideal",
+        "artista": "Chet Baker",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Chet+Baker/_/My+Ideal"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "All Of Me",
+        "artista": "Billie Holiday",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Billie+Holiday/_/All+Of+Me"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Misty",
+        "artista": "Ella Fitzgerald",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Ella+Fitzgerald/_/Misty"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "I Wish I Knew How It Would Feel to Be Free",
+        "artista": "Nina Simone",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Nina+Simone/_/I+Wish+I+Knew+How+It+Would+Feel+to+Be+Free"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Moon Love",
+        "artista": "Chet Baker",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Chet+Baker/_/Moon+Love"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Don't Let Me Be Misunderstood",
+        "artista": "Nina Simone",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Nina+Simone/_/Don%27t+Let+Me+Be+Misunderstood"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Autumn Leaves",
+        "artista": "Cannonball Adderley",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Cannonball+Adderley/_/Autumn+Leaves"
+    },
+    {
+        "tag": "jazz",
+        "fecha_desde": "1775390400",
+        "fecha_hasta": "1775995200",
+        "nombre": "Do You Want To Know A Secret - Remastered 2009",
+        "artista": "The Beatles",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/The+Beatles/_/Do+You+Want+To+Know+A+Secret+-+Remastered+2009"
+    }
+]
