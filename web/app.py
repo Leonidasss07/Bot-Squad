@@ -1,92 +1,161 @@
-import pandas as pd
 import streamlit as st
-import matplotlib.pyplot as plt
 
-st.set_page_config(page_title="Proyecto Musical", layout="wide")
-
-col1, col2 = st.columns([5, 1])
-
-col_logo, col_titulo = st.columns([0.6, 6])
-
-
-with col_titulo:
-    st.markdown("<h1 style='margin-top: 16px;'>  𝄞 ANÁLISIS ESTADISTICO MUSICAL</h1>", unsafe_allow_html=True)
-   
-st.markdown("""
-<p style='font-size:16px; max-width:800px;'>
-En un mercado saturado la diferencia entre un track que pasa desapercibido y un exito global
-suele estar en los detalles que el oido humano no siempre detecta a la primera.
-En Análisis Estadistico Musical, transformamos el audio en métricas accionables
-para que lleves tu sonido al siguiente nivel competitivo.
-</p>
-""", unsafe_allow_html=True)
-st.markdown("""
-<p style='font-size:22px; font-weight:bold; color:#3d2b1f; margin-top:20px;'>
-NO SOMOS CRÍTICOS MUSICALES, SOMOS ANALISTAS DE DATOS
-</p>
-""", unsafe_allow_html=True)
-
-st.markdown("## Explora los análisis")
-
-col1, col2 = st.columns(2)
-
-with col1:
-    if st.button("Canciones populares"):
-        st.switch_page("pages/canciones_populares.py")
-
-    if st.button("Artistas"):
-        st.switch_page("pages/artistas.py")
-
-with col2:
-    if st.button("Canciones del mes"):
-        st.switch_page("pages/canciones_del_mes.py")
-
-    if st.button("🎧 Géneros"):
-        st.switch_page("pages/Géneros.py")
-
-canciones = pd.read_csv("data/clean/canciones_populares.csv")
-artistas = pd.read_csv("data/clean/artistas_populares.csv")
-generos = pd.read_csv("data/clean/generos_canciones.csv")
-julio = pd.read_csv("data/clean/canciones_julio.csv")
-
-st.header("Resumen general")
-
-col1, col2, col3, col4 = st.columns(4)
-
-col1.metric("Canciones", len(canciones))
-col2.metric("Artistas", len(artistas))
-col3.metric("Géneros", len(generos))
-col4.metric("Canciones de julio", len(julio))
-
-st.header("Vista previa de los datos")
-
-opcion = st.selectbox(
-    "Selecciona una tabla",
-    ["Canciones populares", "Artistas populares", "Géneros", "Canciones de julio"]
+st.set_page_config(
+    page_title="Proyecto Musical",
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
-if opcion == "Canciones populares":
-    st.dataframe(canciones.head(20))
+st.markdown("""
+<style>
 
-elif opcion == "Artistas populares":
-    st.dataframe(artistas.head(20))
+[data-testid="stSidebar"] {
+    background-color: #f3f6fb;
+}
 
-elif opcion == "Géneros":
-    st.dataframe(generos.head(20))
+.sidebar-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1f2a44;
+    margin-bottom: 10px;
+}
 
-else:
-    st.dataframe(julio.head(20))
+.sidebar-section {
+    font-size: 12px;
+    font-weight: 800;
+    color: #8a8f98;
+    letter-spacing: 1px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
 
-conteo_generos = generos["generos"].value_counts().head(10)
+section[data-testid="stSidebar"] div.stButton > button {
+    background-color: transparent !important;
+    border: none !important;
+    color: #1f2a44 !important;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 4px;
+    font-size: 16px;
+}
 
-fig2, ax2 = plt.subplots(figsize=(10, 5))
-ax2.bar(conteo_generos.index, conteo_generos.values)
-ax2.set_title("Géneros más populares")
-ax2.set_xlabel("Género")
-ax2.set_ylabel("Cantidad")
-plt.xticks(rotation=45, ha="right")
-plt.tight_layout()
-st.pyplot(fig2)
+section[data-testid="stSidebar"] div.stButton > button:hover {
+    background-color: #e9eefc !important;
+    border-radius: 6px;
+}
 
-canciones["reproducciones"] = pd.to_numeric(canciones["reproducciones"], errors="coerce")
-top_canciones = canciones.sort_values(by="reproducciones", ascending=False).head(10)
+.main-buttons button {
+    height: 90px !important;
+    border-radius: 18px !important;
+    border: none !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: #1f2a44 !important;
+}
+
+.main-buttons.btn1 button { background-color: #d7e3fc !important; }
+.main-buttons.btn2 button { background-color: #f7d6e0 !important; }
+.main-buttons.btn3 button { background-color: #fff4b8 !important; }
+.main-buttons.btn4 button { background-color: #d9f2d9 !important; }
+
+.main-buttons button:hover {
+    filter: brightness(0.96) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08) !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+
+with st.sidebar:
+    st.markdown('<div class="sidebar-title">Analisis Musical Stats</div>', unsafe_allow_html=True)
+
+    st.markdown('<div class="sidebar-section">HOME</div>', unsafe_allow_html=True)
+    if st.button("Página principal"):
+        st.session_state.menu = "Inicio"
+
+    st.markdown('<div class="sidebar-section">DASHBOARD</div>', unsafe_allow_html=True)
+    if st.button("Dashboard"):
+        st.switch_page("pages/dashboard.py")
+
+    st.markdown('<div class="sidebar-section">EXPLORAR</div>', unsafe_allow_html=True)
+
+    if st.button("Canciones"):
+        st.switch_page("pages/canciones.py")
+
+    if st.button("Géneros"):
+        st.switch_page("pages/generos.py")
+
+    if st.button("Artistas"):
+        st.session_state.menu = "Artistas"
+
+    st.markdown('<div class="sidebar-section">PRODUCTOR</div>', unsafe_allow_html=True)
+    if st.button("Tendencias"):
+        st.session_state.menu = "Tendencias"
+
+    st.markdown('<div class="sidebar-section">USUARIO</div>', unsafe_allow_html=True)
+    if st.button("Perfil"):
+        st.session_state.menu = "Perfil"
+
+
+opcion = st.session_state.get("menu", "Inicio")
+
+
+if opcion == "Inicio":
+    st.title("𝄞 ÁNALISIS ESTADISTICO MUSICAL")
+
+    st.markdown("""
+    <p style='font-size:16px; max-width:800px;'>
+    En un mercado saturado, la diferencia entre un track que pasa desapercibido y un éxito global
+    suele estar en los detalles que el oído humano no siempre detecta a la primera.
+    En Análisis Estadístico Musical, transformamos el audio en métricas accionables
+    para que lleves tu sonido al siguiente nivel competitivo.
+    </p>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <p style='font-size:22px; font-weight:bold; color:#3d2b1f; margin-top:10px;'>
+    NO SOMOS CRÍTICOS MUSICALES, SOMOS ANALISTAS DE DATOS
+    </p>
+    """, unsafe_allow_html=True)
+
+    st.markdown("### Explora")
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    with col1:
+        st.markdown('<div class="main-buttons btn1">', unsafe_allow_html=True)
+        if st.button("Dashboard", use_container_width=True):
+            st.switch_page("pages/dashboard.py")
+        st.markdown('</div>', unsafe_allow_html=True)
+
+    with col2:
+        st.markdown('<div class="main-buttons btn2">', unsafe_allow_html=True)
+        if st.button("Canciones", use_container_width=True):
+            st.switch_page("pages/canciones.py")
+        st.markdown('</div>', unsafe_allow_html=True)
+
+    with col3:
+        st.markdown('<div class="main-buttons btn3">', unsafe_allow_html=True)
+        if st.button("Artistas", use_container_width=True):
+            st.session_state.menu = "Artistas"
+        st.markdown('</div>', unsafe_allow_html=True)
+
+    with col4:
+        st.markdown('<div class="main-buttons btn4">', unsafe_allow_html=True)
+        if st.button("Géneros", use_container_width=True):
+            st.switch_page("pages/generos.py")
+        st.markdown('</div>', unsafe_allow_html=True)
+
+
+elif opcion == "Artistas":
+    st.title("Artistas")
+    st.info("Aquí irán los artistas.")
+
+elif opcion == "Tendencias":
+    st.title("Tendencias")
+    st.info("Aquí irán las tendencias musicales.")
+
+elif opcion == "Perfil":
+    st.title("Usuario")
+    st.info("Aquí irá la información")
