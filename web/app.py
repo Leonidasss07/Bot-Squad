@@ -1,258 +1,298 @@
-import os
-import pandas as pd
 import streamlit as st
+import pandas as pd
 import matplotlib.pyplot as plt
 
-st.set_page_config(page_title="Proyecto Musical", layout="wide")
-
-
-def cargar_csv_seguro(ruta):
-    if os.path.exists(ruta):
-        return pd.read_csv(ruta)
-    return pd.DataFrame()
-
-def convertir_fechas_unix(df, col_desde="fecha_desde", col_hasta="fecha_hasta"):
-    if col_desde in df.columns:
-        df[col_desde] = pd.to_datetime(df[col_desde], unit="s", errors="coerce")
-        df[col_desde] = df[col_desde].dt.strftime("%d/%m/%Y")
-    if col_hasta in df.columns:
-        df[col_hasta] = pd.to_datetime(df[col_hasta], unit="s", errors="coerce")
-        df[col_hasta] = df[col_hasta].dt.strftime("%d/%m/%Y")
-    return df
-
-def limpiar_numeros(df, columna):
-    if columna in df.columns:
-        df[columna] = pd.to_numeric(df[columna], errors="coerce")
-    return df
-
-
-canciones = cargar_csv_seguro("data/clean/canciones_populares.csv")
-artistas = cargar_csv_seguro("data/clean/artistas_populares.csv")
-generos = cargar_csv_seguro("data/clean/generos_canciones.csv")
-julio = cargar_csv_seguro("data/clean/canciones_julio.csv")
-artistas_semanales = cargar_csv_seguro("data/clean/artistas_semanales.csv")
-
-if not artistas_semanales.empty:
-    artistas_semanales = convertir_fechas_unix(artistas_semanales, "fecha_desde", "fecha_hasta")
-    artistas_semanales = limpiar_numeros(artistas_semanales, "reproducciones")
-
-if not canciones.empty:
-    canciones = limpiar_numeros(canciones, "reproducciones")
-
-if not artistas.empty:
-    artistas = limpiar_numeros(artistas, "reproducciones")
-
-
-st.title("🎧 Proyecto musical con Last.fm")
-st.subheader("Análisis de canciones, artistas, géneros y rankings semanales")
-
-st.divider()
-
-
-st.header("📊 Resumen general")
-
-col1, col2, col3, col4, col5 = st.columns(5)
-
-col1.metric("Canciones", len(canciones))
-col2.metric("Artistas", len(artistas))
-col3.metric("Géneros", len(generos))
-col4.metric("Julio", len(julio))
-col5.metric("Semanales", len(artistas_semanales))
-
-st.divider()
-
-
-st.header("📁 Vista previa de los datos")
-
-opcion = st.selectbox(
-    "Selecciona una tabla",
-    [
-        "Canciones populares",
-        "Artistas populares",
-        "Géneros",
-        "Canciones de julio",
-        "Artistas semanales"
-    ]
+st.set_page_config(
+    page_title="Proyecto Musical",
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
-if opcion == "Canciones populares":
-    if canciones.empty:
-        st.warning("No se encontró el archivo de canciones populares.")
-    else:
-        st.dataframe(canciones.head(20), use_container_width=True)
+st.markdown("""
+<style>
+[data-testid="stSidebarNav"] { display: none !important; }
 
-elif opcion == "Artistas populares":
-    if artistas.empty:
-        st.warning("No se encontró el archivo de artistas populares.")
-    else:
-        st.dataframe(artistas.head(20), use_container_width=True)
+[data-testid="stSidebar"] {
+    background-color: #f3f6fb;
+}
 
-elif opcion == "Géneros":
-    if generos.empty:
-        st.warning("No se encontró el archivo de géneros.")
-    else:
-        st.dataframe(generos.head(20), use_container_width=True)
+.sidebar-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1f2a44;
+    margin-bottom: 10px;
+}
 
-elif opcion == "Canciones de julio":
-    if julio.empty:
-        st.warning("No se encontró el archivo de canciones de julio.")
-    else:
-        st.dataframe(julio.head(20), use_container_width=True)
+.sidebar-section {
+    font-size: 12px;
+    font-weight: 800;
+    color: #8a8f98;
+    letter-spacing: 1px;
+    margin-top: 18px;
+    margin-bottom: 4px;
+}
 
-elif opcion == "Artistas semanales":
-    if artistas_semanales.empty:
-        st.warning("No se encontró el archivo de artistas semanales.")
-    else:
-        st.dataframe(artistas_semanales.head(20), use_container_width=True)
+.metric-card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+}
 
-st.divider()
+/* Radio como texto simple */
+div[data-testid="stRadio"] > label { display: none; }
+div[data-testid="stRadio"] > div { gap: 2px !important; }
+div[data-testid="stRadio"] > div > label {
+    display: block !important;
+    padding: 6px 8px !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: #1f2a44 !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+div[data-testid="stRadio"] > div > label:hover { color: #4f6ef7 !important; }
+div[data-testid="stRadio"] > div > label > div:first-child { display: none !important; }
+div[data-testid="stRadio"] > div > label > p {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+}
 
-st.header("🗓️ Canciones semanales")
+/* Botones sidebar como texto simple */
+div[data-testid="stSidebar"] div.stButton > button {
+    width: 100%;
+    height: auto;
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    color: #1f2a44;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    box-shadow: none;
+    transition: color 0.15s ease;
+}
+div[data-testid="stSidebar"] div.stButton > button:hover {
+    background-color: transparent;
+    color: #4f6ef7;
+    border: none;
+    box-shadow: none;
+}
 
-tag_usuario = st.selectbox(
-    "Elige un género",
-    ["disco", "rock", "pop", "jazz", "hip-hop", "k-pop"]
-)
+/* Botones de explorar en página principal */
+div[data-testid="stMain"] div.stButton > button {
+    width: 100%;
+    height: 54px;
+    border-radius: 12px;
+    border: 1px solid #d6dbe4;
+    background-color: white;
+    color: #1f2a44;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+div[data-testid="stMain"] div.stButton > button:hover {
+    background-color: #f0f4ff;
+    border-color: #b8c4ea;
+}
+</style>
+""", unsafe_allow_html=True)
 
-ruta_csv_tag = f"data/clean/canciones_{tag_usuario}.csv"
-canciones_tag = cargar_csv_seguro(ruta_csv_tag)
+# Inicializa la página activa solo la primera vez
+if "pagina" not in st.session_state:
+    st.session_state["pagina"] = "🏠 Página principal"
 
-if not canciones_tag.empty:
-    canciones_tag = convertir_fechas_unix(canciones_tag, "fecha_desde", "fecha_hasta")
+# ── Sidebar ──
+with st.sidebar:
+    st.markdown('<div class="sidebar-title">Analisis Musical Stats</div>', unsafe_allow_html=True)
 
+    st.markdown('<div class="sidebar-section">HOME</div>', unsafe_allow_html=True)
+    if st.button("🏠 Página principal", key="btn_home"):
+        st.session_state["pagina"] = "🏠 Página principal"
 
-    if not canciones_tag.empty:
-        semana_desde = canciones_tag["fecha_desde"].iloc[0] if "fecha_desde" in canciones_tag.columns else "N/A"
-        semana_hasta = canciones_tag["fecha_hasta"].iloc[0] if "fecha_hasta" in canciones_tag.columns else "N/A"
+    st.markdown('<div class="sidebar-section">DASHBOARD</div>', unsafe_allow_html=True)
+    if st.button("📊 Dashboard", key="btn_dash"):
+        st.session_state["pagina"] = "📊 Dashboard"
 
-        st.markdown(f"**Semana:** {semana_desde} - {semana_hasta}")
-        st.markdown(f"**Tag seleccionado:** {tag_usuario}")
+    st.markdown('<div class="sidebar-section">EXPLORAR</div>', unsafe_allow_html=True)
+    if st.button("🎵 Canciones", key="btn_canciones"):
+        st.session_state["pagina"] = "🎵 Canciones"
+    if st.button("🎤 Artistas", key="btn_artistas"):
+        st.session_state["pagina"] = "🎤 Artistas"
+    if st.button("🎼 Géneros", key="btn_generos"):
+        st.session_state["pagina"] = "🎼 Géneros"
 
-        col_izq, col_der = st.columns(2)
+    st.markdown('<div class="sidebar-section">PRODUCTOR</div>', unsafe_allow_html=True)
+    if st.button("⭐ Favoritos", key="btn_favoritos"):
+        st.session_state["pagina"] = "⭐ Favoritos"
+    if st.button("📈 Tendencias", key="btn_tendencias"):
+        st.session_state["pagina"] = "📈 Tendencias"
+    if st.button("🕘 Historial", key="btn_historial"):
+        st.session_state["pagina"] = "🕘 Historial"
 
-        with col_izq:
-            st.subheader("Tabla semanal")
-            columnas_tabla = [col for col in ["nombre", "artista"] if col in canciones_tag.columns]
-            st.dataframe(canciones_tag[columnas_tabla].head(10), use_container_width=True)
+    st.markdown('<div class="sidebar-section">USUARIO</div>', unsafe_allow_html=True)
+    if st.button("👤 Perfil", key="btn_perfil"):
+        st.session_state["pagina"] = "👤 Perfil"
 
-        with col_der:
-            st.subheader("Gráfico semanal")
-            top10 = canciones_tag.sort_values(by="oyentes", ascending=False).head(10).copy()
-            top10 = top10.sort_values(by="oyentes", ascending=True)
-            top10["etiqueta"] = top10["nombre"].astype(str).str.slice(0, 30)
+opcion = st.session_state["pagina"]
 
-            fig, ax = plt.subplots(figsize=(8, 5))
-            ax.barh(top10["etiqueta"], top10["oyentes"])
-            ax.set_title(f"Top canciones semanales - {tag_usuario}")
-            ax.set_xlabel("Oyentes")
-            ax.set_ylabel("Canción")
-            plt.tight_layout()
-            st.pyplot(fig)
-    else:
-        st.warning(f"El archivo {ruta_csv_tag} existe, pero no tiene valores numéricos válidos en 'oyentes'.")
-else:
-    st.warning(f"No existe el archivo {ruta_csv_tag}. Ejecuta antes tu script de descarga.")
+# ── Datos temporales ──
+canciones = pd.DataFrame({
+    "nombre": ["Dato pendiente", "Dato pendiente", "Dato pendiente"],
+    "reproducciones": [0, 0, 0]
+})
+artistas = pd.DataFrame({"nombre": ["Dato pendiente", "Dato pendiente", "Dato pendiente"]})
+generos  = pd.DataFrame({"generos": ["Pendiente", "Pendiente", "Pendiente"]})
+julio    = pd.DataFrame({"nombre": ["Dato pendiente", "Dato pendiente", "Dato pendiente"]})
 
-st.divider()
+# ── Página principal ──
+if opcion == "🏠 Página principal":
+    st.title("𝄞 ÁNALISIS ESTADISTICO MUSICAL")
 
+    st.markdown("""
+    <p style='font-size:16px; max-width:800px; color:#374151;'>
+    En un mercado saturado, la diferencia entre un track que pasa desapercibido y un éxito global
+    suele estar en los detalles que el oído humano no siempre detecta a la primera.
+    En Análisis Estadístico Musical, transformamos el audio en métricas accionables
+    para que lleves tu sonido al siguiente nivel competitivo.
+    </p>
+    """, unsafe_allow_html=True)
 
+    st.markdown("""
+    <p style='font-size:17px; font-weight:700; color:#1f2a44; margin-top:8px; margin-bottom:32px;'>
+    NO SOMOS CRÍTICOS MUSICALES, SOMOS ANALISTAS DE DATOS
+    </p>
+    """, unsafe_allow_html=True)
 
-st.header("📈 Gráficos generales")
+    st.subheader("Explora")
 
-col_g1, col_g2 = st.columns(2)
+    col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        if st.button("Dashboard", key="exp_dash"):
+            st.session_state["pagina"] = "📊 Dashboard"
+            st.rerun()
+    with col2:
+        if st.button("Canciones", key="exp_canciones"):
+            st.session_state["pagina"] = "🎵 Canciones"
+            st.rerun()
+    with col3:
+        if st.button("Artistas", key="exp_artistas"):
+            st.session_state["pagina"] = "🎤 Artistas"
+            st.rerun()
+    with col4:
+        if st.button("Géneros", key="exp_generos"):
+            st.session_state["pagina"] = "🎼 Géneros"
+            st.rerun()
 
-with col_g1:
-    st.subheader("Géneros más populares")
-    if not generos.empty and "generos" in generos.columns:
+# ── Dashboard ──
+elif opcion == "📊 Dashboard":
+    st.title("📊 Dashboard")
+
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Canciones", len(canciones))
+    col2.metric("Artistas", len(artistas))
+    col3.metric("Géneros", len(generos))
+    col4.metric("Canciones del mes", len(julio))
+
+    st.subheader("Vista general")
+    col_a, col_b = st.columns([1.4, 1])
+    with col_a:
+        st.write("Desde el menú lateral podrás acceder a las demás secciones del sistema.")
+    with col_b:
         conteo_generos = generos["generos"].value_counts().head(10)
-
-        fig2, ax2 = plt.subplots(figsize=(8, 5))
-        ax2.bar(conteo_generos.index, conteo_generos.values)
-        ax2.set_title("Top géneros")
-        ax2.set_xlabel("Género")
-        ax2.set_ylabel("Cantidad")
+        plt.rcdefaults()
+        fig, ax = plt.subplots(figsize=(6, 4))
+        ax.bar(conteo_generos.index, conteo_generos.values, color="#4f6ef7")
+        ax.set_title("Resumen de géneros")
+        ax.set_xlabel("Género")
+        ax.set_ylabel("Cantidad")
         plt.xticks(rotation=45, ha="right")
         plt.tight_layout()
-        st.pyplot(fig2)
+        st.pyplot(fig)
+
+elif opcion == "🎵 Canciones":
+    st.title("🎵 Canciones")
+    st.dataframe(canciones, use_container_width=True)
+
+elif opcion == "🎤 Artistas":
+    st.title("🎤 Artistas")
+    st.dataframe(artistas, use_container_width=True)
+
+elif opcion == "🎼 Géneros":
+    st.title("🎼 Géneros")
+    st.markdown("Distribución de géneros musicales extraída de Last.fm.")
+    st.markdown("---")
+
+    # Carga real del CSV
+    import os
+    gen_path = "data/clean/generos_canciones.csv"
+    if os.path.exists(gen_path):
+        gen_df = pd.read_csv(gen_path)
+        conteo_generos = gen_df["generos"].value_counts().head(10).reset_index()
+        conteo_generos.columns = ["género", "cantidad"]
     else:
-        st.warning("No hay datos de géneros disponibles.")
+        conteo_generos = pd.DataFrame({
+            "género":   ["Jazz", "Pop", "Rock", "Soul", "Hip-Hop"],
+            "cantidad": [15, 12, 10, 8, 6]
+        })
 
-with col_g2:
-    st.subheader("Top artistas globales")
-    if not artistas.empty and "reproducciones" in artistas.columns and "nombre" in artistas.columns:
-        top_artistas = artistas.dropna(subset=["reproducciones"]).sort_values(
-            by="reproducciones", ascending=False
-        ).head(10).copy()
+    col_izq, col_der = st.columns([1, 1.4], gap="large")
 
-        top_artistas = top_artistas.sort_values(by="reproducciones", ascending=True)
-        top_artistas["etiqueta"] = top_artistas["nombre"].astype(str).str.slice(0, 30)
+    with col_izq:
+        st.subheader("Tabla de géneros")
+        st.dataframe(
+            conteo_generos.style.bar(subset=["cantidad"], color="#c7d3fc"),
+            use_container_width=True,
+            hide_index=True
+        )
 
-        fig3, ax3 = plt.subplots(figsize=(8, 5))
-        ax3.barh(top_artistas["etiqueta"], top_artistas["reproducciones"])
-        ax3.set_title("Top artistas")
-        ax3.set_xlabel("Reproducciones")
-        ax3.set_ylabel("Artista")
+    with col_der:
+        st.subheader("Gráfica de géneros")
+        plt.rcdefaults()
+        fig, ax = plt.subplots(figsize=(7, 4.5))
+        colors = ["#4f6ef7", "#6c82f8", "#8997f9", "#a6acfa", "#c3c1fb",
+                  "#4f6ef7", "#6c82f8", "#8997f9", "#a6acfa", "#c3c1fb"]
+        bars = ax.barh(
+            conteo_generos["género"][::-1],
+            conteo_generos["cantidad"][::-1],
+            color=colors[:len(conteo_generos)],
+            height=0.6, edgecolor="none"
+        )
+        ax.set_xlabel("Cantidad de canciones", fontsize=10, color="#555")
+        ax.tick_params(axis="y", labelsize=11)
+        ax.tick_params(axis="x", labelsize=9, colors="#888")
+        ax.spines["top"].set_visible(False)
+        ax.spines["right"].set_visible(False)
+        ax.spines["left"].set_visible(False)
+        ax.set_xlim(0, conteo_generos["cantidad"].max() * 1.18)
+        for bar, val in zip(bars, conteo_generos["cantidad"][::-1]):
+            ax.text(
+                bar.get_width() + conteo_generos["cantidad"].max() * 0.02,
+                bar.get_y() + bar.get_height() / 2,
+                str(val), va="center", color="#555", fontsize=9
+            )
+        ax.set_facecolor("#fafbff")
+        fig.patch.set_facecolor("#fafbff")
         plt.tight_layout()
-        st.pyplot(fig3)
-    else:
-        st.warning("No hay datos de artistas disponibles.")
+        st.pyplot(fig)
+        plt.close()
 
-st.divider()
+elif opcion == "⭐ Favoritos":
+    st.switch_page("pages/4_Favoritos.py")
 
-st.header("⚡ Comparación entre tags")
+elif opcion == "📈 Tendencias":
+    st.title("📈 Tendencias")
+    st.info("Aquí irán las tendencias musicales.")
 
-tags_comparacion = ["disco", "rock"]
-col_a, col_b = st.columns(2)
+elif opcion == "🕘 Historial":
+    st.title("🕘 Historial")
+    st.info("Aquí irá el historial del usuario o productor.")
 
-for i, tag in enumerate(tags_comparacion):
-    ruta = f"data/clean/canciones_{tag}.csv"
-    df = cargar_csv_seguro(ruta)
-
-    if not df.empty:
-        df = convertir_fechas_unix(df, "fecha_desde", "fecha_hasta")
-        df = limpiar_numeros(df, "oyentes")
-        df = df.dropna(subset=["oyentes"])
-        df = df[df["oyentes"] > 0]
-
-        if not df.empty:
-            top5 = df.sort_values(by="oyentes", ascending=False).head(5).copy()
-            top5["etiqueta"] = top5["nombre"].astype(str).str.slice(0, 20)
-
-            if i == 0:
-                with col_a:
-                    st.subheader(f"Tag: {tag}")
-                    st.dataframe(top5[["nombre", "artista", "oyentes"]], use_container_width=True)
-
-                    fig, ax = plt.subplots(figsize=(7, 4))
-                    ax.bar(top5["etiqueta"], top5["oyentes"])
-                    ax.set_title(f"Top 5 - {tag}")
-                    ax.set_ylabel("Oyentes")
-                    plt.xticks(rotation=45, ha="right")
-                    plt.tight_layout()
-                    st.pyplot(fig)
-            else:
-                with col_b:
-                    st.subheader(f"Tag: {tag}")
-                    st.dataframe(top5[["nombre", "artista", "oyentes"]], use_container_width=True)
-
-                    fig, ax = plt.subplots(figsize=(7, 4))
-                    ax.bar(top5["etiqueta"], top5["oyentes"])
-                    ax.set_title(f"Top 5 - {tag}")
-                    ax.set_ylabel("Oyentes")
-                    plt.xticks(rotation=45, ha="right")
-                    plt.tight_layout()
-                    st.pyplot(fig)
-        else:
-            if i == 0:
-                with col_a:
-                    st.warning(f"El archivo de {tag} no tiene oyentes válidos.")
-            else:
-                with col_b:
-                    st.warning(f"El archivo de {tag} no tiene oyentes válidos.")
-    else:
-        if i == 0:
-            with col_a:
-                st.warning(f"No existe el archivo canciones_{tag}.csv")
-        else:
-            with col_b:
-                st.warning(f"No existe el archivo canciones_{tag}.csv")
+elif opcion == "👤 Perfil":
+    st.title("👤 Usuario")
+    st.info("Aquí irá la información del usuario.")

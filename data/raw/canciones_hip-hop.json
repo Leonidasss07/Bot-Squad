@@ -1,8 +1,8 @@
 [
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Flashing Lights",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -10,17 +10,8 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Heartbeat",
-        "artista": "Childish Gambino",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Childish+Gambino/_/Heartbeat"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "All Falls Down",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -28,26 +19,17 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Fashion Killa",
-        "artista": "A$AP Rocky",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Heartbeat",
+        "artista": "Childish Gambino",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/A$AP+Rocky/_/Fashion+Killa"
+        "url": "https://www.last.fm/music/Childish+Gambino/_/Heartbeat"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Touch the Sky",
-        "artista": "Kanye West",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kanye+West/_/Touch+the+Sky"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "I Wonder",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -55,26 +37,26 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Ms. Jackson",
-        "artista": "OutKast",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Touch the Sky",
+        "artista": "Kanye West",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/OutKast/_/Ms.+Jackson"
+        "url": "https://www.last.fm/music/Kanye+West/_/Touch+the+Sky"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Swimming Pools (Drank)",
-        "artista": "Kendrick Lamar",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Fashion Killa",
+        "artista": "A$AP Rocky",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kendrick+Lamar/_/Swimming+Pools+(Drank)"
+        "url": "https://www.last.fm/music/A$AP+Rocky/_/Fashion+Killa"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Homecoming",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -82,8 +64,17 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Ms. Jackson",
+        "artista": "OutKast",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/OutKast/_/Ms.+Jackson"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Stronger",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -91,26 +82,8 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Hey Ya!",
-        "artista": "OutKast",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/OutKast/_/Hey+Ya%21"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Trap Queen",
-        "artista": "Fetty Wap",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Fetty+Wap/_/Trap+Queen"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Gold Digger",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -118,8 +91,26 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Swimming Pools (Drank)",
+        "artista": "Kendrick Lamar",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kendrick+Lamar/_/Swimming+Pools+(Drank)"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Trap Queen",
+        "artista": "Fetty Wap",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Fetty+Wap/_/Trap+Queen"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Kiss Me Thru The Phone",
         "artista": "Soulja Boy",
         "oyentes": "N/A",
@@ -127,8 +118,8 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Headlines",
         "artista": "Drake",
         "oyentes": "N/A",
@@ -136,26 +127,8 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Pursuit of Happiness (Nightmare)",
-        "artista": "Kid Cudi",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kid+Cudi/_/Pursuit+of+Happiness+(Nightmare)"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Meet Me Halfway",
-        "artista": "Black Eyed Peas",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Black+Eyed+Peas/_/Meet+Me+Halfway"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Can't Tell Me Nothing",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -163,8 +136,17 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Pursuit of Happiness (Nightmare)",
+        "artista": "Kid Cudi",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kid+Cudi/_/Pursuit+of+Happiness+(Nightmare)"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Runaway",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -172,89 +154,8 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "POWER",
-        "artista": "Kanye West",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kanye+West/_/POWER"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "21 Questions",
-        "artista": "50 Cent",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/50+Cent/_/21+Questions"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "The Way I Are",
-        "artista": "Timbaland",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Timbaland/_/The+Way+I+Are"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Paper Planes",
-        "artista": "M.I.A.",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/M.I.A./_/Paper+Planes"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Good Life",
-        "artista": "Kanye West",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kanye+West/_/Good+Life"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Alright",
-        "artista": "Kendrick Lamar",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kendrick+Lamar/_/Alright"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Pump It",
-        "artista": "Black Eyed Peas",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Black+Eyed+Peas/_/Pump+It"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "All of the Lights",
-        "artista": "Kanye West",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kanye+West/_/All+of+the+Lights"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Without Me",
-        "artista": "Eminem",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Eminem/_/Without+Me"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Dark Fantasy",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -262,26 +163,8 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Champion",
-        "artista": "Kanye West",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kanye+West/_/Champion"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "The Spins",
-        "artista": "Mac Miller",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Mac+Miller/_/The+Spins"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Everything I Am",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -289,8 +172,53 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "21 Questions",
+        "artista": "50 Cent",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/50+Cent/_/21+Questions"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Champion",
+        "artista": "Kanye West",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kanye+West/_/Champion"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "POWER",
+        "artista": "Kanye West",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kanye+West/_/POWER"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Good Life",
+        "artista": "Kanye West",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kanye+West/_/Good+Life"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Meet Me Halfway",
+        "artista": "Black Eyed Peas",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Black+Eyed+Peas/_/Meet+Me+Halfway"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Richman",
         "artista": "3OH!3",
         "oyentes": "N/A",
@@ -298,98 +226,53 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Low (feat. T-Pain)",
-        "artista": "Flo Rida",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "All of the Lights",
+        "artista": "Kanye West",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Flo+Rida/_/Low+(feat.+T-Pain)"
+        "url": "https://www.last.fm/music/Kanye+West/_/All+of+the+Lights"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "In Da Club",
-        "artista": "50 Cent",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "The Way I Are",
+        "artista": "Timbaland",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/50+Cent/_/In+Da+Club"
+        "url": "https://www.last.fm/music/Timbaland/_/The+Way+I+Are"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Bitch, Don’t Kill My Vibe",
-        "artista": "Kendrick Lamar",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Paper Planes",
+        "artista": "M.I.A.",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kendrick+Lamar/_/Bitch,+Don%E2%80%99t+Kill+My+Vibe"
+        "url": "https://www.last.fm/music/M.I.A./_/Paper+Planes"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Black and Yellow",
-        "artista": "Wiz Khalifa",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Wiz+Khalifa/_/Black+and+Yellow"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "One Beer",
-        "artista": "MF DOOM",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/MF+DOOM/_/One+Beer"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Stereo Hearts (feat. Adam Levine)",
-        "artista": "Gym Class Heroes",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Gym+Class+Heroes/_/Stereo+Hearts+(feat.+Adam+Levine)"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Hate It Or Love It",
-        "artista": "The Game",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/The+Game/_/Hate+It+Or+Love+It"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Poetic Justice",
-        "artista": "Kendrick Lamar",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kendrick+Lamar/_/Poetic+Justice"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "So Fresh, So Clean",
-        "artista": "OutKast",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/OutKast/_/So+Fresh,+So+Clean"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "The Real Slim Shady",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Without Me",
         "artista": "Eminem",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Eminem/_/The+Real+Slim+Shady"
+        "url": "https://www.last.fm/music/Eminem/_/Without+Me"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Pump It",
+        "artista": "Black Eyed Peas",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Black+Eyed+Peas/_/Pump+It"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Through the Wire",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -397,152 +280,89 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "It Was A Good Day",
-        "artista": "Ice Cube",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Ice+Cube/_/It+Was+A+Good+Day"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Smack That",
-        "artista": "Akon",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Akon/_/Smack+That"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Bad Girls",
-        "artista": "M.I.A.",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/M.I.A./_/Bad+Girls"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Swimming Pools (Drank) (extended version)",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Alright",
         "artista": "Kendrick Lamar",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kendrick+Lamar/_/Swimming+Pools+(Drank)+(extended+version)"
+        "url": "https://www.last.fm/music/Kendrick+Lamar/_/Alright"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Marvins Room",
-        "artista": "Drake",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "In Da Club",
+        "artista": "50 Cent",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Drake/_/Marvins+Room"
+        "url": "https://www.last.fm/music/50+Cent/_/In+Da+Club"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "HUMBLE.",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Low (feat. T-Pain)",
+        "artista": "Flo Rida",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Flo+Rida/_/Low+(feat.+T-Pain)"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Black and Yellow",
+        "artista": "Wiz Khalifa",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Wiz+Khalifa/_/Black+and+Yellow"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "So Fresh, So Clean",
+        "artista": "OutKast",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/OutKast/_/So+Fresh,+So+Clean"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "The Spins",
+        "artista": "Mac Miller",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Mac+Miller/_/The+Spins"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Bitch, Don’t Kill My Vibe",
         "artista": "Kendrick Lamar",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kendrick+Lamar/_/HUMBLE."
+        "url": "https://www.last.fm/music/Kendrick+Lamar/_/Bitch,+Don%E2%80%99t+Kill+My+Vibe"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "212 (feat. Lazy Jay)",
-        "artista": "Azealia Banks",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "One Beer",
+        "artista": "MF DOOM",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Azealia+Banks/_/212+(feat.+Lazy+Jay)"
+        "url": "https://www.last.fm/music/MF+DOOM/_/One+Beer"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Do for Love",
-        "artista": "2Pac",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Stereo Hearts (feat. Adam Levine)",
+        "artista": "Gym Class Heroes",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/2Pac/_/Do+for+Love"
+        "url": "https://www.last.fm/music/Gym+Class+Heroes/_/Stereo+Hearts+(feat.+Adam+Levine)"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "A.D.H.D",
-        "artista": "Kendrick Lamar",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kendrick+Lamar/_/A.D.H.D"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Best I Ever Had",
-        "artista": "Drake",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Drake/_/Best+I+Ever+Had"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Hotel Room Service",
-        "artista": "Pitbull",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Pitbull/_/Hotel+Room+Service"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Feel Good Inc.",
-        "artista": "Gorillaz",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Gorillaz/_/Feel+Good+Inc."
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Needed Me",
-        "artista": "Rihanna",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Rihanna/_/Needed+Me"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Hot in Herre",
-        "artista": "Nelly",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Nelly/_/Hot+in+Herre"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Jesus Walks",
-        "artista": "Kanye West",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kanye+West/_/Jesus+Walks"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "DNA.",
-        "artista": "Kendrick Lamar",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kendrick+Lamar/_/DNA."
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Black Skinhead",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -550,98 +370,17 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "The World Is Yours",
-        "artista": "Nas",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Nas/_/The+World+Is+Yours"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Lose Yourself",
-        "artista": "Eminem",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Eminem/_/Lose+Yourself"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Till I Collapse",
-        "artista": "Eminem",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Eminem/_/Till+I+Collapse"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Hoe Cakes",
-        "artista": "MF DOOM",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/MF+DOOM/_/Hoe+Cakes"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Good Morning",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Jesus Walks",
         "artista": "Kanye West",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kanye+West/_/Good+Morning"
+        "url": "https://www.last.fm/music/Kanye+West/_/Jesus+Walks"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Roses",
-        "artista": "Kanye West",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kanye+West/_/Roses"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Stan",
-        "artista": "Eminem",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Eminem/_/Stan"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Work Out",
-        "artista": "J. Cole",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/J.+Cole/_/Work+Out"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Where Is the Love",
-        "artista": "Black Eyed Peas",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Black+Eyed+Peas/_/Where+Is+the+Love"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "On Sight",
-        "artista": "Kanye West",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kanye+West/_/On+Sight"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Heard 'Em Say",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -649,8 +388,170 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "The Glory",
+        "artista": "Kanye West",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kanye+West/_/The+Glory"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "It Was A Good Day",
+        "artista": "Ice Cube",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Ice+Cube/_/It+Was+A+Good+Day"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Hate It Or Love It",
+        "artista": "The Game",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/The+Game/_/Hate+It+Or+Love+It"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Smack That",
+        "artista": "Akon",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Akon/_/Smack+That"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Poetic Justice",
+        "artista": "Kendrick Lamar",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kendrick+Lamar/_/Poetic+Justice"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "The Real Slim Shady",
+        "artista": "Eminem",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Eminem/_/The+Real+Slim+Shady"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Swimming Pools (Drank) (extended version)",
+        "artista": "Kendrick Lamar",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kendrick+Lamar/_/Swimming+Pools+(Drank)+(extended+version)"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Good Morning",
+        "artista": "Kanye West",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kanye+West/_/Good+Morning"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Marvins Room",
+        "artista": "Drake",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Drake/_/Marvins+Room"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Best I Ever Had",
+        "artista": "Drake",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Drake/_/Best+I+Ever+Had"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Bad Girls",
+        "artista": "M.I.A.",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/M.I.A./_/Bad+Girls"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Do for Love",
+        "artista": "2Pac",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/2Pac/_/Do+for+Love"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "On Sight",
+        "artista": "Kanye West",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kanye+West/_/On+Sight"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "A.D.H.D",
+        "artista": "Kendrick Lamar",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kendrick+Lamar/_/A.D.H.D"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Roses",
+        "artista": "Kanye West",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kanye+West/_/Roses"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Feel Good Inc.",
+        "artista": "Gorillaz",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Gorillaz/_/Feel+Good+Inc."
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "HUMBLE.",
+        "artista": "Kendrick Lamar",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kendrick+Lamar/_/HUMBLE."
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Hot in Herre",
+        "artista": "Nelly",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Nelly/_/Hot+in+Herre"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Slow Jamz",
         "artista": "Twista",
         "oyentes": "N/A",
@@ -658,53 +559,26 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Airplanes (feat. Hayley Williams)",
-        "artista": "B.o.B",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "212 (feat. Lazy Jay)",
+        "artista": "Azealia Banks",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/B.o.B/_/Airplanes+(feat.+Hayley+Williams)"
+        "url": "https://www.last.fm/music/Azealia+Banks/_/212+(feat.+Lazy+Jay)"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Mr. Rager",
-        "artista": "Kid Cudi",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Hotel Room Service",
+        "artista": "Pitbull",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kid+Cudi/_/Mr.+Rager"
+        "url": "https://www.last.fm/music/Pitbull/_/Hotel+Room+Service"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Many Men (Wish Death)",
-        "artista": "50 Cent",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/50+Cent/_/Many+Men+(Wish+Death)"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Sabotage",
-        "artista": "Beastie Boys",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Beastie+Boys/_/Sabotage"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "All Caps",
-        "artista": "Madvillain",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Madvillain/_/All+Caps"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Heartless",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -712,71 +586,35 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "N.Y. State of Mind",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Needed Me",
+        "artista": "Rihanna",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Rihanna/_/Needed+Me"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "The World Is Yours",
         "artista": "Nas",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Nas/_/N.Y.+State+of+Mind"
+        "url": "https://www.last.fm/music/Nas/_/The+World+Is+Yours"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Hotline Bling",
-        "artista": "Drake",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Hoe Cakes",
+        "artista": "MF DOOM",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Drake/_/Hotline+Bling"
+        "url": "https://www.last.fm/music/MF+DOOM/_/Hoe+Cakes"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Sunflower - Spider-Man: Into the Spider-Verse",
-        "artista": "Post Malone",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Post+Malone/_/Sunflower+-+Spider-Man:+Into+the+Spider-Verse"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "93 'til Infinity",
-        "artista": "Souls of Mischief",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Souls+of+Mischief/_/93+%27til+Infinity"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Peso",
-        "artista": "A$AP Rocky",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/A$AP+Rocky/_/Peso"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Sad!",
-        "artista": "XXXTENTACION",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/XXXTENTACION/_/Sad%21"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "You Know What",
-        "artista": "N*E*R*D",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/N%2AE%2AR%2AD/_/You+Know+What"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Addiction",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -784,71 +622,35 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Luxury",
-        "artista": "Azealia Banks",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Azealia+Banks/_/Luxury"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "King Kunta",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "DNA.",
         "artista": "Kendrick Lamar",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kendrick+Lamar/_/King+Kunta"
+        "url": "https://www.last.fm/music/Kendrick+Lamar/_/DNA."
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Still D.R.E.",
-        "artista": "Dr. Dre",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Dr.+Dre/_/Still+D.R.E."
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Roses",
-        "artista": "OutKast",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/OutKast/_/Roses"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "I've Seen Footage",
-        "artista": "Death Grips",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Death+Grips/_/I%27ve+Seen+Footage"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Mockingbird",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Till I Collapse",
         "artista": "Eminem",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Eminem/_/Mockingbird"
+        "url": "https://www.last.fm/music/Eminem/_/Till+I+Collapse"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "My Humps",
-        "artista": "Black Eyed Peas",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Lose Yourself",
+        "artista": "Eminem",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Black+Eyed+Peas/_/My+Humps"
+        "url": "https://www.last.fm/music/Eminem/_/Lose+Yourself"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Family Business",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -856,26 +658,53 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Electric Relaxation",
-        "artista": "A Tribe Called Quest",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Airplanes (feat. Hayley Williams)",
+        "artista": "B.o.B",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/A+Tribe+Called+Quest/_/Electric+Relaxation"
+        "url": "https://www.last.fm/music/B.o.B/_/Airplanes+(feat.+Hayley+Williams)"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "ATLiens",
-        "artista": "OutKast",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Mr. Rager",
+        "artista": "Kid Cudi",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/OutKast/_/ATLiens"
+        "url": "https://www.last.fm/music/Kid+Cudi/_/Mr.+Rager"
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Stan",
+        "artista": "Eminem",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Eminem/_/Stan"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Where Is the Love",
+        "artista": "Black Eyed Peas",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Black+Eyed+Peas/_/Where+Is+the+Love"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "All Caps",
+        "artista": "Madvillain",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Madvillain/_/All+Caps"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Hell of a Life",
         "artista": "Kanye West",
         "oyentes": "N/A",
@@ -883,20 +712,191 @@
     },
     {
         "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Work Out",
+        "artista": "J. Cole",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/J.+Cole/_/Work+Out"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Many Men (Wish Death)",
+        "artista": "50 Cent",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/50+Cent/_/Many+Men+(Wish+Death)"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Lost in the World",
+        "artista": "Kanye West",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kanye+West/_/Lost+in+the+World"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Sunflower - Spider-Man: Into the Spider-Verse",
+        "artista": "Post Malone",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Post+Malone/_/Sunflower+-+Spider-Man:+Into+the+Spider-Verse"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Sabotage",
+        "artista": "Beastie Boys",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Beastie+Boys/_/Sabotage"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "N.Y. State of Mind",
+        "artista": "Nas",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Nas/_/N.Y.+State+of+Mind"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Hotline Bling",
+        "artista": "Drake",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Drake/_/Hotline+Bling"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Sad!",
+        "artista": "XXXTENTACION",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/XXXTENTACION/_/Sad%21"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "93 'til Infinity",
+        "artista": "Souls of Mischief",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Souls+of+Mischief/_/93+%27til+Infinity"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "I've Seen Footage",
+        "artista": "Death Grips",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Death+Grips/_/I%27ve+Seen+Footage"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Roses",
+        "artista": "OutKast",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/OutKast/_/Roses"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Big Brother",
+        "artista": "Kanye West",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kanye+West/_/Big+Brother"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Peso",
+        "artista": "A$AP Rocky",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/A$AP+Rocky/_/Peso"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Love Lockdown",
+        "artista": "Kanye West",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kanye+West/_/Love+Lockdown"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Luxury",
+        "artista": "Azealia Banks",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Azealia+Banks/_/Luxury"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Mockingbird",
+        "artista": "Eminem",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Eminem/_/Mockingbird"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Paranoid",
+        "artista": "Kanye West",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kanye+West/_/Paranoid"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Still D.R.E.",
+        "artista": "Dr. Dre",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Dr.+Dre/_/Still+D.R.E."
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "ATLiens",
+        "artista": "OutKast",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/OutKast/_/ATLiens"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Two Words",
+        "artista": "Kanye West",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kanye+West/_/Two+Words"
+    },
+    {
+        "tag": "hip-hop",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Promiscuous",
         "artista": "Nelly Furtado",
         "oyentes": "N/A",
         "url": "https://www.last.fm/music/Nelly+Furtado/_/Promiscuous"
-    },
-    {
-        "tag": "hip-hop",
-        "fecha_desde": "1775390400",
-        "fecha_hasta": "1775995200",
-        "nombre": "Maui Wowie",
-        "artista": "Kid Cudi",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kid+Cudi/_/Maui+Wowie"
     }
 ]
