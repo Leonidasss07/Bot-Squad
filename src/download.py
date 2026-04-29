@@ -44,17 +44,7 @@ def obtener_canciones_populares():
             print(f"Ocurrió un error en la página {pagina}: {e}")
             break
 
-    artistas = []
-
-    for artist in datos["artists"]["artist"]:
-        artistas.append({
-            "nombre": artist.get("name", ""),
-            "oyentes": int(artist.get("listeners", 0)),
-            "reproducciones": int(artist.get("playcount", 0)),
-            "url": artist.get("url", "")
-        })
-
-    return artistas
+    return canciones
 
 #artistas populares
 def obtener_artistas_populares():
