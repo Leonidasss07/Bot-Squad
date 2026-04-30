@@ -1,7 +1,8 @@
+import os
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import os
+
 
 st.set_page_config(
     page_title="Géneros · Proyecto Musical",
@@ -92,6 +93,7 @@ with st.sidebar:
 
 COLORS = ["#4f6ef7","#6c82f8","#8997f9","#a6acfa","#c3c1fb",
           "#3a5bd9","#5570f0","#7088f5","#99a9f9","#bbc3fc"]
+
 
 
 gen_path = "data/clean/generos_canciones.csv"
@@ -212,7 +214,6 @@ with col_info:
 
 st.markdown("---")
 
-
 st.subheader("🔍 Canciones más populares por género")
 st.markdown("Selecciona un género para ver sus canciones más escuchadas.")
 
@@ -317,6 +318,7 @@ else:
                     bar.get_y() + bar.get_height() / 2,
                     label, va="center", color="#555", fontsize=9, fontweight="bold"
                 )
+
             ax3.set_facecolor("#fafbff")
             fig3.patch.set_facecolor("#fafbff")
             plt.tight_layout()
