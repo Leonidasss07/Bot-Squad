@@ -21,15 +21,6 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "September",
-        "artista": "Earth, Wind & Fire",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Earth,+Wind+&+Fire/_/September"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
         "nombre": "Young Hearts Run Free",
         "artista": "Candi Staton",
         "oyentes": "N/A",
@@ -48,10 +39,10 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Let's Groove",
+        "nombre": "September",
         "artista": "Earth, Wind & Fire",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Earth,+Wind+&+Fire/_/Let%27s+Groove"
+        "url": "https://www.last.fm/music/Earth,+Wind+&+Fire/_/September"
     },
     {
         "tag": "disco",
@@ -66,10 +57,28 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Ring My Bell",
-        "artista": "Anita Ward",
+        "nombre": "Say So",
+        "artista": "Doja Cat",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Anita+Ward/_/Ring+My+Bell"
+        "url": "https://www.last.fm/music/Doja+Cat/_/Say+So"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Let's Groove",
+        "artista": "Earth, Wind & Fire",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Earth,+Wind+&+Fire/_/Let%27s+Groove"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "In The Navy",
+        "artista": "Village People",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Village+People/_/In+The+Navy"
     },
     {
         "tag": "disco",
@@ -84,10 +93,10 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Say So",
-        "artista": "Doja Cat",
+        "nombre": "Ring My Bell",
+        "artista": "Anita Ward",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Doja+Cat/_/Say+So"
+        "url": "https://www.last.fm/music/Anita+Ward/_/Ring+My+Bell"
     },
     {
         "tag": "disco",
@@ -138,37 +147,10 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Upside Down",
-        "artista": "Diana Ross",
+        "nombre": "Don't Stop 'Til You Get Enough",
+        "artista": "Michael Jackson",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Diana+Ross/_/Upside+Down"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "In The Navy",
-        "artista": "Village People",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Village+People/_/In+The+Navy"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "Sunny",
-        "artista": "Boney M.",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Boney+M./_/Sunny"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "Break My Heart",
-        "artista": "Dua Lipa",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Dua+Lipa/_/Break+My+Heart"
+        "url": "https://www.last.fm/music/Michael+Jackson/_/Don%27t+Stop+%27Til+You+Get+Enough"
     },
     {
         "tag": "disco",
@@ -183,10 +165,28 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Don't Stop 'Til You Get Enough",
-        "artista": "Michael Jackson",
+        "nombre": "Sunny",
+        "artista": "Boney M.",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Michael+Jackson/_/Don%27t+Stop+%27Til+You+Get+Enough"
+        "url": "https://www.last.fm/music/Boney+M./_/Sunny"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Upside Down",
+        "artista": "Diana Ross",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Diana+Ross/_/Upside+Down"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Break My Heart",
+        "artista": "Dua Lipa",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Dua+Lipa/_/Break+My+Heart"
     },
     {
         "tag": "disco",
@@ -201,19 +201,19 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Love Again",
-        "artista": "Dua Lipa",
+        "nombre": "Off the Wall",
+        "artista": "Michael Jackson",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Dua+Lipa/_/Love+Again"
+        "url": "https://www.last.fm/music/Michael+Jackson/_/Off+the+Wall"
     },
     {
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Daddy Cool",
-        "artista": "Boney M.",
+        "nombre": "Love Again",
+        "artista": "Dua Lipa",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Boney+M./_/Daddy+Cool"
+        "url": "https://www.last.fm/music/Dua+Lipa/_/Love+Again"
     },
     {
         "tag": "disco",
@@ -228,19 +228,10 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Off the Wall",
-        "artista": "Michael Jackson",
+        "nombre": "Daddy Cool",
+        "artista": "Boney M.",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Michael+Jackson/_/Off+the+Wall"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "Give Life Back to Music",
-        "artista": "Daft Punk",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Daft+Punk/_/Give+Life+Back+to+Music"
+        "url": "https://www.last.fm/music/Boney+M./_/Daddy+Cool"
     },
     {
         "tag": "disco",
@@ -255,19 +246,10 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Stayin' Alive - From \"Saturday Night Fever\" Soundtrack",
-        "artista": "Bee Gees",
+        "nombre": "Give Life Back to Music",
+        "artista": "Daft Punk",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Bee+Gees/_/Stayin%27+Alive+-+From+%22Saturday+Night+Fever%22+Soundtrack"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "The Winner Takes It All",
-        "artista": "ABBA",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/ABBA/_/The+Winner+Takes+It+All"
+        "url": "https://www.last.fm/music/Daft+Punk/_/Give+Life+Back+to+Music"
     },
     {
         "tag": "disco",
@@ -282,10 +264,10 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Hot Stuff",
-        "artista": "Donna Summer",
+        "nombre": "Stayin' Alive - From \"Saturday Night Fever\" Soundtrack",
+        "artista": "Bee Gees",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Donna+Summer/_/Hot+Stuff"
+        "url": "https://www.last.fm/music/Bee+Gees/_/Stayin%27+Alive+-+From+%22Saturday+Night+Fever%22+Soundtrack"
     },
     {
         "tag": "disco",
@@ -300,19 +282,37 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Last Train to London",
-        "artista": "Electric Light Orchestra",
+        "nombre": "Lose Yourself to Dance (feat. Pharrell Williams)",
+        "artista": "Daft Punk",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Electric+Light+Orchestra/_/Last+Train+to+London"
+        "url": "https://www.last.fm/music/Daft+Punk/_/Lose+Yourself+to+Dance+(feat.+Pharrell+Williams)"
     },
     {
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Lose Yourself to Dance (feat. Pharrell Williams)",
-        "artista": "Daft Punk",
+        "nombre": "The Winner Takes It All",
+        "artista": "ABBA",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Daft+Punk/_/Lose+Yourself+to+Dance+(feat.+Pharrell+Williams)"
+        "url": "https://www.last.fm/music/ABBA/_/The+Winner+Takes+It+All"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Hot Stuff",
+        "artista": "Donna Summer",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Donna+Summer/_/Hot+Stuff"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Last Train to London",
+        "artista": "Electric Light Orchestra",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Electric+Light+Orchestra/_/Last+Train+to+London"
     },
     {
         "tag": "disco",
@@ -336,6 +336,15 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
+        "nombre": "Tears",
+        "artista": "Sabrina Carpenter",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Tears"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Dynamite",
         "artista": "BTS",
         "oyentes": "N/A",
@@ -345,19 +354,19 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "About Damn Time",
-        "artista": "Lizzo",
+        "nombre": "Fragments of Time (feat. Todd Edwards)",
+        "artista": "Daft Punk",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Lizzo/_/About+Damn+Time"
+        "url": "https://www.last.fm/music/Daft+Punk/_/Fragments+of+Time+(feat.+Todd+Edwards)"
     },
     {
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Fragments of Time (feat. Todd Edwards)",
-        "artista": "Daft Punk",
+        "nombre": "About Damn Time",
+        "artista": "Lizzo",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Daft+Punk/_/Fragments+of+Time+(feat.+Todd+Edwards)"
+        "url": "https://www.last.fm/music/Lizzo/_/About+Damn+Time"
     },
     {
         "tag": "disco",
@@ -381,28 +390,10 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Tears",
-        "artista": "Sabrina Carpenter",
+        "nombre": "Get Down On It",
+        "artista": "Kool & the Gang",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Sabrina+Carpenter/_/Tears"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "Vanish Into You",
-        "artista": "Lady Gaga",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Lady+Gaga/_/Vanish+Into+You"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "Got To Be Real",
-        "artista": "Cheryl Lynn",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Cheryl+Lynn/_/Got+To+Be+Real"
+        "url": "https://www.last.fm/music/Kool+&+the+Gang/_/Get+Down+On+It"
     },
     {
         "tag": "disco",
@@ -417,6 +408,15 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
+        "nombre": "Vanish Into You",
+        "artista": "Lady Gaga",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Lady+Gaga/_/Vanish+Into+You"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Stayin Alive",
         "artista": "Bee Gees",
         "oyentes": "N/A",
@@ -426,19 +426,19 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Get Down On It",
-        "artista": "Kool & the Gang",
+        "nombre": "Got To Be Real",
+        "artista": "Cheryl Lynn",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kool+&+the+Gang/_/Get+Down+On+It"
+        "url": "https://www.last.fm/music/Cheryl+Lynn/_/Got+To+Be+Real"
     },
     {
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Brother Louie",
-        "artista": "Modern Talking",
+        "nombre": "Ma Baker",
+        "artista": "Boney M.",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Modern+Talking/_/Brother+Louie"
+        "url": "https://www.last.fm/music/Boney+M./_/Ma+Baker"
     },
     {
         "tag": "disco",
@@ -462,6 +462,15 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
+        "nombre": "Brother Louie",
+        "artista": "Modern Talking",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Modern+Talking/_/Brother+Louie"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Give It Up",
         "artista": "KC and The Sunshine Band",
         "oyentes": "N/A",
@@ -480,10 +489,10 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Ma Baker",
-        "artista": "Boney M.",
+        "nombre": "After LIKE",
+        "artista": "IVE",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Boney+M./_/Ma+Baker"
+        "url": "https://www.last.fm/music/IVE/_/After+LIKE"
     },
     {
         "tag": "disco",
@@ -493,15 +502,6 @@
         "artista": "Tove Lo",
         "oyentes": "N/A",
         "url": "https://www.last.fm/music/Tove+Lo/_/disco+tits"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "After LIKE",
-        "artista": "IVE",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/IVE/_/After+LIKE"
     },
     {
         "tag": "disco",
@@ -534,19 +534,10 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "I'm So Excited",
-        "artista": "The Pointer Sisters",
+        "nombre": "Get Down Saturday Night",
+        "artista": "Oliver Cheatham",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/The+Pointer+Sisters/_/I%27m+So+Excited"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "I'm Coming Out",
-        "artista": "Diana Ross",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Diana+Ross/_/I%27m+Coming+Out"
+        "url": "https://www.last.fm/music/Oliver+Cheatham/_/Get+Down+Saturday+Night"
     },
     {
         "tag": "disco",
@@ -561,19 +552,19 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Get Down Saturday Night",
-        "artista": "Oliver Cheatham",
+        "nombre": "I'm Coming Out",
+        "artista": "Diana Ross",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Oliver+Cheatham/_/Get+Down+Saturday+Night"
+        "url": "https://www.last.fm/music/Diana+Ross/_/I%27m+Coming+Out"
     },
     {
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Good Times",
-        "artista": "Chic",
+        "nombre": "I'm So Excited",
+        "artista": "The Pointer Sisters",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Chic/_/Good+Times"
+        "url": "https://www.last.fm/music/The+Pointer+Sisters/_/I%27m+So+Excited"
     },
     {
         "tag": "disco",
@@ -588,37 +579,19 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "12 to 12",
-        "artista": "sombr",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/sombr/_/12+to+12"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "YMCA",
-        "artista": "Village People",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Village+People/_/YMCA"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "On the Radio",
-        "artista": "Donna Summer",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Donna+Summer/_/On+the+Radio"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
         "nombre": "Touch (feat. Paul Williams)",
         "artista": "Daft Punk",
         "oyentes": "N/A",
         "url": "https://www.last.fm/music/Daft+Punk/_/Touch+(feat.+Paul+Williams)"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Good Times",
+        "artista": "Chic",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Chic/_/Good+Times"
     },
     {
         "tag": "disco",
@@ -633,19 +606,28 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Last Dance",
-        "artista": "Donna Summer",
+        "nombre": "12 to 12",
+        "artista": "sombr",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Donna+Summer/_/Last+Dance"
+        "url": "https://www.last.fm/music/sombr/_/12+to+12"
     },
     {
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "CUFF IT",
-        "artista": "Beyoncé",
+        "nombre": "On the Radio",
+        "artista": "Donna Summer",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Beyonc%C3%A9/_/CUFF+IT"
+        "url": "https://www.last.fm/music/Donna+Summer/_/On+the+Radio"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Last Dance",
+        "artista": "Donna Summer",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Donna+Summer/_/Last+Dance"
     },
     {
         "tag": "disco",
@@ -660,19 +642,19 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Le Freak",
-        "artista": "Chic",
+        "nombre": "CUFF IT",
+        "artista": "Beyoncé",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Chic/_/Le+Freak"
+        "url": "https://www.last.fm/music/Beyonc%C3%A9/_/CUFF+IT"
     },
     {
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Boogie Oogie Oogie",
-        "artista": "A Taste of Honey",
+        "nombre": "YMCA",
+        "artista": "Village People",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/A+Taste+of+Honey/_/Boogie+Oogie+Oogie"
+        "url": "https://www.last.fm/music/Village+People/_/YMCA"
     },
     {
         "tag": "disco",
@@ -687,6 +669,15 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
+        "nombre": "Celebration",
+        "artista": "Kool & the Gang",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Kool+&+the+Gang/_/Celebration"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
         "nombre": "Heart of Glass",
         "artista": "Blondie",
         "oyentes": "N/A",
@@ -696,10 +687,19 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Canned Heat",
-        "artista": "Jamiroquai",
+        "nombre": "Instant Crush (feat. Julian Casablancas)",
+        "artista": "Daft Punk",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Jamiroquai/_/Canned+Heat"
+        "url": "https://www.last.fm/music/Daft+Punk/_/Instant+Crush+(feat.+Julian+Casablancas)"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Le Freak",
+        "artista": "Chic",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Chic/_/Le+Freak"
     },
     {
         "tag": "disco",
@@ -723,24 +723,6 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Instant Crush (feat. Julian Casablancas)",
-        "artista": "Daft Punk",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Daft+Punk/_/Instant+Crush+(feat.+Julian+Casablancas)"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "Celebration",
-        "artista": "Kool & the Gang",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Kool+&+the+Gang/_/Celebration"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
         "nombre": "Take a Chance on Me",
         "artista": "ABBA",
         "oyentes": "N/A",
@@ -750,10 +732,10 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Super Trouper",
-        "artista": "ABBA",
+        "nombre": "Boogie Oogie Oogie",
+        "artista": "A Taste of Honey",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/ABBA/_/Super+Trouper"
+        "url": "https://www.last.fm/music/A+Taste+of+Honey/_/Boogie+Oogie+Oogie"
     },
     {
         "tag": "disco",
@@ -768,10 +750,28 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "I Just Want to Be Your Everything",
-        "artista": "Andy Gibb",
+        "nombre": "Canned Heat",
+        "artista": "Jamiroquai",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Andy+Gibb/_/I+Just+Want+to+Be+Your+Everything"
+        "url": "https://www.last.fm/music/Jamiroquai/_/Canned+Heat"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Super Trouper",
+        "artista": "ABBA",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/ABBA/_/Super+Trouper"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Get on the Floor",
+        "artista": "Michael Jackson",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Michael+Jackson/_/Get+on+the+Floor"
     },
     {
         "tag": "disco",
@@ -781,6 +781,24 @@
         "artista": "Cerrone",
         "oyentes": "N/A",
         "url": "https://www.last.fm/music/Cerrone/_/Supernature"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "I Just Want to Be Your Everything",
+        "artista": "Andy Gibb",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Andy+Gibb/_/I+Just+Want+to+Be+Your+Everything"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Don't Leave Me This Way",
+        "artista": "Thelma Houston",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Thelma+Houston/_/Don%27t+Leave+Me+This+Way"
     },
     {
         "tag": "disco",
@@ -804,15 +822,6 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "That's The Way (I Like It)",
-        "artista": "KC and The Sunshine Band",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/KC+and+The+Sunshine+Band/_/That%27s+The+Way+(I+Like+It)"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
         "nombre": "Ladies Night",
         "artista": "Kool & the Gang",
         "oyentes": "N/A",
@@ -822,10 +831,10 @@
         "tag": "disco",
         "fecha_desde": "1776600000",
         "fecha_hasta": "1777204800",
-        "nombre": "Get on the Floor",
-        "artista": "Michael Jackson",
+        "nombre": "That's The Way (I Like It)",
+        "artista": "KC and The Sunshine Band",
         "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Michael+Jackson/_/Get+on+the+Floor"
+        "url": "https://www.last.fm/music/KC+and+The+Sunshine+Band/_/That%27s+The+Way+(I+Like+It)"
     },
     {
         "tag": "disco",
@@ -835,33 +844,6 @@
         "artista": "KC and The Sunshine Band",
         "oyentes": "N/A",
         "url": "https://www.last.fm/music/KC+and+The+Sunshine+Band/_/I%27m+Your+Boogie+Man"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "More, More, More",
-        "artista": "Andrea True Connection",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Andrea+True+Connection/_/More,+More,+More"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "Shake Your Groove Thing",
-        "artista": "Peaches & Herb",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Peaches+&+Herb/_/Shake+Your+Groove+Thing"
-    },
-    {
-        "tag": "disco",
-        "fecha_desde": "1776600000",
-        "fecha_hasta": "1777204800",
-        "nombre": "Don't Leave Me This Way",
-        "artista": "Thelma Houston",
-        "oyentes": "N/A",
-        "url": "https://www.last.fm/music/Thelma+Houston/_/Don%27t+Leave+Me+This+Way"
     },
     {
         "tag": "disco",
@@ -889,6 +871,24 @@
         "artista": "Bee Gees",
         "oyentes": "N/A",
         "url": "https://www.last.fm/music/Bee+Gees/_/Night+Fever+-+From+%22Saturday+Night+Fever%22+Soundtrack"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "More, More, More",
+        "artista": "Andrea True Connection",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/Andrea+True+Connection/_/More,+More,+More"
+    },
+    {
+        "tag": "disco",
+        "fecha_desde": "1776600000",
+        "fecha_hasta": "1777204800",
+        "nombre": "Rock Your Baby",
+        "artista": "George McCrae",
+        "oyentes": "N/A",
+        "url": "https://www.last.fm/music/George+McCrae/_/Rock+Your+Baby"
     },
     {
         "tag": "disco",
