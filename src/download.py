@@ -6,16 +6,45 @@ import csv
 
 API_KEY = '2486bf623744f4f6f8e4b2a60720a504' 
 
-#canciones populares
+
+import requests
+import time
+
+# 1. Función para buscar la imagen (se mantiene igual)
+def obtener_imagen_cancion(artista, cancion, api_key):
+    url = 'http://ws.audioscrobbler.com/2.0/'
+    params = {
+        'method': 'track.getInfo',
+        'api_key': api_key,
+        'artist': artista,
+        'track': cancion,
+        'format': 'json'
+    }
+    try:
+        respuesta = requests.get(url, params=params)
+        datos = respuesta.json()
+        
+        if 'track' in datos and 'album' in datos['track'] and 'image' in datos['track']['album']:
+            imagenes = datos['track']['album']['image']
+            if len(imagenes) > 0:
+                return imagenes[-1]['#text']
+    except Exception as e:
+        print(f"Error obteniendo imagen para {cancion}: {e}")
+        
+    return ""
+
+# 2. Tu función principal optimizada
 def obtener_canciones_populares():
     url = 'http://ws.audioscrobbler.com/2.0/'
     canciones = []
-    for pagina in range(1,11):
+    
+    # Volvemos a tu configuración de 10 páginas
+    for pagina in range(1, 11): 
         params = {
             'method': 'chart.gettoptracks',
-            'api_key': API_KEY,
+            'api_key': API_KEY, # Asegúrate de tener tu API_KEY definida en tu archivo
             'format': 'json',
-            'limit': 1000,
+            'limit': 1000,      # Volvemos a pedir 1000 canciones por página
             'page': pagina
         }
         try:    
@@ -27,24 +56,40 @@ def obtener_canciones_populares():
                 break
 
             for track in datos['tracks']['track']:
+                nombre_cancion = track['name']
+                nombre_artista = track['artist']['name']
+                
+                # Por defecto, la imagen estará vacía
+                imagen_real = ""
+                
+                # --- NUEVA CONDICIÓN ---
+                # Comprobamos cuántas canciones llevamos en la lista
+                if len(canciones) < 10000:
+                    # Si llevamos menos de 200, buscamos la imagen
+                    imagen_real = obtener_imagen_cancion(nombre_artista, nombre_cancion, API_KEY)
+                    # Hacemos la pausa de 0.1s solo cuando pedimos una imagen
+                    time.sleep(0.1) 
+
                 cancion = {
-                    'nombre': track['name'],
-                    'artista': track['artist']['name'],
+                    'nombre': nombre_cancion,
+                    'artista': nombre_artista,
                     'reproducciones': track['playcount'],
-                    'url': track['url']
+                    'url': track['url'],
+                    'imagen_url': imagen_real
                 }
                 canciones.append(cancion)
 
             print(f"Página {pagina} procesada. Canciones en total: {len(canciones)}")
-            
-            # Pausa de 1 segundo para no saturar la API
-            time.sleep(1)
+            # Pausa de 1 segundo entre páginas grandes para no saturar
+            time.sleep(1) 
             
         except Exception as e:
             print(f"Ocurrió un error en la página {pagina}: {e}")
             break
 
     return canciones
+
+
 
 #artistas populares
 def obtener_artistas_populares():
@@ -266,9 +311,18 @@ def guardar_canciones_csv(canciones):
     file_path = 'data/clean/canciones_populares.csv'
     with open(file_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(['nombre', 'artista', 'reproducciones', 'url'])
+        # 1. Agregamos 'imagen_url' a los encabezados
+        writer.writerow(['nombre', 'artista', 'reproducciones', 'url', 'imagen_url'])
+        
         for cancion in canciones:
-            writer.writerow([cancion['nombre'], cancion['artista'], cancion['reproducciones'], cancion['url']])
+            # 2. Agregamos el valor de 'imagen_url' a la fila a escribir
+            writer.writerow([
+                cancion['nombre'], 
+                cancion['artista'], 
+                cancion['reproducciones'], 
+                cancion['url'], 
+                cancion.get('imagen_url', '') # Usamos .get() por si acaso alguna canción no tiene imagen
+            ])
     print(f'CSV guardado en {file_path}')
 
 def guardar_artistas_csv(artistas):
