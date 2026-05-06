@@ -1,87 +1,144 @@
 import os
 import html
+import base64
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
 
 st.set_page_config(
-    page_title="Géneros · Proyecto Musical",
+    page_title="Géneros",
     page_icon=None,
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
 
-# imagen del fondo
-HERO_IMAGE_URL = "https://i.pinimg.com/736x/44/2c/ce/442cce422c3c8177ae22de9b1028a6b5.jpg"
+# ruta de la imagen
+HERO_IMAGE_PATH = "web/assets/nova_music_bg.jpeg"
 
 
-# estilo de la página
+def image_to_base64(path):
+    if not os.path.exists(path):
+        return ""
+    with open(path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+
+HERO_IMAGE_BASE64 = image_to_base64(HERO_IMAGE_PATH)
+
+
 st.markdown(f"""
 <style>
+html, body, [data-testid="stAppViewContainer"], .stApp {{
+    background: #000000 !important;
+    color: #ffffff !important;
+}}
+
+header, footer, #MainMenu,
+[data-testid="stToolbar"],
+[data-testid="stDecoration"],
+[data-testid="stStatusWidget"],
+[data-testid="collapsedControl"],
+[data-testid="stSidebar"],
 [data-testid="stSidebarNav"] {{
     display: none !important;
 }}
 
-.sidebar-title {{
-    font-size: 24px;
-    font-weight: 800;
-    margin-bottom: 10px;
-}}
-
-.sidebar-section {{
-    font-size: 12px;
-    font-weight: 800;
-    color: #64748b;
-    letter-spacing: 1px;
-    margin-top: 18px;
-    margin-bottom: 4px;
-}}
-
-div[data-testid="stSidebar"] div.stButton > button {{
-    width: 100%;
-    height: auto;
-    padding: 8px 10px;
-    border-radius: 10px;
-    border: none;
-    background-color: transparent;
-    font-size: 15px;
-    font-weight: 500;
-    text-align: left;
-    box-shadow: none;
-    transition: all 0.18s ease;
-}}
-
-div[data-testid="stSidebar"] div.stButton > button:hover {{
-    background-color: var(--secondary-background-color);
-    color: #3f5fa8;
+[data-testid="stAppViewContainer"] > .main {{
+    background: #000000 !important;
 }}
 
 .block-container {{
-    padding-top: 2rem;
+    max-width: 100% !important;
+    padding-top: 0 !important;
+    padding-bottom: 2rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
 }}
 
+hr {{
+    border: none !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    margin-top: 1.8rem !important;
+    margin-bottom: 1.8rem !important;
+}}
+
+h1, h2, h3, h4, p, label, div {{
+    color: inherit;
+}}
+
+
+/* menú superior */
+.menu-superior {{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+
+    height: 240px;
+    margin-top: 0;
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    background-image:
+        linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
+        linear-gradient(to left, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
+        linear-gradient(to bottom, rgba(0,0,0,0) 55%, rgba(0,0,0,0.95)),
+        url("data:image/jpeg;base64,{HERO_IMAGE_BASE64}");
+
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 10;
+}}
+
+.menu-superior a {{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-family: "Century Gothic", "Montserrat", "Segoe UI", Arial, sans-serif;
+    text-transform: uppercase;
+    transform: translateY(42px);
+    text-shadow: 0 3px 12px rgba(0,0,0,0.85);
+}}
+
+.menu-superior a:hover {{
+    color: #AFCFCF;
+}}
+
+
+/* HERO */
 .hero-card {{
     position: relative;
     overflow: hidden;
-    border-radius: 30px;
-    padding: 36px 36px;
-    margin-bottom: 26px;
-    border: 1px solid #d9dee8;
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.10);
-    background-image: url("{HERO_IMAGE_URL}");
-    background-size: cover;
-    background-position: center 38%;
-    background-repeat: no-repeat;
-    min-height: 360px;
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+    margin-bottom: 24px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+    min-height: 390px;
+    background: #000000;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }}
 
 .hero-content {{
+    position: relative;
+    z-index: 2;
     width: 100%;
-    max-width: 850px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 48px 38px 48px;
+    text-align: center;
 }}
 
 .hero-title {{
@@ -90,7 +147,7 @@ div[data-testid="stSidebar"] div.stButton > button:hover {{
     margin: 0;
     letter-spacing: -1px;
     line-height: 1.05;
-    color: #AFCFCF !important;
+    color: #ffffff !important;
     text-shadow: 0 4px 18px rgba(0, 0, 0, 0.75);
 }}
 
@@ -100,49 +157,65 @@ div[data-testid="stSidebar"] div.stButton > button:hover {{
     font-weight: 650;
     line-height: 1.7;
     max-width: 760px;
-    margin-top: 14px;
-    margin-bottom: 0;
+    margin: 14px auto 0 auto;
     text-shadow: 0 3px 14px rgba(0, 0, 0, 0.75);
+    text-align: center;
 }}
 
 .hero-metrics {{
     display: flex;
+    justify-content: center;
     gap: 16px;
-    margin-top: 24px;
+    margin: 30px auto 0 auto;
     flex-wrap: wrap;
+    max-width: 980px;
 }}
 
 .hero-metric-box {{
-    background: rgba(255, 255, 255, 0.55);
-    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 18px;
-    padding: 16px 24px;
+    padding: 18px 26px;
     flex: 1;
-    min-width: 150px;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+    min-width: 180px;
+    max-width: 280px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+    text-align: left;
 }}
 
 .hm-label {{
-    color: #111827;
+    color: #ffffff;
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 0.5px;
 }}
 
 .hm-value {{
-    color: #111827;
+    color: #ffffff;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: 4px;
 }}
 
+h3 {{
+    color: #ffffff !important;
+    font-size: 28px !important;
+    font-weight: 800 !important;
+    margin-top: 0.5rem !important;
+}}
+
+h4 {{
+    color: #ffffff !important;
+}}
 
 .legend-card {{
-    background: var(--secondary-background-color);
-    border: 1px solid rgba(128, 128, 128, 0.18);
+    background: #0d0d0d;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 24px;
     padding: 22px 24px;
-    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
     margin-top: 8px;
 }}
 
@@ -150,6 +223,7 @@ div[data-testid="stSidebar"] div.stButton > button:hover {{
     font-size: 22px;
     font-weight: 850;
     margin-bottom: 20px;
+    color: #ffffff;
 }}
 
 .legend-grid {{
@@ -178,6 +252,7 @@ div[data-testid="stSidebar"] div.stButton > button:hover {{
     font-weight: 800;
     font-size: 14px;
     line-height: 1.2;
+    color: #ffffff;
 }}
 
 .legend-info {{
@@ -186,7 +261,7 @@ div[data-testid="stSidebar"] div.stButton > button:hover {{
 }}
 
 .legend-percent {{
-    color: #52627b;
+    color: #d4d4d4;
     font-size: 12px;
     line-height: 1.35;
     margin-bottom: 2px;
@@ -195,26 +270,26 @@ div[data-testid="stSidebar"] div.stButton > button:hover {{
 }}
 
 .legend-count {{
-    color: #8a97aa;
+    color: #9ca3af;
     font-size: 12px;
     line-height: 1.35;
     display: block;
 }}
 
 .song-card {{
-    background: var(--secondary-background-color);
-    border: 1px solid rgba(128, 128, 128, 0.2);
+    background: #0d0d0d;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 22px;
     padding: 14px;
     margin-bottom: 14px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.10);
     transition: transform 0.16s ease, box-shadow 0.16s ease;
     min-height: 155px;
 }}
 
 .song-card:hover {{
     transform: translateY(-2px);
-    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
 }}
 
 .song-layout {{
@@ -240,12 +315,12 @@ div[data-testid="stSidebar"] div.stButton > button:hover {{
     min-width: 30px;
     height: 30px;
     border-radius: 10px;
-    background: var(--background-color);
-    border: 1px solid rgba(128, 128, 128, 0.3);
+    background: #111111;
+    border: 1px solid rgba(255, 255, 255, 0.10);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3d5f99;
+    color: #AFCFCF;
     font-size: 13px;
     font-weight: 800;
 }}
@@ -256,16 +331,17 @@ div[data-testid="stSidebar"] div.stButton > button:hover {{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: #ffffff;
 }}
 
 .song-artist {{
-    color: #7b8798;
+    color: #b5b9c2;
     font-size: 14px;
     margin-top: 4px;
 }}
 
 .song-meta {{
-    color: #64748b;
+    color: #9ca3af;
     font-size: 12px;
     margin-top: 9px;
 }}
@@ -274,7 +350,7 @@ div[data-testid="stSidebar"] div.stButton > button:hover {{
     display: inline-block;
     margin-top: 12px;
     background: linear-gradient(135deg, #DCE8D8 0%, #AFCFCF 100%);
-    color: #1f2937 !important;
+    color: #111827 !important;
     text-decoration: none !important;
     border-radius: 12px;
     padding: 8px 12px;
@@ -292,13 +368,13 @@ div[data-testid="stSidebar"] div.stButton > button:hover {{
 .song-button-disabled {{
     display: inline-block;
     margin-top: 12px;
-    background: var(--background-color);
-    color: #475569 !important;
+    background: #111111;
+    color: #94a3b8 !important;
     border-radius: 12px;
     padding: 8px 12px;
     font-size: 13px;
     font-weight: 650;
-    border: 1px solid rgba(128, 128, 128, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }}
 
 .song-cover {{
@@ -307,7 +383,7 @@ div[data-testid="stSidebar"] div.stButton > button:hover {{
     border-radius: 18px;
     overflow: hidden;
     flex-shrink: 0;
-    border: 1px solid rgba(128, 128, 128, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     background: linear-gradient(135deg, #222831 0%, #101418 100%);
     display: flex;
     align-items: center;
@@ -326,15 +402,49 @@ div[data-testid="stSidebar"] div.stButton > button:hover {{
     color: #475569;
 }}
 
+.stSelectbox label {{
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}}
+
+div[data-baseweb="select"] > div {{
+    background-color: #0d0d0d !important;
+    border: 1px solid rgba(255, 255, 255, 0.10) !important;
+    color: #ffffff !important;
+}}
+
 @media (max-width: 900px) {{
+    .block-container {{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }}
+
+    .menu-superior {{
+        height: 220px;
+        gap: 18px;
+        flex-wrap: wrap;
+    }}
+
+    .menu-superior a {{
+        font-size: 12px;
+        letter-spacing: 2px;
+    }}
+
     .hero-card {{
-        padding: 24px 20px;
-        min-height: 420px;
-        background-position: center;
+        min-height: 400px;
+    }}
+
+    .hero-content {{
+        padding: 0 22px 26px 22px;
     }}
 
     .hero-title {{
         font-size: 34px;
+    }}
+
+    .hero-metric-box {{
+        max-width: none;
+        min-width: 100%;
     }}
 
     .song-layout {{
@@ -352,6 +462,14 @@ div[data-testid="stSidebar"] div.stButton > button:hover {{
     }}
 }}
 </style>
+
+<div class="menu-superior">
+    <a href="/" target="_self">Inicio</a>
+    <a href="/dashboard" target="_self">Dashboard</a>
+    <a href="/canciones" target="_self">Canciones</a>
+    <a href="/artistas" target="_self">Artistas</a>
+    <a href="/generos" target="_self">Géneros</a>
+</div>
 """, unsafe_allow_html=True)
 
 
@@ -369,50 +487,36 @@ COLORS = [
 ]
 
 
-# limpiar texto
 def texto_seguro(valor):
     if pd.isna(valor):
         return ""
     return html.escape(str(valor))
 
 
-# limpiar html
 def html_block(texto):
     lineas = texto.splitlines()
     lineas_limpias = [linea.strip() for linea in lineas if linea.strip()]
     return "\n".join(lineas_limpias)
 
-
-# obtener enlace
 def obtener_url_fila(row):
-    for col in ["url", "url_popular"]:
+    posibles = ["url", "link", "lastfm_url", "enlace"]
+    
+    for col in posibles:
         if col in row.index and pd.notna(row[col]) and str(row[col]).strip() != "":
             return str(row[col]).strip()
     return ""
 
-
-# obtener imagen
 def obtener_imagen_fila(row):
-    posibles = ["imagen", "image", "image_url", "cover_url", "cover", "artwork"]
-
-    imagenes_genericas = [
-        "2a96cbd8b46e442fc41c2b86b821562f",
-        "c6f59c1e5e7240a4c0d427abd71f3dbb"
-    ]
+    posibles = ["imagen", "image", "image_url", "cover_url", "cover", "artwork", "img"]
 
     for col in posibles:
-        if col in row.index and pd.notna(row[col]) and str(row[col]).strip() != "":
+        if col in row.index and pd.notna(row[col]):
             url = str(row[col]).strip()
-
-            if any(generica in url for generica in imagenes_genericas):
-                continue
-
-            return url
-
+            if url.startswith("http"):
+                return url
     return ""
 
 
-# formatear reproducciones
 def obtener_valor_formateado(row, valor_col, usar_ranking):
     if usar_ranking:
         return f"Posición {row.get('posición', '')}"
@@ -429,40 +533,6 @@ def obtener_valor_formateado(row, valor_col, usar_ranking):
     return ""
 
 
-# menú
-with st.sidebar:
-    st.markdown('<div class="sidebar-title">Music Stats</div>', unsafe_allow_html=True)
-
-    st.markdown('<div class="sidebar-section">HOME</div>', unsafe_allow_html=True)
-    if st.button("Página principal"):
-        st.switch_page("app.py")
-
-    st.markdown('<div class="sidebar-section">DASHBOARD</div>', unsafe_allow_html=True)
-    if st.button("Dashboard"):
-        st.switch_page("pages/dashboard.py")
-
-    st.markdown('<div class="sidebar-section">EXPLORAR</div>', unsafe_allow_html=True)
-    if st.button("Canciones"):
-        st.switch_page("pages/1_Semanales.py")
-    if st.button("Artistas"):
-        st.switch_page("pages/artistas.py")
-    if st.button("Géneros"):
-        st.switch_page("pages/2_Generos.py")
-
-    st.markdown('<div class="sidebar-section">PRODUCTOR</div>', unsafe_allow_html=True)
-    if st.button("Mi catálogo"):
-        pass
-    if st.button("Tendencias"):
-        st.switch_page("pages/3_Tendencias.py")
-    if st.button("Historial"):
-        pass
-
-    st.markdown('<div class="sidebar-section">USUARIO</div>', unsafe_allow_html=True)
-    if st.button("Perfil"):
-        pass
-
-
-# cargar datos de géneros
 gen_path = "data/clean/generos_canciones.csv"
 
 if os.path.exists(gen_path):
@@ -475,22 +545,19 @@ else:
         "cantidad": [352, 220, 144, 139, 134, 82, 74, 71, 58, 53]
     })
 
-
-# calcular métricas
 total = conteo_generos["cantidad"].sum()
 conteo_generos["porcentaje"] = (conteo_generos["cantidad"] / total * 100).round(1).astype(str) + "%"
 genero_top = conteo_generos.iloc[0]["género"].capitalize()
 total_generos = len(conteo_generos)
 
 
-# cabecera principal
 st.markdown(
     html_block(f"""
     <div class="hero-card">
         <div class="hero-content">
             <h1 class="hero-title">Explorador de géneros</h1>
-            <p class="hero-text">
-                Descubre qué estilos aparecen con más frecuencia explora canciones destacadas por género.
+            <p class="hero-subtitle">
+                Descubre qué estilos aparecen con más frecuencia y explora canciones destacadas por género.
             </p>
             <div class="hero-metrics">
                 <div class="hero-metric-box">
@@ -514,8 +581,6 @@ st.markdown(
 
 st.markdown("---")
 
-
-# composición del catálogo
 st.subheader("Composición del catálogo")
 
 col_pie, col_legend = st.columns([0.95, 1.05], gap="large")
@@ -523,6 +588,8 @@ col_pie, col_legend = st.columns([0.95, 1.05], gap="large")
 with col_pie:
     plt.rcdefaults()
     fig2, ax2 = plt.subplots(figsize=(4.6, 4.0))
+    fig2.patch.set_facecolor("#000000")
+    ax2.set_facecolor("#000000")
 
     wedges, texts, autotexts = ax2.pie(
         conteo_generos["cantidad"],
@@ -539,8 +606,6 @@ with col_pie:
         at.set_color("#1a1a1a")
         at.set_fontweight("bold")
 
-    ax2.set_facecolor("none")
-    fig2.patch.set_facecolor("none")
     plt.tight_layout()
     st.pyplot(fig2)
     plt.close()
@@ -574,8 +639,6 @@ with col_legend:
 
 st.markdown("---")
 
-
-# canciones destacadas por género
 st.subheader("Canciones destacadas por género")
 
 TAGS_TODOS = ["disco", "rock", "pop", "jazz", "hip-hop", "k-pop"]
@@ -676,7 +739,7 @@ else:
             cover_html = f'<div class="song-cover"><div class="song-cover-placeholder">{initial}</div></div>'
 
         if url:
-            boton = f'<a class="song-button" href="{html.escape(url)}" target="_blank">Ver en Last.fm</a>'
+            boton = f'<a class="song-button" href="{html.escape(url)}" target="_blank">Escuchar en Last.fm</a>'
         else:
             boton = '<span class="song-button-disabled">Sin enlace</span>'
 
@@ -703,7 +766,6 @@ else:
 
     st.markdown("---")
 
-    # gráficas
     st.subheader("Análisis en gráficas")
 
     col_graf_generos, col_graf_repro = st.columns(2, gap="large")
@@ -713,6 +775,8 @@ else:
 
         plt.rcdefaults()
         fig, ax = plt.subplots(figsize=(6.5, 4.5))
+        fig.patch.set_facecolor("#000000")
+        ax.set_facecolor("#000000")
         bar_colors = COLORS[:len(conteo_generos)]
 
         bars = ax.barh(
@@ -723,14 +787,15 @@ else:
             edgecolor="none"
         )
 
-        ax.set_xlabel("Cantidad de canciones", fontsize=10)
-        ax.tick_params(axis="y", labelsize=11)
-        ax.tick_params(axis="x", labelsize=9)
+        ax.set_xlabel("Cantidad de canciones", fontsize=10, color="#ffffff")
+        ax.tick_params(axis="y", labelsize=11, colors="#ffffff")
+        ax.tick_params(axis="x", labelsize=9, colors="#ffffff")
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
         ax.spines["left"].set_visible(False)
         ax.spines["bottom"].set_alpha(0.3)
-        ax.grid(axis="x", alpha=0.3)
+        ax.spines["bottom"].set_color("#ffffff")
+        ax.grid(axis="x", alpha=0.2, color="#ffffff")
 
         max_val = conteo_generos["cantidad"].max()
         max_val = max_val if max_val > 0 else 1
@@ -743,11 +808,10 @@ else:
                 str(val),
                 va="center",
                 fontsize=9,
-                fontweight="bold"
+                fontweight="bold",
+                color="#ffffff"
             )
 
-        ax.set_facecolor("none")
-        fig.patch.set_facecolor("none")
         plt.tight_layout()
         st.pyplot(fig)
         plt.close()
@@ -759,6 +823,8 @@ else:
 
             plt.rcdefaults()
             fig3, ax3 = plt.subplots(figsize=(6.5, 4.5))
+            fig3.patch.set_facecolor("#000000")
+            ax3.set_facecolor("#000000")
 
             nombres = tag_df[nombre_col].astype(str).str[:28].tolist()
             valores_raw = tag_df[valor_col].tolist()
@@ -780,14 +846,15 @@ else:
                 edgecolor="none"
             )
 
-            ax3.set_xlabel(xlabel, fontsize=10)
-            ax3.tick_params(axis="y", labelsize=10)
-            ax3.tick_params(axis="x", labelsize=8)
+            ax3.set_xlabel(xlabel, fontsize=10, color="#ffffff")
+            ax3.tick_params(axis="y", labelsize=10, colors="#ffffff")
+            ax3.tick_params(axis="x", labelsize=8, colors="#ffffff")
             ax3.spines["top"].set_visible(False)
             ax3.spines["right"].set_visible(False)
             ax3.spines["left"].set_visible(False)
             ax3.spines["bottom"].set_alpha(0.3)
-            ax3.grid(axis="x", alpha=0.3)
+            ax3.spines["bottom"].set_color("#ffffff")
+            ax3.grid(axis="x", alpha=0.2, color="#ffffff")
 
             max_val = max(valores_plot) if valores_plot and max(valores_plot) > 0 else 1
             ax3.set_xlim(0, max_val * 1.3)
@@ -801,11 +868,10 @@ else:
                     label,
                     va="center",
                     fontsize=9,
-                    fontweight="bold"
+                    fontweight="bold",
+                    color="#ffffff"
                 )
 
-            ax3.set_facecolor("none")
-            fig3.patch.set_facecolor("none")
             plt.tight_layout()
             st.pyplot(fig3)
             plt.close()
