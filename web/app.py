@@ -259,7 +259,7 @@ st.markdown("""
 </style>
 
 <div class="boton-login">
-    <a href="/sesion">INICIA SESIÓN</a>
+    <a href="/sesion" target="_self">INICIA SESIÓN</a>
 </div>
 """, unsafe_allow_html=True)
 
@@ -328,7 +328,7 @@ columnas = st.columns(4)
 
 with columnas[0]:
     st.markdown(f"""
-    <a href="/dashboard" class="album-generos">
+    <a href="/dashboard" target="_self" class="album-generos">
         <img src="data:image/jpg;base64,{imagen_dashboard}">
     </a>
     <div class="boton-texto">Dashboard</div>
@@ -336,7 +336,7 @@ with columnas[0]:
 
 with columnas[1]:
     st.markdown(f"""
-    <a href="/canciones" class="album-generos">
+    <a href="/canciones" target="_self" class="album-generos">
         <img src="data:image/jpg;base64,{imagen_canciones}">
     </a>
     <div class="boton-texto">Canciones</div>
@@ -352,7 +352,7 @@ with columnas[2]:
     
 with columnas[3]:
     st.markdown(f"""
-    <a href="/generos" class="album-generos">
+    <a href="/generos" target="_self" class="album-generos">
         <img src="data:image/jpg;base64,{imagen_generos}">
     </a>
     <div class="boton-texto">Géneros</div>

@@ -13,9 +13,8 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-
 # ruta de la imagen
-HERO_IMAGE_PATH = "web/assets/nova_music_bg.jpeg"
+HERO_IMAGE_PATH = "web/assets/generos_bg.jpeg"
 
 
 def image_to_base64(path):
@@ -26,7 +25,6 @@ def image_to_base64(path):
 
 
 HERO_IMAGE_BASE64 = image_to_base64(HERO_IMAGE_PATH)
-
 
 st.markdown(f"""
 <style>
@@ -68,8 +66,6 @@ h1, h2, h3, h4, p, label, div {{
     color: inherit;
 }}
 
-
-/* menú superior */
 .menu-superior {{
     display: flex;
     justify-content: center;
@@ -113,8 +109,6 @@ h1, h2, h3, h4, p, label, div {{
     color: #AFCFCF;
 }}
 
-
-/* HERO */
 .hero-card {{
     position: relative;
     overflow: hidden;

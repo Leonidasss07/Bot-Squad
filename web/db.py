@@ -9,7 +9,7 @@ print("DB path:", os.path.abspath("usuarios.db"))
 conn = sqlite3.connect("usuarios.db", check_same_thread=False)
 cursor = conn.cursor()
 
-# Crear tabla (con columnas nuevas)
+# Crear tabla 
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS usuarios (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -21,7 +21,6 @@ CREATE TABLE IF NOT EXISTS usuarios (
 """)
 conn.commit()
 
-# En caso de que ya existiera la tabla sin esas columnas
 try:
     cursor.execute("ALTER TABLE usuarios ADD COLUMN codigo_recuperacion TEXT")
 except:
@@ -34,7 +33,6 @@ except:
 
 conn.commit()
 
-# -------------------------
 
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
@@ -63,10 +61,7 @@ def iniciar_sesion(correo, password):
     )
     return cursor.fetchone()
 
-# -------------------------
-# 🔑 RECUPERACIÓN DE CONTRASEÑA
-# -------------------------
-
+# Recuperacón de contraseña
 def guardar_codigo_recuperacion(correo):
     correo = correo.strip().lower()
     codigo = str(random.randint(100000, 999999))

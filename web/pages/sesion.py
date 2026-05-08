@@ -1,142 +1,155 @@
 import streamlit as st
-from db import (
-    crear_usuario,
-    iniciar_sesion,
-    guardar_codigo_recuperacion,
-    verificar_codigo,
-    cambiar_password
-)
+import base64
+import os
+from db import crear_usuario, iniciar_sesion, guardar_codigo_recuperacion, verificar_codigo, cambiar_password
 from email_utils import enviar_codigo
 
-st.set_page_config(
-    page_title="Sesión - Nova music",
-    layout="centered"
-)
+st.set_page_config(page_title="Sesión - Nova music", layout="wide")
 
-st.markdown("""
+def get_base64_image(path):
+    if not os.path.exists(path): return ""
+    with open(path, "rb") as img:
+        return base64.b64encode(img.read()).decode()
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+path_bg = os.path.join(BASE_DIR, "..", "assets", "sesion_bg.jpeg")
+path_banner = os.path.join(BASE_DIR, "..", "assets", "image_3857d6.jpg") 
+
+img_bg = get_base64_image(path_bg)
+img_banner = get_base64_image(path_banner)
+
+st.markdown(f"""
 <style>
-html, body, .stApp {
-    background-color: black !important;
-    color: white !important;
-}
+.stApp {{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.85)), url("data:image/jpeg;base64,{img_bg}");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}}
 
-header[data-testid="stHeader"],
-[data-testid="stToolbar"],
-[data-testid="stDecoration"],
-[data-testid="stAppViewContainer"],
-[data-testid="stSidebar"] {
-    background: black !important;
-}
+header {{ visibility: hidden; }}
+[data-testid="stSidebar"] {{ display: none; }}
+.block-container {{ padding: 0 !important; }}
 
-[data-testid="stSidebar"] * {
-    color: white !important;
-}
+.top-menu {{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    height: 80px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url("data:image/jpeg;base64,{img_banner}");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-bottom: 5px;
+}}
 
-h1, h2, h3, p, label, span, div {
-    color: white !important;
-}
+.logo-text {{
+    position: absolute; left: 40px; bottom: 20px;
+    font-size: 22px; font-weight: bold; color: rgba(255,255,255,0.7); letter-spacing: 3px;
+}}
 
-input {
+.top-menu a {{
+    color: white; text-decoration: none; font-weight: bold; font-size: 16px; text-transform: uppercase;
+}}
+
+/* Contenedor Principal */
+.main-center-wrapper {{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}}
+
+/* Forzar ancho unificado en el bloque de formulario */
+[data-testid="stForm"] {{
+    border: none !important;
+    width: 450px !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+}}
+
+/* Alineación de Radio Buttons */
+div[data-testid="stRadio"] {{
+    background-color: transparent !important;
+    margin-bottom: 20px;
+}}
+
+div[role="radiogroup"] {{
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+}}
+
+/* Estilo de Inputs */
+input {{
     background-color: #1e1e1e !important;
     color: white !important;
-    border: 1px solid white !important;
-}
+    border: 1px solid #444 !important;
+    border-radius: 8px !important;
+}}
 
-button {
+/* Botón de envío */
+[data-testid="stFormSubmitButton"] button {{
+    width: 100% !important;
     background-color: #111 !important;
+    border: 1px solid #555 !important;
     color: white !important;
     border-radius: 8px !important;
-    border: 1px solid #555 !important;
-}
-
-button:hover {
-    background-color: #222 !important;
-}
-
-/* Radio buttons bien blancos */
-div[role="radiogroup"] label,
-div[role="radiogroup"] label span,
-div[role="radiogroup"] div,
-.stRadio label,
-.stRadio span {
-    color: white !important;
-    opacity: 1 !important;
-}
-
-.stAlert {
-    border-radius: 10px;
-}
+    height: 45px;
+    font-weight: bold;
+    margin-top: 10px;
+}}
 </style>
 """, unsafe_allow_html=True)
 
-if "usuario" not in st.session_state:
-    st.session_state.usuario = None
+st.markdown(f"""
+<div class="top-menu">
+    <div class="logo-text">NOVA MUSIC ★</div>
+    <a href="/" target="_self">INICIO</a>
+    <a href="/dashboard" target="_self">DASHBOARD</a>
+    <a href="/canciones" target="_self">CANCIONES</a>
+    <a href="/artistas" target="_self">ARTISTAS</a>
+    <a href="/generos" target="_self">GÉNEROS</a>
+</div>
+""", unsafe_allow_html=True)
 
-if st.session_state.usuario:
-    st.switch_page("app.py")
+st.markdown('<div class="main-center-wrapper">', unsafe_allow_html=True)
 
-st.markdown("## Cuenta de usuario")
+col1, col2, col3 = st.columns([1, 2, 1])
 
-opcion = st.radio(
-    "Elige una opción",
-    ["Iniciar sesión", "Crear cuenta", "Olvidé mi contraseña"],
-    horizontal=True
-)
+with col2:
+    st.markdown("<h2 style='text-align: center-wrapper;'>Cuenta de usuario</h2>", unsafe_allow_html=True)
+    
+    with st.form("login_form"):
+        opcion = st.radio(
+            "Elige una opción", 
+            ["Iniciar sesión", "Crear cuenta", "Olvidé mi contraseña"], 
+            horizontal=True,
+            label_visibility="collapsed"
+        )
+        
+        st.write("")
+        
+        correo = st.text_input("Correo", placeholder="ejemplo@correo.com")
+        password = st.text_input("Contraseña", type="password")
+        
+        submit = st.form_submit_button("Confirmar")
+        
+        if submit:
+            if opcion == "Iniciar sesión":
+                usuario = iniciar_sesion(correo, password)
+                if usuario:
+                    st.session_state.usuario = correo
+                    st.switch_page("app.py")
+                else:
+                    st.error("Credenciales incorrectas")
+            elif opcion == "Crear cuenta":
+                if crear_usuario(correo, password):
+                    st.success("Cuenta creada")
+                else:
+                    st.error("Error al crear cuenta")
 
-if opcion in ["Iniciar sesión", "Crear cuenta"]:
-    correo = st.text_input("Correo")
-    password = st.text_input("Contraseña", type="password")
-
-    if opcion == "Crear cuenta":
-        if st.button("Crear cuenta"):
-            if crear_usuario(correo, password):
-                st.session_state.usuario = correo
-                st.success("Cuenta creada correctamente")
-                st.switch_page("app.py")
-            else:
-                st.error("Ese correo ya existe")
-
-    if opcion == "Iniciar sesión":
-        if st.button("Iniciar sesión"):
-            usuario = iniciar_sesion(correo, password)
-
-            if usuario:
-                st.session_state.usuario = correo
-                st.success(f"Bienvenido, {correo}")
-                st.switch_page("app.py")
-            else:
-                st.error("Correo o contraseña incorrectos")
-
-if opcion == "Olvidé mi contraseña":
-    st.markdown("### Restablecer contraseña")
-
-    correo_recuperacion = st.text_input("Correo de tu cuenta")
-
-    if st.button("Enviar código"):
-        codigo = guardar_codigo_recuperacion(correo_recuperacion)
-
-        if codigo:
-            st.session_state.correo_recuperacion = correo_recuperacion
-
-            try:
-                enviar_codigo(correo_recuperacion, codigo)
-                st.success("Te enviamos un código a tu correo.")
-            except Exception as e:
-                st.error(f"No se pudo enviar el correo: {e}")
-        else:
-            st.error("No existe una cuenta con ese correo")
-
-    codigo_usuario = st.text_input("Código recibido")
-    nueva_password = st.text_input("Nueva contraseña", type="password")
-    repetir_password = st.text_input("Repite la nueva contraseña", type="password")
-
-    if st.button("Cambiar contraseña"):
-        if "correo_recuperacion" not in st.session_state:
-            st.error("Primero debes enviar un código")
-        elif nueva_password != repetir_password:
-            st.error("Las contraseñas no coinciden")
-        elif verificar_codigo(st.session_state.correo_recuperacion, codigo_usuario):
-            cambiar_password(st.session_state.correo_recuperacion, nueva_password)
-            st.success("Contraseña cambiada correctamente. Ya puedes iniciar sesión.")
-        else:
-            st.error("Código incorrecto o expirado")
+st.markdown('</div>', unsafe_allow_html=True)

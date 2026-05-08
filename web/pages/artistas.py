@@ -4,10 +4,15 @@ import matplotlib.pyplot as plt
 import base64
 import os
 
-# 🔥 TABLAS
+#tablas
 def tabla_negra(df):
     html = """
-    <table style='width:60%; margin:auto; border-collapse:collapse; background:#000; color:white; border-radius:10px; overflow:hidden; margin-top:20px; border:1px solid #ec4899; font-size:13px;'>
+    <table style='width:60%; 
+    margin:auto; border-collapse:collapse; 
+    background:#000; color:white; 
+    border-radius:10px; overflow:hidden; 
+    margin-top:20px; border:1px solid #ec4899; 
+    font-size:13px;'>
         <thead>
             <tr style='background:#111827;'>
     """
@@ -27,7 +32,13 @@ def tabla_negra(df):
 
 def tabla_top(df):
     html = """
-    <table style='width:82%; margin:auto; border-collapse:collapse; background:#000; color:white; border-radius:10px; overflow:hidden; margin-top:20px; border:1px solid #ec4899; font-size:13px;'>
+    <table style='width:82%; margin:auto; 
+    border-collapse:collapse; background:#000; 
+    color:white; border-radius:10px; 
+    overflow:hidden; 
+    margin-top:20px; 
+    border:1px solid #ec4899; 
+    font-size:13px;'>
         <thead>
             <tr style='background:#111827;'>
     """
@@ -45,7 +56,6 @@ def tabla_top(df):
     return html
 
 
-# 🔧 CONFIG
 st.set_page_config(page_title="Proyecto Musical", layout="wide")
 
 def get_base64_image(path):
@@ -56,7 +66,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 img_path = os.path.join(BASE_DIR, "..", "assets", "populares.jpg")
 img_base64 = get_base64_image(img_path)
 
-# 🎨 CSS
 st.markdown(f"""
 <style>
 html, body {{
@@ -160,17 +169,17 @@ div[data-baseweb="input"] {{
 </style>
 """, unsafe_allow_html=True)
 
-# MENU
+#menu
 st.markdown("""
 <div class="top-menu">
-    <a href="/">Inicio</a>
-    <a href="/generos">Géneros</a>
-    <a href="/albumes">Álbumes</a>
-    <a href="/db">Dashboard</a>
+    <a href="/">INICIO</a>
+    <a href="/generos">DASHBOARD</a>
+    <a href="/albumes">CANCIONES</a>
+    <a href="/albumes">ARTISTAS</a>
+    <a href="/db">GÉNEROS</a>
 </div>
 """, unsafe_allow_html=True)
 
-# DATA
 @st.cache_data
 def cargar_artistas():
     return pd.read_csv("data/clean/artistas_populares.csv")
@@ -180,7 +189,7 @@ artistas["reproducciones"] = pd.to_numeric(artistas["reproducciones"], errors="c
 
 artistas_ordenados = artistas.sort_values(by="reproducciones", ascending=False).reset_index(drop=True)
 
-# SEARCH
+#buscador de artistas
 st.markdown("""
 <div class="search-section">
     <h2>Descubre tu artista favorito</h2>
@@ -208,7 +217,6 @@ if busqueda:
 
 st.divider()
 
-# LAYOUT
 col1, col2 = st.columns(2)
 
 with col1:
