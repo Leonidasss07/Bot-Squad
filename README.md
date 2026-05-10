@@ -13,7 +13,7 @@ Grupo de trabajo para proyecto de software
 -Juan Diego Soto Galvan
 -Leoncio Mbomio Mbuña
 
-## Arquitectura Docker
+# Arquitectura Docker
 La aplicación se ejecuta en un único contenedor Docker que contiene la aplicación Streamlit, el código fuente y los archivos de datos necesarios para visualizar el proyecto.
 
 # Contenedor principal
@@ -27,7 +27,7 @@ El contenedor se encarga de:
 - Leer los archivos CSV almacenados en `data/clean/`.
 - Mostrar las páginas de análisis musical, dashboard, canciones, artistas y géneros.
 
-## Ejecución
+# Ejecución
 1. Primero se genera la imagen Docker a partir del `Dockerfile`: `docker build -t bot-squad .`
 2. Docker instala las dependencias indicadas en `requirements.txt`.
 3. Se copia el código del proyecto dentro del contenedor.
