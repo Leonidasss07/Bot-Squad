@@ -278,15 +278,21 @@ def obtener_canciones_semanales_tag(tag):
         datos = respuesta.json()
 
         for track in datos["tracks"]["track"]:
+            nombre = track.get("name", "N/A")
+            artista = track.get("artist", {}).get("name", "N/A")
+
+            imagen_url = obtener_imagen_cancion(artista, nombre)
+            time.sleep(0.1)
+
             cancion = {
                 "tag": tag,
                 "fecha_desde": fecha_desde,
                 "fecha_hasta": fecha_hasta,
-                "nombre": track.get("name", "N/A"),
-                "artista": track.get("artist", {}).get("name", "N/A"),
+                "nombre": nombre,
+                "artista": artista,
                 "oyentes": track.get("listeners", "N/A"),
                 "url": track.get("url", ""),
-                "imagen_url": ""
+                "imagen_url": imagen_url
             }
 
             canciones.append(cancion)

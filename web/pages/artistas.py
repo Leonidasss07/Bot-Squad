@@ -197,7 +197,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-busqueda = st.text_input("", placeholder="Buscar artista...")
+busqueda = st.text_input("Buscar artista", placeholder="Buscar artista...", label_visibility="collapsed")
 
 if busqueda:
     resultados = artistas_ordenados[
@@ -257,4 +257,4 @@ with col2:
 
     plt.tight_layout()
 
-    st.pyplot(fig, use_container_width=True)
+    st.pyplot(fig)
