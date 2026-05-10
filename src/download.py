@@ -6,42 +6,33 @@ import csv
 import math
 
 
-API_KEY = "2486bf623744f4f6f8e4b2a60720a504"
 
-MAX_CANCIONES_POPULARES = 10000
-LIMITE_POR_PAGINA = 1000
-MAX_PORTADAS = 10000
+import requests
+import time
 
-
-# obtener imagen de canción
-def obtener_imagen_cancion(artista, cancion):
-    url = "http://ws.audioscrobbler.com/2.0/"
-
+# obtener portadas
+def obtener_imagen_cancion(artista, cancion, api_key):
+    url = 'http://ws.audioscrobbler.com/2.0/'
     params = {
-        "method": "track.getInfo",
-        "api_key": API_KEY,
-        "artist": artista,
-        "track": cancion,
-        "format": "json"
+        'method': 'track.getInfo',
+        'api_key': api_key,
+        'artist': artista,
+        'track': cancion,
+        'format': 'json'
     }
-
     try:
-        respuesta = requests.get(url, params=params, timeout=15)
+        respuesta = requests.get(url, params=params)
         datos = respuesta.json()
-
-        if "track" in datos and "album" in datos["track"]:
-            imagenes = datos["track"]["album"].get("image", [])
-
-            if imagenes:
-                return imagenes[-1].get("#text", "")
-
-    except Exception:
-        pass
-
+        
+        if 'track' in datos and 'album' in datos['track'] and 'image' in datos['track']['album']:
+            imagenes = datos['track']['album']['image']
+            if len(imagenes) > 0:
+                return imagenes[-1]['#text']
+    except Exception as e:
+        print(f"Error obteniendo imagen para {cancion}: {e}")
+        
     return ""
 
-
-# canciones populares
 def obtener_canciones_populares():
     url = "http://ws.audioscrobbler.com/2.0/"
     canciones = []
@@ -338,20 +329,21 @@ def guardar_canciones(canciones):
 
 
 def guardar_canciones_csv(canciones):
-    guardar_csv(
-        canciones,
-        "data/clean/canciones_populares.csv",
-        ["nombre", "artista", "reproducciones", "url", "imagen_url"]
-    )
-
-
-# guardar artistas
-def guardar_artistas(artistas):
-    os.makedirs("data/raw", exist_ok=True)
-    file_path = "data/raw/artistas_populares.json"
-    guardar_json_lineas(artistas, file_path)
-    print(f"Se han guardado {len(artistas)} artistas en {file_path}")
-
+    os.makedirs('data/clean', exist_ok=True)
+    file_path = 'data/clean/canciones_populares.csv'
+    with open(file_path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['nombre', 'artista', 'reproducciones', 'url', 'imagen_url'])
+        
+        for cancion in canciones:
+            writer.writerow([
+                cancion['nombre'], 
+                cancion['artista'], 
+                cancion['reproducciones'], 
+                cancion['url'], 
+                cancion.get('imagen_url', '')
+            ])
+    print(f'CSV guardado en {file_path}')
 
 def guardar_artistas_csv(artistas):
     guardar_csv(
