@@ -5,7 +5,6 @@ from email.headerregistry import Address
 EMAIL_EMISOR = "TU_GMAIL_REAL@gmail.com"
 EMAIL_PASSWORD = "TU_PASSWORD_DE_APLICACION_SIN_ESPACIOS"
 
-
 def enviar_codigo(destinatario, codigo):
     mensaje = EmailMessage()
     mensaje["Subject"] = "Codigo Nova Music"
