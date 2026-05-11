@@ -1,258 +1,365 @@
-import os
-import pandas as pd
 import streamlit as st
-import matplotlib.pyplot as plt
+import base64
+from pathlib import Path
+import streamlit.components.v1 as components
+import random 
 
-st.set_page_config(page_title="Proyecto Musical", layout="wide")
+st.set_page_config(
+    page_title="Nova music",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
 
+BASE_DIR = Path(__file__).parent
+ASSETS_DIR = BASE_DIR / "assets"
 
-def cargar_csv_seguro(ruta):
-    if os.path.exists(ruta):
-        return pd.read_csv(ruta)
-    return pd.DataFrame()
+def imagen_local(nombre):
+    archivo = ASSETS_DIR / nombre
 
-def convertir_fechas_unix(df, col_desde="fecha_desde", col_hasta="fecha_hasta"):
-    if col_desde in df.columns:
-        df[col_desde] = pd.to_datetime(df[col_desde], unit="s", errors="coerce")
-        df[col_desde] = df[col_desde].dt.strftime("%d/%m/%Y")
-    if col_hasta in df.columns:
-        df[col_hasta] = pd.to_datetime(df[col_hasta], unit="s", errors="coerce")
-        df[col_hasta] = df[col_hasta].dt.strftime("%d/%m/%Y")
-    return df
+    if not archivo.exists():
+        st.error(f"No encontré la imagen: {archivo}")
+        st.stop()
 
-def limpiar_numeros(df, columna):
-    if columna in df.columns:
-        df[columna] = pd.to_numeric(df[columna], errors="coerce")
-    return df
+    with open(archivo, "rb") as img:
+        return base64.b64encode(img.read()).decode()
 
-
-canciones = cargar_csv_seguro("data/clean/canciones_populares.csv")
-artistas = cargar_csv_seguro("data/clean/artistas_populares.csv")
-generos = cargar_csv_seguro("data/clean/generos_canciones.csv")
-julio = cargar_csv_seguro("data/clean/canciones_julio.csv")
-artistas_semanales = cargar_csv_seguro("data/clean/artistas_semanales.csv")
-
-if not artistas_semanales.empty:
-    artistas_semanales = convertir_fechas_unix(artistas_semanales, "fecha_desde", "fecha_hasta")
-    artistas_semanales = limpiar_numeros(artistas_semanales, "reproducciones")
-
-if not canciones.empty:
-    canciones = limpiar_numeros(canciones, "reproducciones")
-
-if not artistas.empty:
-    artistas = limpiar_numeros(artistas, "reproducciones")
+if not ASSETS_DIR.exists():
+    st.error(f"No existe la carpeta assets en: {ASSETS_DIR}")
+    st.stop()
 
 
-st.title("🎧 Proyecto musical con Last.fm")
-st.subheader("Análisis de canciones, artistas, géneros y rankings semanales")
+imagen_lema = imagen_local("lema.jpg")
+imagen_grafica = imagen_local("grafica.jpg")
+imagen_nueva = imagen_local("angeles.jpg")
+imagen_nueva2 = imagen_local("favoritos.jpg")
+imagen_nueva3 = imagen_local("audifonos.jpg")
+imagen_nueva4 = imagen_local("corazon.jpg")
+imagen_nueva5 = imagen_local("flecha.jpg")
+imagen_anuncio = imagen_local("anuncio.jpg")
+imagen_dashboard = imagen_local("bts.jpg")
+imagen_canciones = imagen_local("peso.jpg")
+imagen_artistas = imagen_local("kanye.jpg")
+imagen_generos = imagen_local("un_verano_sin_ti.jpg")
 
-st.divider()
+if "menu" not in st.session_state:
+    st.session_state.menu = "Inicio"
+
+st.markdown("""
+<style>
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: black !important;
+    overflow-x: hidden;
+}
+
+.stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"],
+[data-testid="stMainBlockContainer"],
+.block-container,
+[data-testid="stVerticalBlock"],
+[data-testid="stHorizontalBlock"],
+[data-testid="column"],
+[data-testid="stElementContainer"] {
+    background: black !important;
+}
+
+header[data-testid="stHeader"],
+[data-testid="stToolbar"],
+[data-testid="stDecoration"],
+#MainMenu,
+footer,
+[data-testid="stSidebar"],
+[data-testid="collapsedControl"] {
+    display: none !important;
+}
+
+section.main > div {
+    padding-top: 0 !important;
+}
+
+.hero {
+    width: 110vw;
+    height: 105vh;
+    margin-top: -120px;
+    margin-left: -5vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    position: absolute;
+    inset: 0;
+    filter: brightness(1) !important;
+    opacity: 0;
+    animation: cambiarHero 20s infinite;
+}
+
+.hero img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.hero img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.hero img:nth-child(3) {
+    animation-delay: 8s;
+}
+            
+.hero img:nth-child(4) {
+    animation-delay: 12s;
+}
+
+.hero img:nth-child(5) {
+    animation-delay: 16s;
+}
+
+@keyframes cambiarHero {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    45% { opacity: 1; }
+    55% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.logo-hero {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 5;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-family: "Century Gothic", "Montserrat", "Avenir Next", "Segoe UI", Arial, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.logo-hero .star {
+    font-size: 18px;
+    margin-left: 6px;
+    vertical-align: -1px;
+}
+
+.texto-hero {
+    position: absolute;
+    bottom: 80px;
+    left: 60px;
+    z-index: 5;
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: "Century Gothic", "Montserrat", "Segoe UI", Arial, sans-serif;
+    text-shadow: 0 4px 18px rgba(0,0,0,0.8);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 70%,
+        rgba(0,0,0,0.4) 80%,
+        rgba(0,0,0,0.9) 100%
+    );
+}
+
+.explora {
+    padding: 50px;
+}
+
+.explora h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.album-generos {
+    width: 170px;
+    height: 170px;
+    border-radius: 22px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    box-shadow: 0 14px 32px rgba(0,0,0,0.6);
+    transition: 0.3s ease;
+}
+
+.album-generos:hover {
+    transform: scale(1.08);
+}
+
+.album-generos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boton-texto {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.banner-anuncio {
+    width: 92%;
+    height: 260px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 40px auto;
+}
+
+.banner-anuncio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+.boton-login {
+    position: fixed;
+    top: 35px;
+    right: 45px;
+    z-index: 9999;
+}
+
+.boton-login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: "Century Gothic", "Montserrat", "Segoe UI", Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border: 1px solid rgba(255,255,255,0.55);
+    border-radius: 30px;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(8px);
+}
+
+.boton-login a:hover {
+    background: white;
+    color: black;
+}
+</style>
+
+<div class="boton-login">
+    <a href="/sesion" target="_self">INICIA SESIÓN</a>
+</div>
+""", unsafe_allow_html=True)
 
 
-st.header("📊 Resumen general")
+st.markdown(f"""
+<div class="hero">
+    <img src="data:image/jpeg;base64,{imagen_nueva}">
+    <img src="data:image/jpeg;base64,{imagen_nueva2}">
+    <img src="data:image/jpeg;base64,{imagen_nueva3}">
+    <img src="data:image/jpeg;base64,{imagen_nueva4}">
+    <img src="data:image/jpeg;base64,{imagen_nueva5}">
+    <div class="logo-hero">NOVA MUSIC<span class="star">★</span></div>
+    <div class="texto-hero"></div>
+</div>
+""", unsafe_allow_html=True)
 
-col1, col2, col3, col4, col5 = st.columns(5)
+col1, col2 = st.columns([2, 1])
 
-col1.metric("Canciones", len(canciones))
-col2.metric("Artistas", len(artistas))
-col3.metric("Géneros", len(generos))
-col4.metric("Julio", len(julio))
-col5.metric("Semanales", len(artistas_semanales))
+with col1:
+    st.markdown(f"""
+    <div style="margin: 55px">
+        <img src="data:image/jpg;base64,{imagen_lema}" 
+             style="width:60%; border-radius:15px;">
+    </div>
+    """, unsafe_allow_html=True)
 
-st.divider()
+with col2:
+    st.markdown("""
+    <div style="margin-top:90px; text-align:center;">
+        <p style="
+            color:white; 
+            font-weight:800; 
+            font-size:20px;
+            margin-bottom:15px;">
+            Recomendaciones
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
 
-
-st.header("📁 Vista previa de los datos")
-
-opcion = st.selectbox(
-    "Selecciona una tabla",
-    [
-        "Canciones populares",
-        "Artistas populares",
-        "Géneros",
-        "Canciones de julio",
-        "Artistas semanales"
+    playlists = [
+        "PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI",  # Top global
+        "PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj",  # Pop
+        "PLS_oEMUyvA728O0r3rW0U2Y9d2z6kQ6Jt",  # Latino
+        "PL4fGSI1pDJn5kI81J1fYWK5eZRl1zJ5kM"   # Variado
     ]
-)
 
-if opcion == "Canciones populares":
-    if canciones.empty:
-        st.warning("No se encontró el archivo de canciones populares.")
-    else:
-        st.dataframe(canciones.head(20), use_container_width=True)
+    playlist = random.choice(playlists)
 
-elif opcion == "Artistas populares":
-    if artistas.empty:
-        st.warning("No se encontró el archivo de artistas populares.")
-    else:
-        st.dataframe(artistas.head(20), use_container_width=True)
+    components.html(f"""
+    <iframe width="100%" height="300"
+        src="https://www.youtube.com/embed/videoseries?list={playlist}"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+        style="border-radius:25px;">
+    </iframe>
+    """, height=320)
 
-elif opcion == "Géneros":
-    if generos.empty:
-        st.warning("No se encontró el archivo de géneros.")
-    else:
-        st.dataframe(generos.head(20), use_container_width=True)
+st.markdown("""
+<div class="explora" style="margin-top:-80px;">
+    <h3>Explora</h3>
+</div>
+""", unsafe_allow_html=True)
 
-elif opcion == "Canciones de julio":
-    if julio.empty:
-        st.warning("No se encontró el archivo de canciones de julio.")
-    else:
-        st.dataframe(julio.head(20), use_container_width=True)
+columnas = st.columns(4)
 
-elif opcion == "Artistas semanales":
-    if artistas_semanales.empty:
-        st.warning("No se encontró el archivo de artistas semanales.")
-    else:
-        st.dataframe(artistas_semanales.head(20), use_container_width=True)
+with columnas[0]:
+    st.markdown(f"""
+    <a href="/dashboard" target="_self" class="album-generos">
+        <img src="data:image/jpg;base64,{imagen_dashboard}">
+    </a>
+    <div class="boton-texto">Dashboard</div>
+    """, unsafe_allow_html=True)
 
-st.divider()
+with columnas[1]:
+    st.markdown(f"""
+    <a href="/canciones" target="_self" class="album-generos">
+        <img src="data:image/jpg;base64,{imagen_canciones}">
+    </a>
+    <div class="boton-texto">Canciones</div>
+    """, unsafe_allow_html=True)
 
-st.header("🗓️ Canciones semanales")
+with columnas[2]:
+    st.markdown(f"""
+    <a href="/artistas" target="_self" class="album-generos">
+        <img src="data:image/jpg;base64,{imagen_artistas}">
+    </a>
+    <div class="boton-texto">Artistas</div>
+    """, unsafe_allow_html=True)
+    
+with columnas[3]:
+    st.markdown(f"""
+    <a href="/generos" target="_self" class="album-generos">
+        <img src="data:image/jpg;base64,{imagen_generos}">
+    </a>
+    <div class="boton-texto">Géneros</div>
+    """, unsafe_allow_html=True)
 
-tag_usuario = st.selectbox(
-    "Elige un género",
-    ["disco", "rock", "pop", "jazz", "hip-hop", "k-pop"]
-)
-
-ruta_csv_tag = f"data/clean/canciones_{tag_usuario}.csv"
-canciones_tag = cargar_csv_seguro(ruta_csv_tag)
-
-if not canciones_tag.empty:
-    canciones_tag = convertir_fechas_unix(canciones_tag, "fecha_desde", "fecha_hasta")
-
-
-    if not canciones_tag.empty:
-        semana_desde = canciones_tag["fecha_desde"].iloc[0] if "fecha_desde" in canciones_tag.columns else "N/A"
-        semana_hasta = canciones_tag["fecha_hasta"].iloc[0] if "fecha_hasta" in canciones_tag.columns else "N/A"
-
-        st.markdown(f"**Semana:** {semana_desde} - {semana_hasta}")
-        st.markdown(f"**Tag seleccionado:** {tag_usuario}")
-
-        col_izq, col_der = st.columns(2)
-
-        with col_izq:
-            st.subheader("Tabla semanal")
-            columnas_tabla = [col for col in ["nombre", "artista"] if col in canciones_tag.columns]
-            st.dataframe(canciones_tag[columnas_tabla].head(10), use_container_width=True)
-
-        with col_der:
-            st.subheader("Gráfico semanal")
-            top10 = canciones_tag.sort_values(by="oyentes", ascending=False).head(10).copy()
-            top10 = top10.sort_values(by="oyentes", ascending=True)
-            top10["etiqueta"] = top10["nombre"].astype(str).str.slice(0, 30)
-
-            fig, ax = plt.subplots(figsize=(8, 5))
-            ax.barh(top10["etiqueta"], top10["oyentes"])
-            ax.set_title(f"Top canciones semanales - {tag_usuario}")
-            ax.set_xlabel("Oyentes")
-            ax.set_ylabel("Canción")
-            plt.tight_layout()
-            st.pyplot(fig)
-    else:
-        st.warning(f"El archivo {ruta_csv_tag} existe, pero no tiene valores numéricos válidos en 'oyentes'.")
-else:
-    st.warning(f"No existe el archivo {ruta_csv_tag}. Ejecuta antes tu script de descarga.")
-
-st.divider()
-
-
-
-st.header("📈 Gráficos generales")
-
-col_g1, col_g2 = st.columns(2)
-
-with col_g1:
-    st.subheader("Géneros más populares")
-    if not generos.empty and "generos" in generos.columns:
-        conteo_generos = generos["generos"].value_counts().head(10)
-
-        fig2, ax2 = plt.subplots(figsize=(8, 5))
-        ax2.bar(conteo_generos.index, conteo_generos.values)
-        ax2.set_title("Top géneros")
-        ax2.set_xlabel("Género")
-        ax2.set_ylabel("Cantidad")
-        plt.xticks(rotation=45, ha="right")
-        plt.tight_layout()
-        st.pyplot(fig2)
-    else:
-        st.warning("No hay datos de géneros disponibles.")
-
-with col_g2:
-    st.subheader("Top artistas globales")
-    if not artistas.empty and "reproducciones" in artistas.columns and "nombre" in artistas.columns:
-        top_artistas = artistas.dropna(subset=["reproducciones"]).sort_values(
-            by="reproducciones", ascending=False
-        ).head(10).copy()
-
-        top_artistas = top_artistas.sort_values(by="reproducciones", ascending=True)
-        top_artistas["etiqueta"] = top_artistas["nombre"].astype(str).str.slice(0, 30)
-
-        fig3, ax3 = plt.subplots(figsize=(8, 5))
-        ax3.barh(top_artistas["etiqueta"], top_artistas["reproducciones"])
-        ax3.set_title("Top artistas")
-        ax3.set_xlabel("Reproducciones")
-        ax3.set_ylabel("Artista")
-        plt.tight_layout()
-        st.pyplot(fig3)
-    else:
-        st.warning("No hay datos de artistas disponibles.")
-
-st.divider()
-
-st.header("⚡ Comparación entre tags")
-
-tags_comparacion = ["disco", "rock"]
-col_a, col_b = st.columns(2)
-
-for i, tag in enumerate(tags_comparacion):
-    ruta = f"data/clean/canciones_{tag}.csv"
-    df = cargar_csv_seguro(ruta)
-
-    if not df.empty:
-        df = convertir_fechas_unix(df, "fecha_desde", "fecha_hasta")
-        df = limpiar_numeros(df, "oyentes")
-        df = df.dropna(subset=["oyentes"])
-        df = df[df["oyentes"] > 0]
-
-        if not df.empty:
-            top5 = df.sort_values(by="oyentes", ascending=False).head(5).copy()
-            top5["etiqueta"] = top5["nombre"].astype(str).str.slice(0, 20)
-
-            if i == 0:
-                with col_a:
-                    st.subheader(f"Tag: {tag}")
-                    st.dataframe(top5[["nombre", "artista", "oyentes"]], use_container_width=True)
-
-                    fig, ax = plt.subplots(figsize=(7, 4))
-                    ax.bar(top5["etiqueta"], top5["oyentes"])
-                    ax.set_title(f"Top 5 - {tag}")
-                    ax.set_ylabel("Oyentes")
-                    plt.xticks(rotation=45, ha="right")
-                    plt.tight_layout()
-                    st.pyplot(fig)
-            else:
-                with col_b:
-                    st.subheader(f"Tag: {tag}")
-                    st.dataframe(top5[["nombre", "artista", "oyentes"]], use_container_width=True)
-
-                    fig, ax = plt.subplots(figsize=(7, 4))
-                    ax.bar(top5["etiqueta"], top5["oyentes"])
-                    ax.set_title(f"Top 5 - {tag}")
-                    ax.set_ylabel("Oyentes")
-                    plt.xticks(rotation=45, ha="right")
-                    plt.tight_layout()
-                    st.pyplot(fig)
-        else:
-            if i == 0:
-                with col_a:
-                    st.warning(f"El archivo de {tag} no tiene oyentes válidos.")
-            else:
-                with col_b:
-                    st.warning(f"El archivo de {tag} no tiene oyentes válidos.")
-    else:
-        if i == 0:
-            with col_a:
-                st.warning(f"No existe el archivo canciones_{tag}.csv")
-        else:
-            with col_b:
-                st.warning(f"No existe el archivo canciones_{tag}.csv")
+st.markdown(f"""
+<div class="banner-anuncio">
+    <img src="data:image/jpeg;base64,{imagen_anuncio}">
+</div>
+""", unsafe_allow_html=True)
