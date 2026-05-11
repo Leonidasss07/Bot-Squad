@@ -155,7 +155,21 @@ else:
 
 st.divider()
 
+<<<<<<< Updated upstream
 
+=======
+st.markdown(f"""
+<div class="hero">
+    <img src="data:image/jpeg;base64,{imagen_nueva}">
+    <img src="data:image/jpeg;base64,{imagen_nueva2}">
+    <img src="data:image/jpeg;base64,{imagen_nueva3}">
+    <img src="data:image/jpeg;base64,{imagen_nueva4}">
+    <img src="data:image/jpeg;base64,{imagen_nueva5}">
+    <div class="logo-hero">NOVA MUSIC<span class="star">★</span></div>
+    <div class="texto-hero"></div>
+</div>
+""", unsafe_allow_html=True)
+>>>>>>> Stashed changes
 
 st.header("📈 Gráficos generales")
 
@@ -166,6 +180,7 @@ with col_g1:
     if not generos.empty and "generos" in generos.columns:
         conteo_generos = generos["generos"].value_counts().head(10)
 
+<<<<<<< Updated upstream
         fig2, ax2 = plt.subplots(figsize=(8, 5))
         ax2.bar(conteo_generos.index, conteo_generos.values)
         ax2.set_title("Top géneros")
@@ -176,6 +191,14 @@ with col_g1:
         st.pyplot(fig2)
     else:
         st.warning("No hay datos de géneros disponibles.")
+=======
+    playlists = [
+        "PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI",
+        "PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj",
+        "PLS_oEMUyvA728O0r3rW0U2Y9d2z6kQ6Jt",
+        "PL4fGSI1pDJn5kI81J1fYWK5eZRl1zJ5kM"
+    ]
+>>>>>>> Stashed changes
 
 with col_g2:
     st.subheader("Top artistas globales")
@@ -197,7 +220,12 @@ with col_g2:
     else:
         st.warning("No hay datos de artistas disponibles.")
 
+<<<<<<< Updated upstream
 st.divider()
+=======
+# Paginas
+columnas = st.columns(4)
+>>>>>>> Stashed changes
 
 st.header("⚡ Comparación entre tags")
 
@@ -208,6 +236,7 @@ for i, tag in enumerate(tags_comparacion):
     ruta = f"data/clean/canciones_{tag}.csv"
     df = cargar_csv_seguro(ruta)
 
+<<<<<<< Updated upstream
     if not df.empty:
         df = convertir_fechas_unix(df, "fecha_desde", "fecha_hasta")
         df = limpiar_numeros(df, "oyentes")
@@ -256,3 +285,11 @@ for i, tag in enumerate(tags_comparacion):
         else:
             with col_b:
                 st.warning(f"No existe el archivo canciones_{tag}.csv")
+=======
+# Anuncio
+st.markdown(f"""
+<div class="banner-anuncio">
+    <img src="data:image/jpeg;base64,{imagen_anuncio}">
+</div>
+""", unsafe_allow_html=True)
+>>>>>>> Stashed changes

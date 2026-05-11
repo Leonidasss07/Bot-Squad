@@ -6,9 +6,16 @@ import csv
 
 API_KEY = '2486bf623744f4f6f8e4b2a60720a504' 
 
+<<<<<<< Updated upstream
 
 import requests
 import time
+=======
+API_KEY = "2486bf623744f4f6f8e4b2a60720a504"      
+MAX_CANCIONES_POPULARES = 10000      
+LIMITE_POR_PAGINA = 1000           
+MAX_PORTADAS = 10000            
+>>>>>>> Stashed changes
 
 # 1. Función para buscar la imagen (se mantiene igual)
 def obtener_imagen_cancion(artista, cancion, api_key):
@@ -33,7 +40,11 @@ def obtener_imagen_cancion(artista, cancion, api_key):
         
     return ""
 
+<<<<<<< Updated upstream
 # 2. Tu función principal optimizada
+=======
+#canciones populares
+>>>>>>> Stashed changes
 def obtener_canciones_populares():
     url = 'http://ws.audioscrobbler.com/2.0/'
     canciones = []
@@ -106,6 +117,7 @@ def obtener_artistas_populares():
     datos = respuesta.json()
     artistas = []
 
+<<<<<<< Updated upstream
     for artista in datos['artists']['artist']:
         musico = {
             'nombre': artista['name'],
@@ -115,6 +127,24 @@ def obtener_artistas_populares():
         }
         artistas.append(musico)
             
+=======
+    try:
+        respuesta = requests.get(url, params=params, timeout=15)
+        datos = respuesta.json()
+
+        for artista in datos["artists"]["artist"]:
+            musico = {
+                "nombre": artista.get("name", "N/A"),
+                "reproducciones": artista.get("playcount", "N/A"),
+                "oyentes": artista.get("listeners", "N/A"),
+                "url": artista.get("url", "")
+            }
+            artistas.append(musico)
+
+    except Exception as e:
+        print(f"Error al obtener artistas: {e}")
+
+>>>>>>> Stashed changes
     return artistas
 
 #canciones populares del mes
@@ -131,6 +161,7 @@ def obtener_canciones_populares_julio():
     datos = respuesta.json()
     canciones_populares_julio = []
 
+<<<<<<< Updated upstream
     for track in datos['album']['tracks']['track']:
         cancion_julio = {
             'nombre': track['name'],
@@ -139,6 +170,27 @@ def obtener_canciones_populares_julio():
         }
         canciones_populares_julio.append(cancion_julio)
 
+=======
+    try:
+        respuesta = requests.get(url, params=params, timeout=15)
+        datos = respuesta.json()
+
+        tracks = datos.get("album", {}).get("tracks", {}).get("track", [])
+
+        if isinstance(tracks, dict):
+            tracks = [tracks]
+
+        for track in tracks:
+            cancion_julio = {
+                "nombre": track.get("name", "N/A"),
+                "artista": track.get("artist", {}).get("name", "N/A"),
+                "duracion": track.get("duration", "N/A")
+            }
+
+            canciones_populares_julio.append(cancion_julio)
+    except Exception as e:
+        print(f"Error al obtener canciones de julio: {e}")
+>>>>>>> Stashed changes
     return canciones_populares_julio
 
 # géneros de las canciones más populares
@@ -164,6 +216,7 @@ def obtener_generos_canciones_populares():
             'limit': 100,
             'page': pagina
         }
+<<<<<<< Updated upstream
 
         respuesta = requests.get(url, params=params)
         datos = respuesta.json()
@@ -203,6 +256,49 @@ def obtener_generos_canciones_populares():
 
         print(f"Página {pagina} procesada")
 
+=======
+        try:
+            respuesta = requests.get(url, params=params, timeout=15)
+            datos = respuesta.json()
+
+            if "error" in datos or "tracks" not in datos:
+                print(f"Aviso: error en la página {pagina}")
+                break
+
+            for track in datos["tracks"]["track"]:
+                nombre = track.get("name", "N/A")
+                artista = track.get("artist", {}).get("name", "N/A")
+
+                params_info = {
+                    "method": "track.getInfo",
+                    "api_key": API_KEY,
+                    "format": "json",
+                    "artist": artista,
+                    "track": nombre
+                }
+                respuesta_info = requests.get(url, params=params_info, timeout=15)
+                datos_info = respuesta_info.json()
+
+                try:
+                    tags = datos_info["track"]["toptags"]["tag"]
+
+                    for tag in tags:
+                        genero = tag["name"].lower()
+
+                        if genero in GENEROS_VALIDOS:
+                            canciones_con_generos.append({"generos": genero})
+
+                except (KeyError, TypeError):
+                    pass
+
+                time.sleep(0.2)
+
+            print(f"Página {pagina} procesada")
+
+        except Exception as e:
+            print(f"Error al obtener géneros en la página {pagina}: {e}")
+            break
+>>>>>>> Stashed changes
     return canciones_con_generos
 
 #canciones semanales
@@ -253,7 +349,6 @@ def obtener_canciones_semanales_tag(tag):
                 'url': track.get('url', 'N/A')
             }
             canciones.append(cancion)
-
         print(f"Se obtuvieron {len(canciones)} canciones para el tag {tag}")
 
     except Exception as e:
@@ -262,7 +357,27 @@ def obtener_canciones_semanales_tag(tag):
     return canciones
 
 
+<<<<<<< Updated upstream
 #guardar los archivos
+=======
+def guardar_json_lista(datos, file_path):
+    with open(file_path, "w", encoding="utf-8") as archivo:
+        json.dump(datos, archivo, ensure_ascii=False, indent=4)
+
+# guardar csv
+def guardar_csv(datos, file_path, columnas):
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+    with open(file_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=columnas, quoting=csv.QUOTE_ALL)
+        writer.writeheader()
+
+        for item in datos:
+            writer.writerow({columna: item.get(columna, "") for columna in columnas})
+    print(f"CSV guardado en {file_path}")
+
+# guardar canciones populares
+>>>>>>> Stashed changes
 def guardar_canciones(canciones):
     os.makedirs('data/raw', exist_ok=True)
     file_path = 'data/raw/canciones_populares.json'
@@ -325,6 +440,7 @@ def guardar_canciones_csv(canciones):
             ])
     print(f'CSV guardado en {file_path}')
 
+<<<<<<< Updated upstream
 def guardar_artistas_csv(artistas):
     os.makedirs('data/clean', exist_ok=True)
     file_path = 'data/clean/artistas_populares.csv'
@@ -334,6 +450,27 @@ def guardar_artistas_csv(artistas):
         for artista in artistas:
             writer.writerow([artista['nombre'], artista['reproducciones'], artista['oyentes'], artista['url']])
     print(f'CSV guardado en {file_path}')
+=======
+def guardar_artistas(artistas):
+    os.makedirs("data/raw", exist_ok=True)
+    file_path = "data/raw/artistas_populares.json"
+    guardar_json_lineas(artistas, file_path)
+    print(f"Se han guardado {len(artistas)} artistas en {file_path}")
+
+def guardar_artistas_csv(artistas):
+    guardar_csv(
+        artistas,
+        "data/clean/artistas_populares.csv",
+        ["nombre", "reproducciones", "oyentes", "url"]
+    )
+    
+# guardar canciones de julio
+def guardar_canciones_julio(canciones_julio):
+    os.makedirs("data/raw", exist_ok=True)
+    file_path = "data/raw/canciones_populares_julio.json"
+    guardar_json_lineas(canciones_julio, file_path)
+    print(f"Se han guardado {len(canciones_julio)} canciones en {file_path}")
+>>>>>>> Stashed changes
 
 def guardar_canciones_julio_csv(canciones_julio):
     os.makedirs('data/clean', exist_ok=True)
