@@ -119,7 +119,7 @@ h1, h2, h3, h4, p, label, div {{
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     width: 100vw;
-    min-height: 390px;
+    min-height: 350px;
     background: #000000;
     display: flex;
     align-items: center;
@@ -160,7 +160,7 @@ h1, h2, h3, h4, p, label, div {{
     display: flex;
     justify-content: center;
     gap: 16px;
-    margin: 30px auto 0 auto;
+    margin: 20px auto 0 auto;
     flex-wrap: wrap;
     max-width: 980px;
 }}
@@ -492,22 +492,20 @@ def html_block(texto):
     lineas_limpias = [linea.strip() for linea in lineas if linea.strip()]
     return "\n".join(lineas_limpias)
 
-def obtener_url_fila(row):
-    posibles = ["url", "link", "lastfm_url", "enlace"]
-    
-    for col in posibles:
-        if col in row.index and pd.notna(row[col]) and str(row[col]).strip() != "":
-            return str(row[col]).strip()
-    return ""
-
 def obtener_imagen_fila(row):
-    posibles = ["imagen", "image", "image_url", "cover_url", "cover", "artwork", "img"]
-
+    posibles = ["imagen url", "imagen_url"]
+    
     for col in posibles:
         if col in row.index and pd.notna(row[col]):
             url = str(row[col]).strip()
             if url.startswith("http"):
                 return url
+    return ""
+
+def obtener_url_fila(row):
+
+    if "url" in row.index and pd.notna(row["url"]):
+        return str(row["url"]).strip()
     return ""
 
 
@@ -668,32 +666,60 @@ else:
     if os.path.exists(pop_path):
         pop_df = pd.read_csv(pop_path)
 
-        if "reproducciones" in pop_df.columns:
-            pop_df["reproducciones"] = pd.to_numeric(pop_df["reproducciones"], errors="coerce")
+    if "reproducciones" in pop_df.columns:
+        pop_df["reproducciones"] = pd.to_numeric(pop_df["reproducciones"], errors="coerce")
 
-        if "nombre" in pop_df.columns:
-            pop_df["nombre_lower"] = pop_df["nombre"].astype(str).str.lower().str.strip()
-            tag_df["nombre_lower"] = tag_df[nombre_col].astype(str).str.lower().str.strip()
+    if "nombre" in pop_df.columns:
+        pop_df["nombre_lower"] = pop_df["nombre"].astype(str).str.lower().str.strip()
+        tag_df["nombre_lower"] = tag_df[nombre_col].astype(str).str.lower().str.strip()
 
-            columnas_merge = ["nombre_lower"]
+        columnas_merge = ["nombre_lower"]
 
-            for extra_col in ["reproducciones", "url", "imagen", "image", "image_url", "cover_url", "cover", "artwork"]:
-                if extra_col in pop_df.columns:
-                    columnas_merge.append(extra_col)
+        for extra_col in [
+            "reproducciones",
+            "url",
+            "audio_url",
+            "imagen_url",
+            "imagen",
+            "image",
+            "image_url",
+            "cover_url",
+            "cover",
+            "artwork"
+        ]:
+            if extra_col in pop_df.columns and extra_col not in columnas_merge:
+                columnas_merge.append(extra_col)
 
-            tag_df = tag_df.merge(
-                pop_df[columnas_merge],
-                on="nombre_lower",
-                how="left",
-                suffixes=("", "_popular")
-            ).drop(columns=["nombre_lower"])
+        tag_df = tag_df.merge(
+            pop_df[columnas_merge],
+            on="nombre_lower",
+            how="left",
+            suffixes=("", "_popular")
+        ).drop(columns=["nombre_lower"])
 
-            for img_col in ["imagen", "image", "image_url", "cover_url", "cover", "artwork"]:
+        for col in ["reproducciones", "url", "audio_url", "imagen_url"]:
+            pop_col = f"{col}_popular"
+
+            if pop_col in tag_df.columns:
+                if col not in tag_df.columns:
+                    tag_df[col] = tag_df[pop_col]
+                else:
+                    tag_df[col] = tag_df[col].fillna(tag_df[pop_col])
+
+        for img_col in ["imagen", "image", "image_url", "cover_url", "cover", "artwork"]:
+            pop_col = f"{img_col}_popular"
+
+            if pop_col in tag_df.columns and img_col not in tag_df.columns:
+                tag_df[img_col] = tag_df[pop_col]
+
+        tag_df = tag_df.loc[:, ~tag_df.columns.duplicated()]
+
+        for img_col in ["imagen", "image", "image_url", "cover_url", "cover", "artwork"]:
                 pop_col = f"{img_col}_popular"
                 if pop_col in tag_df.columns and img_col not in tag_df.columns:
                     tag_df[img_col] = tag_df[pop_col]
 
-            if "url_popular" in tag_df.columns and "url" not in tag_df.columns:
+        if "url_popular" in tag_df.columns and "url" not in tag_df.columns:
                 tag_df["url"] = tag_df["url_popular"]
 
     valor_col = None
@@ -723,40 +749,46 @@ else:
         artista = texto_seguro(row[artista_col]) if artista_col else "Artista no disponible"
         url = obtener_url_fila(row)
         imagen = obtener_imagen_fila(row)
+        audio = str(row.get("audio_url", "")).strip()
         meta = texto_seguro(obtener_valor_formateado(row, valor_col, usar_ranking))
         rank = i + 1
 
         if imagen:
-            cover_html = f'<div class="song-cover"><img src="{html.escape(imagen)}" alt="{nombre}"></div>'
+            cover_html = f'<div class="song-cover"><img src="{imagen}" style="width:100%; height:100%; object-fit:cover;"></div>'
         else:
             initial = nombre[:1].upper() if nombre else "♪"
             cover_html = f'<div class="song-cover"><div class="song-cover-placeholder">{initial}</div></div>'
 
         if url:
-            boton = f'<a class="song-button" href="{html.escape(url)}" target="_blank">Escuchar en Last.fm</a>'
+            boton = f'<a class="song-button" href="{html.escape(url)}" target="_blank">Ver en Last.fm</a>'
         else:
             boton = '<span class="song-button-disabled">Sin enlace</span>'
 
-        with columnas_canciones[i % 2]:
-            st.markdown(
-                html_block(f"""
-                <div class="song-card">
-                    <div class="song-layout">
-                        <div class="song-content">
-                            <div class="song-topline">
-                                <div class="song-rank">{rank}</div>
-                                <div class="song-name">{nombre}</div>
-                            </div>
-                            <div class="song-artist">{artista}</div>
-                            <div class="song-meta">{meta}</div>
-                            {boton}
+    with columnas_canciones[i % 2]:
+        st.markdown(
+            html_block(f"""
+            <div class="song-card">
+                <div class="song-layout">
+                    <div class="song-content">
+                        <div class="song-topline">
+                            <div class="song-rank">{rank}</div>
+                            <div class="song-name">{nombre}</div>
                         </div>
-                        {cover_html}
+                        <div class="song-artist">{artista}</div>
+                        <div class="song-meta">{meta}</div>
+                        {boton}
                     </div>
+                    {cover_html}
                 </div>
-                """),
-                unsafe_allow_html=True
-            )
+            </div>
+            """),
+            unsafe_allow_html=True
+        )
+
+        if audio.startswith("http"):
+            st.audio(audio, format="audio/mp3")
+        else:
+            st.caption("Audio no disponible")
 
     st.markdown("---")
 

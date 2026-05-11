@@ -6,12 +6,13 @@ import csv
 import math
 
 
-
-import requests
-import time
+API_KEY = "2486bf623744f4f6f8e4b2a60720a504"      
+MAX_CANCIONES_POPULARES = 10000      
+LIMITE_POR_PAGINA = 1000           
+MAX_PORTADAS = 10000            
 
 # obtener portadas
-def obtener_imagen_cancion(artista, cancion, api_key):
+def obtener_imagen_cancion(artista, cancion, api_key=API_KEY):
     url = 'http://ws.audioscrobbler.com/2.0/'
     params = {
         'method': 'track.getInfo',
@@ -87,7 +88,6 @@ def obtener_canciones_populares():
 
     return canciones
 
-
 # artistas populares
 def obtener_artistas_populares():
     url = "http://ws.audioscrobbler.com/2.0/"
@@ -120,7 +120,6 @@ def obtener_artistas_populares():
         print(f"Error al obtener artistas: {e}")
 
     return artistas
-
 
 # canciones populares del mes
 def obtener_canciones_populares_julio():
@@ -159,7 +158,6 @@ def obtener_canciones_populares_julio():
 
     return canciones_populares_julio
 
-
 # géneros válidos
 GENEROS_VALIDOS = {
     "pop", "rock", "hip-hop", "hip hop", "rap", "r&b", "rnb", "soul", "jazz",
@@ -169,7 +167,6 @@ GENEROS_VALIDOS = {
     "disco", "ambient", "lo-fi", "synthpop", "synthwave", "grunge", "emo",
     "gospel", "opera", "soundtrack", "new wave", "post-rock", "experimental"
 }
-
 
 # géneros de canciones populares
 def obtener_generos_canciones_populares():
@@ -229,7 +226,6 @@ def obtener_generos_canciones_populares():
             break
 
     return canciones_con_generos
-
 
 # canciones por género
 def obtener_canciones_semanales_tag(tag):
@@ -295,7 +291,6 @@ def obtener_canciones_semanales_tag(tag):
 
     return canciones
 
-
 def guardar_json_lineas(datos, file_path):
     with open(file_path, "w", encoding="utf-8") as archivo:
         for item in datos:
@@ -305,10 +300,9 @@ def guardar_json_lista(datos, file_path):
     with open(file_path, "w", encoding="utf-8") as archivo:
         json.dump(datos, archivo, ensure_ascii=False, indent=4)
 
-
 # guardar csv
 def guardar_csv(datos, file_path, columnas):
-    os.makedirs("data/clean", exist_ok=True)
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
     with open(file_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=columnas, quoting=csv.QUOTE_ALL)
@@ -319,14 +313,12 @@ def guardar_csv(datos, file_path, columnas):
 
     print(f"CSV guardado en {file_path}")
 
-
 # guardar canciones populares
 def guardar_canciones(canciones):
     os.makedirs("data/raw", exist_ok=True)
     file_path = "data/raw/canciones_populares.json"
     guardar_json_lineas(canciones, file_path)
     print(f"Se han guardado {len(canciones)} canciones en {file_path}")
-
 
 def guardar_canciones_csv(canciones):
     os.makedirs('data/clean', exist_ok=True)
@@ -345,13 +337,19 @@ def guardar_canciones_csv(canciones):
             ])
     print(f'CSV guardado en {file_path}')
 
+# NUEVA FUNCIÓN AÑADIDA PARA EVITAR ERROR
+def guardar_artistas(artistas):
+    os.makedirs("data/raw", exist_ok=True)
+    file_path = "data/raw/artistas_populares.json"
+    guardar_json_lineas(artistas, file_path)
+    print(f"Se han guardado {len(artistas)} artistas en {file_path}")
+
 def guardar_artistas_csv(artistas):
     guardar_csv(
         artistas,
         "data/clean/artistas_populares.csv",
         ["nombre", "reproducciones", "oyentes", "url"]
     )
-
 
 # guardar canciones de julio
 def guardar_canciones_julio(canciones_julio):
@@ -360,14 +358,12 @@ def guardar_canciones_julio(canciones_julio):
     guardar_json_lineas(canciones_julio, file_path)
     print(f"Se han guardado {len(canciones_julio)} canciones en {file_path}")
 
-
 def guardar_canciones_julio_csv(canciones_julio):
     guardar_csv(
         canciones_julio,
         "data/clean/canciones_julio.csv",
         ["nombre", "artista", "duracion"]
     )
-
 
 # guardar géneros
 def guardar_generos_canciones(canciones_con_generos):
@@ -376,14 +372,12 @@ def guardar_generos_canciones(canciones_con_generos):
     guardar_json_lineas(canciones_con_generos, file_path)
     print(f"Se han guardado {len(canciones_con_generos)} géneros en {file_path}")
 
-
 def guardar_generos_csv(canciones_con_generos):
     guardar_csv(
         canciones_con_generos,
         "data/clean/generos_canciones.csv",
         ["generos"]
     )
-
 
 # guardar canciones por género
 def guardar_canciones_tag(canciones, tag):
@@ -392,14 +386,12 @@ def guardar_canciones_tag(canciones, tag):
     guardar_json_lista(canciones, file_path)
     print(f"Se han guardado {len(canciones)} canciones en {file_path}")
 
-
 def guardar_canciones_tag_csv(canciones, tag):
     guardar_csv(
         canciones,
         f"data/clean/canciones_{tag}.csv",
         ["tag", "fecha_desde", "fecha_hasta", "nombre", "artista", "oyentes", "url", "imagen_url"]
     )
-
 
 # ejecutar
 if __name__ == "__main__":
