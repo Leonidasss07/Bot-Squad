@@ -25,7 +25,6 @@ st.markdown(f"""
 [data-testid="collapsedControl"],
 [data-testid="stToolbar"],
 [data-testid="stDecoration"],
-#MainMenu,
 footer {{
     display: none !important;
 }}
@@ -244,10 +243,8 @@ html, body, .stApp {{
 </div>
 """, unsafe_allow_html=True)
 
-# =========================
-# TÍTULO
-# =========================
-st.title("📊 Dashboard")
+
+st.title("Dashboard")
 
 meses = {
     1: "Enero", 2: "Febrero", 3: "Marzo", 4: "Abril",
