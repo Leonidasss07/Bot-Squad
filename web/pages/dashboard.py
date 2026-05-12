@@ -259,7 +259,6 @@ st.caption(f"Última sincronización con Last.fm: {mes_actual}")
 
 loader.empty()
 
-
 try:
     canciones = pd.read_csv("data/clean/canciones_populares.csv")
     artistas = pd.read_csv("data/clean/artistas_populares.csv")
