@@ -1,10 +1,13 @@
 import streamlit as st
 import base64
 import os
+
 from db import crear_usuario, iniciar_sesion, guardar_codigo_recuperacion, verificar_codigo, cambiar_password
 from email_utils import enviar_codigo
+from utils_loader import mostrar_loader
 
 st.set_page_config(page_title="Sesión - Nova music", layout="wide")
+loader = mostrar_loader(1)
 
 def get_base64_image(path):
     if not os.path.exists(path): return ""
@@ -115,6 +118,8 @@ st.markdown(f"""
     <a href="/generos" target="_self">GÉNEROS</a>
 </div>
 """, unsafe_allow_html=True)
+
+loader.empty()
 
 st.markdown('<div class="main-center-wrapper">', unsafe_allow_html=True)
 

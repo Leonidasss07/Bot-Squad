@@ -4,7 +4,7 @@ import base64
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import time
 
 st.set_page_config(
     page_title="Géneros",
@@ -16,6 +16,60 @@ st.set_page_config(
 # ruta de la imagen
 HERO_IMAGE_PATH = "web/assets/generos_bg.jpeg"
 
+loader = st.empty()
+
+loader.markdown("""
+<style>
+.loader-screen {
+    position: fixed;
+    inset: 0;
+    background: #000000;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loader-logo {
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-family: "Century Gothic", "Montserrat", "Segoe UI", Arial, sans-serif;
+    text-shadow: 0 0 20px rgba(255,255,255,0.35);
+}
+
+.loader-dots::after {
+    content: "";
+    animation: dots 1.2s infinite;
+}
+
+@keyframes dots {
+    0% { content: ""; }
+    25% { content: "."; }
+    50% { content: ". ."; }
+    75% { content: ". . ."; }
+    100% { content: ""; }
+}
+
+.loader-text {
+    margin-top: 14px;
+    color: rgba(255,255,255,0.65);
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+</style>
+
+<div class="loader-screen">
+    <div class="loader-logo">NOVA MUSIC★<span class="loader-dots"></span></div>
+    <div class="loader-text">Cargando página</div>
+</div>
+""", unsafe_allow_html=True)
+
+# pequeña pausa visual opcional
+time.sleep(1)
 
 def image_to_base64(path):
     if not os.path.exists(path):
@@ -31,6 +85,23 @@ st.markdown(f"""
 html, body, [data-testid="stAppViewContainer"], .stApp {{
     background: #000000 !important;
     color: #ffffff !important;
+}}
+            
+/* audio gris */
+[data-testid="stAudio"] {{
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    box-shadow: none !important;
+}}
+
+[data-testid="stAudio"] audio {{
+    width: 100%;
+    height: 36px;
+    border-radius: 20px;
+    filter: grayscale(1) brightness(0.85);
 }}
 
 header, footer, #MainMenu,
@@ -542,6 +613,7 @@ conteo_generos["porcentaje"] = (conteo_generos["cantidad"] / total * 100).round(
 genero_top = conteo_generos.iloc[0]["género"].capitalize()
 total_generos = len(conteo_generos)
 
+loader.empty()
 
 st.markdown(
     html_block(f"""
@@ -754,41 +826,47 @@ else:
         rank = i + 1
 
         if imagen:
-            cover_html = f'<div class="song-cover"><img src="{imagen}" style="width:100%; height:100%; object-fit:cover;"></div>'
+            cover_html = f'''
+            <div class="song-cover">
+                <img src="{html.escape(imagen)}" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            '''
         else:
             initial = nombre[:1].upper() if nombre else "♪"
-            cover_html = f'<div class="song-cover"><div class="song-cover-placeholder">{initial}</div></div>'
+            cover_html = f'''
+            <div class="song-cover">
+                <div class="song-cover-placeholder">{initial}</div>
+            </div>
+            '''
 
         if url:
             boton = f'<a class="song-button" href="{html.escape(url)}" target="_blank">Ver en Last.fm</a>'
         else:
             boton = '<span class="song-button-disabled">Sin enlace</span>'
 
-    with columnas_canciones[i % 2]:
-        st.markdown(
-            html_block(f"""
-            <div class="song-card">
-                <div class="song-layout">
-                    <div class="song-content">
-                        <div class="song-topline">
-                            <div class="song-rank">{rank}</div>
-                            <div class="song-name">{nombre}</div>
+        with columnas_canciones[i % 2]:
+            st.markdown(
+                html_block(f"""
+                <div class="song-card">
+                    <div class="song-layout">
+                        <div class="song-content">
+                            <div class="song-topline">
+                                <div class="song-rank">{rank}</div>
+                                <div class="song-name">{nombre}</div>
+                            </div>
+                            <div class="song-artist">{artista}</div>
+                            <div class="song-meta">{meta}</div>
+                            {boton}
                         </div>
-                        <div class="song-artist">{artista}</div>
-                        <div class="song-meta">{meta}</div>
-                        {boton}
+                        {cover_html}
                     </div>
-                    {cover_html}
                 </div>
-            </div>
-            """),
-            unsafe_allow_html=True
-        )
+                """),
+                unsafe_allow_html=True
+            )
 
-        if audio.startswith("http"):
-            st.audio(audio, format="audio/mp3")
-        else:
-            st.caption("Audio no disponible")
+            if audio.startswith("http"):
+                st.audio(audio, format="audio/mp3")
 
     st.markdown("---")
 

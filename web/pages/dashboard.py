@@ -3,7 +3,9 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from datetime import datetime
 import base64
+
 from pathlib import Path
+from utils_loader import mostrar_loader
 
 def imagen_local(nombre):
     BASE_DIR = Path(__file__).resolve().parent.parent
@@ -15,7 +17,7 @@ imagen_dashboard_bg = imagen_local("dashboard.jpg")
 
 # CONFIG
 st.set_page_config(page_title="Proyecto Musical", layout="wide")
-
+loader = mostrar_loader(1)
 # =========================
 # MENÚ SUPERIOR
 # =========================
@@ -254,6 +256,9 @@ meses = {
 mes_actual = meses[datetime.now().month]
 
 st.caption(f"Última sincronización con Last.fm: {mes_actual}")
+
+loader.empty()
+
 
 try:
     canciones = pd.read_csv("data/clean/canciones_populares.csv")

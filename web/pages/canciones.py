@@ -1,11 +1,14 @@
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
+
 from datetime import datetime
 from matplotlib.ticker import ScalarFormatter
-
+from utils_loader import mostrar_loader
 
 st.set_page_config(page_title="Proyecto Musical", page_icon="🎵", layout="wide")
+
+loader = mostrar_loader(1)
 
 st.title("🎧 Canciones Populares")
 
@@ -18,6 +21,7 @@ mes_actual = meses[datetime.now().month]
 
 st.caption(f"Última sincronización con Last.fm: {mes_actual}")
 
+
 try:
     canciones = pd.read_csv("data/clean/canciones_populares.csv")
     canciones["reproducciones"] = pd.to_numeric(canciones["reproducciones"], errors="coerce")
@@ -28,11 +32,13 @@ except FileNotFoundError:
 st.write("---") 
 termino_busqueda = st.text_input("🔍 Buscar canción o artista:", placeholder="Escribe tu búsqueda aquí...")
 
+loader.empty()
+
+
 if termino_busqueda:
     filtro = canciones["nombre"].str.contains(termino_busqueda, case=False, na=False) | \
              canciones["artista"].str.contains(termino_busqueda, case=False, na=False)
     canciones = canciones[filtro]
-
 if canciones.empty:
     st.warning(f"No encontramos resultados para '{termino_busqueda}'. Intenta con otra palabra.")
 else:
