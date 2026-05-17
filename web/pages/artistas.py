@@ -1,3 +1,4 @@
+
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
@@ -170,13 +171,15 @@ div[data-baseweb="input"] {{
 """, unsafe_allow_html=True)
 
 #menu
+# --- MENÚ SUPERIOR ---
 st.markdown("""
 <div class="top-menu">
-    <a href="/">INICIO</a>
-    <a href="/dashboard" target="_self">Dashboard</a>
-    <a href="/canciones" target="_self">Canciones</a>
-    <a href="/artistas" target="_self">Artistas</a>
-    <a href="/generos" target="_self">Géneros</a>
+    <a href="/" target="_self">INICIO</a>
+    <a href="/dashboard" target="_self">DASHBOARD</a>
+    <a href="/canciones" target="_self">CANCIONES</a>
+    <a href="/artistas" target="_self">ARTISTAS</a>
+    <a href="/generos" target="_self">GÉNEROS</a>
+    <a href="/favoritos" target="_self">FAVORITOS</a>
 </div>
 """, unsafe_allow_html=True)
 
