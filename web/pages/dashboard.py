@@ -7,17 +7,20 @@ import base64
 from pathlib import Path
 from utils_loader import mostrar_loader
 
+
 def imagen_local(nombre):
     BASE_DIR = Path(__file__).resolve().parent.parent
     ruta = BASE_DIR / "assets" / nombre
     with open(ruta, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
+
 imagen_dashboard_bg = imagen_local("dashboard.jpg")
 
 # CONFIG
 st.set_page_config(page_title="Proyecto Musical", layout="wide")
 loader = mostrar_loader(1)
+
 # =========================
 # MENÚ SUPERIOR
 # =========================
@@ -47,7 +50,7 @@ header[data-testid="stHeader"] {{
     align-items: flex-end;
     gap: 40px;
 
-    height: 300px;
+    height: 400px;
     padding-bottom: 58px;
     margin-top: 0;
 
@@ -68,7 +71,7 @@ header[data-testid="stHeader"] {{
         url("data:image/jpeg;base64,{imagen_dashboard_bg}");
 
     background-size: 100% auto;
-    background-position: center 60%;
+    background-position: absolute;
     background-repeat: no-repeat;
 
     position: relative;
@@ -326,6 +329,7 @@ html, body, .stApp {{
     padding: 0 !important;
     margin: 10px 0 4px 0 !important;
 }}
+
 [data-testid="stAudio"] audio {{
     width: 100%;
     height: 38px;
@@ -352,6 +356,7 @@ meses = {
     5: "Mayo", 6: "Junio", 7: "Julio", 8: "Agosto",
     9: "Septiembre", 10: "Octubre", 11: "Noviembre", 12: "Diciembre"
 }
+
 mes_actual = meses[datetime.now().month]
 
 st.caption(f"Última sincronización con Last.fm: {mes_actual}")
@@ -384,7 +389,7 @@ with col_tabla:
 
     conteo_generos = generos["generos"].value_counts().head(10)
 
-    plt.style.use('dark_background')
+    plt.style.use("dark_background")
     fig, ax = plt.subplots(figsize=(10, 6))
 
     fig.patch.set_alpha(0.0)
@@ -401,10 +406,10 @@ with col_tabla:
 
     ax.grid(axis="x", color="white", alpha=0.15)
 
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-    ax.spines['bottom'].set_alpha(0.25)
-    ax.spines['left'].set_alpha(0.25)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["bottom"].set_alpha(0.25)
+    ax.spines["left"].set_alpha(0.25)
 
     plt.tight_layout()
     st.pyplot(fig)
@@ -418,8 +423,11 @@ with col_artistas:
     df = df.reset_index(drop=True)
     df.index = df.index + 1
 
-    if "reproducciones" in df.columns:
-        df = df.drop(columns=["reproducciones"])
+    columnas_ocultar = ["reproducciones", "imagen_url"]
+
+    for columna in columnas_ocultar:
+        if columna in df.columns:
+            df = df.drop(columns=[columna])
 
     tabla_html = df.to_html(
         classes="tabla-artistas",
@@ -439,24 +447,21 @@ canciones_top = canciones.sort_values(by="reproducciones", ascending=False)
 top_1 = canciones_top.iloc[0]
 top_2 = canciones_top.iloc[1] if len(canciones_top) > 1 else None
 
-
 # Formato de reproducciones
-reproducciones_formato   = f"{top_1['reproducciones']:,.0f}"
+reproducciones_formato = f"{top_1['reproducciones']:,.0f}"
 reproducciones_formato_2 = f"{top_2['reproducciones']:,.0f}" if top_2 is not None else ""
-
 
 # Dos cards en columnas
 col_c1, col_c2 = st.columns(2, gap="large")
 
 with col_c1:
-    # Construir portada para card 1
     if "imagen_url" in top_1 and pd.notna(top_1["imagen_url"]) and top_1["imagen_url"] != "":
         img1 = top_1["imagen_url"]
         cover1 = f'<div class="cancion-cover-wrap"><img src="{img1}" style="width:155px;height:155px;object-fit:cover;display:block;"></div>'
-        bg1   = f'<div class="cancion-bg" style="background-image:url({img1});"></div>'
+        bg1 = f'<div class="cancion-bg" style="background-image:url({img1});"></div>'
     else:
         cover1 = '<div class="cancion-cover-wrap"><div class="portada-fake">SIN PORTADA</div></div>'
-        bg1    = '<div class="cancion-bg" style="background:#0f172a;"></div>'
+        bg1 = '<div class="cancion-bg" style="background:#0f172a;"></div>'
 
     st.markdown(f"""
     <div class="cancion-card">
@@ -475,21 +480,22 @@ with col_c1:
     </div>
     """, unsafe_allow_html=True)
 
-    # Audio debajo de la card
     audio_top1 = str(top_1.get("audio_url", "")).strip()
+
     if audio_top1.startswith("http"):
-        st.audio(audio_top1, format="audio/mp4")
+        st.audio(audio_top1, format="audio/mp3")
+    else:
+        st.caption("Audio no disponible")
 
 with col_c2:
     if top_2 is not None:
-        # Construir portada para card 2
         if "imagen_url" in top_2 and pd.notna(top_2["imagen_url"]) and top_2["imagen_url"] != "":
             img2 = top_2["imagen_url"]
             cover2 = f'<div class="cancion-cover-wrap"><img src="{img2}" style="width:155px;height:155px;object-fit:cover;display:block;"></div>'
-            bg2    = f'<div class="cancion-bg" style="background-image:url({img2});"></div>'
+            bg2 = f'<div class="cancion-bg" style="background-image:url({img2});"></div>'
         else:
             cover2 = '<div class="cancion-cover-wrap"><div class="portada-fake">SIN PORTADA</div></div>'
-            bg2    = '<div class="cancion-bg" style="background:#0f172a;"></div>'
+            bg2 = '<div class="cancion-bg" style="background:#0f172a;"></div>'
 
         st.markdown(f"""
         <div class="cancion-card">
@@ -509,5 +515,8 @@ with col_c2:
         """, unsafe_allow_html=True)
 
         audio_top2 = str(top_2.get("audio_url", "")).strip()
+
         if audio_top2.startswith("http"):
-            st.audio(audio_top2, format="audio/mp4")
+            st.audio(audio_top2, format="audio/mp3")
+        else:
+            st.caption("Audio no disponible")

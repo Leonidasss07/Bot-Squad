@@ -34,6 +34,31 @@ def obtener_imagen_cancion(artista, cancion, api_key=API_KEY):
         
     return ""
 
+# obtener imagen de artista usando Deezer
+def obtener_imagen_artista(nombre_artista):
+    url = "https://api.deezer.com/search/artist"
+
+    params = {
+        "q": nombre_artista,
+        "limit": 1
+    }
+
+    try:
+        respuesta = requests.get(url, params=params, timeout=15)
+        datos = respuesta.json()
+
+        resultados = datos.get("data", [])
+
+        if resultados:
+            imagen = resultados[0].get("picture_xl", "")
+            if imagen:
+                return imagen
+
+    except Exception as e:
+        print(f"Error obteniendo imagen para artista {nombre_artista}: {e}")
+
+    return ""
+
 def obtener_canciones_populares():
     url = "http://ws.audioscrobbler.com/2.0/"
     canciones = []
@@ -107,14 +132,19 @@ def obtener_artistas_populares():
         datos = respuesta.json()
 
         for artista in datos["artists"]["artist"]:
+            nombre_artista = artista.get("name", "N/A")
+            imagen_url = obtener_imagen_artista(nombre_artista)
+
             musico = {
-                "nombre": artista.get("name", "N/A"),
+                "nombre": nombre_artista,
                 "reproducciones": artista.get("playcount", "N/A"),
                 "oyentes": artista.get("listeners", "N/A"),
-                "url": artista.get("url", "")
+                "url": artista.get("url", ""),
+                "imagen_url": imagen_url
             }
 
             artistas.append(musico)
+            time.sleep(0.1)
 
     except Exception as e:
         print(f"Error al obtener artistas: {e}")
@@ -336,7 +366,6 @@ def guardar_canciones_csv(canciones):
             ])
     print(f'CSV guardado en {file_path}')
 
-# NUEVA FUNCIÓN AÑADIDA PARA EVITAR ERROR
 def guardar_artistas(artistas):
     os.makedirs("data/raw", exist_ok=True)
     file_path = "data/raw/artistas_populares.json"
@@ -347,7 +376,7 @@ def guardar_artistas_csv(artistas):
     guardar_csv(
         artistas,
         "data/clean/artistas_populares.csv",
-        ["nombre", "reproducciones", "oyentes", "url"]
+        ["nombre", "reproducciones", "oyentes", "url", "imagen_url"]
     )
 
 # guardar canciones de julio

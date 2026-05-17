@@ -1,31 +1,28 @@
+import os
+import html
+import base64
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
-import base64
-import os
-import json
-from matplotlib.ticker import ScalarFormatter
+
+from db_favoritos import (
+    agregar_cancion_favorita,
+    eliminar_cancion_favorita,
+    es_cancion_favorita,
+)
+
+from utils_loader import mostrar_loader
 
 # --- CONFIGURACIÓN DE PÁGINA ---
-st.set_page_config(page_title="Canciones - Nova Music", layout="wide")
+st.set_page_config(
+    page_title="Canciones - Nova Music",
+    page_icon=None,
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
 
-# --- PERSISTENCIA DE FAVORITOS ---
-FAVORITOS_FILE = "favoritos.json"
+loader = mostrar_loader(1)
 
-def cargar_favoritos():
-    if os.path.exists(FAVORITOS_FILE):
-        try:
-            with open(FAVORITOS_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except: return []
-    return []
-
-def guardar_favoritos(lista):
-    with open(FAVORITOS_FILE, "w", encoding="utf-8") as f:
-        json.dump(lista, f, ensure_ascii=False, indent=4)
-
-if 'favoritos' not in st.session_state:
-    st.session_state.favoritos = cargar_favoritos()
 
 # --- ASSETS Y BASE64 ---
 def get_base64_image(path):
@@ -34,6 +31,84 @@ def get_base64_image(path):
             return base64.b64encode(img.read()).decode()
     return ""
 
+
+def texto_seguro(valor):
+    if pd.isna(valor):
+        return ""
+    return html.escape(str(valor))
+
+
+def formatear_numero(valor):
+    try:
+        valor = float(valor)
+
+        if valor >= 1_000_000_000:
+            return f"{valor / 1_000_000_000:.1f}B"
+        if valor >= 1_000_000:
+            return f"{valor / 1_000_000:.1f}M"
+        if valor >= 1_000:
+            return f"{valor / 1_000:.1f}K"
+
+        return f"{valor:.0f}"
+    except Exception:
+        return str(valor)
+
+
+def obtener_usuario_activo():
+    usuario = st.session_state.get("usuario")
+
+    if usuario:
+        return usuario
+
+    if os.path.exists("usuario_activo.txt"):
+        with open("usuario_activo.txt", "r", encoding="utf-8") as f:
+            usuario_guardado = f.read().strip()
+
+        if usuario_guardado:
+            st.session_state["usuario"] = usuario_guardado
+            return usuario_guardado
+
+    return None
+
+
+def obtener_imagen_fila(row):
+    posibles = ["imagen_url", "imagen", "image", "image_url", "cover_url", "cover", "artwork"]
+
+    for col in posibles:
+        if col in row.index and pd.notna(row[col]):
+            url = str(row[col]).strip().strip('"').strip("'")
+            if url.startswith("http"):
+                return url
+
+    return ""
+
+
+def obtener_audio_fila(row):
+    posibles = ["audio_url", "preview", "preview_url", "mp3", "audio"]
+
+    for col in posibles:
+        if col in row.index and pd.notna(row[col]):
+            url = str(row[col]).strip().strip('"').strip("'")
+            if url.startswith("http"):
+                return url
+
+    return ""
+
+
+def obtener_url_fila(row):
+    if "url" in row.index and pd.notna(row["url"]):
+        url = str(row["url"]).strip().strip('"').strip("'")
+        if url.startswith("http"):
+            return url
+
+    return ""
+
+
+def cargar_canciones():
+    return pd.read_csv("data/clean/canciones_populares.csv")
+
+
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 img_path = os.path.join(BASE_DIR, "..", "assets", "canciones.jpeg")
 img_base64 = get_base64_image(img_path)
@@ -41,136 +116,470 @@ img_base64 = get_base64_image(img_path)
 # --- ESTILOS CSS ---
 st.markdown(f"""
 <style>
-header {{ visibility: hidden; }}
-.stApp {{ background:#000; color:white; }}
-[data-testid="stSidebar"] {{ display:none; }}
-.block-container {{ padding: 0 !important; }}
-
-.top-menu {{
-    display:flex; justify-content:center; align-items:center; gap:110px;
-    background-image:url("data:image/jpg;base64,{img_base64}");
-    background-size:cover; height:500px; margin-top: -11px; position:relative;
+html, body, [data-testid="stAppViewContainer"], .stApp {{
+    background: #000000 !important;
+    color: #ffffff !important;
+    margin: 0;
+    padding: 0;
 }}
-.top-menu::before {{
-    content:""; position:absolute; inset:0;
-    background:linear-gradient(to bottom, rgba(0,0,0,0) 25%, rgba(0,0,0,0.95) 100%);
+
+header, footer, #MainMenu,
+[data-testid="stToolbar"],
+[data-testid="stDecoration"],
+[data-testid="stStatusWidget"],
+[data-testid="collapsedControl"],
+[data-testid="stSidebar"],
+[data-testid="stSidebarNav"] {{
+    display: none !important;
 }}
-.top-menu a {{ color:white; text-decoration:none; letter-spacing:2px; z-index:2; font-weight: bold; }}
 
-.search-section {{ text-align:center; margin-top:-150px; }}
-
-.stTextInput input {{
-    background:#000 !important; color:white !important;
-    border:2px solid white !important; border-radius:999px;
-    padding:8px 24px !important; text-align: center;
+* {{
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }}
-div[data-testid="stTextInput"] {{ width: 30% !important; margin: 20px auto !important; }}
 
-.song-row {{ border-bottom: 1px solid #1f2937; padding: 10px 0; }}
-.stats-title {{ font-size:22px; margin-bottom:20px; font-weight: bold; color: #ffffff; }}
-</style>
-""", unsafe_allow_html=True)
+.block-container {{
+    max-width: 100% !important;
+    padding-top: 0 !important;
+    padding-bottom: 2rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}}
+
+hr {{
+    border: none !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}}
 
 # --- MENÚ SUPERIOR ---
-st.markdown("""
-<div class="top-menu">
-    <a href="/" target="_self">INICIO</a>
-    <a href="/dashboard" target="_self">DASHBOARD</a>
-    <a href="/canciones" target="_self">CANCIONES</a>
-    <a href="/artistas" target="_self">ARTISTAS</a>
-    <a href="/generos" target="_self">GÉNEROS</a>
-    <a href="/favoritos" target="_self">FAVORITOS</a>
+.menu-superior {{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 32px;
+
+    height: 400px;
+    padding-bottom: 58px;
+    margin-top: 0;
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    background-image:
+        linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
+        linear-gradient(to left, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,0) 0%,
+            rgba(0,0,0,0) 78%,
+            rgba(0,0,0,0.35) 88%,
+            rgba(0,0,0,0.75) 95%,
+            rgba(0,0,0,1) 100%
+        ),
+        url("data:image/jpg;base64,{img_base64}");
+
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 10;
+}}
+
+.menu-superior a {{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-family: "Century Gothic", "Montserrat", "Segoe UI", Arial, sans-serif;
+    text-transform: uppercase;
+    transform: none;
+    text-shadow: 0 3px 12px rgba(0,0,0,0.85);
+}}
+
+.menu-superior a:hover {{
+    color: #ec4899;
+}}
+
+.search-section {{
+    text-align: center;
+    margin-top: 36px;
+}}
+
+.search-section h2 {{
+    color: white;
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    text-shadow: 0 4px 18px rgba(0,0,0,0.75);
+}}
+
+.search-section p {{
+    color: rgba(255,255,255,0.72);
+    font-size: 15px;
+    font-weight: 400;
+}}
+
+.stTextInput input {{
+    background: #0d0d0d !important;
+    color: white !important;
+    border: 1px solid rgba(255,255,255,0.20) !important;
+    border-radius: 999px;
+    padding: 10px 18px !important;
+    font-size: 13px !important;
+    text-align: center;
+}}
+
+.stTextInput input:focus {{
+    border: 1px solid #ec4899 !important;
+}}
+
+div[data-testid="stTextInput"] {{
+    width: 36% !important;
+    margin: 25px auto !important;
+}}
+
+.stats-title {{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    color: white;
+}}
+
+.song-card {{
+    background: #0d0d0d;
+    border: 1px solid rgba(236, 72, 153, 0.28);
+    border-radius: 20px;
+    padding: 14px;
+    margin-bottom: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}}
+
+.song-layout {{
+    display: grid;
+    grid-template-columns: 72px 1fr 230px 55px;
+    gap: 14px;
+    align-items: center;
+}}
+
+.song-cover {{
+    width: 72px;
+    height: 72px;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}}
+
+.song-cover img {{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}}
+
+.song-placeholder {{
+    color: #ec4899;
+    font-size: 28px;
+    font-weight: 800;
+}}
+
+.song-rank {{
+    color: #ec4899;
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}}
+
+.song-name {{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}}
+
+.song-artist {{
+    color: rgba(255,255,255,0.65);
+    font-size: 13px;
+}}
+
+.song-meta {{
+    color: rgba(255,255,255,0.42);
+    font-size: 12px;
+    margin-top: 5px;
+}}
+
+.song-link {{
+    display: inline-block;
+    color: #ffb3dc !important;
+    text-decoration: none !important;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 6px;
+}}
+
+[data-testid="stAudio"] {{
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    box-shadow: none !important;
+}}
+
+[data-testid="stAudio"] audio {{
+    width: 100%;
+    height: 36px;
+    border-radius: 20px;
+    filter: grayscale(1) brightness(0.85);
+}}
+
+div[data-testid="stButton"] > button {{
+    background: rgba(255,255,255,0.08) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(236, 72, 153, 0.45) !important;
+    border-radius: 14px !important;
+    font-weight: 800 !important;
+    min-height: 42px !important;
+}}
+
+div[data-testid="stButton"] > button:hover {{
+    background: rgba(236,72,153,0.22) !important;
+    border: 1px solid rgba(236,72,153,0.75) !important;
+}}
+
+.login-link {{
+    display: inline-block;
+    color: #ffb3dc !important;
+    text-decoration: none !important;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}}
+
+@media (max-width: 900px) {{
+    .block-container {{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }}
+
+    .menu-superior {{
+        height: 240px;
+        gap: 18px;
+        flex-wrap: wrap;
+        padding-bottom: 42px;
+    }}
+
+    .menu-superior a {{
+        font-size: 12px;
+        letter-spacing: 2px;
+    }}
+
+    div[data-testid="stTextInput"] {{
+        width: 90% !important;
+    }}
+
+    .search-section h2 {{
+        font-size: 30px;
+    }}
+
+    .song-layout {{
+        grid-template-columns: 72px 1fr;
+    }}
+}}
+</style>
+
+<div class="menu-superior">
+    <a href="/" target="_self">Inicio</a>
+    <a href="/dashboard" target="_self">Dashboard</a>
+    <a href="/canciones" target="_self">Canciones</a>
+    <a href="/artistas" target="_self">Artistas</a>
+    <a href="/generos" target="_self">Géneros</a>
+    <a href="/favoritos" target="_self">Favoritos</a>
 </div>
 """, unsafe_allow_html=True)
+
+
+
+# --- CARGA DE DATOS ---
+canciones = cargar_canciones()
+
+canciones["reproducciones"] = pd.to_numeric(canciones["reproducciones"], errors="coerce")
+
+if "imagen_url" not in canciones.columns:
+    canciones["imagen_url"] = ""
+
+if "audio_url" not in canciones.columns:
+    canciones["audio_url"] = ""
+
+canciones_ordenadas = canciones.sort_values(
+    by="reproducciones",
+    ascending=False
+).reset_index(drop=True)
+
+usuario_activo = obtener_usuario_activo()
+
+loader.empty()
 
 # --- BUSCADOR ---
 st.markdown("""
 <div class="search-section">
-    <h2>Tus canciones favoritas</h2>
-    <p>Escucha y guarda lo mejor de Nova Music</p>
+    <h2>Canciones populares</h2>
+    <p>Busca, escucha y guarda tus canciones favoritas</p>
 </div>
 """, unsafe_allow_html=True)
 
-busqueda = st.text_input("Buscar", placeholder="¿Qué quieres escuchar hoy?", label_visibility="collapsed")
-
-# --- CARGA DE DATOS ---
-@st.cache_data
-def cargar_datos():
-    df = pd.read_csv("data/clean/canciones_populares.csv")
-    df["reproducciones"] = pd.to_numeric(df["reproducciones"], errors="coerce")
-    return df
-
-df_canciones = cargar_datos()
+busqueda = st.text_input(
+    "Buscar canción o artista",
+    placeholder="Buscar canción o artista...",
+    label_visibility="collapsed"
+)
 
 if busqueda:
-    df_mostrar = df_canciones[
-        df_canciones["nombre"].str.contains(busqueda, case=False, na=False) |
-        df_canciones["artista"].str.contains(busqueda, case=False, na=False)
+    canciones_mostrar = canciones_ordenadas[
+        canciones_ordenadas["nombre"].str.contains(busqueda, case=False, na=False) |
+        canciones_ordenadas["artista"].str.contains(busqueda, case=False, na=False)
     ].copy()
 else:
-    df_mostrar = df_canciones.sort_values(by="reproducciones", ascending=False).head(10).copy()
+    canciones_mostrar = canciones_ordenadas.head(10).copy()
 
-st.write("<br>", unsafe_allow_html=True)
+st.divider()
+
+
 
 # --- DISEÑO DE DOS COLUMNAS ---
-col_lista, col_grafico = st.columns([1.2, 0.8], gap="large")
+col1, col2 = st.columns([1.15, 0.85], gap="large")
 
-with col_lista:
-    st.markdown("<div class='stats-title'>Top Canciones</div>", unsafe_allow_html=True)
-    
-    if df_mostrar.empty:
-        st.warning("No se encontraron resultados.")
+with col1:
+    st.markdown("<div class='stats-title'>Top canciones</div>", unsafe_allow_html=True)
+
+    if canciones_mostrar.empty:
+        st.warning("No se encontró ninguna canción.")
     else:
-        for index, row in df_mostrar.iterrows():
-            # Crear la fila interactiva
-            c_img, c_info, c_audio, c_fav = st.columns([1, 2.5, 3, 0.7])
-            
-            with c_img:
-                if pd.notna(row.get("imagen_url")):
-                    st.image(row["imagen_url"], use_container_width=True)
-            
-            with c_info:
-                st.markdown(f"**{row['nombre']}**")
-                st.caption(f"{row['artista']}")
-            
-            with c_audio:
-                enlace = str(row.get("audio_url", "")).strip()
-                if enlace.startswith("http"):
-                    st.audio(enlace, format="audio/mp4")
-                else:
-                    st.caption("🎵 No disponible")
-            
-            with c_fav:
-                es_fav = any(f['nombre'] == row['nombre'] and f['artista'] == row['artista'] for f in st.session_state.favoritos)
-                if st.button("❤️" if es_fav else "🤍", key=f"fav_btn_{index}"):
-                    if not es_fav:
-                        st.session_state.favoritos.append({
-                            "nombre": row['nombre'], "artista": row['artista'],
-                            "audio_url": row.get("audio_url", ""), "imagen_url": row.get("imagen_url", "")
-                        })
-                    else:
-                        st.session_state.favoritos = [f for f in st.session_state.favoritos if not (f['nombre'] == row['nombre'] and f['artista'] == row['artista'])]
-                    guardar_favoritos(st.session_state.favoritos)
-                    st.rerun()
-            st.markdown("<div class='song-row'></div>", unsafe_allow_html=True)
+        for i, row in canciones_mostrar.head(10).iterrows():
+            nombre = str(row.get("nombre", "")).strip()
+            artista = str(row.get("artista", "")).strip()
+            imagen = obtener_imagen_fila(row)
+            audio = obtener_audio_fila(row)
+            url = obtener_url_fila(row)
+            reproducciones = row.get("reproducciones", "")
 
-with col_grafico:
-    st.markdown("<div class='stats-title'>Gráfico de Popularidad</div>", unsafe_allow_html=True)
-    
-    if not df_mostrar.empty:
-        top_plot = df_mostrar.head(10).sort_values(by="reproducciones", ascending=True)
-        
-        plt.style.use('dark_background')
-        fig, ax = plt.subplots(figsize=(7, 8))
-        fig.patch.set_facecolor('#000')
-        ax.set_facecolor('#000')
-        
-        ax.barh(top_plot["nombre"], top_plot["reproducciones"], color="#48deec")
-        ax.xaxis.set_major_formatter(ScalarFormatter())
-        ax.ticklabel_format(style='plain', axis='x')
-        
+            if imagen:
+                cover_html = f'<img src="{html.escape(imagen)}">'
+            else:
+                inicial = texto_seguro(nombre[:1].upper() if nombre else "♪")
+                cover_html = f'<div class="song-placeholder">{inicial}</div>'
+
+            enlace_html = ""
+            if url:
+                enlace_html = f'<a class="song-link" href="{html.escape(url)}" target="_blank">Ver en Last.fm</a>'
+
+            c_info, c_audio, c_fav = st.columns([3.2, 2.5, 0.65])
+
+            with c_info:
+                st.markdown(
+                    f"""
+                    <div class="song-card">
+                        <div class="song-layout" style="grid-template-columns:72px 1fr;">
+                            <div class="song-cover">{cover_html}</div>
+                            <div>
+                                <div class="song-rank">#{i + 1}</div>
+                                <div class="song-name">{texto_seguro(nombre)}</div>
+                                <div class="song-artist">{texto_seguro(artista)}</div>
+                                <div class="song-meta">{formatear_numero(reproducciones)} reproducciones</div>
+                                {enlace_html}
+                            </div>
+                        </div>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+
+            with c_audio:
+                if audio:
+                    st.audio(audio, format="audio/mp3")
+                else:
+                    st.caption("Audio no disponible")
+
+            with c_fav:
+                if usuario_activo:
+                    ya_es_fav = es_cancion_favorita(usuario_activo, nombre, artista)
+
+                    btn_label = "★" if ya_es_fav else "☆"
+                    btn_key = f"fav_cancion_{usuario_activo}_{i}_{nombre}_{artista}"
+
+                    if st.button(btn_label, key=btn_key):
+                        if ya_es_fav:
+                            eliminar_cancion_favorita(usuario_activo, nombre, artista)
+                            st.toast("Eliminado de favoritos")
+                        else:
+                            agregar_cancion_favorita(
+                                usuario=usuario_activo,
+                                nombre=nombre,
+                                artista=artista,
+                                imagen_url=imagen,
+                                url=url,
+                                audio_url=audio,
+                                reproducciones=reproducciones,
+                                genero="canciones",
+                            )
+                            st.toast("¡Añadido a favoritos! ★")
+
+                        st.rerun()
+                else:
+                    st.markdown(
+                        '<a class="login-link" href="/sesion" target="_self">☆ Inicia sesión</a>',
+                        unsafe_allow_html=True
+                    )
+
+with col2:
+    st.markdown("<div class='stats-title'>Gráfico de popularidad</div>", unsafe_allow_html=True)
+
+    if not canciones_mostrar.empty:
+        top_plot = canciones_mostrar.head(10).copy()
+        top_plot = top_plot.sort_values(by="reproducciones", ascending=True)
+
+        top_plot["reproducciones_millones"] = top_plot["reproducciones"] / 1_000_000
+
+        fig, ax = plt.subplots(figsize=(7, 5))
+        fig.patch.set_facecolor("#000000")
+        ax.set_facecolor("#000000")
+
+        bars = ax.barh(
+            top_plot["nombre"],
+            top_plot["reproducciones_millones"],
+            color="#ff2d95",
+            height=0.62
+        )
+
+        ax.set_xlabel("Reproducciones en millones", color="#ffffff", fontsize=10)
+
+        ax.tick_params(axis="x", colors="#d1d5db", labelsize=9)
+        ax.tick_params(axis="y", colors="#ffffff", labelsize=9)
+
         for spine in ax.spines.values():
             spine.set_visible(False)
-            
+
+        ax.grid(axis="x", color="#ffffff", alpha=0.15, linewidth=0.6)
+
+        max_val = top_plot["reproducciones_millones"].max()
+        max_val = max_val if max_val > 0 else 1
+        ax.set_xlim(0, max_val * 1.22)
+
+        for bar, valor in zip(bars, top_plot["reproducciones_millones"]):
+            ax.text(
+                bar.get_width() + max_val * 0.02,
+                bar.get_y() + bar.get_height() / 2,
+                f"{valor:.1f}M",
+                va="center",
+                color="#ffb3dc",
+                fontsize=8,
+                fontweight="bold"
+            )
+
         plt.tight_layout()
         st.pyplot(fig)
+        plt.close()

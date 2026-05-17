@@ -161,7 +161,7 @@ if st.session_state.get("usuario"):
     st.markdown('</div>', unsafe_allow_html=True)
     st.stop()
 
-# ── Formulario de login/registro ──────────────────────────
+# Formulario de login/registro 
 st.markdown('<div class="main-center-wrapper">', unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns([1, 2, 1])
@@ -188,8 +188,11 @@ with col2:
             if opcion == "Iniciar sesión":
                 usuario = iniciar_sesion(correo, password)
                 if usuario:
-                    # Guardamos en session_state ANTES de redirigir
+                    # Guardamos en session_state antes de redirigir
                     st.session_state["usuario"] = correo
+
+                    with open("usuario_activo.txt", "w", encoding="utf-8") as f:
+                        f.write(correo)
                     st.session_state["login_ok"] = True
                     st.rerun()
                 else:
