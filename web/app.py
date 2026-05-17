@@ -1,14 +1,18 @@
 import streamlit as st
 import base64
 from pathlib import Path
+
 import streamlit.components.v1 as components
 import random 
+from utils_loader import mostrar_loader
 
 st.set_page_config(
     page_title="Nova music",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+
+loader = mostrar_loader(1)
 
 BASE_DIR = Path(__file__).parent
 ASSETS_DIR = BASE_DIR / "assets"
@@ -275,6 +279,8 @@ st.markdown(f"""
     <div class="texto-hero"></div>
 </div>
 """, unsafe_allow_html=True)
+
+loader.empty()
 
 col1, col2 = st.columns([2, 1])
 

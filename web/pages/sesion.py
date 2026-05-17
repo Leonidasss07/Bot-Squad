@@ -1,10 +1,14 @@
 import streamlit as st
 import base64
 import os
+import html as html_lib
+
 from db import crear_usuario, iniciar_sesion, guardar_codigo_recuperacion, verificar_codigo, cambiar_password
 from email_utils import enviar_codigo
+from utils_loader import mostrar_loader
 
 st.set_page_config(page_title="Sesión - Nova music", layout="wide")
+loader = mostrar_loader(1)
 
 def get_base64_image(path):
     if not os.path.exists(path): return ""
@@ -14,7 +18,7 @@ def get_base64_image(path):
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 path_bg = os.path.join(BASE_DIR, "..", "assets", "sesion_bg.jpeg")
-path_banner = os.path.join(BASE_DIR, "..", "assets", "image_3857d6.jpg") 
+path_banner = os.path.join(BASE_DIR, "..", "assets", "image_3857d6.jpg")
 
 img_bg = get_base64_image(path_bg)
 img_banner = get_base64_image(path_banner)
@@ -55,7 +59,6 @@ header {{ visibility: hidden; }}
     color: white; text-decoration: none; font-weight: bold; font-size: 16px; text-transform: uppercase;
 }}
 
-/* Contenedor Principal */
 .main-center-wrapper {{
     display: flex;
     flex-direction: column;
@@ -63,7 +66,6 @@ header {{ visibility: hidden; }}
     width: 100%;
 }}
 
-/* Forzar ancho unificado en el bloque de formulario */
 [data-testid="stForm"] {{
     border: none !important;
     width: 450px !important;
@@ -71,7 +73,6 @@ header {{ visibility: hidden; }}
     padding: 0 !important;
 }}
 
-/* Alineación de Radio Buttons */
 div[data-testid="stRadio"] {{
     background-color: transparent !important;
     margin-bottom: 20px;
@@ -83,7 +84,6 @@ div[role="radiogroup"] {{
     gap: 10px !important;
 }}
 
-/* Estilo de Inputs */
 input {{
     background-color: #1e1e1e !important;
     color: white !important;
@@ -91,7 +91,6 @@ input {{
     border-radius: 8px !important;
 }}
 
-/* Botón de envío */
 [data-testid="stFormSubmitButton"] button {{
     width: 100% !important;
     background-color: #111 !important;
@@ -101,6 +100,21 @@ input {{
     height: 45px;
     font-weight: bold;
     margin-top: 10px;
+}}
+
+/* Badge usuario logueado */
+.usuario-badge {{
+    background: rgba(175, 207, 207, 0.15);
+    border: 1px solid #AFCFCF;
+    border-radius: 30px;
+    padding: 10px 24px;
+    color: #AFCFCF;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 20px auto;
+    display: inline-block;
 }}
 </style>
 """, unsafe_allow_html=True)
@@ -113,43 +127,81 @@ st.markdown(f"""
     <a href="/canciones" target="_self">CANCIONES</a>
     <a href="/artistas" target="_self">ARTISTAS</a>
     <a href="/generos" target="_self">GÉNEROS</a>
+    <a href="/favoritos" target="_self">FAVORITOS</a>
 </div>
 """, unsafe_allow_html=True)
 
+loader.empty()
+
+if st.session_state.get("usuario"):
+    usuario_actual = st.session_state["usuario"]
+
+    st.markdown('<div class="main-center-wrapper">', unsafe_allow_html=True)
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.markdown(f"""
+        <div style="text-align:center; margin-top:60px;">
+            <div style="font-size:40px; margin-bottom:16px;">★</div>
+            <h2 style="color:white; font-weight:800;">¡Hola de nuevo!</h2>
+            <div class="usuario-badge">Sesión iniciada como {html_lib.escape(usuario_actual)}</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("<div style='height:20px'></div>", unsafe_allow_html=True)
+
+        col_fav, col_out = st.columns(2, gap="medium")
+        with col_fav:
+            if st.button("★ Ver mis favoritos", use_container_width=True):
+                st.switch_page("pages/favoritos.py")
+        with col_out:
+            if st.button("Cerrar sesión", use_container_width=True):
+                del st.session_state["usuario"]
+                st.rerun()
+
+    st.markdown('</div>', unsafe_allow_html=True)
+    st.stop()
+
+# ── Formulario de login/registro ──────────────────────────
 st.markdown('<div class="main-center-wrapper">', unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
-    st.markdown("<h2 style='text-align: center-wrapper;'>Cuenta de usuario</h2>", unsafe_allow_html=True)
-    
+    st.markdown("<h2 style='text-align:center; color:white; margin-top:40px;'>Cuenta de usuario</h2>", unsafe_allow_html=True)
+
     with st.form("login_form"):
         opcion = st.radio(
-            "Elige una opción", 
-            ["Iniciar sesión", "Crear cuenta", "Olvidé mi contraseña"], 
+            "Elige una opción",
+            ["Iniciar sesión", "Crear cuenta", "Olvidé mi contraseña"],
             horizontal=True,
             label_visibility="collapsed"
         )
-        
+
         st.write("")
-        
+
         correo = st.text_input("Correo", placeholder="ejemplo@correo.com")
         password = st.text_input("Contraseña", type="password")
-        
+
         submit = st.form_submit_button("Confirmar")
-        
+
         if submit:
             if opcion == "Iniciar sesión":
                 usuario = iniciar_sesion(correo, password)
                 if usuario:
-                    st.session_state.usuario = correo
-                    st.switch_page("app.py")
+                    # Guardamos en session_state ANTES de redirigir
+                    st.session_state["usuario"] = correo
+                    st.session_state["login_ok"] = True
+                    st.rerun()
                 else:
                     st.error("Credenciales incorrectas")
             elif opcion == "Crear cuenta":
                 if crear_usuario(correo, password):
-                    st.success("Cuenta creada")
+                    st.success("✓ Cuenta creada. Ya puedes iniciar sesión.")
                 else:
-                    st.error("Error al crear cuenta")
+                    st.error("Error al crear cuenta (puede que el correo ya exista)")
 
 st.markdown('</div>', unsafe_allow_html=True)
+
+if st.session_state.get("login_ok"):
+    del st.session_state["login_ok"]
+    st.switch_page("pages/favoritos.py")

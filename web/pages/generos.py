@@ -4,7 +4,13 @@ import base64
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import time
 
+from db_favoritos import (
+    agregar_cancion_favorita,
+    eliminar_cancion_favorita,
+    es_cancion_favorita,
+)
 
 st.set_page_config(
     page_title="Géneros",
@@ -13,9 +19,62 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# ruta de la imagen
+# Ruta de la imagen
 HERO_IMAGE_PATH = "web/assets/generos_bg.jpeg"
 
+loader = st.empty()
+
+loader.markdown("""
+<style>
+.loader-screen {
+    position: fixed;
+    inset: 0;
+    background: #000000;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loader-logo {
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-family: "Century Gothic", "Montserrat", "Segoe UI", Arial, sans-serif;
+    text-shadow: 0 0 20px rgba(255,255,255,0.35);
+}
+
+.loader-dots::after {
+    content: "";
+    animation: dots 1.2s infinite;
+}
+
+@keyframes dots {
+    0% { content: ""; }
+    25% { content: "."; }
+    50% { content: ". ."; }
+    75% { content: ". . ."; }
+    100% { content: ""; }
+}
+
+.loader-text {
+    margin-top: 14px;
+    color: rgba(255,255,255,0.65);
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+</style>
+
+<div class="loader-screen">
+    <div class="loader-logo">NOVA MUSIC★<span class="loader-dots"></span></div>
+    <div class="loader-text">Cargando página</div>
+</div>
+""", unsafe_allow_html=True)
+
+time.sleep(1)
 
 def image_to_base64(path):
     if not os.path.exists(path):
@@ -31,6 +90,22 @@ st.markdown(f"""
 html, body, [data-testid="stAppViewContainer"], .stApp {{
     background: #000000 !important;
     color: #ffffff !important;
+}}
+            
+[data-testid="stAudio"] {{
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    box-shadow: none !important;
+}}
+
+[data-testid="stAudio"] audio {{
+    width: 100%;
+    height: 36px;
+    border-radius: 20px;
+    filter: grayscale(1) brightness(0.85);
 }}
 
 header, footer, #MainMenu,
@@ -65,14 +140,15 @@ hr {{
 h1, h2, h3, h4, p, label, div {{
     color: inherit;
 }}
-
+            
 .menu-superior {{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 42px;
 
-    height: 240px;
+    height: 400px;
+    padding-bottom: 200px;
     margin-top: 0;
 
     width: 100vw;
@@ -82,7 +158,14 @@ h1, h2, h3, h4, p, label, div {{
     background-image:
         linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
         linear-gradient(to left, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
-        linear-gradient(to bottom, rgba(0,0,0,0) 55%, rgba(0,0,0,0.95)),
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,0) 0%,
+            rgba(0,0,0,0) 78%,
+            rgba(0,0,0,0.35) 88%,
+            rgba(0,0,0,0.75) 95%,
+            rgba(0,0,0,1) 100%
+        ),
         url("data:image/jpeg;base64,{HERO_IMAGE_BASE64}");
 
     background-size: cover;
@@ -90,7 +173,7 @@ h1, h2, h3, h4, p, label, div {{
     background-repeat: no-repeat;
 
     position: relative;
-    z-index: 10;
+    z-index: 1;
 }}
 
 .menu-superior a {{
@@ -101,17 +184,13 @@ h1, h2, h3, h4, p, label, div {{
     letter-spacing: 3px;
     font-family: "Century Gothic", "Montserrat", "Segoe UI", Arial, sans-serif;
     text-transform: uppercase;
-    transform: translateY(42px);
+    transform: none;
     text-shadow: 0 3px 12px rgba(0,0,0,0.85);
-}}
-
-.menu-superior a:hover {{
-    color: #AFCFCF;
 }}
 
 .hero-card {{
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     border: none;
     border-radius: 0;
     margin-top: 0;
@@ -119,10 +198,10 @@ h1, h2, h3, h4, p, label, div {{
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     width: 100vw;
-    min-height: 350px;
-    background: #000000;
+    min-height: 300px;
+    background: #000000 !important;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }}
 
 .hero-content {{
@@ -131,16 +210,18 @@ h1, h2, h3, h4, p, label, div {{
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 20px 48px 38px 48px;
+    padding: 0px 48px 38px 48px;
     text-align: center;
+    transform: translateY(-45px);
 }}
 
 .hero-title {{
     font-size: 44px;
     font-weight: 900;
     margin: 0;
+    padding-top: 64px;
     letter-spacing: -1px;
-    line-height: 1.05;
+    line-height: 1.15;
     color: #ffffff !important;
     text-shadow: 0 4px 18px rgba(0, 0, 0, 0.75);
 }}
@@ -271,129 +352,150 @@ h4 {{
 }}
 
 .song-card {{
-    background: #0d0d0d;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 22px;
-    padding: 14px;
+    width: 100%;
     margin-bottom: 14px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.10);
-    transition: transform 0.16s ease, box-shadow 0.16s ease;
-    min-height: 155px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background: #1a1a2e;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.55);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    min-height: 120px;
 }}
 
 .song-card:hover {{
-    transform: translateY(-2px);
-    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 40px rgba(0,0,0,0.65);
+}}
+
+/* Fondo borroso extraído de la portada */
+.song-bg {{
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(16px) brightness(0.5) saturate(1.4);
+    transform: scale(1.08);
+    z-index: 0;
+}}
+
+.song-overlay {{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.42) 100%);
+    z-index: 1;
 }}
 
 .song-layout {{
+    position: relative;
+    z-index: 2;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 14px;
+    gap: 0;
+    min-height: 120px;
+}}
+
+.song-cover {{
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}}
+
+.song-cover img {{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}}
+
+.song-cover-placeholder {{
+    font-size: 28px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.3);
 }}
 
 .song-content {{
     flex: 1;
     min-width: 0;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }}
 
 .song-topline {{
     display: flex;
     align-items: center;
-    gap: 9px;
-    margin-bottom: 8px;
+    gap: 8px;
+    margin-bottom: 5px;
 }}
 
 .song-rank {{
-    min-width: 30px;
-    height: 30px;
-    border-radius: 10px;
-    background: #111111;
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    min-width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
     display: flex;
     align-items: center;
     justify-content: center;
     color: #AFCFCF;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 800;
+    flex-shrink: 0;
 }}
 
 .song-name {{
-    font-weight: 800;
-    font-size: 16px;
+    font-weight: 900;
+    font-size: 15px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     color: #ffffff;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.5);
 }}
 
 .song-artist {{
-    color: #b5b9c2;
-    font-size: 14px;
-    margin-top: 4px;
+    color: rgba(255,255,255,0.65);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 2px;
 }}
 
 .song-meta {{
-    color: #9ca3af;
-    font-size: 12px;
-    margin-top: 9px;
+    color: rgba(255,255,255,0.38);
+    font-size: 11px;
+    margin-top: 6px;
+    font-weight: 500;
 }}
 
 .song-button {{
     display: inline-block;
-    margin-top: 12px;
-    background: linear-gradient(135deg, #DCE8D8 0%, #AFCFCF 100%);
-    color: #111827 !important;
+    margin-top: 8px;
+    background: rgba(175,207,207,0.15);
+    color: #AFCFCF !important;
     text-decoration: none !important;
-    border-radius: 12px;
-    padding: 8px 12px;
-    font-size: 13px;
-    font-weight: 760;
-    border: 1px solid #AFCFCF;
+    border-radius: 10px;
+    padding: 5px 11px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid rgba(175,207,207,0.35);
+    width: fit-content;
 }}
 
 .song-button:hover {{
-    color: #111827 !important;
-    background: linear-gradient(135deg, #AFCFCF 0%, #78AFC4 100%);
-    border: 1px solid #78AFC4;
+    background: rgba(175,207,207,0.28);
+    color: #ffffff !important;
+    border-color: rgba(175,207,207,0.6);
 }}
 
 .song-button-disabled {{
-    display: inline-block;
-    margin-top: 12px;
-    background: #111111;
-    color: #94a3b8 !important;
-    border-radius: 12px;
-    padding: 8px 12px;
-    font-size: 13px;
-    font-weight: 650;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-}}
-
-.song-cover {{
-    width: 100px;
-    height: 100px;
-    border-radius: 18px;
-    overflow: hidden;
-    flex-shrink: 0;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    background: linear-gradient(135deg, #222831 0%, #101418 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}}
-
-.song-cover img {{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}}
-
-.song-cover-placeholder {{
-    font-size: 24px;
-    font-weight: 800;
-    color: #475569;
+    display: none;
 }}
 
 .stSelectbox label {{
@@ -442,12 +544,12 @@ div[data-baseweb="select"] > div {{
     }}
 
     .song-layout {{
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: flex-start;
     }}
 
     .song-cover {{
-        width: 100px;
+        width: 100%;
         height: 100px;
     }}
 
@@ -543,6 +645,7 @@ conteo_generos["porcentaje"] = (conteo_generos["cantidad"] / total * 100).round(
 genero_top = conteo_generos.iloc[0]["género"].capitalize()
 total_generos = len(conteo_generos)
 
+loader.empty()
 
 st.markdown(
     html_block(f"""
@@ -755,41 +858,94 @@ else:
         rank = i + 1
 
         if imagen:
-            cover_html = f'<div class="song-cover"><img src="{imagen}" style="width:100%; height:100%; object-fit:cover;"></div>'
+            cover_html = f'''
+            <div class="song-cover">
+                <img src="{html.escape(imagen)}" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            '''
         else:
             initial = nombre[:1].upper() if nombre else "♪"
-            cover_html = f'<div class="song-cover"><div class="song-cover-placeholder">{initial}</div></div>'
+            cover_html = f'''
+            <div class="song-cover">
+                <div class="song-cover-placeholder">{initial}</div>
+            </div>
+            '''
 
         if url:
             boton = f'<a class="song-button" href="{html.escape(url)}" target="_blank">Ver en Last.fm</a>'
         else:
             boton = '<span class="song-button-disabled">Sin enlace</span>'
 
-    with columnas_canciones[i % 2]:
-        st.markdown(
-            html_block(f"""
-            <div class="song-card">
-                <div class="song-layout">
-                    <div class="song-content">
-                        <div class="song-topline">
-                            <div class="song-rank">{rank}</div>
-                            <div class="song-name">{nombre}</div>
-                        </div>
-                        <div class="song-artist">{artista}</div>
-                        <div class="song-meta">{meta}</div>
-                        {boton}
-                    </div>
-                    {cover_html}
-                </div>
-            </div>
-            """),
-            unsafe_allow_html=True
-        )
+        with columnas_canciones[i % 2]:
+            # Fondo borroso usando la portada
+            bg_html = f'<div class="song-bg" style="background-image:url({html.escape(imagen)});"></div>' if imagen else '<div class="song-bg" style="background:#0f172a;"></div>'
 
-        if audio.startswith("http"):
-            st.audio(audio, format="audio/mp3")
-        else:
-            st.caption("Audio no disponible")
+            st.markdown(
+                html_block(f"""
+                <div class="song-card">
+                    {bg_html}
+                    <div class="song-overlay"></div>
+                    <div class="song-layout">
+                        {cover_html}
+                        <div class="song-content">
+                            <div class="song-topline">
+                                <div class="song-rank">{rank}</div>
+                                <div class="song-name">{nombre}</div>
+                            </div>
+                            <div class="song-artist">{artista}</div>
+                            <div class="song-meta">{meta}</div>
+                            {boton}
+                        </div>
+                    </div>
+                </div>
+                """),
+                unsafe_allow_html=True
+            )
+
+            if audio.startswith("http"):
+                st.audio(audio, format="audio/mp3")
+            usuario_activo = st.session_state.get("usuario")
+
+            if usuario_activo:
+                ya_es_fav = es_cancion_favorita(
+                    usuario_activo,
+                    row[nombre_col],
+                    row[artista_col] if artista_col else ""
+                )
+
+                btn_label = "★ Guardado" if ya_es_fav else "☆ Guardar favorito"
+                btn_key = f"fav_gen_{genero_elegido}_{i}_{usuario_activo}"
+
+                if st.button(btn_label, key=btn_key, use_container_width=False):
+                    if ya_es_fav:
+                        eliminar_cancion_favorita(
+                            usuario_activo,
+                            row[nombre_col],
+                            row[artista_col] if artista_col else ""
+                        )
+                        st.toast("Eliminado de favoritos")
+                    else:
+                        agregar_cancion_favorita(
+                            usuario=usuario_activo,
+                            nombre=row[nombre_col],
+                            artista=row[artista_col] if artista_col else "",
+                            imagen_url=obtener_imagen_fila(row),
+                            url=obtener_url_fila(row),
+                            audio_url=str(row.get("audio_url", "")).strip(),
+                            reproducciones=row.get("reproducciones", ""),
+                            genero=genero_elegido,
+                        )
+                        st.toast("¡Añadido a favoritos! ★")
+
+                    st.rerun()
+            else:
+                st.markdown(
+                    '<a href="/sesion" target="_self" style="'
+                    'display:inline-block; margin-top:6px; font-size:12px; '
+                    'color:#AFCFCF; text-decoration:none; font-weight:700; '
+                    'letter-spacing:1px;">☆ Inicia sesión para guardar</a>',
+                    unsafe_allow_html=True,
+                )
 
     st.markdown("---")
 

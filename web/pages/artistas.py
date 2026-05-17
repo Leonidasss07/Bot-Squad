@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import base64
 import os
 
+from utils_loader import mostrar_loader
+
 #tablas
 def tabla_negra(df):
     html = """
@@ -58,6 +60,8 @@ def tabla_top(df):
 
 
 st.set_page_config(page_title="Proyecto Musical", layout="wide")
+
+loader = mostrar_loader(1)
 
 def get_base64_image(path):
     with open(path, "rb") as img:
@@ -219,6 +223,8 @@ if busqueda:
         )
 
 st.divider()
+
+loader.empty()
 
 col1, col2 = st.columns(2)
 
