@@ -92,7 +92,6 @@ html, body, [data-testid="stAppViewContainer"], .stApp {{
     color: #ffffff !important;
 }}
             
-/* audio gris */
 [data-testid="stAudio"] {{
     background: transparent !important;
     border: none !important;
@@ -145,10 +144,11 @@ h1, h2, h3, h4, p, label, div {{
 .menu-superior {{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 42px;
 
-    height: 240px;
+    height: 400px;
+    padding-bottom: 200px;
     margin-top: 0;
 
     width: 100vw;
@@ -158,7 +158,14 @@ h1, h2, h3, h4, p, label, div {{
     background-image:
         linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
         linear-gradient(to left, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
-        linear-gradient(to bottom, rgba(0,0,0,0) 55%, rgba(0,0,0,0.95)),
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,0) 0%,
+            rgba(0,0,0,0) 78%,
+            rgba(0,0,0,0.35) 88%,
+            rgba(0,0,0,0.75) 95%,
+            rgba(0,0,0,1) 100%
+        ),
         url("data:image/jpeg;base64,{HERO_IMAGE_BASE64}");
 
     background-size: cover;
@@ -166,7 +173,7 @@ h1, h2, h3, h4, p, label, div {{
     background-repeat: no-repeat;
 
     position: relative;
-    z-index: 10;
+    z-index: 1;
 }}
 
 .menu-superior a {{
@@ -177,36 +184,22 @@ h1, h2, h3, h4, p, label, div {{
     letter-spacing: 3px;
     font-family: "Century Gothic", "Montserrat", "Segoe UI", Arial, sans-serif;
     text-transform: uppercase;
-    transform: translateY(42px);
+    transform: none;
     text-shadow: 0 3px 12px rgba(0,0,0,0.85);
 }}
 
 .hero-card {{
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     border: none;
     border-radius: 0;
-    margin-top: -35px;
+    margin-top: 0;
     margin-bottom: 24px;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     width: 100vw;
-    min-height: 340px;
-
-    background-image:
-        linear-gradient(to bottom,
-            rgba(0,0,0,0.10) 0%,
-            rgba(0,0,0,0.35) 38%,
-            rgba(0,0,0,0.70) 75%,
-            rgba(0,0,0,0.95) 95%,
-            rgba(0,0,0,1) 100%
-        ),
-        url("data:image/jpeg;base64,{HERO_IMAGE_BASE64}");
-
-    background-size: cover;
-    background-position: center 52%;
-    background-repeat: no-repeat;
-
+    min-height: 300px;
+    background: #000000 !important;
     display: flex;
     align-items: flex-start;
 }}
@@ -217,16 +210,18 @@ h1, h2, h3, h4, p, label, div {{
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 58px 48px 30px 48px;
+    padding: 0px 48px 38px 48px;
     text-align: center;
+    transform: translateY(-45px);
 }}
 
 .hero-title {{
     font-size: 44px;
     font-weight: 900;
     margin: 0;
+    padding-top: 64px;
     letter-spacing: -1px;
-    line-height: 1.05;
+    line-height: 1.15;
     color: #ffffff !important;
     text-shadow: 0 4px 18px rgba(0, 0, 0, 0.75);
 }}

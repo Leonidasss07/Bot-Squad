@@ -44,23 +44,31 @@ header[data-testid="stHeader"] {{
 .menu-superior {{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 40px;
 
-    height: 340px;
-    margin-top: -55px;
+    height: 300px;
+    padding-bottom: 58px;
+    margin-top: 0;
 
     width: 100vw;
     margin-left: calc(-50vw + 50%);
 
     background-image:
-        linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0) 18%),
-        linear-gradient(to left,  rgba(0,0,0,0.5), rgba(0,0,0,0) 18%),
-        linear-gradient(to bottom, rgba(0,0,0,0) 52%, rgba(0,0,0,1) 100%),
+        linear-gradient(to right, rgba(0,0,0,0.70), rgba(0,0,0,0) 22%),
+        linear-gradient(to left, rgba(0,0,0,0.70), rgba(0,0,0,0) 22%),
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,0) 0%,
+            rgba(0,0,0,0) 78%,
+            rgba(0,0,0,0.35) 88%,
+            rgba(0,0,0,0.75) 95%,
+            rgba(0,0,0,1) 100%
+        ),
         url("data:image/jpeg;base64,{imagen_dashboard_bg}");
 
-    background-size: cover;
-    background-position: center top;
+    background-size: 100% auto;
+    background-position: center 60%;
     background-repeat: no-repeat;
 
     position: relative;
@@ -75,11 +83,12 @@ header[data-testid="stHeader"] {{
     letter-spacing: 3px;
     font-family: "Century Gothic", "Montserrat", "Segoe UI", Arial, sans-serif;
     text-transform: uppercase;
-    transform: translateY(40px);
+    transform: none;
+    text-shadow: 0 3px 12px rgba(0,0,0,0.85);
 }}
 
 .menu-superior a:hover {{
-    color: #3b82f6;
+    color: #AFCFCF;
 }}
 
 h1 {{
@@ -87,23 +96,24 @@ h1 {{
 }}
 
 h2 {{
-    font-size: 24px !important;
+    font-size: 28px !important;
     color: white !important;
-    font-weight: 800 !important;
+    font-weight: 900 !important;
     letter-spacing: 1.5px;
     text-align: center;
     border: none !important;
     padding: 4px 0;
     width: fit-content;
-    margin: 20px auto 20px auto !important;
+    margin: 34px auto 20px auto !important;
     text-shadow: 0 0 12px rgba(255,255,255,0.25);
 }}
 
 [data-testid="stCaptionContainer"] {{
-    color: rgba(255,255,255,0.75) !important;
+    color: rgba(255,255,255,0.72) !important;
     text-align: center;
     font-size: 12px !important;
-    margin-top: 10px !important;
+    margin-top: 8px !important;
+    margin-bottom: 24px !important;
 }}
 
 [data-testid="stHorizontalBlock"]:has([data-testid="stMetric"]) {{
@@ -182,7 +192,6 @@ h2 {{
     box-shadow: 0 16px 48px rgba(0,0,0,0.7);
 }}
 
-/* Fondo borroso con el color del álbum (simulado con overlay) */
 .cancion-bg {{
     position: absolute;
     inset: 0;
@@ -208,7 +217,7 @@ h2 {{
     position: relative;
     z-index: 2;
     margin: 0 !important;
-    font-size: 10px !important;
+    font-size: 16px !important;
     text-align: right !important;
     width: 100%;
     color: rgba(255,255,255,0.55) !important;
@@ -229,7 +238,6 @@ h2 {{
     min-height: 155px;
 }}
 
-/* Portada cuadrada a la izquierda, sin bordes ni sombra propia */
 .cancion-cover-wrap {{
     flex-shrink: 0;
     width: 155px;
@@ -262,7 +270,6 @@ h2 {{
     letter-spacing: 1px;
 }}
 
-/* Info a la derecha */
 .cancion-info {{
     flex: 1;
     padding: 18px 18px 18px 18px;
@@ -488,7 +495,7 @@ with col_c2:
         <div class="cancion-card">
             {bg2}
             <div class="cancion-overlay"></div>
-            <h2>Más trending</h2>
+            <h2>Trending</h2>
             <div class="cancion-content">
                 {cover2}
                 <div class="cancion-info">
