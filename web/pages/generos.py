@@ -19,7 +19,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# ruta de la imagen
+# Ruta de la imagen
 HERO_IMAGE_PATH = "web/assets/generos_bg.jpeg"
 
 loader = st.empty()
@@ -565,6 +565,7 @@ div[data-baseweb="select"] > div {{
     <a href="/canciones" target="_self">Canciones</a>
     <a href="/artistas" target="_self">Artistas</a>
     <a href="/generos" target="_self">Géneros</a>
+    <a href="/favoritos" target="_self">Favoritos</a>
 </div>
 """, unsafe_allow_html=True)
 
@@ -903,18 +904,18 @@ else:
 
             if audio.startswith("http"):
                 st.audio(audio, format="audio/mp3")
-            usuario_activo = st.session_state.get("usuario", None)
- 
+            usuario_activo = st.session_state.get("usuario")
+
             if usuario_activo:
                 ya_es_fav = es_cancion_favorita(
                     usuario_activo,
                     row[nombre_col],
                     row[artista_col] if artista_col else ""
                 )
- 
+
                 btn_label = "★ Guardado" if ya_es_fav else "☆ Guardar favorito"
-                btn_key   = f"fav_gen_{genero_elegido}_{i}"
- 
+                btn_key = f"fav_gen_{genero_elegido}_{i}_{usuario_activo}"
+
                 if st.button(btn_label, key=btn_key, use_container_width=False):
                     if ya_es_fav:
                         eliminar_cancion_favorita(
@@ -925,19 +926,19 @@ else:
                         st.toast("Eliminado de favoritos")
                     else:
                         agregar_cancion_favorita(
-                            usuario   = usuario_activo,
-                            nombre    = row[nombre_col],
-                            artista   = row[artista_col] if artista_col else "",
-                            imagen_url= obtener_imagen_fila(row),
-                            url       = obtener_url_fila(row),
-                            audio_url = str(row.get("audio_url", "")).strip(),
-                            reproducciones = row.get("reproducciones", ""),
-                            genero    = genero_elegido,
+                            usuario=usuario_activo,
+                            nombre=row[nombre_col],
+                            artista=row[artista_col] if artista_col else "",
+                            imagen_url=obtener_imagen_fila(row),
+                            url=obtener_url_fila(row),
+                            audio_url=str(row.get("audio_url", "")).strip(),
+                            reproducciones=row.get("reproducciones", ""),
+                            genero=genero_elegido,
                         )
                         st.toast("¡Añadido a favoritos! ★")
+
                     st.rerun()
             else:
-                # Redirigir si no hay sesión
                 st.markdown(
                     '<a href="/sesion" target="_self" style="'
                     'display:inline-block; margin-top:6px; font-size:12px; '

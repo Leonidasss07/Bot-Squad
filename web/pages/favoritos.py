@@ -200,10 +200,20 @@ with tab_c:
             <div class="empty-state-icon">♪</div>
             <div class="empty-state-text">
                 Aún no tienes canciones guardadas.<br>
-                Ve a <strong style="color:#AFCFCF">Géneros</strong> y pulsa ☆ en las que te gusten.
+                Ve a Géneros o Canciones y pulsa ☆ en las que te gusten.
             </div>
         </div>
         """, unsafe_allow_html=True)
+
+        col1, col2, col3, col4 = st.columns([1.5, 1, 1, 1.5])
+
+        with col2:
+            if st.button("Ir a Géneros", use_container_width=True):
+                st.switch_page("pages/generos.py")
+
+        with col3:
+            if st.button("Ir a Canciones", use_container_width=True):
+                st.switch_page("pages/canciones.py")
     else:
         cols = st.columns(2, gap="large")
         for i, cancion in enumerate(canciones_fav):

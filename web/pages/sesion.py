@@ -133,7 +133,6 @@ st.markdown(f"""
 
 loader.empty()
 
-# ── Si ya hay sesión activa, mostrar estado y opciones ────
 if st.session_state.get("usuario"):
     usuario_actual = st.session_state["usuario"]
 
@@ -203,7 +202,6 @@ with col2:
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# ── Redirigir tras login exitoso (fuera del form) ─────────
 if st.session_state.get("login_ok"):
     del st.session_state["login_ok"]
     st.switch_page("pages/favoritos.py")

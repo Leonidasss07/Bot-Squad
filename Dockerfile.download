@@ -1,5 +1,7 @@
+# Base con Python para ejecutar la app
 FROM python:3.11-slim
 
+# Carpeta de trabajo dentro del contenedor
 WORKDIR /app
 
 # Instalar dependencias
@@ -9,7 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar todo el proyecto
 COPY . .
 
-# Crear carpetas de datos si no existen
+# Crear carpetas
 RUN mkdir -p data/raw data/clean
 
 # Ejecutar el script de descarga de datos desde la API de Last.fm
