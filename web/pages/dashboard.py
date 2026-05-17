@@ -47,20 +47,20 @@ header[data-testid="stHeader"] {{
     align-items: center;
     gap: 40px;
 
-    height: 240px;
+    height: 340px;
     margin-top: -55px;
 
     width: 100vw;
     margin-left: calc(-50vw + 50%);
 
     background-image:
-        linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
-        linear-gradient(to left, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
-        linear-gradient(to bottom, rgba(0,0,0,0) 55%, rgba(0,0,0,0.95)),
+        linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0) 18%),
+        linear-gradient(to left,  rgba(0,0,0,0.5), rgba(0,0,0,0) 18%),
+        linear-gradient(to bottom, rgba(0,0,0,0) 52%, rgba(0,0,0,1) 100%),
         url("data:image/jpeg;base64,{imagen_dashboard_bg}");
 
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
 
     position: relative;
@@ -167,72 +167,163 @@ h2 {{
 }}
 
 .cancion-card {{
-    width: 92%;
-    margin: 20px auto 45px auto;
-    padding: 28px 34px;
-    border-radius: 22px;
-    background: linear-gradient(135deg, rgba(15,23,42,0.88), rgba(2,6,23,0.95));
-    border: 1px solid rgba(37,99,235,0.45);
-    box-shadow: 0 0 35px rgba(37,99,235,0.12);
+    width: 100%;
+    margin: 10px 0 6px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background: #1a1a2e;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.55);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}}
+
+.cancion-card:hover {{
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.7);
+}}
+
+/* Fondo borroso con el color del álbum (simulado con overlay) */
+.cancion-bg {{
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(18px) brightness(0.55) saturate(1.4);
+    transform: scale(1.08);
+    z-index: 0;
+}}
+
+.cancion-overlay {{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.15) 0%,
+        rgba(0,0,0,0.45) 100%
+    );
+    z-index: 1;
 }}
 
 .cancion-card h2 {{
-    margin: 0 0 24px 0 !important;
-    font-size: 25px !important;
-    text-align: left !important;
+    position: relative;
+    z-index: 2;
+    margin: 0 !important;
+    font-size: 10px !important;
+    text-align: right !important;
     width: 100%;
+    color: rgba(255,255,255,0.55) !important;
+    letter-spacing: 2.5px !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+    padding: 14px 16px 0 16px;
 }}
 
 .cancion-content {{
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 0;
+    padding: 0;
+    min-height: 155px;
 }}
 
-.portada-fake {{
-    width: 210px;
-    height: 210px;
-    border-radius: 18px;
-    background: linear-gradient(135deg, rgba(37,99,235,0.35), rgba(15,23,42,0.95));
-    border: 1px solid rgba(255,255,255,0.08);
+/* Portada cuadrada a la izquierda, sin bordes ni sombra propia */
+.cancion-cover-wrap {{
+    flex-shrink: 0;
+    width: 155px;
+    align-self: stretch;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255,255,255,0.75);
+    overflow: hidden;
+}}
+
+.cancion-cover-wrap img {{
+    width: 155px;
+    height: 155px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    margin: auto;
+}}
+
+.portada-fake {{
+    width: 155px;
+    height: 155px;
+    background: linear-gradient(135deg, rgba(37,99,235,0.5), rgba(15,23,42,0.95));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.6);
     font-weight: 700;
+    font-size: 12px;
     letter-spacing: 1px;
+}}
+
+/* Info a la derecha */
+.cancion-info {{
+    flex: 1;
+    padding: 18px 18px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}}
+
+.cancion-label {{
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
 }}
 
 .cancion-info h3 {{
     color: white;
-    font-size: 30px;
-    margin: 0 0 14px 0;
+    font-size: 22px;
+    font-weight: 900;
+    margin: 0 0 4px 0;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }}
 
-.cancion-info p {{
-    color: rgba(255,255,255,0.88);
-    font-size: 16px;
-    margin: 10px 0;
+.cancion-info .artista {{
+    color: rgba(255,255,255,0.65);
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}}
+
+.cancion-info .repro {{
+    color: rgba(255,255,255,0.4);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }}
 
 .cancion-boton {{
-    display: inline-block;
-    margin-top: 18px;
-    padding: 11px 18px;
-    border-radius: 12px;
-    background: #1e3a8a;
-    color: white !important;
-    text-decoration: none;
-    font-weight: 700;
-}}
-
-.cancion-boton:hover {{
-    background: #2563eb;
+    display: none;
 }}
 
 html, body, .stApp {{
     background-color: black;
     color: white;
+}}
+
+[data-testid="stAudio"] {{
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 10px 0 4px 0 !important;
+}}
+[data-testid="stAudio"] audio {{
+    width: 100%;
+    height: 38px;
+    border-radius: 20px;
+    filter: grayscale(1) brightness(0.75);
 }}
 </style>
 
@@ -242,6 +333,7 @@ html, body, .stApp {{
     <a href="/canciones" target="_self">Canciones</a>
     <a href="/artistas" target="_self">Artistas</a>
     <a href="/generos" target="_self">Géneros</a>
+    <a href="/favoritos" target="_self">Favoritos</a>
 </div>
 """, unsafe_allow_html=True)
 
@@ -338,30 +430,77 @@ canciones["reproducciones"] = pd.to_numeric(
 
 canciones_top = canciones.sort_values(by="reproducciones", ascending=False)
 top_1 = canciones_top.iloc[0]
+top_2 = canciones_top.iloc[1] if len(canciones_top) > 1 else None
 
-portada_html = ""
-if "imagen_url" in top_1 and pd.notna(top_1["imagen_url"]) and top_1["imagen_url"] != "":
-    portada_html = f'<img src="{top_1["imagen_url"]}" style="width:210px;height:210px;object-fit:cover;border-radius:18px;">'
-else:
-    portada_html = '<div class="portada-fake">SIN PORTADA</div>'
 
-url_boton = ""
-if "url" in top_1:
-    url_boton = f'<a class="cancion-boton" href="{top_1["url"]}" target="_blank">Escuchar en Last.fm</a>'
+# Formato de reproducciones
+reproducciones_formato   = f"{top_1['reproducciones']:,.0f}"
+reproducciones_formato_2 = f"{top_2['reproducciones']:,.0f}" if top_2 is not None else ""
 
-reproducciones_formato = f"{top_1['reproducciones']:,.0f}"
 
-st.markdown(f"""
-<div class="cancion-card">
-    <h2>Canción más escuchada</h2>
-    <div class="cancion-content">
-        {portada_html}
-        <div class="cancion-info">
-            <h3>{top_1['nombre']}</h3>
-            <p><strong>Artista:</strong> {top_1['artista']}</p>
-            <p><strong>Reproducciones:</strong> {reproducciones_formato}</p>
-            {url_boton}
+# Dos cards en columnas
+col_c1, col_c2 = st.columns(2, gap="large")
+
+with col_c1:
+    # Construir portada para card 1
+    if "imagen_url" in top_1 and pd.notna(top_1["imagen_url"]) and top_1["imagen_url"] != "":
+        img1 = top_1["imagen_url"]
+        cover1 = f'<div class="cancion-cover-wrap"><img src="{img1}" style="width:155px;height:155px;object-fit:cover;display:block;"></div>'
+        bg1   = f'<div class="cancion-bg" style="background-image:url({img1});"></div>'
+    else:
+        cover1 = '<div class="cancion-cover-wrap"><div class="portada-fake">SIN PORTADA</div></div>'
+        bg1    = '<div class="cancion-bg" style="background:#0f172a;"></div>'
+
+    st.markdown(f"""
+    <div class="cancion-card">
+        {bg1}
+        <div class="cancion-overlay"></div>
+        <h2>Más escuchada</h2>
+        <div class="cancion-content">
+            {cover1}
+            <div class="cancion-info">
+                <div class="cancion-label">Artista</div>
+                <div style="color:rgba(255,255,255,0.7);font-size:13px;font-weight:600;margin-bottom:6px;">{top_1['artista']}</div>
+                <h3>{top_1['nombre']}</h3>
+                <div class="repro">{reproducciones_formato} reproducciones</div>
+            </div>
         </div>
     </div>
-</div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
+
+    # Audio debajo de la card
+    audio_top1 = str(top_1.get("audio_url", "")).strip()
+    if audio_top1.startswith("http"):
+        st.audio(audio_top1, format="audio/mp4")
+
+with col_c2:
+    if top_2 is not None:
+        # Construir portada para card 2
+        if "imagen_url" in top_2 and pd.notna(top_2["imagen_url"]) and top_2["imagen_url"] != "":
+            img2 = top_2["imagen_url"]
+            cover2 = f'<div class="cancion-cover-wrap"><img src="{img2}" style="width:155px;height:155px;object-fit:cover;display:block;"></div>'
+            bg2    = f'<div class="cancion-bg" style="background-image:url({img2});"></div>'
+        else:
+            cover2 = '<div class="cancion-cover-wrap"><div class="portada-fake">SIN PORTADA</div></div>'
+            bg2    = '<div class="cancion-bg" style="background:#0f172a;"></div>'
+
+        st.markdown(f"""
+        <div class="cancion-card">
+            {bg2}
+            <div class="cancion-overlay"></div>
+            <h2>Más trending</h2>
+            <div class="cancion-content">
+                {cover2}
+                <div class="cancion-info">
+                    <div class="cancion-label">Artista</div>
+                    <div style="color:rgba(255,255,255,0.7);font-size:13px;font-weight:600;margin-bottom:6px;">{top_2['artista']}</div>
+                    <h3>{top_2['nombre']}</h3>
+                    <div class="repro">{reproducciones_formato_2} reproducciones</div>
+                </div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        audio_top2 = str(top_2.get("audio_url", "")).strip()
+        if audio_top2.startswith("http"):
+            st.audio(audio_top2, format="audio/mp4")
