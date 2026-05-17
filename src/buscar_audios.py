@@ -3,6 +3,7 @@ import requests
 import time
 import os
 
+#guardar preview de canciones
 def obtener_preview_itunes(artista, cancion):
     url = "https://itunes.apple.com/search"
     

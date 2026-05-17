@@ -5,10 +5,10 @@
 .venv-4
 __pycache__
 *.pyc
+*.ipynb
 .git
 .gitignore
 .vscode
 notebooks
-*.ipynb
 .DS_Store
 data/raw

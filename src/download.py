@@ -283,7 +283,6 @@ def obtener_canciones_semanales_tag(tag):
             }
 
             canciones.append(cancion)
-
         print(f"Se obtuvieron {len(canciones)} canciones para el tag {tag}")
 
     except Exception as e:

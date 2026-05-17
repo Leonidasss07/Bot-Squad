@@ -22,7 +22,6 @@ def guardar_top_semanal_json():
         respuesta.raise_for_status()
         datos = respuesta.json()
         
-        # Guardar como archivo JSON
         nombre_archivo = 'top_canciones_semana.json'
         with open(nombre_archivo, 'w', encoding='utf-8') as f:
             json.dump(datos, f, ensure_ascii=False, indent=4)
