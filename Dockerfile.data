@@ -1,0 +1,22 @@
+# Base con Python para ejecutar la app
+FROM python:3.11-slim
+
+# Carpeta de trabajo dentro del contenedor
+WORKDIR /app
+
+# Instalar dependencias 
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copiar scripts de descarga y el procesamiento
+COPY src/ ./src/
+COPY data/ ./data/
+
+# Crear carpetas
+RUN mkdir -p data/raw data/clean
+
+# Punto de montaje para que el contenedor de la web pueda leer los CSV
+VOLUME ["/app/data/clean"]
+
+# Ejecuta el script de audios sobre los datos ya descargados
+CMD ["python", "src/buscar_audios.py"]

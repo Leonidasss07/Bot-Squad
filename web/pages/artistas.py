@@ -175,12 +175,13 @@ div[data-baseweb="input"] {{
 
 #menu
 st.markdown("""
-<div class="top-menu">
-    <a href="/">INICIO</a>
+<div class="menu-superior">
+    <a href="/" target="_self">Inicio</a>
     <a href="/dashboard" target="_self">Dashboard</a>
     <a href="/canciones" target="_self">Canciones</a>
     <a href="/artistas" target="_self">Artistas</a>
     <a href="/generos" target="_self">Géneros</a>
+    <a href="/favoritos" target="_self">Favoritos</a>
 </div>
 """, unsafe_allow_html=True)
 
