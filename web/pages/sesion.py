@@ -11,7 +11,8 @@ st.set_page_config(page_title="Sesión - Nova music", layout="wide")
 loader = mostrar_loader(1)
 
 def get_base64_image(path):
-    if not os.path.exists(path): return ""
+    if not os.path.exists(path):
+        return ""
     with open(path, "rb") as img:
         return base64.b64encode(img.read()).decode()
 
@@ -51,12 +52,25 @@ header {{ visibility: hidden; }}
 }}
 
 .logo-text {{
-    position: absolute; left: 40px; bottom: 20px;
-    font-size: 22px; font-weight: bold; color: rgba(255,255,255,0.7); letter-spacing: 3px;
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 3px;
 }}
 
 .top-menu a {{
-    color: white; text-decoration: none; font-weight: bold; font-size: 16px; text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}}
+
+.top-menu a:hover {{
+    color: #AFCFCF;
 }}
 
 .main-center-wrapper {{
@@ -116,6 +130,21 @@ input {{
     margin: 20px auto;
     display: inline-block;
 }}
+
+div[data-testid="stButton"] > button {{
+    background-color: #111 !important;
+    border: 1px solid #555 !important;
+    color: white !important;
+    border-radius: 8px !important;
+    height: 45px;
+    font-weight: bold;
+}}
+
+div[data-testid="stButton"] > button:hover {{
+    background-color: rgba(175, 207, 207, 0.15) !important;
+    border: 1px solid #AFCFCF !important;
+    color: #AFCFCF !important;
+}}
 </style>
 """, unsafe_allow_html=True)
 
@@ -133,11 +162,27 @@ st.markdown(f"""
 
 loader.empty()
 
+# Recuperar sesión guardada si existe
+if "usuario" not in st.session_state and os.path.exists("usuario_activo.txt"):
+    with open("usuario_activo.txt", "r", encoding="utf-8") as f:
+        usuario_guardado = f.read().strip()
+
+    if usuario_guardado:
+        st.session_state["usuario"] = usuario_guardado
+
+# Mensaje después de cerrar sesión
+if st.session_state.get("logout_ok"):
+    del st.session_state["logout_ok"]
+    st.success("Sesión cerrada correctamente.")
+
+# Vista cuando ya hay sesión iniciada
 if st.session_state.get("usuario"):
     usuario_actual = st.session_state["usuario"]
 
     st.markdown('<div class="main-center-wrapper">', unsafe_allow_html=True)
+
     col1, col2, col3 = st.columns([1, 2, 1])
+
     with col2:
         st.markdown(f"""
         <div style="text-align:center; margin-top:60px;">
@@ -150,18 +195,26 @@ if st.session_state.get("usuario"):
         st.markdown("<div style='height:20px'></div>", unsafe_allow_html=True)
 
         col_fav, col_out = st.columns(2, gap="medium")
+
         with col_fav:
             if st.button("★ Ver mis favoritos", use_container_width=True):
                 st.switch_page("pages/favoritos.py")
+
         with col_out:
             if st.button("Cerrar sesión", use_container_width=True):
-                del st.session_state["usuario"]
+                if "usuario" in st.session_state:
+                    del st.session_state["usuario"]
+
+                if os.path.exists("usuario_activo.txt"):
+                    os.remove("usuario_activo.txt")
+
+                st.session_state["logout_ok"] = True
                 st.rerun()
 
     st.markdown('</div>', unsafe_allow_html=True)
     st.stop()
 
-# Formulario de login/registro 
+# Formulario de login/registro
 st.markdown('<div class="main-center-wrapper">', unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns([1, 2, 1])
@@ -187,21 +240,27 @@ with col2:
         if submit:
             if opcion == "Iniciar sesión":
                 usuario = iniciar_sesion(correo, password)
+
                 if usuario:
                     # Guardamos en session_state antes de redirigir
                     st.session_state["usuario"] = correo
 
                     with open("usuario_activo.txt", "w", encoding="utf-8") as f:
                         f.write(correo)
+
                     st.session_state["login_ok"] = True
                     st.rerun()
                 else:
                     st.error("Credenciales incorrectas")
+
             elif opcion == "Crear cuenta":
                 if crear_usuario(correo, password):
                     st.success("✓ Cuenta creada. Ya puedes iniciar sesión.")
                 else:
-                    st.error("Error al crear cuenta (puede que el correo ya exista)")
+                    st.error("Error al crear cuenta. Puede que el correo ya exista.")
+
+            elif opcion == "Olvidé mi contraseña":
+                st.info("La recuperación de contraseña todavía no está activada en esta pantalla.")
 
 st.markdown('</div>', unsafe_allow_html=True)
 

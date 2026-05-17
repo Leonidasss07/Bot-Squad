@@ -455,6 +455,18 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
+_, col_logout, _ = st.columns([2.4, 1, 2.4])
+
+with col_logout:
+    if st.button("Cerrar sesión", use_container_width=True):
+        if "usuario" in st.session_state:
+            del st.session_state["usuario"]
+
+        if os.path.exists("usuario_activo.txt"):
+            os.remove("usuario_activo.txt")
+
+        st.switch_page("pages/sesion.py")
+        
 st.markdown("---")
 
 
