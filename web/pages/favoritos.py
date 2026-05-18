@@ -3,6 +3,8 @@ import base64
 import os
 import html as html_lib
 
+from utils_sesion import recuperar_sesion
+from utils_loader import mostrar_loader
 from db_favoritos import (
     obtener_canciones_favoritas,
     obtener_artistas_favoritos,
@@ -17,78 +19,29 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+loader = mostrar_loader(1)
+recuperar_sesion()
 
-# FUNCIONES
-def recuperar_usuario():
-    usuario = st.session_state.get("usuario")
+# Redirigir si no hay sesión
+if not st.session_state.get("usuario"):
+    loader.empty()
 
-    if usuario:
-        return usuario
-
-    if os.path.exists("usuario_activo.txt"):
-        with open("usuario_activo.txt", "r", encoding="utf-8") as f:
-            usuario_guardado = f.read().strip()
-
-        if usuario_guardado:
-            st.session_state["usuario"] = usuario_guardado
-            return usuario_guardado
-
-    return None
-
-
-def image_to_base64(path):
-    if not os.path.exists(path):
-        return ""
-
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode()
-
-
-def texto_seguro(valor):
-    if valor is None or str(valor).strip() in ("", "nan"):
-        return ""
-    return html_lib.escape(str(valor))
-
-
-def formatear_numero(valor, tipo="reprod."):
-    if valor is None or str(valor).strip() in ("", "nan"):
-        return ""
-
-    try:
-        v = float(valor)
-
-        if v >= 1_000_000_000:
-            return f"{v / 1_000_000_000:.1f}B {tipo}"
-        if v >= 1_000_000:
-            return f"{v / 1_000_000:.1f}M {tipo}"
-        if v >= 1_000:
-            return f"{v / 1_000:.1f}K {tipo}"
-
-        return f"{int(v)} {tipo}"
-    except Exception:
-        return str(valor)
-
-
-# SESIÓN
-usuario = recuperar_usuario()
-
-if not usuario:
     st.markdown("""
     <style>
-    html, body, .stApp {
-        background: #000 !important;
-        color: #fff !important;
+    html, body, .stApp { 
+        background: #000 !important; 
+        color: #fff !important; 
     }
 
-    header, footer, #MainMenu,
+    header, footer, #MainMenu, 
     [data-testid="stToolbar"],
-    [data-testid="stSidebar"],
-    [data-testid="collapsedControl"] {
-        display: none !important;
+    [data-testid="stSidebar"], 
+    [data-testid="collapsedControl"] { 
+        display: none !important; 
     }
 
-    .block-container {
-        padding-top: 0 !important;
+    .block-container { 
+        padding-top: 0 !important; 
     }
     </style>
     """, unsafe_allow_html=True)
@@ -113,284 +66,321 @@ if not usuario:
 
     st.stop()
 
+loader.empty()
 
-# IMAGEN DE FONDO
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-ROOT_DIR = os.path.dirname(BASE_DIR)
-HERO_PATH = os.path.join(ROOT_DIR, "assets", "generos_bg.jpeg")
+usuario = st.session_state["usuario"]
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))   #
+ROOT_DIR = os.path.dirname(BASE_DIR)                    
+HERO_PATH = os.path.join(ROOT_DIR, "assets", "fav.jpeg")
+
+
+def image_to_base64(path):
+    if not os.path.exists(path):
+        return ""
+
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+
 HERO_B64 = image_to_base64(HERO_PATH)
 
 
-# CSS Y MENÚ
+def texto_seguro(valor):
+    if valor is None or str(valor).strip() in ("", "nan"):
+        return ""
+
+    return html_lib.escape(str(valor))
+
+
+def formatear_numero(valor, tipo="reprod."):
+    if valor is None or str(valor).strip() in ("", "nan", "None"):
+        return ""
+
+    try:
+        v = float(valor)
+
+        if v >= 1_000_000_000:
+            return f"{v / 1_000_000_000:.1f}B {tipo}"
+        if v >= 1_000_000:
+            return f"{v / 1_000_000:.1f}M {tipo}"
+        if v >= 1_000:
+            return f"{v / 1_000:.1f}K {tipo}"
+
+        return f"{int(v)} {tipo}"
+    except Exception:
+        return str(valor)
+
+
+# CSS y menú
 st.markdown(f"""
 <style>
 html, body, [data-testid="stAppViewContainer"], .stApp {{
-    background: #000000 !important;
+    background: #000000 !important; 
     color: #ffffff !important;
 }}
 
 header, footer, #MainMenu,
-[data-testid="stToolbar"],
+[data-testid="stToolbar"], 
 [data-testid="stDecoration"],
-[data-testid="stStatusWidget"],
+[data-testid="stStatusWidget"], 
 [data-testid="collapsedControl"],
-[data-testid="stSidebar"],
-[data-testid="stSidebarNav"] {{
-    display: none !important;
+[data-testid="stSidebar"], 
+[data-testid="stSidebarNav"] {{ 
+    display: none !important; 
 }}
 
-[data-testid="stAppViewContainer"] > .main {{
-    background: #000000 !important;
+[data-testid="stAppViewContainer"] > .main {{ 
+    background: #000000 !important; 
 }}
 
 .block-container {{
-    max-width: 100% !important;
+    max-width: 100% !important; 
     padding-top: 0 !important;
-    padding-bottom: 2rem !important;
-    padding-left: 2rem !important;
+    padding-bottom: 2rem !important; 
+    padding-left: 2rem !important; 
     padding-right: 2rem !important;
 }}
 
-hr {{
-    border: none !important;
-    border-top: 1px solid rgba(255,255,255,0.08) !important;
-    margin: 1.8rem 0 !important;
+hr {{ 
+    border: none !important; 
+    border-top: 1px solid rgba(255,255,255,0.08) !important; 
+    margin: 1.8rem 0 !important; 
 }}
 
 .menu-superior {{
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    justify-content: center; 
     align-items: center;
-    gap: 42px;
+    gap: 42px; 
 
-    height: 240px;
-    width: 100vw;
+    height: 240px; 
+    width: 100vw; 
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
 
     background-image:
         linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
-        linear-gradient(to left, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
+        linear-gradient(to left,  rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
         linear-gradient(to bottom, rgba(0,0,0,0) 55%, rgba(0,0,0,0.95)),
         url("data:image/jpeg;base64,{HERO_B64}");
 
-    background-size: cover;
+    background-size: cover; 
     background-position: center top;
     background-repeat: no-repeat;
-
-    position: relative;
+    position: relative; 
     z-index: 10;
 }}
 
 .menu-superior a {{
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px; 
     font-weight: 800;
-    letter-spacing: 3px;
-    font-family: "Century Gothic", "Montserrat", "Segoe UI", Arial, sans-serif;
-    text-transform: uppercase;
+    letter-spacing: 3px; 
+    font-family: "Century Gothic","Montserrat","Segoe UI",Arial,sans-serif;
+    text-transform: uppercase; 
     transform: translateY(42px);
     text-shadow: 0 3px 12px rgba(0,0,0,0.85);
 }}
 
-.menu-superior a:hover {{
-    color: #ec4899;
+.menu-superior a:hover {{ 
+    color: #AFCFCF; 
 }}
 
-.fav-hero {{
-    text-align: center;
-    padding: 40px 48px 24px;
+.fav-hero {{ 
+    text-align: center; 
+    padding: 40px 48px 24px; 
 }}
 
-.fav-hero-title {{
-    font-size: 44px;
-    font-weight: 900;
-    color: #ffffff;
-    letter-spacing: -1px;
+.fav-hero-title {{ 
+    font-size: 44px; 
+    font-weight: 900; 
+    color: #ffffff; 
+    letter-spacing: -1px; 
 }}
 
-.fav-hero-sub {{
-    color: rgba(255,255,255,0.55);
-    font-size: 15px;
-    margin-top: 8px;
-    letter-spacing: 1px;
+.fav-hero-sub {{ 
+    color: rgba(255,255,255,0.55); 
+    font-size: 15px; 
+    margin-top: 8px; 
+    letter-spacing: 1px; 
 }}
 
 .fav-user-badge {{
-    display: inline-block;
+    display: inline-block; 
     margin-top: 14px;
-    background: rgba(236,72,153,0.12);
-    border: 1px solid rgba(236,72,153,0.35);
-    border-radius: 30px;
-    padding: 7px 22px;
-    font-size: 13px;
+    background: rgba(175,207,207,0.12); 
+    border: 1px solid rgba(175,207,207,0.35);
+    border-radius: 30px; 
+    padding: 7px 22px; 
+    font-size: 13px; 
     font-weight: 700;
-    color: #ffb3dc;
+    color: #AFCFCF; 
     letter-spacing: 1px;
 }}
 
 .fav-song-card {{
-    background: #0d0d0d;
+    background: #0d0d0d; 
     border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 22px;
-    padding: 14px;
+    border-radius: 22px; 
+    padding: 14px; 
     margin-bottom: 14px;
-    box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.10); 
     transition: transform 0.16s ease;
 }}
 
-.fav-song-card:hover {{
-    transform: translateY(-2px);
-    box-shadow: 0 16px 34px rgba(0,0,0,0.18);
+.fav-song-card:hover {{ 
+    transform: translateY(-2px); 
+    box-shadow: 0 16px 34px rgba(0,0,0,0.18); 
 }}
 
-.fav-song-layout {{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 14px;
+.fav-song-layout {{ 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 14px; 
 }}
 
-.fav-song-content {{
-    flex: 1;
-    min-width: 0;
+.fav-song-content {{ 
+    flex: 1; 
+    min-width: 0; 
 }}
 
-.fav-song-name {{
-    font-weight: 800;
-    font-size: 16px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #ffffff;
+.fav-song-name {{ 
+    font-weight: 800; 
+    font-size: 16px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    color: #ffffff; 
 }}
 
-.fav-song-artist {{
-    color: #b5b9c2;
-    font-size: 14px;
-    margin-top: 4px;
+.fav-song-artist {{ 
+    color: #b5b9c2; 
+    font-size: 14px; 
+    margin-top: 4px; 
 }}
 
-.fav-song-meta {{
-    color: #9ca3af;
-    font-size: 12px;
-    margin-top: 6px;
+.fav-song-meta {{ 
+    color: #9ca3af; 
+    font-size: 12px; 
+    margin-top: 6px; 
 }}
 
 .fav-song-cover {{
-    width: 88px;
-    height: 88px;
-    border-radius: 16px;
-    overflow: hidden;
+    width: 88px; 
+    height: 88px; 
+    border-radius: 16px; 
+    overflow: hidden; 
     flex-shrink: 0;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.08); 
     background: #111;
-    display: flex;
-    align-items: center;
+    display: flex; 
+    align-items: center; 
     justify-content: center;
 }}
 
-.fav-song-cover img {{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.fav-song-cover img {{ 
+    width:100%; 
+    height:100%; 
+    object-fit:cover; 
 }}
 
-.fav-cover-placeholder {{
-    font-size: 22px;
-    font-weight: 800;
-    color: #ec4899;
+.fav-cover-placeholder {{ 
+    font-size:22px; 
+    font-weight:800; 
+    color:#475569; 
 }}
 
 .fav-link-btn {{
-    display: inline-block;
+    display: inline-block; 
     margin-top: 10px;
-    background: rgba(236,72,153,0.14);
-    color: #ffb3dc !important;
+    background: linear-gradient(135deg,#DCE8D8 0%,#AFCFCF 100%);
+    color: #111827 !important; 
     text-decoration: none !important;
-    border-radius: 10px;
-    padding: 6px 12px;
-    font-size: 12px;
+    border-radius: 10px; 
+    padding: 6px 12px; 
+    font-size: 12px; 
     font-weight: 760;
-    border: 1px solid rgba(236,72,153,0.35);
+    border: 1px solid #AFCFCF;
 }}
 
 .fav-artist-card {{
-    background: #0d0d0d;
+    background: #0d0d0d; 
     border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 22px;
-    padding: 18px 20px;
+    border-radius: 22px; 
+    padding: 18px 20px; 
     margin-bottom: 14px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    display: flex; 
+    align-items: center; 
+    gap: 16px; 
     transition: transform 0.16s ease;
 }}
 
-.fav-artist-card:hover {{
-    transform: translateY(-2px);
-    box-shadow: 0 16px 34px rgba(0,0,0,0.18);
+.fav-artist-card:hover {{ 
+    transform: translateY(-2px); 
+    box-shadow: 0 16px 34px rgba(0,0,0,0.18); 
 }}
 
 .fav-artist-avatar {{
-    width: 68px;
-    height: 68px;
-    border-radius: 50%;
-    overflow: hidden;
+    width: 68px; 
+    height: 68px; 
+    border-radius: 50%; 
+    overflow: hidden; 
     flex-shrink: 0;
-    border: 2px solid rgba(236,72,153,0.35);
+    border: 2px solid rgba(255,255,255,0.12); 
     background: #111;
-    display: flex;
-    align-items: center;
+    display: flex; 
+    align-items: center; 
     justify-content: center;
 }}
 
-.fav-artist-avatar img {{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.fav-artist-avatar img {{ 
+    width:100%; 
+    height:100%; 
+    object-fit:cover; 
 }}
 
-.fav-artist-initial {{
-    font-size: 22px;
-    font-weight: 800;
-    color: #ec4899;
+.fav-artist-initial {{ 
+    font-size:22px; 
+    font-weight:800; 
+    color:#475569; 
 }}
 
-.fav-artist-info {{
-    flex: 1;
-    min-width: 0;
+.fav-artist-info {{ 
+    flex:1; 
+    min-width:0; 
 }}
 
-.fav-artist-name {{
-    font-size: 17px;
-    font-weight: 800;
-    color: #ffffff;
+.fav-artist-name {{ 
+    font-size:17px; 
+    font-weight:800; 
+    color:#ffffff; 
 }}
 
-.fav-artist-meta {{
-    color: #9ca3af;
-    font-size: 13px;
-    margin-top: 3px;
+.fav-artist-meta {{ 
+    color:#9ca3af; 
+    font-size:13px; 
+    margin-top:3px; 
 }}
 
-.empty-state {{
-    text-align: center;
-    padding: 70px 20px;
-    color: rgba(255,255,255,0.35);
+.empty-state {{ 
+    text-align:center; 
+    padding:70px 20px; 
+    color:rgba(255,255,255,0.28); 
 }}
 
-.empty-state-icon {{
-    font-size: 52px;
-    margin-bottom: 14px;
+.empty-state-icon {{ 
+    font-size:52px; 
+    margin-bottom:14px; 
 }}
 
-.empty-state-text {{
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 1.6;
+.empty-state-text {{ 
+    font-size:15px; 
+    font-weight:600; 
+    letter-spacing:1px; 
+    line-height:1.6; 
 }}
 
 .empty-link {{
@@ -398,9 +388,9 @@ hr {{
     margin-top: 22px;
     padding: 12px 22px;
     border-radius: 14px;
-    background: rgba(236,72,153,0.14);
-    border: 1px solid rgba(236,72,153,0.45);
-    color: #ffb3dc !important;
+    background: rgba(175,207,207,0.14);
+    border: 1px solid rgba(175,207,207,0.45);
+    color: #AFCFCF !important;
     text-decoration: none !important;
     font-size: 13px;
     font-weight: 800;
@@ -408,31 +398,32 @@ hr {{
 }}
 
 [data-testid="stAudio"] {{
-    background: transparent !important;
+    background: transparent !important; 
     border: none !important;
-    padding: 0 !important;
-    margin-top: 6px;
+    padding: 0 !important; 
+    margin-top: 6px; 
     margin-bottom: 6px;
 }}
 
-[data-testid="stAudio"] audio {{
-    width: 100%;
-    height: 36px;
-    border-radius: 20px;
-    filter: grayscale(1) brightness(0.85);
+[data-testid="stAudio"] audio {{ 
+    width:100%; 
+    height:36px; 
+    border-radius:20px; 
+    filter:grayscale(1) brightness(0.85); 
 }}
 
 div[data-testid="stButton"] > button {{
     background: rgba(255,255,255,0.08) !important;
     color: #ffffff !important;
-    border: 1px solid rgba(236,72,153,0.45) !important;
+    border: 1px solid rgba(175,207,207,0.45) !important;
     border-radius: 14px !important;
     font-weight: 800 !important;
 }}
 
 div[data-testid="stButton"] > button:hover {{
-    background: rgba(236,72,153,0.22) !important;
-    border: 1px solid rgba(236,72,153,0.75) !important;
+    background: rgba(175,207,207,0.18) !important;
+    border: 1px solid #AFCFCF !important;
+    color: #AFCFCF !important;
 }}
 </style>
 
@@ -446,6 +437,7 @@ div[data-testid="stButton"] > button:hover {{
 </div>
 """, unsafe_allow_html=True)
 
+recuperar_sesion()
 
 st.markdown(f"""
 <div class="fav-hero">
@@ -466,31 +458,39 @@ with col_logout:
             os.remove("usuario_activo.txt")
 
         st.switch_page("pages/sesion.py")
-        
+
 st.markdown("---")
 
-
-# CARGAR FAVORITOS
-canciones_fav = obtener_canciones_favoritas(usuario)
+# Cargar favoritos
+canciones_fav_todas = obtener_canciones_favoritas(usuario)
 artistas_fav = obtener_artistas_favoritos(usuario)
 
-# En caso de que los artistas se guardaron usando agregar_cancion_favorita
+# Separar artistas que se guardaron usando el sistema de canciones
 artistas_desde_canciones = [
-    item for item in canciones_fav
+    item for item in canciones_fav_todas
     if str(item.get("genero", "")).lower() == "artistas"
     or str(item.get("artista", "")).lower() == "artista"
 ]
 
-if not artistas_fav and artistas_desde_canciones:
-    artistas_fav = artistas_desde_canciones
+# Dejar en canciones solo canciones reales
+canciones_fav = [
+    item for item in canciones_fav_todas
+    if not (
+        str(item.get("genero", "")).lower() == "artistas"
+        or str(item.get("artista", "")).lower() == "artista"
+    )
+]
+
+# Mostrar artistas guardados como canciones en la pestaña Artistas
+if artistas_desde_canciones:
+    artistas_fav = artistas_fav + artistas_desde_canciones
 
 tab_c, tab_a = st.tabs([
     f"Canciones  ({len(canciones_fav)})",
     f"Artistas  ({len(artistas_fav)})",
 ])
 
-
-# CANCIONES
+# Canciones
 with tab_c:
     st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
 
@@ -500,7 +500,7 @@ with tab_c:
             <div class="empty-state-icon">♪</div>
             <div class="empty-state-text">
                 Aún no tienes canciones guardadas.<br>
-                Ve a <strong style="color:#ffb3dc">Géneros</strong> o <strong style="color:#ffb3dc">Canciones</strong> y pulsa ☆.
+                Ve a <strong style="color:#AFCFCF">Géneros</strong> o <strong style="color:#AFCFCF">Canciones</strong> y pulsa ☆.
             </div>
             <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
                 <a class="empty-link" href="/generos" target="_self">Ir a Géneros →</a>
@@ -512,12 +512,6 @@ with tab_c:
         cols = st.columns(2, gap="large")
 
         for i, cancion in enumerate(canciones_fav):
-            if (
-                str(cancion.get("genero", "")).lower() == "artistas"
-                or str(cancion.get("artista", "")).lower() == "artista"
-            ):
-                continue
-
             nombre = texto_seguro(cancion.get("nombre", ""))
             artista = texto_seguro(cancion.get("artista", ""))
             imagen = cancion.get("imagen_url", "") or ""
@@ -568,8 +562,7 @@ with tab_c:
                     eliminar_cancion_favorita(usuario, cancion["nombre"], cancion.get("artista", ""))
                     st.rerun()
 
-
-# ARTISTAS
+# Artistas
 with tab_a:
     st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
 
@@ -579,7 +572,7 @@ with tab_a:
             <div class="empty-state-icon">🎤</div>
             <div class="empty-state-text">
                 Aún no tienes artistas guardados.<br>
-                Ve a <strong style="color:#ffb3dc">Artistas</strong> y guarda tus favoritos.
+                Ve a <strong style="color:#AFCFCF">Artistas</strong> y guarda tus favoritos.
             </div>
             <a class="empty-link" href="/artistas" target="_self">Ir a Artistas →</a>
         </div>
@@ -592,6 +585,7 @@ with tab_a:
             imagen = artista.get("imagen_url", "") or ""
             url = artista.get("url", "") or ""
             oyentes = artista.get("oyentes", "") or ""
+            reproducciones = artista.get("reproducciones", "") or ""
 
             avatar_html = (
                 f'<div class="fav-artist-avatar"><img src="{html_lib.escape(imagen)}"></div>'
@@ -604,7 +598,9 @@ with tab_a:
                 if url.startswith("http") else ""
             )
 
-            meta_oyentes = formatear_numero(oyentes, "oyentes")
+            meta_texto = formatear_numero(oyentes, "oyentes")
+            if not meta_texto:
+                meta_texto = formatear_numero(reproducciones, "reprod.")
 
             with cols2[i % 2]:
                 st.markdown(f"""
@@ -612,7 +608,7 @@ with tab_a:
                     {avatar_html}
                     <div class="fav-artist-info">
                         <div class="fav-artist-name">{nombre}</div>
-                        <div class="fav-artist-meta">{meta_oyentes}</div>
+                        <div class="fav-artist-meta">{meta_texto}</div>
                         {link_btn}
                     </div>
                 </div>
@@ -622,14 +618,16 @@ with tab_a:
                     try:
                         eliminar_artista_favorito(usuario, artista["nombre"])
                     except Exception:
-                        eliminar_cancion_favorita(usuario, artista["nombre"], artista.get("artista", "Artista"))
+                        pass
+
+                    eliminar_cancion_favorita(
+                        usuario,
+                        artista["nombre"],
+                        artista.get("artista", "Artista")
+                    )
 
                     st.rerun()
 
-
-# =========================
-# FOOTER
-# =========================
 st.markdown("---")
 st.markdown(f"""
 <div style="text-align:center; padding:12px 0 8px;">

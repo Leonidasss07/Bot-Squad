@@ -11,6 +11,7 @@ from db_favoritos import (
     eliminar_cancion_favorita,
     es_cancion_favorita,
 )
+from utils_sesion import recuperar_sesion
 
 st.set_page_config(
     page_title="Géneros",
@@ -140,15 +141,14 @@ hr {{
 h1, h2, h3, h4, p, label, div {{
     color: inherit;
 }}
-            
+
 .menu-superior {{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     gap: 42px;
 
-    height: 400px;
-    padding-bottom: 200px;
+    height: 240px;
     margin-top: 0;
 
     width: 100vw;
@@ -158,14 +158,7 @@ h1, h2, h3, h4, p, label, div {{
     background-image:
         linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
         linear-gradient(to left, rgba(0,0,0,0.75), rgba(0,0,0,0) 25%),
-        linear-gradient(
-            to bottom,
-            rgba(0,0,0,0) 0%,
-            rgba(0,0,0,0) 78%,
-            rgba(0,0,0,0.35) 88%,
-            rgba(0,0,0,0.75) 95%,
-            rgba(0,0,0,1) 100%
-        ),
+        linear-gradient(to bottom, rgba(0,0,0,0) 55%, rgba(0,0,0,0.95)),
         url("data:image/jpeg;base64,{HERO_IMAGE_BASE64}");
 
     background-size: cover;
@@ -173,7 +166,7 @@ h1, h2, h3, h4, p, label, div {{
     background-repeat: no-repeat;
 
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }}
 
 .menu-superior a {{
@@ -184,13 +177,17 @@ h1, h2, h3, h4, p, label, div {{
     letter-spacing: 3px;
     font-family: "Century Gothic", "Montserrat", "Segoe UI", Arial, sans-serif;
     text-transform: uppercase;
-    transform: none;
+    transform: translateY(42px);
     text-shadow: 0 3px 12px rgba(0,0,0,0.85);
+}}
+
+.menu-superior a:hover {{
+    color: #AFCFCF;
 }}
 
 .hero-card {{
     position: relative;
-    overflow: visible;
+    overflow: hidden;
     border: none;
     border-radius: 0;
     margin-top: 0;
@@ -198,10 +195,10 @@ h1, h2, h3, h4, p, label, div {{
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     width: 100vw;
-    min-height: 300px;
-    background: #000000 !important;
+    min-height: 350px;
+    background: #000000;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }}
 
 .hero-content {{
@@ -210,18 +207,16 @@ h1, h2, h3, h4, p, label, div {{
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0px 48px 38px 48px;
+    padding: 20px 48px 38px 48px;
     text-align: center;
-    transform: translateY(-45px);
 }}
 
 .hero-title {{
     font-size: 44px;
     font-weight: 900;
     margin: 0;
-    padding-top: 64px;
     letter-spacing: -1px;
-    line-height: 1.15;
+    line-height: 1.05;
     color: #ffffff !important;
     text-shadow: 0 4px 18px rgba(0, 0, 0, 0.75);
 }}
@@ -368,7 +363,6 @@ h4 {{
     box-shadow: 0 14px 40px rgba(0,0,0,0.65);
 }}
 
-/* Fondo borroso extraído de la portada */
 .song-bg {{
     position: absolute;
     inset: 0;
@@ -560,12 +554,11 @@ div[data-baseweb="select"] > div {{
 </style>
 
 <div class="menu-superior">
-    <a href="/" target="_self">INICIO</a>
-    <a href="/dashboard" target="_self">DASHBOARD</a>
-    <a href="/canciones" target="_self">CANCIONES</a>
-    <a href="/artistas" target="_self">ARTISTAS</a>
-    <a href="/generos" target="_self">GENEROS</a>
-    <a href="/favoritos" target="_self">FAVORITOS</a>
+    <a href="/" target="_self">Inicio</a>
+    <a href="/dashboard" target="_self">Dashboard</a>
+    <a href="/canciones" target="_self">Canciones</a>
+    <a href="/artistas" target="_self">Artistas</a>
+    <a href="/generos" target="_self">Géneros</a>
 </div>
 """, unsafe_allow_html=True)
 
@@ -582,7 +575,6 @@ COLORS = [
     "#477EAE",
     "#1A2E78"
 ]
-
 
 def texto_seguro(valor):
     if pd.isna(valor):
@@ -627,7 +619,6 @@ def obtener_valor_formateado(row, valor_col, usar_ranking):
 
     return ""
 
-
 gen_path = "data/clean/generos_canciones.csv"
 
 if os.path.exists(gen_path):
@@ -646,6 +637,8 @@ genero_top = conteo_generos.iloc[0]["género"].capitalize()
 total_generos = len(conteo_generos)
 
 loader.empty()
+
+recuperar_sesion()
 
 st.markdown(
     html_block(f"""
@@ -847,6 +840,9 @@ else:
     st.markdown(f"#### Canciones de {genero_elegido.upper()}")
 
     columnas_canciones = st.columns(2)
+    
+    # Leer sesion una sola vez fuera del bucle
+    usuario_activo = st.session_state.get("usuario", None)
 
     for i, row in tag_df.iterrows():
         nombre = texto_seguro(row[nombre_col])
@@ -904,18 +900,18 @@ else:
 
             if audio.startswith("http"):
                 st.audio(audio, format="audio/mp3")
-            usuario_activo = st.session_state.get("usuario")
-
+            usuario_activo = st.session_state.get("usuario", None)
+ 
             if usuario_activo:
                 ya_es_fav = es_cancion_favorita(
                     usuario_activo,
                     row[nombre_col],
                     row[artista_col] if artista_col else ""
                 )
-
+ 
                 btn_label = "★ Guardado" if ya_es_fav else "☆ Guardar favorito"
-                btn_key = f"fav_gen_{genero_elegido}_{i}_{usuario_activo}"
-
+                btn_key   = f"fav_gen_{genero_elegido}_{i}"
+ 
                 if st.button(btn_label, key=btn_key, use_container_width=False):
                     if ya_es_fav:
                         eliminar_cancion_favorita(
@@ -926,19 +922,19 @@ else:
                         st.toast("Eliminado de favoritos")
                     else:
                         agregar_cancion_favorita(
-                            usuario=usuario_activo,
-                            nombre=row[nombre_col],
-                            artista=row[artista_col] if artista_col else "",
-                            imagen_url=obtener_imagen_fila(row),
-                            url=obtener_url_fila(row),
-                            audio_url=str(row.get("audio_url", "")).strip(),
-                            reproducciones=row.get("reproducciones", ""),
-                            genero=genero_elegido,
+                            usuario   = usuario_activo,
+                            nombre    = row[nombre_col],
+                            artista   = row[artista_col] if artista_col else "",
+                            imagen_url= obtener_imagen_fila(row),
+                            url       = obtener_url_fila(row),
+                            audio_url = str(row.get("audio_url", "")).strip(),
+                            reproducciones = row.get("reproducciones", ""),
+                            genero    = genero_elegido,
                         )
                         st.toast("¡Añadido a favoritos! ★")
-
                     st.rerun()
             else:
+                # Redirigir si no hay sesión
                 st.markdown(
                     '<a href="/sesion" target="_self" style="'
                     'display:inline-block; margin-top:6px; font-size:12px; '

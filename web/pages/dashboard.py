@@ -351,16 +351,6 @@ html, body, .stApp {{
 
 st.title("Dashboard")
 
-meses = {
-    1: "Enero", 2: "Febrero", 3: "Marzo", 4: "Abril",
-    5: "Mayo", 6: "Junio", 7: "Julio", 8: "Agosto",
-    9: "Septiembre", 10: "Octubre", 11: "Noviembre", 12: "Diciembre"
-}
-
-mes_actual = meses[datetime.now().month]
-
-st.caption(f"Última sincronización con Last.fm: {mes_actual}")
-
 loader.empty()
 
 try:
@@ -395,7 +385,7 @@ with col_tabla:
     fig.patch.set_alpha(0.0)
     ax.patch.set_alpha(0.0)
 
-    ax.barh(conteo_generos.index, conteo_generos.values, color="#3b82f6")
+    ax.barh(conteo_generos.index, conteo_generos.values, color="#3e78d5")
     ax.invert_yaxis()
 
     ax.set_xlabel("")
