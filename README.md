@@ -75,10 +75,34 @@ El contenedor se encarga de:
 - Permitir el uso de canciones, artistas, géneros, favoritos y usuarios.
 
 ---
-
 ### Ejecución
-1. Primero se genera la imagen Docker a partir del `Dockerfile`: `docker build -t bot-squad .`
-2. Docker instala las dependencias indicadas en `requirements.txt`.
-3. Se copia el código del proyecto dentro del contenedor.
-4. Al iniciar el contenedor, se ejecuta la aplicación Streamlit: `docker run -p 8503:8501 bot-squad`
-5. La web queda disponible en `http://localhost:8503`.
+
+#### Opción 1 – Ejecución con Docker
+
+Con Docker instalado (https://www.docker.com/products/docker-desktop), abre una terminal en la carpeta del proyecto y ejecuta:
+
+1. Construir la imagen principal de la aplicación: `docker build -t bot-squad .`
+2. Iniciar la aplicación: `docker run -p 8503:8501 bot-squad`
+3. Abrir el navegador y entrar en: `http://localhost:8503`
+
+Si además quieres ejecutar los pasos de descarga de datos, ejecuta estos comandos en orden antes de iniciar la aplicación:
+
+- Para descargar los datos musicales desde Last.fm:
+  `docker build -f Dockerfile.download -t bot-squad-download .`
+  `docker run bot-squad-download`
+
+- Para buscar previews de audio en iTunes:
+  `docker build -f Dockerfile.data -t bot-squad-data .`
+  `docker run bot-squad-data`
+
+---
+
+#### Opción 2 – Ejecución manual (sin Docker)
+
+Abre una terminal en la carpeta raíz del proyecto y sigue estos pasos:
+
+1. Instalar las librerías necesarias: `pip install -r requirements.txt`
+2. Descargar los datos musicales desde Last.fm: `python src/download.py`
+3. (Opcional) Buscar previews de audio en iTunes: `python src/buscar_audios.py`
+4. Lanzar la aplicación: `streamlit run web/app.py`
+5. Abrir el navegador y entrar en: `http://localhost:8501`
