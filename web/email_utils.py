@@ -1,9 +1,12 @@
 import smtplib
+import streamlit as st
+
+
 from email.message import EmailMessage
 from email.headerregistry import Address
 
-EMAIL_EMISOR = "TU_GMAIL_REAL@gmail.com"
-EMAIL_PASSWORD = "TU_PASSWORD_DE_APLICACION_SIN_ESPACIOS"
+EMAIL_EMISOR = st.secrets["EMAIL_EMISOR"]
+EMAIL_PASSWORD = st.secrets["EMAIL_PASSWORD"]
 
 def enviar_codigo(destinatario, codigo):
     mensaje = EmailMessage()

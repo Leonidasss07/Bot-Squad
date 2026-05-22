@@ -62,7 +62,7 @@ Este contenedor incluye:
 
 **Nombre de la imagen:** `bot-squad`  
 **Aplicación:** Nova Music  
-**Tecnología:** Python + Streamlit  
+**Tecnología:** Python y Streamlit  
 **Puerto local:** `8503`  
 **Puerto interno del contenedor:** `8501`  
 **Comando de ejecución:** `streamlit run web/app.py`
